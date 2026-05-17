@@ -121,9 +121,4 @@ export async function getGearById(id: string): Promise<GearPrice | null> {
     }
   } catch { return null }
 }
-data.shop as 'rakuten' | 'yahoo', url: data.url,
-      affiliateUrl: data.affiliate_url, image: data.image_url,
-      shopName: data.shop_name, fetchedAt: data.fetched_at,
-    }
-  } catch { return null }
-}
+
