@@ -86,7 +86,7 @@ async function run() {
     const weather = await getJmaWeather(region.id)
     const tide    = getTideSnapshot(region.id)
     const seaTemp = estimateSeaTemp(region.seaTempBase)
-    console.log(`  weather=${weather.condition} tide=${tide.tideType} seaTemp=${seaTemp}C`)
+    console.log(`  weather=${weather.weatherText} tide=${tide.tideType} seaTemp=${seaTemp}C`)
 
     for (const fish of FISH) {
       try {
