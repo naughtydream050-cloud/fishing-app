@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "postedAt": "2026-05-18T01:11:14.067Z",
+      "postId": null,
+      "adapter": "browser",
+      "text": "SPEC AI takes messy notes and turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "before-after",
+      "linkIncluded": false,
+      "status": "skipped",
+      "error": "Browser posting not attempted because no in-app browser control tool is exposed in this session.",
+      "notes": "Do not mark as posted until visible X browser post succeeds."
+    },
+    {
+      "postedAt": "2026-05-18T01:51:15.094Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": null,
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "setup_required",
+      "error": "THREADS_ACCESS_TOKEN and THREADS_USER_ID are required.",
+      "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-18T03:14:22.844Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": null,
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "setup_required",
+      "error": "THREADS_ACCESS_TOKEN and THREADS_USER_ID are required.",
+      "notes": "Daily deterministic no-token Threads workflow."
+    }
+  ]
+}

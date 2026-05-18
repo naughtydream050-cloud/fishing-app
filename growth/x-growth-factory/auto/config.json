@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "channel": "threads",
+  "timezone": "Asia/Tokyo",
+  "dryRunDefault": true,
+  "dailyPostLimit": 1,
+  "weeklyLinkPostLimit": 2,
+  "threadsSafeLength": 480,
+  "product": {
+    "name": "SPEC AI",
+    "url": "https://spec-ai-alpha.vercel.app",
+    "facts": [
+      "AI text organization SaaS",
+      "turns messy notes into summary, tasks, and share-ready text",
+      "Free: 1 successful analysis/day",
+      "Pro: 10 successful analyses/day",
+      "Price: ¥300/month"
+    ]
+  },
+  "sources": {
+    "manualSeed": {
+      "enabled": true,
+      "path": "growth/x-growth-factory/auto/sources/manual-seeds.json"
+    },
+    "hackerNews": {
+      "enabled": true,
+      "queries": ["AI productivity", "notes app", "meeting notes", "SaaS", "solo founder"],
+      "limitPerQuery": 5
+    },
+    "googleNewsRss": {
+      "enabled": true,
+      "queries": ["AI productivity notes", "meeting notes AI", "solo founder SaaS"]
+    },
+    "rss": {
+      "enabled": false,
+      "feeds": []
+    }
+  },
+  "scoringWeights": {
+    "ai productivity": 6,
+    "notes": 7,
+    "meetings": 7,
+    "meeting": 7,
+    "creators": 3,
+    "creator": 3,
+    "solo founders": 5,
+    "solo founder": 5,
+    "saas": 4,
+    "task organization": 8,
+    "tasks": 7,
+    "workflow": 6,
+    "summary": 7
+  },
+  "forbiddenClaims": [
+    "guaranteed results",
+    "guaranteed conversion",
+    "used by thousands",
+    "officially endorsed",
+    "best ai tool",
+    "viral guaranteed",
+    "revenue guaranteed"
+  ]
+}

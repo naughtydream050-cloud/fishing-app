@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "theme": "messy notes after a meeting",
+      "keywords": ["notes", "meetings", "tasks", "summary"],
+      "source": "manual"
+    },
+    {
+      "theme": "solo founder follow-up workflow",
+      "keywords": ["solo founder", "workflow", "tasks"],
+      "source": "manual"
+    },
+    {
+      "theme": "turn rough notes into shareable updates",
+      "keywords": ["notes", "summary", "share text"],
+      "source": "manual"
+    }
+  ]
+}
