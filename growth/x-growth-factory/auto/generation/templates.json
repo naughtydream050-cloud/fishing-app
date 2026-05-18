@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "messy-to-clear",
+      "linkAllowed": false,
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month."
+    },
+    {
+      "id": "operator-followup",
+      "linkAllowed": false,
+      "text": "A useful meeting note should become three things: summary, tasks, and share text. SPEC AI is built for that small workflow. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month."
+    },
+    {
+      "id": "tiny-workflow",
+      "linkAllowed": false,
+      "text": "Tiny workflow: paste rough notes, get summary, tasks, and share-ready text. That is the SPEC AI job. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month."
+    },
+    {
+      "id": "soft-link",
+      "linkAllowed": true,
+      "text": "SPEC AI turns messy notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month. https://spec-ai-alpha.vercel.app"
+    }
+  ]
+}

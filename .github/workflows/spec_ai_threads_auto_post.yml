@@ -1,0 +1,56 @@
+name: SPEC AI Threads Auto Post
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 1 * * *"
+    - cron: "30 2 * * 1"
+
+jobs:
+  daily:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 1 * * *'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: spec-ai-threads-daily
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run deterministic Threads daily post
+        run: node growth/x-growth-factory/auto/run-daily.mjs --cron-secret "$CRON_SECRET"
+        env:
+          THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      - name: Persist Growth Factory state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add growth/x-growth-factory/queue/approved.json growth/x-growth-factory/queue/posting_log.json
+          git diff --cached --quiet || git commit -m "chore(growth): update SPEC AI Threads posting state"
+          git push
+
+  weekly-pdca:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 2 * * 1'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run weekly PDCA
+        run: node growth/x-growth-factory/auto/run-weekly-pdca.mjs
+      - name: Persist PDCA state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add growth/x-growth-factory/auto/pdca/pattern-memory.json growth/x-growth-factory/auto/pdca/weekly-pdca-report.md
+          git diff --cached --quiet || git commit -m "chore(growth): update SPEC AI Threads PDCA"
+          git push
