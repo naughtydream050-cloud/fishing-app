@@ -20,3 +20,10 @@ button, a {
 img {
   max-width: 100%;
 }
+
+/* Desktop navigation — show links on wider screens */
+@media (min-width: 640px) {
+  .desktop-nav-link {
+    display: inline-block !important;
+  }
+}

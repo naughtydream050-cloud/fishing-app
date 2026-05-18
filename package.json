@@ -23,6 +23,8 @@
     "@types/react-dom": "^18",
     "typescript": "^5",
     "cross-env": "^7.0.3",
-    "tsx": "^4.19.0"
+    "tsx": "^4.19.0",
+    "eslint": "^9",
+    "eslint-config-next": "^15.3.4"
   }
 }

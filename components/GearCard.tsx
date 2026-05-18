@@ -26,6 +26,7 @@ export default function GearCard({ item, rank }: Props) {
           {rank}
         </div>
         {item.image && (
+          // eslint-disable-next-line @next/next/no-img-element
           <img src={item.image} alt={item.title}
             width={90} height={90}
             style={{ objectFit: 'contain', borderRadius: 8, border: '1px solid #eee', flexShrink: 0 }} />
