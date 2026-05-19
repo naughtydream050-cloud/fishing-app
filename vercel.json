@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "USE_MOCK_DATA": "true"
+    }
+  }
+}
