@@ -1,0 +1,48 @@
+import type { FishingForecast } from '@/types/forecast'
+
+export const MOCK_FORECASTS: FishingForecast[] = [
+  {
+    regionId: 'hiroshima',
+    fishId: 'aji',
+    forecastScore: 82,
+    weatherSummary: '晴れ・弱風',
+    tideSummary: '中潮',
+    seaTemperature: 18.4,
+    aiSummary: '海水温上昇と小潮前後の影響で、広島湾ではアジの回遊が増加しています。夕マズメから夜間が特に活性が高く、ジグ単1.2gが有効です。',
+    recommendedGearIds: [],
+    generatedAt: new Date().toISOString(),
+  },
+  {
+    regionId: 'tokyo_23',
+    fishId: 'seabass',
+    forecastScore: 74,
+    weatherSummary: '曇り・南風',
+    tideSummary: '大潮',
+    seaTemperature: 17.8,
+    aiSummary: '大潮周りで荒川・隅田川のシーバスが活発です。潮が動く夜間の橋脚周りでバイブレーションが効きます。',
+    recommendedGearIds: [],
+    generatedAt: new Date().toISOString(),
+  },
+  {
+    regionId: 'yamaguchi',
+    fishId: 'mebaru',
+    forecastScore: 68,
+    weatherSummary: '晴れ・無風',
+    tideSummary: '小潮',
+    seaTemperature: 16.2,
+    aiSummary: '水温が安定し、山口県日本海側でメバルの活性が上がっています。夜釣りでワームのフォールが効果的です。',
+    recommendedGearIds: [],
+    generatedAt: new Date().toISOString(),
+  },
+  {
+    regionId: 'okayama',
+    fishId: 'black_bass',
+    forecastScore: 71,
+    weatherSummary: '晴れ・微風',
+    tideSummary: '中潮',
+    seaTemperature: 19.1,
+    aiSummary: '水温上昇でバスのスポーニング後期。児島湖周辺でトップウォーターへの反応が高まっています。',
+    recommendedGearIds: [],
+    generatedAt: new Date().toISOString(),
+  },
+]
