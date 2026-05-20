@@ -14,6 +14,7 @@ export type JmaWeatherSnapshot = {
   windSpeed: 'calm' | 'light' | 'moderate' | 'strong'
   precipitation: number // mm/day estimate (0-100)
   fetchedAt: string
+  isFallback?: boolean
 }
 
 const JMA_AREA_CODES: Record<string, string> = {
@@ -104,6 +105,7 @@ export async function getJmaWeather(regionId: string): Promise<JmaWeatherSnapsho
       windSpeed: 'light',
       precipitation: 0,
       fetchedAt: now.toISOString(),
+      isFallback: true,
     }
   }
 }

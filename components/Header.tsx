@@ -3,115 +3,93 @@ import { useState } from 'react'
 
 const NAV_LINKS = [
   { href: '/', label: '🏠 ホーム' },
+  { href: '/forecast', label: '📅 予報' },
+  { href: '/reports', label: '🐟 釣果' },
+  { href: '/areas', label: '🗾 地域' },
+  { href: '/articles', label: '📰 記事' },
+  { href: '/deals', label: '🛒 釣具' },
+  { href: '/subscribe', label: '⭐ プレミアム' },
+]
+
+const NAV_LINKS_MOBILE = [
+  { href: '/', label: '🏠 ホーム' },
   { href: '/forecast', label: '📅 今週の釣り予想' },
-  { href: '/reports', label: '🐟 先週の釣果報告' },
+  { href: '/reports', label: '🐟 釣果報告' },
+  { href: '/areas', label: '🗾 地域から探す' },
+  { href: '/articles', label: '📰 全国特集・記事' },
   { href: '/deals', label: '🛒 激安釣具' },
-  { href: '/articles', label: '📰 全国特集' },
-  { href: '/areas', label: '🗾 地域別情報' },
+  { href: '/subscribe', label: '⭐ プレミアムとは' },
 ]
 
 export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header style={{
-      background: '#1a4f8a',
-      color: '#fff',
-      position: 'sticky',
-      top: 0,
-      zIndex: 100,
-      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-    }}>
-      <div style={{
-        maxWidth: 720,
-        margin: '0 auto',
-        padding: '0 16px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        height: 52,
-      }}>
+    <header className="header-root">
+      <div className="header-inner">
         {/* Logo */}
-        <a
-          href="/"
-          style={{
-            color: '#fff',
-            textDecoration: 'none',
-            fontSize: 17,
-            fontWeight: 800,
-            letterSpacing: 0.5,
-          }}
-        >
-          🎣 釣り予報AI
+        <a href="/" className="header-logo">
+          <span className="header-logo-main">🎣 釣り予報AI</span>
+          <span className="header-logo-sub">全国の釣り情報を毎日更新</span>
         </a>
 
         {/* Desktop nav */}
-        <nav style={{ display: 'flex', gap: 0 }} aria-label="グローバルナビ">
+        <nav className="header-nav" aria-label="グローバルナビ">
           {NAV_LINKS.slice(1).map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              style={{
-                color: 'rgba(255,255,255,0.85)',
-                textDecoration: 'none',
-                fontSize: 13,
-                padding: '0 10px',
-                lineHeight: '52px',
-                display: 'none', // hidden on mobile, shown via CSS below
-              }}
-              className="desktop-nav-link"
-            >
+            <a key={link.href} href={link.href} className="header-nav-link">
               {link.label}
             </a>
           ))}
+          <a
+            href="/signup"
+            className="btn-nav-accent"
+            data-cta="nav-free-signup"
+            style={{ marginLeft: 4 }}
+          >
+            無料登録
+          </a>
         </nav>
 
-        {/* Hamburger button */}
+        {/* Hamburger */}
         <button
           onClick={() => setOpen(v => !v)}
-          aria-label="メニューを開く"
-          style={{
-            background: 'none',
-            border: 'none',
-            color: '#fff',
-            fontSize: 24,
-            cursor: 'pointer',
-            padding: '4px 8px',
-            minHeight: 44,
-            display: 'flex',
-            alignItems: 'center',
-          }}
+          aria-label={open ? 'メニューを閉じる' : 'メニューを開く'}
+          aria-expanded={open}
+          className="header-hamburger"
         >
           {open ? '✕' : '☰'}
         </button>
       </div>
 
-      {/* Dropdown menu */}
+      {/* Mobile menu */}
       {open && (
-        <nav
-          style={{
-            background: '#163d6e',
-            borderTop: '1px solid rgba(255,255,255,0.1)',
-          }}
-          aria-label="モバイルナビ"
-        >
-          {NAV_LINKS.map(link => (
+        <nav className="header-mobile-menu" aria-label="モバイルナビ">
+          {NAV_LINKS_MOBILE.map(link => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              style={{
-                display: 'block',
-                color: '#fff',
-                textDecoration: 'none',
-                padding: '14px 20px',
-                fontSize: 16,
-                borderBottom: '1px solid rgba(255,255,255,0.08)',
-              }}
+              className="header-mobile-link"
             >
               {link.label}
             </a>
           ))}
+          <a
+            href="/signup"
+            onClick={() => setOpen(false)}
+            className="header-mobile-link"
+            data-cta="nav-free-signup"
+            style={{
+              background: 'var(--c-green-600)',
+              color: '#fff',
+              fontWeight: 800,
+              borderRadius: 10,
+              textAlign: 'center',
+              marginTop: 4,
+            }}
+          >
+            ✅ 無料登録（30秒）
+          </a>
         </nav>
       )}
     </header>

@@ -14,7 +14,7 @@ export default function ReportsPage() {
         {MOCK_FISHING_REPORTS.map((report) => (
           <a
             key={report.id}
-            href={report.sourceUrl}
+            href={`/reports/${report.id}`}
             style={{
               display: 'block',
               textDecoration: 'none',
