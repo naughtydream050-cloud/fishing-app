@@ -1,131 +1,399 @@
-import { getTrendingGears } from '@/lib/dataAccess'
-import GearList from '@/app/GearList'
 import { REGIONS } from '@/types/region'
-import { getForecastsForRegion } from '@/lib/forecasts'
-import { generateFaqJsonLd } from '@/lib/jsonld'
+import { getRegionalForecastsByRegion } from '@/lib/forecastRepository'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { isFishingProduct } from '@/lib/productFilter'
+import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
+import { MOCK_FISHING_REPORTS } from '@/lib/mockFishingReports'
+import { MOCK_ARTICLES } from '@/lib/mockArticles'
+import DataSourceBadge from '@/components/DataSourceBadge'
+import type { FishId } from '@/types/fish'
+import type { Metadata } from 'next'
 
 export const revalidate = 3600
 
-export default async function HomePage() {
-  const [nationwide, chugoku, tokyo_23] = await Promise.all([
-    getTrendingGears('釣り竿', 'nationwide').catch(() => []),
-    getTrendingGears('釣り竿', 'chugoku').catch(() => []),
-    getTrendingGears('釣り竿', 'tokyo_23').catch(() => []),
-  ])
+export const metadata: Metadata = {
+  title: '釣り予報AI｜今日どこで釣れる？地域別の釣れそう度を30秒でチェック',
+  description: '地域別の活性スコア・今日釣れそうな場所がわかる釣り予報サービス。広島・山口・岡山・東京湾の釣り場情報を毎日更新。',
+  openGraph: {
+    title: '釣り予報AI｜今日どこで釣れる？',
+    description: '地域別の活性スコアで、今日釣れそうな場所が30秒でわかる。',
+    url: 'https://fishing-app-omega.vercel.app',
+  },
+}
 
-  // Fetch top forecast for each region (highest score this week)
+// ── Fish display metadata ──────────────────────────────────────
+type FishMeta = {
+  name: string
+  emoji: string
+  time: string
+  difficulty: '初心者OK' | '中級者向け'
+}
+const FISH_META: Record<FishId, FishMeta> = {
+  seabass:    { name: 'シーバス',     emoji: '🎣', time: '夜〜朝マズメ', difficulty: '中級者向け' },
+  aji:        { name: 'アジ',         emoji: '🐟', time: '夕マズメ〜夜', difficulty: '初心者OK'   },
+  mebaru:     { name: 'メバル',       emoji: '🐡', time: '夜釣り',       difficulty: '初心者OK'   },
+  black_bass: { name: 'ブラックバス', emoji: '🎣', time: '朝・夕マズメ', difficulty: '初心者OK'   },
+}
+
+function scoreColor(score: number): string {
+  if (score >= 70) return '#16a34a'
+  if (score >= 40) return '#d97706'
+  return '#dc2626'
+}
+function scoreBadge(score: number): string {
+  if (score >= 70) return '好調'
+  if (score >= 40) return '普通'
+  return '渋め'
+}
+
+const QUICK_CHIPS = [
+  { label: '広島', slug: 'hiroshima', active: true },
+  { label: '山口', slug: 'yamaguchi', active: true },
+  { label: '岡山', slug: 'okayama', active: true },
+  { label: '東京湾', slug: 'tokyo_23', active: true },
+  { label: '大阪', slug: null, active: false },
+  { label: '兵庫', slug: null, active: false },
+]
+
+export default async function HomePage() {
   const regionForecasts = await Promise.all(
     REGIONS.map(async (region) => {
-      const forecasts = await getForecastsForRegion(region.id).catch(() => [])
+      const forecasts = await getRegionalForecastsByRegion(region.id).catch(() => [])
       const top = forecasts.sort((a, b) => b.forecastScore - a.forecastScore)[0]
       return { region, top }
     })
   )
+  const firstForecast = regionForecasts.find(r => r.top)?.top
 
-  const allRegionGear = { nationwide, chugoku, tokyo_23 }
+  const top3 = [...regionForecasts]
+    .filter(r => r.top)
+    .sort((a, b) => (b.top?.forecastScore ?? 0) - (a.top?.forecastScore ?? 0))
+    .slice(0, 3)
 
-  const faqItems = [
+  const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
+  const topGear = rawGear.filter(isFishingProduct).slice(0, 3)
+
+  const baseUrl = 'https://fishing-app-omega.vercel.app'
+
+  const faqJsonLd = generateFaqJsonLd([
     {
-      question: '今週どこで釣れる？全国の釣り予報は？',
+      question: '今日どこで釣れる？地域別の活性スコアは？',
       answer: regionForecasts
-        .filter((r) => r.top)
-        .map((r) => `${r.region.displayName}（活性スコア${r.top!.forecastScore}/100）`)
+        .filter(r => r.top)
+        .map(r => `${r.region.displayName}（活性スコア${r.top!.forecastScore}/100）`)
         .join('、'),
     },
     {
       question: '釣り用品の最安値はどこで買える？',
       answer: '楽天・Yahoo!ショッピングの最安値をAIが毎日比較。このサイトで今日の最安値が確認できます。',
     },
-  ]
-
-  const faqJsonLd = generateFaqJsonLd(faqItems)
+  ])
+  const breadcrumbJsonLd = generateBreadcrumbJsonLd([
+    { name: '釣り予報AI', url: baseUrl },
+  ])
+  const articleJsonLd = generateArticleJsonLd({
+    title: '今日どこで釣れる？地域別の釣れそう度を30秒でチェック｜釣り予報AI',
+    description: '気象庁データ×AIで全国の釣り場を分析。地域別の活性スコア・おすすめ魚種を毎日更新。',
+    url: baseUrl,
+  })
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
-      <main style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px' }}>
-        {/* Header */}
-        <div style={{ marginBottom: 24 }}>
-          <h1 style={{ fontSize: 26, fontWeight: 800, color: '#1a1a1a', marginBottom: 6 }}>
-            🎣 釣り予報AI — 今週どこで釣れる？
-          </h1>
-          <p style={{ fontSize: 15, color: '#666', lineHeight: 1.5 }}>
-            気象庁データ×AIで毎日更新。地域ごとの活性予報と釣具最安値を一括チェック。
+      <main style={{ maxWidth: 740, margin: '0 auto', padding: '18px 14px 56px' }}>
+
+        {/* ━━━━━━ HERO ━━━━━━ */}
+        <section className="hero">
+          <div className="hero-eyebrow">🗾 全国釣り予報 · 毎日更新</div>
+          <h1>今日どこで釣れる？<br />地域別の釣れそう度を30秒でチェック</h1>
+          <p className="hero-sub" style={{ marginTop: 10 }}>
+            気象庁データで全国の釣り場を分析。地域ごとの活性スコアで、今日釣れそうな場所がすぐわかります。
           </p>
+
+          {/* TOP3 地域スコア */}
+          {top3.length > 0 && (
+            <div className="hero-top3">
+              {top3.map(({ region, top }, i) => {
+                const fish = top ? FISH_META[top.fishId] : null
+                const score = top?.forecastScore ?? 0
+                return (
+                  <a
+                    key={region.id}
+                    href={`/areas/${region.slug}`}
+                    className="hero-top3-item"
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    data-cta="hero-search-region"
+                  >
+                    <span className="hero-top3-rank">#{i + 1}</span>
+                    <span className="hero-top3-info">
+                      {region.displayName}
+                      {fish ? ` — ${fish.emoji} ${fish.name}` : ''}
+                      {top ? ` · ${top.weatherSummary}` : ''}
+                    </span>
+                    <span
+                      className="hero-top3-score"
+                      style={{ color: score >= 70 ? '#6ee7b7' : score >= 40 ? '#fcd34d' : '#fca5a5' }}
+                    >
+                      {score}点
+                    </span>
+                  </a>
+                )
+              })}
+            </div>
+          )}
+
+          <div className="hero-ctas">
+            <a href="/areas" className="btn-primary" data-cta="hero-view-areas">🗾 自分の地域を見る</a>
+            <a href="/subscribe" className="btn-ghost" data-cta="hero-free-signup">📩 無料で釣り予報を受け取る</a>
+          </div>
+        </section>
+
+        {/* ━━━━━━ クイック地域検索 ━━━━━━ */}
+        <div className="quick-search">
+          <div className="quick-search-title">🔍 地域から釣り場を探す</div>
+          <input
+            className="quick-search-input"
+            type="text"
+            placeholder="地域名を入力（例：広島、東京）"
+            readOnly
+            aria-label="地域検索（準備中）"
+          />
+          <div className="quick-chips">
+            {QUICK_CHIPS.map(chip => (
+              chip.active && chip.slug ? (
+                <a
+                  key={chip.label}
+                  href={`/areas/${chip.slug}`}
+                  className="region-chip"
+                  data-cta="hero-search-region"
+                >
+                  {chip.label}
+                </a>
+              ) : (
+                <span key={chip.label} className="region-chip region-chip-disabled">
+                  {chip.label}
+                  <span className="badge-coming-soon" style={{ marginLeft: 4, fontSize: '0.6rem', padding: '1px 6px', borderRadius: 99 }}>準備中</span>
+                </span>
+              )
+            ))}
+          </div>
         </div>
 
-        {/* Date badge */}
-        <div style={{
-          display: 'inline-block', background: '#eef2f8', borderRadius: 8,
-          padding: '6px 14px', fontSize: 14, color: '#1a4f8a', fontWeight: 600, marginBottom: 24,
-        }}>
-          📅 {new Date().toLocaleDateString('ja-JP', { month: 'long', day: 'numeric', weekday: 'short' })} 更新
-        </div>
-
-        {/* Regional Forecast Cards */}
-        <div style={{ marginBottom: 32 }}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: '#1a1a1a' }}>
-            🗾 今週の地域別釣り予報
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 12 }}>
+        {/* ━━━━━━ 地域別予想 ━━━━━━ */}
+        <section className="section">
+          {firstForecast && (
+            <DataSourceBadge
+              isMock={firstForecast.isMock}
+              generatedAt={firstForecast.generatedAt}
+              dataStatus={firstForecast.dataStatus}
+            />
+          )}
+          <div className="section-header">
+            <h2 className="section-title">🗾 今日の地域別釣り予想</h2>
+            <a href="/forecast" className="section-link">すべて見る →</a>
+          </div>
+          <div className="grid-forecast">
             {regionForecasts.map(({ region, top }) => {
               const score = top?.forecastScore ?? 0
-              const scoreColor = score >= 70 ? '#16a34a' : score >= 40 ? '#d97706' : '#dc2626'
+              const fish  = top ? FISH_META[top.fishId] : null
+              const color = scoreColor(score)
               return (
                 <a
                   key={region.id}
-                  href={`/region/${region.slug}`}
-                  style={{
-                    display: 'block', textDecoration: 'none',
-                    background: '#fff', border: '1px solid #e2e8f0', borderRadius: 12,
-                    padding: '16px 20px',
-                    boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
-                  }}
+                  href={`/areas/${region.slug}`}
+                  className="card card-hover forecast-card"
+                  data-cta="hero-search-region"
                 >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <div>
-                      <div style={{ fontSize: 16, fontWeight: 700, color: '#1a1a1a', marginBottom: 4 }}>
-                        {region.displayName}
+                  <div className="forecast-card-head">
+                    <div style={{ flex: 1 }}>
+                      <div className="forecast-region-name">{region.displayName}</div>
+                      <div className="forecast-meta">
+                        {top
+                          ? `🌡️ ${top.seaTemperature}℃ | ${top.tideSummary} | ${top.weatherSummary}`
+                          : 'データ生成中…'}
                       </div>
-                      <div style={{ fontSize: 13, color: '#666' }}>
-                        {top ? `🌡️ ${top.seaTemperature}℃ | ${top.tideSummary}` : '予報データ生成中...'}
+                      <div className="forecast-badges">
+                        {fish && (
+                          <>
+                            <span className="badge badge-fish">{fish.emoji} {fish.name}</span>
+                            <span className="badge badge-time">⏰ {fish.time}</span>
+                            <span className={`badge ${fish.difficulty === '初心者OK' ? 'badge-easy' : 'badge-inter'}`}>
+                              {fish.difficulty === '初心者OK' ? '🟢 初心者OK' : '🔵 中級者向け'}
+                            </span>
+                          </>
+                        )}
                       </div>
-                      {top && (
-                        <div style={{ fontSize: 12, color: '#888', marginTop: 4 }}>
-                          {top.weatherSummary}
-                        </div>
-                      )}
                     </div>
-                    {top && (
-                      <div style={{ textAlign: 'center', minWidth: 48 }}>
-                        <div style={{ fontSize: 26, fontWeight: 900, color: scoreColor, lineHeight: 1 }}>
-                          {score}
-                        </div>
-                        <div style={{ fontSize: 10, color: '#888' }}>活性</div>
-                      </div>
-                    )}
+                    <div
+                      className="forecast-score"
+                      style={{ color, borderColor: color }}
+                    >
+                      <span>{score || '—'}</span>
+                      <span className="score-label">{scoreBadge(score)}</span>
+                    </div>
                   </div>
+                  {top?.aiSummary && (
+                    <p className="forecast-summary">{top.aiSummary}</p>
+                  )}
                 </a>
               )
             })}
           </div>
+
+          {/* プレミアム機能プレビューカード */}
+          <div className="premium-preview-card" style={{ marginTop: 14 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-blue-800)', marginBottom: 6 }}>
+              📊 プレミアムで各スポットのリアルタイム予報が見られます
+            </div>
+            <p style={{ fontSize: 13, color: 'var(--c-gray-600)', marginBottom: 12, lineHeight: 1.6 }}>
+              天気・潮汐・水温を組み合わせた詳細なスポット別予報。毎週メールでお届け。
+            </p>
+            <a href="/subscribe" className="section-link" data-cta="premium-upgrade">
+              プレミアムを詳しく見る →
+            </a>
+          </div>
+        </section>
+
+        {/* ━━━━━━ 釣果報告 ━━━━━━ */}
+        <section className="section">
+          <div className="section-header">
+            <h2 className="section-title">🐟 最近の釣果報告</h2>
+            <a href="/reports" className="section-link">すべて見る →</a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {MOCK_FISHING_REPORTS.slice(0, 3).map((report) => (
+              <a key={report.id} href={`/reports/${report.id}`} className="card card-hover report-card">
+                {report.imageUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={report.imageUrl} alt={report.area} className="report-thumb-img" />
+                ) : (
+                  <div className="report-thumb-wrap">🐟</div>
+                )}
+                <div className="report-body">
+                  <div className="report-area">📍 {report.area}</div>
+                  <div className="report-title">{report.title}</div>
+                  <div className="report-tags">
+                    {report.fishName.map(f => (
+                      <span key={f} className="badge badge-report">{f}</span>
+                    ))}
+                  </div>
+                  <div className="report-summary">{report.summary}</div>
+                  <div className="report-footer">{report.sourceName} · {report.publishedAt}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* ━━━━━━ 全国特集・記事 ━━━━━━ */}
+        <section className="section">
+          <div className="section-header">
+            <h2 className="section-title">📰 全国特集・記事まとめ</h2>
+            <a href="/articles" className="section-link">すべて見る →</a>
+          </div>
+          <div className="grid-articles">
+            {MOCK_ARTICLES.slice(0, 4).map((article) => (
+              <a key={article.id} href={`/articles/${article.slug}`} className="card card-hover article-card">
+                {article.imageUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={article.imageUrl}
+                    alt={article.title}
+                    className="article-img"
+                    style={{ borderRadius: '14px 14px 0 0' }}
+                  />
+                ) : (
+                  <div className="article-img-wrap">📰</div>
+                )}
+                <div className="article-body">
+                  <span className="badge badge-cat">{article.category}</span>
+                  <div className="article-title">{article.title}</div>
+                  <div className="article-summary">{article.summary}</div>
+                  <div className="article-date">{article.publishedAt}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <hr className="divider" />
+
+        {/* ━━━━━━ 激安釣具（補助 · 最大3件） ━━━━━━ */}
+        <section>
+          <div className="gear-header">
+            <span className="gear-header-title">🛒 本日のおすすめ釣具</span>
+            <span className="gear-pr-badge">PR</span>
+            <a
+              href="/deals"
+              style={{ marginLeft: 'auto', fontSize: '0.75rem', color: 'var(--c-gray-500)', textDecoration: 'none' }}
+            >
+              もっと見る →
+            </a>
+          </div>
+
+          {topGear.length === 0 ? (
+            <p style={{ color: 'var(--c-gray-400)', fontSize: '0.85rem', padding: '12px 0' }}>
+              データ取得中...
+            </p>
+          ) : (
+            <div style={{
+              background: 'var(--bg-card)',
+              border: '1px solid var(--c-gray-200)',
+              borderRadius: 'var(--r-card)',
+              boxShadow: 'var(--shadow-card)',
+              overflow: 'hidden',
+            }}>
+              {topGear.map((item, i) => {
+                const rakutenPrice = item.platform === 'rakuten' ? item.price : item.competitorPrice
+                const yahooPrice   = item.platform === 'yahoo'   ? item.price : item.competitorPrice
+                const cheaperPlatform = (rakutenPrice ?? Infinity) <= (yahooPrice ?? Infinity) ? 'rakuten' : 'yahoo'
+                const bestPrice = cheaperPlatform === 'rakuten' ? rakutenPrice : yahooPrice
+                return (
+                  <div
+                    key={item.id}
+                    className="gear-card"
+                    style={i < topGear.length - 1 ? { borderBottom: '1px solid var(--c-gray-200)' } : {}}
+                  >
+                    <div className="gear-rank">{i + 1}</div>
+                    {item.image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={item.image} alt={item.title} className="gear-img" width={56} height={56} />
+                    )}
+                    <div className="gear-info">
+                      {item.manufacturer && <div className="gear-maker">{item.manufacturer}</div>}
+                      <div className="gear-title">{item.title}</div>
+                      <div className="gear-price">
+                        ¥{bestPrice?.toLocaleString() ?? '—'}
+                        <span className="gear-platform">
+                          ({cheaperPlatform === 'rakuten' ? '楽天' : 'Yahoo!'})
+                        </span>
+                      </div>
+                    </div>
+                    <a
+                      href={item.affiliateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="gear-cta"
+                    >
+                      見る →
+                    </a>
+                  </div>
+                )
+              })}
+            </div>
+          )}
+        </section>
+
+        {/* ━━━━━━ 免責・注意事項 ━━━━━━ */}
+        <div className="disclaimer-box">
+          <div>※ 釣れそう度は天気・簡易潮回り・過去傾向をもとにした参考情報です。釣果を保証するものではありません。</div>
+          <div>※ 潮回りは簡易推定（月齢ベース）です。実際の満潮・干潮時刻は各地の潮位表を確認してください。</div>
+          <div>※ 立入禁止区域・漁業権・安全管理を必ず確認し、ライフジャケット着用を推奨します。</div>
         </div>
 
-        {/* Gear Section */}
-        <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: 24, marginBottom: 12 }}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 4, color: '#1a1a1a' }}>
-            🛒 本日の目玉釣具（最安値）
-          </h2>
-          <p style={{ fontSize: 14, color: '#666', marginBottom: 16 }}>
-            楽天・Yahoo!の最安値をAIが毎日自動比較
-          </p>
-        </div>
-
-        <GearList initialGear={nationwide} allRegionGear={allRegionGear} />
       </main>
     </>
   )

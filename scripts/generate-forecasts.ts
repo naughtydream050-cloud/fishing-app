@@ -83,7 +83,12 @@ async function run() {
 
   for (const region of REGIONS) {
     console.log(`\n[region] ${region.displayName}`)
+    let dataSource = 'jma-weather+lunar-tide-estimate+rule-score'
     const weather = await getJmaWeather(region.id)
+    if (weather.isFallback) {
+      console.log(`[JMA] fallback used for ${region.id}`)
+      dataSource += '-jma-fallback'
+    }
     const tide    = getTideSnapshot(region.id)
     const seaTemp = estimateSeaTemp(region.seaTempBase)
     console.log(`  weather=${weather.weatherText} tide=${tide.tideType} seaTemp=${seaTemp}C`)
@@ -130,10 +135,13 @@ async function run() {
           forecast_date:   today,
           forecast_score:  scored.forecastScore,
           weather_summary: scored.weatherSummary,
-          tide_summary:    tide.tideType,
+          tide_summary:    `${tide.tideType}（簡易潮回り推定）`,
           sea_temperature: scored.seaTemperature,
           ai_summary:      summary,
           generated_at:    new Date().toISOString(),
+          is_mock:         false,
+          data_source:     dataSource,
+          valid_date:      today,
         }, { onConflict: 'region_id,fish_id,forecast_date' })
 
         if (error) { console.error(`  [error] ${fish.displayName}: ${error.message}`); failures++ }

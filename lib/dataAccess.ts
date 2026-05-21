@@ -81,7 +81,7 @@ async function fetchFromProviders(keyword: string): Promise<GearPrice[]> {
       fetchedAt: new Date().toISOString(),
     })) : []),
   ]
-  return items.sort((a, b) => a.price - b.price)
+  return sortGearWithPrimaryFirst(items)
 }
 
 export async function getTrendingGears(keyword = '釣り竿', region = 'nationwide'): Promise<GearPrice[]> {
@@ -104,6 +104,12 @@ export async function getTrendingGears(keyword = '釣り竿', region = 'nationwi
   return fresh
 }
 
+export function sortGearWithPrimaryFirst(items: GearPrice[]): GearPrice[] {
+  const primary = items.filter(i => i.price >= 500).sort((a, b) => a.price - b.price)
+  const supplementary = items.filter(i => i.price < 500).sort((a, b) => a.price - b.price)
+  return [...primary, ...supplementary]
+}
+
 export async function getGearById(id: string): Promise<GearPrice | null> {
   if (USE_MOCK) {
     const { MOCK_GEAR } = await import('@/lib/mockData')
@@ -121,4 +127,5 @@ export async function getGearById(id: string): Promise<GearPrice | null> {
     }
   } catch { return null }
 }
+
 
