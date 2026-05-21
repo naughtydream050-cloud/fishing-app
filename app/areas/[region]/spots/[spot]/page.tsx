@@ -3,6 +3,9 @@ import type { Metadata } from 'next'
 import { REGIONS } from '@/types/region'
 import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet } from '@/lib/gearRecommendation'
+import GearSetCard from '@/components/GearSetCard'
 
 export const revalidate = 86400
 
@@ -58,6 +61,14 @@ export default async function SpotDetailPage({ params }: Props) {
     spotData.difficulty === '初心者OK' ? 'var(--c-green-600)' :
     spotData.difficulty === '中級者向け' ? 'var(--c-blue-700)' :
     'var(--c-red-600)'
+
+  const rawGear = await getTrendingGears(spotData.fishTypes[0] ?? '釣り竿', regionData.slug).catch(() => [])
+  const gearSet = recommendGearSet({
+    regionSlug: regionData.slug,
+    spotSlug: spot,
+    fishName: spotData.fishTypes[0],
+    skillLevel: 'beginner',
+  }, rawGear)
 
   return (
     <>
@@ -151,6 +162,9 @@ export default async function SpotDetailPage({ params }: Props) {
             {spotData.tackle}
           </div>
         </section>
+
+        {/* 釣行セット */}
+        <GearSetCard gearSet={gearSet} />
 
         {/* プレミアム機能プレビューカード */}
         <div className="premium-preview-card" style={{ marginBottom: 24 }}>

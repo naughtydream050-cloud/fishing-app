@@ -4,6 +4,9 @@ import { MOCK_ARTICLES } from '@/lib/mockArticles'
 import { REGIONS } from '@/types/region'
 import { FISH_SPECIES } from '@/types/fish'
 import { generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet } from '@/lib/gearRecommendation'
+import GearSetCard from '@/components/GearSetCard'
 
 export const revalidate = 86400
 
@@ -33,6 +36,9 @@ export default async function ArticleDetailPage({ params }: Props) {
   const { slug } = await params
   const article = MOCK_ARTICLES.find((a) => a.slug === slug)
   if (!article) notFound()
+
+  const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
+  const gearSet = recommendGearSet({ skillLevel: 'beginner' }, rawGear)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
@@ -100,6 +106,9 @@ export default async function ArticleDetailPage({ params }: Props) {
             地域の活性スコアが高い日を事前に確認して、釣果アップを目指しましょう。無料登録で自分の地域の予報をお気に入り登録することもできます。
           </p>
         </div>
+
+        {/* 釣行セット */}
+        <GearSetCard gearSet={gearSet} />
 
         {/* 関連地域チップ */}
         <section style={{ marginBottom: 24 }}>
