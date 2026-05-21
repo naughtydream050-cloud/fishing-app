@@ -3,6 +3,9 @@ import type { Metadata } from 'next'
 import { REGIONS } from '@/types/region'
 import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet } from '@/lib/gearRecommendation'
+import GearSetCard from '@/components/GearSetCard'
 
 export const revalidate = 86400
 
@@ -53,6 +56,12 @@ export default async function SpotDetailPage({ params }: Props) {
     { name: regionData.displayName, url: `${baseUrl}/areas/${region}` },
     { name: spotData.name, url: `${baseUrl}/areas/${region}/spots/${spot}` },
   ])
+
+  const gears = await getTrendingGears(spotData.targetFish?.[0] ?? '釣り', region)
+  const gearSet = recommendGearSet(
+    { regionSlug: region, spotSlug: spot, fishName: spotData.targetFish?.[0] },
+    gears
+  )
 
   const difficultyColor =
     spotData.difficulty === '初心者OK' ? 'var(--c-green-600)' :
@@ -187,8 +196,16 @@ export default async function SpotDetailPage({ params }: Props) {
           </a>
         </div>
 
+        {/* 釣行セット */}
+        <section style={{ marginTop: 32 }}>
+          <h2 style={{ fontSize: 16, fontWeight: 700, color: 'var(--c-blue-950)', marginBottom: 12 }}>
+            🎣 おすすめ釣行セット
+          </h2>
+          <GearSetCard gearSet={gearSet} />
+        </section>
+
         {/* ナビ */}
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 24 }}>
           <a href={`/areas/${region}`} style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
             ← {regionData.displayName}のスポット一覧
           </a>
