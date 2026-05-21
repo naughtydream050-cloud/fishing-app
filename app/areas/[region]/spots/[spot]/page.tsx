@@ -57,9 +57,9 @@ export default async function SpotDetailPage({ params }: Props) {
     { name: spotData.name, url: `${baseUrl}/areas/${region}/spots/${spot}` },
   ])
 
-  const gears = await getTrendingGears(spotData.targetFish?.[0] ?? '釣り', region)
+  const gears = await getTrendingGears(spotData.fishTypes?.[0] ?? '釣り', region)
   const gearSet = recommendGearSet(
-    { regionSlug: region, spotSlug: spot, fishName: spotData.targetFish?.[0] },
+    { regionSlug: region, spotSlug: spot, fishName: spotData.fishTypes?.[0] },
     gears
   )
 

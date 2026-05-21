@@ -59,7 +59,7 @@ export function classifyGearCategory(title: string): GearCategory {
 const PRIMARY_CATEGORIES = new Set<GearCategory>(['rod', 'reel', 'safety'])
 
 function toFilterable(g: GearPrice): FilterableProduct {
-  return { name: g.title, description: g.shopName }
+  return { title: g.title, shopName: g.shopName }
 }
 
 function isExampleUrl(url: string): boolean {
