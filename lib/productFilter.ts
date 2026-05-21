@@ -5,6 +5,8 @@
  * - WHITELIST に一致しないものも除外
  */
 
+import type { GearPrice } from './dataAccess'
+
 export type FilterableProduct = {
   title: string
   shopName?: string
@@ -112,4 +114,34 @@ export function isFishingProduct(product: FilterableProduct): boolean {
 
   // 2. ホワイトリストに該当するものだけ表示
   return WHITELIST_RE.test(text)
+}
+
+export function excludeNonFishingProducts(products: GearPrice[]): GearPrice[] {
+  return products.filter(p =>
+    isFishingProduct({ title: p.title, shopName: p.shopName, manufacturer: p.manufacturer })
+  )
+}
+
+const CATEGORY_RULES: [RegExp, string][] = [
+  [/ライフジャケット|救命胴衣|フローティングベスト/i, 'safety'],
+  [/ロッド|釣竿|釣り竿|磯竿|バスロッド|投げ竿|船竿|スピニングロッド|ベイトロッド/i, 'rod'],
+  [/リール|スピニングリール|ベイトリール/i, 'reel'],
+  [/ワーム/i, 'worm'],
+  [/ジグヘッド/i, 'jighead'],
+  [/ルアー|プラグ|ミノー|メタルジグ/i, 'lure'],
+  [/ライン|釣り糸|道糸|フロロ|PEライン/i, 'line'],
+  [/フック|釣り針|釣針/i, 'hook'],
+  [/仕掛け|サビキ|テンヤ|タイラバ|エギ/i, 'rig'],
+  [/クーラーボックス|クーラー/i, 'cooler'],
+  [/タックルボックス|ルアーボックス|タックルバッグ/i, 'storage'],
+  [/ヘッドライト|ランタン|フィッシングライト/i, 'light'],
+  [/フィッシュグリップ|ランディングネット|タモ|ギャフ/i, 'tool'],
+  [/フィッシングベスト|ウェーダー|レインウェア|アングラー/i, 'wear'],
+]
+
+export function classifyGearCategory(name: string): string | null {
+  for (const [re, category] of CATEGORY_RULES) {
+    if (re.test(name)) return category
+  }
+  return null
 }

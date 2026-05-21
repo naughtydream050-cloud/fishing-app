@@ -45,6 +45,20 @@ const BASE_GEAR: GearPrice[] = [
     competitorPrice: 1080,
     competitorPlatform: 'yahoo',
   },
+  {
+    id: 'mock-safety-001',
+    title: 'マリンライフ ライフジャケット 自動膨張式 国土交通省認定 釣り用',
+    manufacturer: 'マリンライフ',
+    price: 8800,
+    platform: 'rakuten',
+    url: 'https://example.rakuten.co.jp/item/s001',
+    affiliateUrl: 'https://example.rakuten.co.jp/item/s001?af=1',
+    image: 'https://placehold.co/200x200/f0e8f8/5f2c7a?text=ライフジャケット',
+    shopName: '安全釣具店',
+    fetchedAt: '2026-05-14T00:00:00Z',
+    competitorPrice: 9200,
+    competitorPlatform: 'yahoo',
+  },
 ]
 
 const CHUGOKU_GEAR: GearPrice[] = [

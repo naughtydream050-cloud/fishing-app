@@ -3,6 +3,9 @@ import type { Metadata } from 'next'
 import { REGIONS } from '@/types/region'
 import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet } from '@/lib/gearRecommendation'
+import GearSetCard from '@/components/GearSetCard'
 
 export const revalidate = 86400
 
@@ -53,6 +56,16 @@ export default async function SpotDetailPage({ params }: Props) {
     { name: regionData.displayName, url: `${baseUrl}/areas/${region}` },
     { name: spotData.name, url: `${baseUrl}/areas/${region}/spots/${spot}` },
   ])
+
+  const rawGear = await getTrendingGears('釣り', regionData.id).catch(() => [])
+  const gearProducts = rawGear.map(g => ({
+    ...g,
+    isMock: g.id.startsWith('mock-') || g.url.includes('example.'),
+  }))
+  const gearSet = recommendGearSet(
+    { regionSlug: region, fishName: spotData.fishTypes[0] },
+    gearProducts
+  )
 
   const difficultyColor =
     spotData.difficulty === '初心者OK' ? 'var(--c-green-600)' :
@@ -186,6 +199,14 @@ export default async function SpotDetailPage({ params }: Props) {
             ✅ この釣り場を保存する（無料）
           </a>
         </div>
+
+        {/* おすすめタックルセット */}
+        <section style={{ marginBottom: 24 }}>
+          <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-900)', marginBottom: 10 }}>
+            🛒 おすすめタックルセット
+          </h2>
+          <GearSetCard gearSet={gearSet} />
+        </section>
 
         {/* ナビ */}
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>

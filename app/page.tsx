@@ -2,10 +2,12 @@ import { REGIONS } from '@/types/region'
 import { getRegionalForecastsByRegion } from '@/lib/forecastRepository'
 import { getTrendingGears } from '@/lib/dataAccess'
 import { isFishingProduct } from '@/lib/productFilter'
+import { recommendGearSet } from '@/lib/gearRecommendation'
 import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
 import { MOCK_FISHING_REPORTS } from '@/lib/mockFishingReports'
 import { MOCK_ARTICLES } from '@/lib/mockArticles'
 import DataSourceBadge from '@/components/DataSourceBadge'
+import GearSetCard from '@/components/GearSetCard'
 import type { FishId } from '@/types/fish'
 import type { Metadata } from 'next'
 
@@ -72,6 +74,11 @@ export default async function HomePage() {
 
   const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
   const topGear = rawGear.filter(isFishingProduct).slice(0, 3)
+  const gearProducts = rawGear.map(g => ({
+    ...g,
+    isMock: g.id.startsWith('mock-') || g.url.includes('example.'),
+  }))
+  const homeGearSet = recommendGearSet({ regionSlug: 'nationwide' }, gearProducts)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
 
@@ -385,6 +392,14 @@ export default async function HomePage() {
               })}
             </div>
           )}
+        </section>
+
+        {/* ━━━━━━ おすすめタックルセット ━━━━━━ */}
+        <section className="section">
+          <div className="section-header">
+            <h2 className="section-title">🎣 おすすめタックルセット</h2>
+          </div>
+          <GearSetCard gearSet={homeGearSet} />
         </section>
 
         {/* ━━━━━━ 免責・注意事項 ━━━━━━ */}
