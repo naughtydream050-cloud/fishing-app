@@ -3,10 +3,38 @@ import type { Metadata } from 'next'
 import { REGIONS } from '@/types/region'
 import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
+import DataSourceBadge from '@/components/DataSourceBadge'
+import GearSetCard from '@/components/GearSetCard'
+import { getTrendingGears } from '@/lib/dataAccess'
+import {
+  recommendGearSet,
+  type GearRecommendationContext,
+  type FishingStyle,
+  type ExperienceLevel,
+} from '@/lib/gearRecommendation'
 
 export const revalidate = 86400
 
 type Props = { params: Promise<{ region: string; spot: string }> }
+
+function deriveFishingStyle(tackle: string): FishingStyle {
+  if (/アジング|ジグ単/i.test(tackle)) return 'ajing'
+  if (/メバリング/i.test(tackle)) return 'mebaring'
+  if (/シーバス|バイブレーション|ミノー/i.test(tackle)) return 'seabass_lure'
+  if (/サビキ/i.test(tackle)) return 'sabiki'
+  if (/エギング|エギ/i.test(tackle)) return 'eging'
+  if (/フカセ/i.test(tackle)) return 'fukase'
+  if (/テンヤ/i.test(tackle)) return 'tenya'
+  if (/バス|クランク|トップウォーター/i.test(tackle)) return 'bass_lure'
+  if (/ショアジギ/i.test(tackle)) return 'shore_jig'
+  return 'general'
+}
+
+function toGearRegion(regionId: string): 'nationwide' | 'chugoku' | 'tokyo_23' {
+  if (regionId === 'tokyo_23') return 'tokyo_23'
+  if (regionId === 'hiroshima' || regionId === 'yamaguchi' || regionId === 'okayama') return 'chugoku'
+  return 'nationwide'
+}
 
 export async function generateStaticParams() {
   const params: { region: string; spot: string }[] = []
@@ -54,10 +82,24 @@ export default async function SpotDetailPage({ params }: Props) {
     { name: spotData.name, url: `${baseUrl}/areas/${region}/spots/${spot}` },
   ])
 
-  const difficultyColor =
-    spotData.difficulty === '初心者OK' ? 'var(--c-green-600)' :
-    spotData.difficulty === '中級者向け' ? 'var(--c-blue-700)' :
-    'var(--c-red-600)'
+  // 釣具レコメンドセットを生成
+  const style = deriveFishingStyle(spotData.tackle)
+  const level: ExperienceLevel = spotData.difficulty === '初心者OK' ? 'beginner' : 'intermediate'
+  const gear = await getTrendingGears(
+    spotData.fishTypes[0] ?? '釣り竿',
+    toGearRegion(regionData.id)
+  ).catch(() => [])
+
+  const gearCtx: GearRecommendationContext = {
+    spotId: spotData.id,
+    spotName: spotData.name,
+    regionId: regionData.id,
+    fishTypes: spotData.fishTypes,
+    style,
+    level,
+    targetPriceTier: level === 'beginner' ? 'budget' : 'mid',
+  }
+  const gearSet = recommendGearSet(gear, gearCtx)
 
   return (
     <>
@@ -69,7 +111,7 @@ export default async function SpotDetailPage({ params }: Props) {
       <main style={{ maxWidth: 720, margin: '0 auto', padding: '20px 16px 56px' }}>
 
         {/* Breadcrumb */}
-        <nav style={{ fontSize: 13, color: 'var(--c-gray-500)', marginBottom: 16 }}>
+        <nav style={{ fontSize: 13, color: 'var(--c-gray-500)', marginBottom: 12 }}>
           <a href="/" style={{ color: 'var(--c-blue-700)' }}>ホーム</a>
           {' › '}
           <a href="/areas" style={{ color: 'var(--c-blue-700)' }}>地域から探す</a>
@@ -78,6 +120,12 @@ export default async function SpotDetailPage({ params }: Props) {
           {' › '}
           <span>{spotData.name}</span>
         </nav>
+
+        {/* データソースバッジ（スポットデータはmock） */}
+        <DataSourceBadge
+          isMock={true}
+          dataStatus={{ source: 'mock', reason: 'no-data', message: 'デモデータ（本番スポットデータ未接続）' }}
+        />
 
         {/* Header */}
         <h1 style={{ fontSize: 22, fontWeight: 800, color: 'var(--c-blue-950)', marginBottom: 6 }}>
@@ -136,7 +184,7 @@ export default async function SpotDetailPage({ params }: Props) {
         </section>
 
         {/* タックル推奨 */}
-        <section style={{ marginBottom: 28 }}>
+        <section style={{ marginBottom: 24 }}>
           <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-900)', marginBottom: 10 }}>
             🎣 おすすめタックル
           </h2>
@@ -150,6 +198,14 @@ export default async function SpotDetailPage({ params }: Props) {
           }}>
             {spotData.tackle}
           </div>
+        </section>
+
+        {/* 釣具セット */}
+        <section style={{ marginBottom: 28 }}>
+          <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-900)', marginBottom: 12 }}>
+            🛒 このスポットにおすすめの釣り道具
+          </h2>
+          <GearSetCard gearSet={gearSet} showDataSource={true} />
         </section>
 
         {/* プレミアム機能プレビューカード */}

@@ -8,3 +8,8 @@ scoop-git-check.txt
 
 .vercel
 .env*.local
+
+# Generated artifacts
+content-audit-report.json
+content-audit-report.md
+tsconfig.tsbuildinfo
