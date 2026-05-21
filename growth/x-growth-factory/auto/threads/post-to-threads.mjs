@@ -1,4 +1,4 @@
-import { publishThreadsTextPost } from "./threads-api.mjs";
+import { publishThreadsPost } from "./threads-api.mjs";
 
 export async function postToThreads({ post, dryRun, cronSecret }) {
   if (dryRun || process.env.THREADS_AUTO_POST_ENABLED !== "true") {
@@ -25,8 +25,16 @@ export async function postToThreads({ post, dryRun, cronSecret }) {
     };
   }
 
-  const result = await publishThreadsTextPost({
-    text: post.text,
+  if (post.imageLocalPath && !post.imageUrl) {
+    return {
+      status: "setup_required",
+      posted: false,
+      reason: "Image posts require a public imageUrl; local imageLocalPath cannot be attached by the current Threads API adapter.",
+    };
+  }
+
+  const result = await publishThreadsPost({
+    post,
     accessToken: process.env.THREADS_ACCESS_TOKEN,
     userId: process.env.THREADS_USER_ID,
   });

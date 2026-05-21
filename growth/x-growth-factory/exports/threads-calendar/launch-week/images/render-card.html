@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1080, initial-scale=1">
+    <title>SPEC AI Launch Week Card Render</title>
+    <style>
+      html,
+      body,
+      iframe {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #0f1726;
+      }
+
+      iframe {
+        border: 0;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="card" title="SPEC AI launch week card"></iframe>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const src = params.get("src");
+      if (src) {
+        document.getElementById("card").src = src;
+      }
+    </script>
+  </body>
+</html>

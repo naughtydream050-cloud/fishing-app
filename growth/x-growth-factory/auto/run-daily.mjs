@@ -1,29 +1,18 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadManualSeeds } from "./sources/manual-seed-source.mjs";
-import { loadHackerNewsTopics } from "./sources/hackernews-source.mjs";
-import { loadGoogleNewsRssTopics } from "./sources/google-news-rss-source.mjs";
-import { loadRssTopics } from "./sources/rss-source.mjs";
-import { scoreTopics } from "./generation/topic-scorer.mjs";
-import { generatePost } from "./generation/template-engine.mjs";
 import { checkPostSafety } from "./generation/safety-checker.mjs";
-import { addIfNotDuplicate } from "./generation/dedupe.mjs";
 import { postToThreads } from "./threads/post-to-threads.mjs";
 
 const autoDir = path.dirname(fileURLToPath(import.meta.url));
 const factoryDir = path.resolve(autoDir, "..");
-const rootDir = path.resolve(factoryDir, "..", "..");
 const args = new Set(process.argv.slice(2));
 const dryRun = args.has("--dry-run") || process.env.THREADS_AUTO_POST_ENABLED !== "true";
 const cronSecret = readArgValue("--cron-secret");
 
 const config = await readJson(path.join(autoDir, "config.json"));
-const templates = await readJson(path.join(autoDir, "generation", "templates.json"));
-const patternMemoryPath = path.join(autoDir, "pdca", "pattern-memory.json");
 const approvedPath = path.join(factoryDir, "queue", "approved.json");
 const logPath = path.join(factoryDir, "queue", "posting_log.json");
-const patternMemory = await readJson(patternMemoryPath);
 const approvedQueue = await readQueue(approvedPath);
 const postingLog = await readQueue(logPath);
 
@@ -31,15 +20,16 @@ const result = await run();
 console.log(JSON.stringify(result, null, 2));
 
 async function run() {
-  const topics = [
-    ...(await loadManualSeeds({ config, rootDir })),
-    ...(await loadHackerNewsTopics({ config })),
-    ...(await loadGoogleNewsRssTopics({ config })),
-    ...(await loadRssTopics({ config })),
-  ];
-  const scoredTopics = scoreTopics(topics, config, patternMemory);
-  const selectedTopic = scoredTopics[0] ?? { theme: "manual fallback", keywords: [] };
-  const post = generatePost({ topic: selectedTopic, templates, config, postingLog });
+  const post = selectNextApprovedPost(approvedQueue, postingLog);
+  if (!post) {
+    return {
+      ok: false,
+      mode: dryRun ? "dry-run" : "production",
+      status: "skipped",
+      reasons: ["no approved unposted Threads queue item"],
+    };
+  }
+
   const safety = checkPostSafety({ post, config, approvedQueue, postingLog });
 
   if (!safety.ok) {
@@ -50,26 +40,31 @@ async function run() {
       mode: dryRun ? "dry-run" : "production",
       status: "skipped",
       reasons: safety.reasons,
+      id: post.id,
+      language: post.language,
       post: post.text,
     };
   }
-
-  const { queue: nextApprovedQueue, added } = addIfNotDuplicate(approvedQueue, post);
 
   if (dryRun) {
     return {
       ok: true,
       mode: "dry-run",
       status: "ready",
-      topic: selectedTopic.theme,
-      score: selectedTopic.score ?? 0,
-      wouldApprove: added,
+      id: post.id,
+      language: post.language,
+      platform: post.platform,
+      siteId: post.siteId,
+      imageRequired: post.imageRequired,
+      imageLocalPath: post.imageLocalPath,
+      imageUrl: post.imageUrl,
+      linkIncluded: post.linkIncluded,
+      score: post.score ?? 0,
       wouldPost: post.text,
       note: "No queue, log, API, AI, or SPEC AI calls were made.",
     };
   }
 
-  await writeJson(approvedPath, nextApprovedQueue);
   const posted = await postToThreads({ post, dryRun, cronSecret });
 
   if (!posted.posted) {
@@ -79,7 +74,7 @@ async function run() {
       mode: "production",
       status: "setup_required",
       reason: posted.reason,
-      approvedCount: nextApprovedQueue.items.length,
+      id: post.id,
       post: post.text,
     };
   }
@@ -90,8 +85,32 @@ async function run() {
     mode: "production",
     status: "posted",
     postId: posted.postId,
+    id: post.id,
     post: post.text,
   };
+}
+
+function selectNextApprovedPost(queue, log) {
+  const postedText = new Set(
+    (log.items ?? [])
+      .filter((item) => ["posted", "scheduled", "exported"].includes(item.status))
+      .map((item) => normalize(item.text))
+  );
+  const postedIds = new Set(
+    (log.items ?? [])
+      .filter((item) => ["posted", "scheduled", "exported"].includes(item.status))
+      .map((item) => item.id)
+      .filter(Boolean)
+  );
+
+  return (queue.items ?? []).find(
+    (item) =>
+      item.platform === "threads" &&
+      item.status === "approved" &&
+      item.language === "ja" &&
+      !postedIds.has(item.id) &&
+      !postedText.has(normalize(item.text))
+  );
 }
 
 function logEntry(post, status, error, postId) {
@@ -100,6 +119,13 @@ function logEntry(post, status, error, postId) {
     channel: "threads",
     adapter: "threads_api",
     postId,
+    id: post.id,
+    language: post.language,
+    platform: post.platform,
+    siteId: post.siteId,
+    imageLocalPath: post.imageLocalPath,
+    imageRequired: post.imageRequired,
+    imageUrl: post.imageUrl,
     text: post.text,
     pattern: post.pattern,
     topic: post.topic,
@@ -120,6 +146,7 @@ async function readQueue(filePath) {
   return {
     version: value.version ?? 1,
     items: Array.isArray(value.items) ? value.items : [],
+    retiredItems: Array.isArray(value.retiredItems) ? value.retiredItems : [],
   };
 }
 
@@ -134,4 +161,8 @@ async function writeJson(filePath, value) {
 function readArgValue(name) {
   const index = process.argv.indexOf(name);
   return index >= 0 ? process.argv[index + 1] : undefined;
+}
+
+function normalize(text) {
+  return String(text ?? "").trim().replace(/\s+/g, " ").toLowerCase();
 }

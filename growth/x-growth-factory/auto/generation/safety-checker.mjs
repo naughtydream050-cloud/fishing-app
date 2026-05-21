@@ -68,15 +68,19 @@ function weeklyLinkCount(postingLog) {
 }
 
 function hasSpecAiFacts(text) {
-  return (
-    /SPEC AI/.test(text) &&
+  if (!/SPEC AI/.test(text)) return false;
+
+  const hasEnglishFacts =
     /summary/.test(text) &&
     /tasks/.test(text) &&
     /(share-ready text|share text)/.test(text) &&
     /1 successful analysis\/day/.test(text) &&
     /10 successful analyses\/day/.test(text) &&
-    /¥300\/month/.test(text)
-  );
+    /¥300\/month/.test(text);
+
+  const hasJapaneseFacts = /要約/.test(text) && /タスク/.test(text) && /共有文/.test(text);
+
+  return hasEnglishFacts || hasJapaneseFacts;
 }
 
 function normalize(text) {

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <title>SPEC AI usage card</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        margin: 0;
+        overflow: hidden;
+        background: #0a0f18;
+        color: #f7fbff;
+        font-family:
+          "Yu Gothic UI", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
+      }
+
+      .card {
+        position: relative;
+        width: 1080px;
+        height: 1350px;
+        padding: 72px;
+        background:
+          linear-gradient(180deg, rgba(5, 9, 16, 0.18), #07101c 72%),
+          radial-gradient(circle at 18% 12%, rgba(38, 166, 154, 0.28), transparent 34%),
+          radial-gradient(circle at 86% 18%, rgba(83, 126, 255, 0.22), transparent 32%),
+          #08111d;
+      }
+
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 11px 18px;
+        border: 1px solid rgba(127, 231, 208, 0.5);
+        border-radius: 999px;
+        color: #a7f3df;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0;
+        background: rgba(7, 20, 30, 0.72);
+      }
+
+      h1 {
+        margin: 34px 0 18px;
+        max-width: 920px;
+        font-size: 74px;
+        line-height: 1.12;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        margin: 0;
+        max-width: 880px;
+        color: #dbe7f3;
+        font-size: 35px;
+        line-height: 1.46;
+        font-weight: 700;
+      }
+
+      .screen-wrap {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        bottom: 108px;
+        height: 608px;
+        border: 1px solid rgba(196, 219, 244, 0.28);
+        border-radius: 26px;
+        overflow: hidden;
+        background: #101923;
+        box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+      }
+
+      .screen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 26%;
+        filter: saturate(1.08) contrast(1.03);
+      }
+
+      .screen-mask {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 48%, rgba(5, 9, 16, 0.28));
+        pointer-events: none;
+      }
+
+      .callouts {
+        position: absolute;
+        left: 44px;
+        right: 44px;
+        bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .callout {
+        min-height: 116px;
+        padding: 19px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 18px;
+        background: rgba(7, 12, 21, 0.86);
+        backdrop-filter: blur(6px);
+      }
+
+      .callout strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #8ef2d2;
+        font-size: 26px;
+        line-height: 1.1;
+      }
+
+      .callout span {
+        display: block;
+        color: #f4f8fc;
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 700;
+      }
+
+      .footer {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        bottom: 44px;
+        display: flex;
+        justify-content: space-between;
+        color: #aab9c8;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="kicker" id="kicker"></div>
+      <h1 id="title"></h1>
+      <p class="lead" id="lead"></p>
+
+      <section class="screen-wrap">
+        <img class="screen" src="./spec-ai-live-home-1080x1350.png" alt="SPEC AI live UI screenshot" />
+        <div class="screen-mask"></div>
+        <div class="callouts" id="callouts"></div>
+      </section>
+
+      <div class="footer">
+        <span>有能サイト紹介</span>
+        <span>spec-ai-alpha.vercel.app</span>
+      </div>
+    </main>
+
+    <script>
+      const cards = {
+        "01": {
+          kicker: "今日の便利サイト",
+          title: "散らかったメモを、送れる形に整える",
+          lead: "会議メモや思いつきの文章を、要約・タスク・共有文に分けて見える化。",
+          callouts: [
+            ["Before", "メモが長くて使いにくい"],
+            ["After", "要約・ToDo・共有文に整理"],
+            ["使いどころ", "会議後、送る前の整理に"],
+          ],
+        },
+        "02": {
+          kicker: "保存用AIツール",
+          title: "10行のメモを、次の行動に変える",
+          lead: "読み返すだけで終わりがちなメモを、今日やることまで落とし込みやすくする。",
+          callouts: [
+            ["入力", "粗いメモを貼る"],
+            ["整理", "重要点を短くまとめる"],
+            ["行動", "タスクに変える"],
+          ],
+        },
+        "03": {
+          kicker: "実画面で紹介",
+          title: "メモアプリの後ろで使う、整理用の画面",
+          lead: "記録する場所ではなく、記録した後に使う“整えるためのWebアプリ”。",
+          callouts: [
+            ["Notes", "メモを入れる"],
+            ["Run", "分析を実行"],
+            ["Output", "共有できる形へ"],
+          ],
+        },
+        "04": {
+          kicker: "料金もシンプル",
+          title: "まずは1日1回、無料で試せる",
+          lead: "毎日使うほど必要ならPro。小さく試して、役に立つか確認しやすい。",
+          callouts: [
+            ["Free", "1成功分析 / 日"],
+            ["Pro", "10成功分析 / 日"],
+            ["価格", "300円 / 月"],
+          ],
+        },
+        "05": {
+          kicker: "仕事メモ向け",
+          title: "通話メモを、報告しやすい形に",
+          lead: "何が決まったか、誰が何をするか、相手に何を送るかを分けて整理。",
+          callouts: [
+            ["要点", "何が決まったか"],
+            ["担当", "誰が動くか"],
+            ["共有", "送る文章にする"],
+          ],
+        },
+        "06": {
+          kicker: "短いワークフロー",
+          title: "貼る → 分析 → 使える文章",
+          lead: "複雑な管理画面を増やすより、まずメモを使える状態にすることに集中。",
+          callouts: [
+            ["Paste", "メモを貼る"],
+            ["Analyze", "構造化する"],
+            ["Use", "そのまま使う"],
+          ],
+        },
+        "07": {
+          kicker: "小さなWebアプリ発掘",
+          title: "大きなツールより、毎日助かる小道具",
+          lead: "SPEC AI は、メモを“使える出力”に変える一点に絞ったサイト。",
+          callouts: [
+            ["Focus", "メモ整理に特化"],
+            ["Trust", "実画面を見て判断"],
+            ["Save", "必要な時に使う"],
+          ],
+        },
+      };
+
+      const day = new URLSearchParams(location.search).get("day") || "01";
+      const data = cards[day] || cards["01"];
+      document.getElementById("kicker").textContent = data.kicker;
+      document.getElementById("title").textContent = data.title;
+      document.getElementById("lead").textContent = data.lead;
+      document.getElementById("callouts").innerHTML = data.callouts
+        .map(([label, text]) => `<div class="callout"><strong>${label}</strong><span>${text}</span></div>`)
+        .join("");
+    </script>
+  </body>
+</html>

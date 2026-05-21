@@ -1,13 +1,145 @@
 {
-  "version": 1,
+  "version": 2,
+  "mode": "approved_queue",
+  "activeLanguage": "ja",
   "items": [
+    {
+      "id": "launch-week-ja-day-01",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "useful-site-intro",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "今日の便利サイト。\n\n散らかったメモを\n「要約・タスク・共有文」に整えてくれる SPEC AI。\n\n会議後のメモ、思いつき、共有前の下書き。\nそのままだと使いにくい文章を、次に動ける形に分けてくれます。\n\nまずは1日1回無料で試せます。\nメモ整理に困った時の保存用にどうぞ。\n\nhttps://spec-ai-alpha.vercel.app",
+      "linkIncluded": true,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "targetKpi": "clicks",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-01.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 01"
+    },
+    {
+      "id": "launch-week-ja-day-02",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "note-to-action",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "メモを取ったのに、\nあとで見返すと「で、何をやるんだっけ？」となる時があります。\n\nSPEC AI は、粗いメモを\n要約・タスク・共有文に分けてくれるWebアプリ。\n\n読み返すためのメモではなく、\n動くためのメモに変えたい時に使いやすいです。\n\n後で試す用に保存。",
+      "linkIncluded": false,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-02-ja-usage-card.png",
+      "targetKpi": "profileTrust",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-02.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-02-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 02"
+    },
+    {
+      "id": "launch-week-ja-day-03",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "actual-ui",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "SPEC AI は、メモアプリの代わりというより\n「メモを取った後」に使う整理用ツールです。\n\nざっくり書いた内容を入れる\n↓\n分析する\n↓\n要約・タスク・共有文として取り出す\n\n記録する場所を増やすより、\n送れる形に整えたい人向け。",
+      "linkIncluded": false,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-03-ja-usage-card.png",
+      "targetKpi": "profileTrust",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-03.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-03-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 03"
+    },
+    {
+      "id": "launch-week-ja-day-04",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "pricing-clarity",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "便利そうだけど、いきなり課金は重い。\nそういうAIツールは多いです。\n\nSPEC AI は、まず1日1回の成功分析を無料で試せます。\nProは10回/日で月300円。\n\nメモ整理が毎日の小さな面倒になっている人は、\n無料枠で合うか見るのがちょうどよさそうです。\n\nhttps://spec-ai-alpha.vercel.app",
+      "linkIncluded": true,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-04-ja-usage-card.png",
+      "targetKpi": "clicks",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-04.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-04-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 04"
+    },
+    {
+      "id": "launch-week-ja-day-05",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "work-call-notes",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "通話メモって、残すだけだと意外と使いにくいです。\n\n「何が決まったか」\n「誰が何をするか」\n「相手に何を送るか」\n\nこの3つに分けたい時、SPEC AI がけっこう相性よさそうです。\n\n議事録というより、次の連絡を作るための整理ツール。",
+      "linkIncluded": false,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-05-ja-usage-card.png",
+      "targetKpi": "profileTrust",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-05.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-05-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 05"
+    },
+    {
+      "id": "launch-week-ja-day-06",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "short-workflow",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "SPEC AI の良いところは、\nやることがかなり短いところ。\n\nメモを貼る\n↓\n分析する\n↓\n要約・タスク・共有文を見る\n\n大きなナレッジ管理を始める前に、\nまず「このメモを使える形にする」だけで助かる場面があります。",
+      "linkIncluded": false,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-06-ja-usage-card.png",
+      "targetKpi": "profileTrust",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-06.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-06-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 06"
+    },
+    {
+      "id": "launch-week-ja-day-07",
+      "platform": "threads",
+      "language": "ja",
+      "siteId": "spec-ai",
+      "score": 10,
+      "status": "approved",
+      "pattern": "useful-small-tool",
+      "topic": "Japanese useful websites discovery launch week",
+      "text": "大きなAIツールより、\n毎日ちょっと助かる小さなWebアプリが便利な時があります。\n\nSPEC AI は、\n散らかったメモを\n要約・タスク・共有文に整えることに絞ったサイト。\n\n万能ツールではないけど、\n会議後や共有前の「整える時間」を減らしたい人には使いどころがあります。",
+      "linkIncluded": false,
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-07-ja-usage-card.png",
+      "targetKpi": "profileTrust",
+      "sourceFile": "growth/x-growth-factory/exports/threads-calendar/launch-week/day-07.md",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-07-ja-usage-card.png",
+      "imageAltText": "SPEC AI Japanese usage card for launch week day 07"
+    }
+  ],
+  "retiredItems": [
     {
       "id": "spec-ai-2026-05-18-001",
       "score": 10,
       "pattern": "before-after",
       "text": "SPEC AI takes messy notes and turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-002",
@@ -15,7 +147,9 @@
       "pattern": "operator-pain",
       "text": "A meeting note is not useful until it becomes a follow-up. SPEC AI turns rough notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-003",
@@ -23,7 +157,9 @@
       "pattern": "tiny-workflow",
       "text": "Tiny workflow: paste rough notes, get summary, tasks, and share-ready text. That is the whole point of SPEC AI. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-004",
@@ -31,7 +167,9 @@
       "pattern": "before-after-detail",
       "text": "Before: scattered notes, unclear owners, no sendable update. After SPEC AI: summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-005",
@@ -39,7 +177,9 @@
       "pattern": "product-boundary",
       "text": "SPEC AI is not a big project system. It does one small job: turn messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-006",
@@ -47,7 +187,9 @@
       "pattern": "meeting-followup",
       "text": "The gap after a meeting is usually not thinking. It is turning notes into something sendable. SPEC AI makes summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-007",
@@ -55,7 +197,9 @@
       "pattern": "clear-positioning",
       "text": "SPEC AI has a simple promise: messy notes in, summary, tasks, and share-ready text out. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-008",
@@ -63,7 +207,9 @@
       "pattern": "use-case-list",
       "text": "Use SPEC AI when notes are too rough to send but too useful to ignore. It turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-009",
@@ -71,7 +217,9 @@
       "pattern": "daily-operator",
       "text": "Daily operator problem: notes pile up faster than follow-ups. SPEC AI turns messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-010",
@@ -79,7 +227,9 @@
       "pattern": "pricing-clarity",
       "text": "SPEC AI is intentionally small: 1 free successful analysis/day, or 10 successful analyses/day on Pro for ¥300/month. The job: messy notes into summary, tasks, and share-ready text.",
       "linkIncluded": false,
-      "targetKpi": "upgradeClicks"
+      "targetKpi": "upgradeClicks",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-011",
@@ -87,7 +237,9 @@
       "pattern": "single-job",
       "text": "One narrow job is enough if it removes daily friction. SPEC AI turns messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-012",
@@ -95,7 +247,9 @@
       "pattern": "output-focused",
       "text": "A useful AI output should be ready to act on. SPEC AI gives summary, tasks, and share-ready text from messy notes. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
-      "targetKpi": "freeUses"
+      "targetKpi": "freeUses",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-013",
@@ -103,7 +257,9 @@
       "pattern": "link-soft-cta",
       "text": "SPEC AI turns messy notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month. https://spec-ai-alpha.vercel.app",
       "linkIncluded": true,
-      "targetKpi": "clicks"
+      "targetKpi": "clicks",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "spec-ai-2026-05-18-014",
@@ -111,7 +267,9 @@
       "pattern": "link-app-cta",
       "text": "Try SPEC AI when rough notes need to become a usable follow-up: summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month. https://spec-ai-alpha.vercel.app/app",
       "linkIncluded": true,
-      "targetKpi": "clicks"
+      "targetKpi": "clicks",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     },
     {
       "id": "threads-2026-05-18-messy-to-clear",
@@ -122,7 +280,9 @@
       "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
       "linkIncluded": false,
       "targetKpi": "freeUses",
-      "generatedBy": "deterministic-template-engine"
+      "generatedBy": "deterministic-template-engine",
+      "status": "retired",
+      "retiredReason": "replaced by Japanese Launch Week queue"
     }
   ]
 }
