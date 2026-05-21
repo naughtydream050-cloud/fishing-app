@@ -1,3 +1,5 @@
+import { excludeNonFishingProducts, classifyGearCategory } from '@/lib/productFilter'
+
 export type GearPrice = {
   id: string
   title: string
@@ -11,13 +13,70 @@ export type GearPrice = {
   manufacturer?: string
   competitorPrice?: number
   competitorPlatform?: 'rakuten' | 'yahoo'
+  dataSource?: 'live' | 'mock'
 }
 
 const USE_MOCK = process.env.USE_MOCK_DATA === 'true'
 
+/** example ドメインを持つ URL かどうか判定 */
+function isMockUrl(url: string): boolean {
+  return url.includes('example.rakuten.co.jp') || url.includes('example.com')
+}
+
+/**
+ * モックデータにラベルを付ける
+ * - dataSource = 'mock'
+ * - title に [デモ商品] を付加（重複しないよう確認）
+ */
+function markMockItems(items: GearPrice[]): GearPrice[] {
+  return items.map((item) => {
+    if (!isMockUrl(item.url) && !isMockUrl(item.affiliateUrl)) return item
+    return {
+      ...item,
+      dataSource: 'mock' as const,
+      title: item.title.endsWith('[デモ商品]')
+        ? item.title
+        : `${item.title} [デモ商品]`,
+    }
+  })
+}
+
+/**
+ * カテゴリ多様性 + 価格帯の複合スコアでソート（昇順）
+ * score = (price / maxPrice) * 0.7 + (categoryCount / total) * 0.3
+ * → 安い & カテゴリが希少な商品が上位
+ */
+function sortByDiversityAndPrice(items: GearPrice[]): GearPrice[] {
+  if (items.length === 0) return items
+
+  const categorized = items.map((item) => ({
+    item,
+    category: classifyGearCategory(item.title) ?? 'other',
+  }))
+
+  const counts: Record<string, number> = {}
+  for (const { category } of categorized) {
+    counts[category] = (counts[category] ?? 0) + 1
+  }
+
+  const maxPrice = Math.max(...items.map((i) => i.price), 1)
+  const total = items.length
+
+  return categorized
+    .map(({ item, category }) => ({
+      item,
+      score:
+        (item.price / maxPrice) * 0.7 +
+        (counts[category] / total) * 0.3,
+    }))
+    .sort((a, b) => a.score - b.score)
+    .map(({ item }) => item)
+}
+
 async function getMockGear(region = 'nationwide'): Promise<GearPrice[]> {
   const { getMockGearByRegion } = await import('@/lib/mockData')
-  return getMockGearByRegion(region as 'nationwide' | 'chugoku' | 'tokyo_23')
+  const items = await getMockGearByRegion(region as 'nationwide' | 'chugoku' | 'tokyo_23')
+  return markMockItems(items)
 }
 
 async function getCachedGear(keyword: string): Promise<GearPrice[] | null> {
@@ -32,7 +91,7 @@ async function getCachedGear(keyword: string): Promise<GearPrice[] | null> {
       .order('price', { ascending: true })
       .limit(20)
     if (error || !data?.length) return null
-    return data.map(row => ({
+    const mapped: GearPrice[] = data.map(row => ({
       id: row.id,
       title: row.gear_name,
       price: row.price,
@@ -43,6 +102,8 @@ async function getCachedGear(keyword: string): Promise<GearPrice[] | null> {
       shopName: row.shop_name,
       fetchedAt: row.fetched_at,
     }))
+    const filtered = excludeNonFishingProducts(mapped)
+    return sortByDiversityAndPrice(markMockItems(filtered))
   } catch { return null }
 }
 
@@ -57,7 +118,7 @@ async function fetchFromProviders(keyword: string): Promise<GearPrice[]> {
   ])
   if (rakuten.status === 'rejected') console.warn('[dataAccess] Rakuten failed:', rakuten.reason)
   if (yahoo.status === 'rejected') console.warn('[dataAccess] Yahoo failed:', yahoo.reason)
-  const items: GearPrice[] = [
+  const raw: GearPrice[] = [
     ...(rakuten.status === 'fulfilled' ? rakuten.value.map((i: any, idx: number) => ({
       id: `rakuten-${idx}-${Date.now()}`,
       title: i.itemName,
@@ -81,7 +142,10 @@ async function fetchFromProviders(keyword: string): Promise<GearPrice[]> {
       fetchedAt: new Date().toISOString(),
     })) : []),
   ]
-  return items.sort((a, b) => a.price - b.price)
+  // フィルタ → モックマーク → 多様性ソート
+  const filtered = excludeNonFishingProducts(raw)
+  const marked = markMockItems(filtered)
+  return sortByDiversityAndPrice(marked)
 }
 
 export async function getTrendingGears(keyword = '釣り竿', region = 'nationwide'): Promise<GearPrice[]> {
@@ -107,7 +171,9 @@ export async function getTrendingGears(keyword = '釣り竿', region = 'nationwi
 export async function getGearById(id: string): Promise<GearPrice | null> {
   if (USE_MOCK) {
     const { MOCK_GEAR } = await import('@/lib/mockData')
-    return MOCK_GEAR.find(g => g.id === id) ?? null
+    const item = MOCK_GEAR.find(g => g.id === id) ?? null
+    if (!item) return null
+    return markMockItems([item])[0]
   }
   try {
     const { supabaseAdmin } = await import('@/lib/supabase')
