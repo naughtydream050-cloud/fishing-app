@@ -1,4 +1,4 @@
-﻿# Launch Week Public Image URLs
+# Launch Week Public Image URLs
 
 Strategy: public raw GitHub URLs from the public repository `naughtydream050-cloud/fishing-app` on branch `main`.
 
@@ -16,4 +16,3 @@ Notes:
 - Do not use local Windows paths as Threads API image URLs.
 - Threads must be able to fetch each `imageUrl` without authentication.
 - If a URL becomes unreachable, keep `setup_required` behavior and do not fall back to text-only posting.
-
