@@ -5,10 +5,23 @@ interface Props {
   rank: number
 }
 
+/** example ドメインを持つ URL かどうか判定（モック/デモ商品） */
+function isMockUrl(url: string): boolean {
+  return url.includes('example.rakuten.co.jp') || url.includes('example.com')
+}
+
 export default function GearCard({ item, rank }: Props) {
   const rakutenPrice = item.platform === 'rakuten' ? item.price : item.competitorPrice
   const yahooPrice = item.platform === 'yahoo' ? item.price : item.competitorPrice
   const cheaperPlatform = (rakutenPrice ?? Infinity) <= (yahooPrice ?? Infinity) ? 'rakuten' : 'yahoo'
+
+  // モック商品の判定：dataSource フィールドまたは URL で判断
+  const isMock = item.dataSource === 'mock' ||
+    isMockUrl(item.affiliateUrl) ||
+    isMockUrl(item.url)
+
+  // モック商品はリンクを無効化
+  const href = isMock ? '#' : item.affiliateUrl
 
   return (
     <div style={{
@@ -38,6 +51,17 @@ export default function GearCard({ item, rank }: Props) {
           <div style={{ fontSize: 18, fontWeight: 700, color: '#1a1a1a', lineHeight: 1.4 }}>
             {item.title}
           </div>
+          {isMock && (
+            <div style={{
+              display: 'inline-block', marginTop: 6,
+              background: '#f5f0e8', color: '#8a6a1a',
+              fontSize: 11, fontWeight: 600,
+              padding: '2px 8px', borderRadius: 4,
+              border: '1px solid #d4b56a',
+            }}>
+              デモ商品
+            </div>
+          )}
         </div>
       </div>
 
@@ -86,18 +110,20 @@ export default function GearCard({ item, rank }: Props) {
 
       {/* CTA Button */}
       <a
-        href={item.affiliateUrl}
-        target="_blank"
-        rel="noopener noreferrer"
+        href={href}
+        target={isMock ? undefined : '_blank'}
+        rel={isMock ? undefined : 'noopener noreferrer'}
         style={{
           display: 'block', textAlign: 'center',
-          background: '#1a4f8a', color: '#fff',
+          background: isMock ? '#aaa' : '#1a4f8a', color: '#fff',
           padding: '16px 24px', borderRadius: 10,
           fontSize: 18, fontWeight: 700, textDecoration: 'none',
           letterSpacing: 0.5,
+          cursor: isMock ? 'default' : 'pointer',
+          pointerEvents: isMock ? 'none' : 'auto',
         }}
       >
-        最安値で見る →
+        {isMock ? '商品データを準備中' : '最安値で見る →'}
       </a>
     </div>
   )
