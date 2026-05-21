@@ -6,6 +6,8 @@ import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateArticleJsonLd } fr
 import { MOCK_ARTICLES } from '@/lib/mockArticles'
 import { getLatestReports } from '@/lib/fishingReports'
 import DataSourceBadge from '@/components/DataSourceBadge'
+import GearSetCard from '@/components/GearSetCard'
+import { recommendGearSet, type GearRecommendationContext } from '@/lib/gearRecommendation'
 import type { FishId } from '@/types/fish'
 import type { Metadata } from 'next'
 
@@ -73,6 +75,12 @@ export default async function HomePage() {
   const latestFishingReports = getLatestReports(3)
   const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
   const topGear = rawGear.filter(isFishingProduct).slice(0, 3)
+  const gearCtx: GearRecommendationContext = {
+    spotId: 'nationwide', spotName: '全国', regionId: 'nationwide',
+    fishTypes: ['アジ', 'シーバス', 'メバル'],
+    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+  }
+  const gearSet = recommendGearSet(rawGear, gearCtx)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
 
@@ -381,6 +389,11 @@ export default async function HomePage() {
               })}
             </div>
           )}
+        </section>
+
+        {/* ━━━━━━ 釣行セット ━━━━━━ */}
+        <section style={{ marginTop: 8 }}>
+          <GearSetCard gearSet={gearSet} showDataSource={true} />
         </section>
 
         {/* ━━━━━━ 免責・注意事項 ━━━━━━ */}

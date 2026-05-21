@@ -7,6 +7,9 @@ import { FISH_SPECIES } from '@/types/fish'
 import { generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
 import DataSourceBadge from '@/components/DataSourceBadge'
 import { getLatestReports } from '@/lib/fishingReports'
+import GearSetCard from '@/components/GearSetCard'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet, type GearRecommendationContext } from '@/lib/gearRecommendation'
 
 export const revalidate = 86400
 
@@ -70,6 +73,14 @@ export default async function ArticleDetailPage({ params }: Props) {
     url: `${baseUrl}/articles/${slug}`,
     datePublished: article.publishedAt,
   })
+
+  const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
+  const articleGearCtx: GearRecommendationContext = {
+    spotId: 'article', spotName: article.title.slice(0, 20), regionId: 'nationwide',
+    fishTypes: ['アジ', 'シーバス', 'メバル'],
+    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+  }
+  const gearSet = recommendGearSet(rawGear, articleGearCtx)
 
   // 関連スポットを解決
   const spotMappings = ARTICLE_SPOT_MAP[slug] ?? []
@@ -238,6 +249,9 @@ export default async function ArticleDetailPage({ params }: Props) {
             </section>
           ) : null
         })()}
+
+        {/* 釣行セット */}
+        <GearSetCard gearSet={gearSet} showDataSource={true} />
 
         {/* サブスク CTA */}
         <div style={{
