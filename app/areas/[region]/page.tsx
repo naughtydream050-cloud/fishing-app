@@ -5,6 +5,7 @@ import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { getRegionalForecastsByRegion } from '@/lib/forecastRepository'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
 import DataSourceBadge from '@/components/DataSourceBadge'
+import { getReportsByRegion } from '@/lib/fishingReports'
 
 export const revalidate = 86400
 
@@ -61,6 +62,7 @@ export default async function AreaRegionPage({ params }: Props) {
   const info = AREA_INFO[regionData.id]
   const forecasts = await getRegionalForecastsByRegion(regionData.id)
   const forecast = forecasts[0] ?? null
+  const areaReports = getReportsByRegion(regionData.slug).slice(0, 3)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
   const breadcrumbJsonLd = generateBreadcrumbJsonLd([
@@ -211,6 +213,43 @@ export default async function AreaRegionPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* このエリアの釣果レポート */}
+        {areaReports.length > 0 && (
+          <section style={{ marginBottom: 28 }}>
+            <h2 style={{ fontSize: 17, fontWeight: 800, color: 'var(--c-blue-900)', marginBottom: 14 }}>
+              📋 このエリアの釣果レポート
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {areaReports.map((report) => (
+                <a
+                  key={report.slug}
+                  href={`/reports/${report.slug}`}
+                  className="card card-hover"
+                  style={{ padding: '14px 16px', display: 'block', textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+                    {report.fishNames.slice(0, 3).map((f) => (
+                      <span key={f} className="badge badge-fish">{f}</span>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--c-blue-900)', marginBottom: 4 }}>
+                    {report.title}
+                  </div>
+                  <div style={{ fontSize: 13, color: 'var(--c-gray-600)', lineHeight: 1.5 }}>
+                    {report.summary.slice(0, 60)}…
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--c-blue-700)', fontWeight: 600, marginTop: 6 }}>
+                    詳しく読む →
+                  </div>
+                </a>
+              ))}
+            </div>
+            <a href={`/reports?region=${regionData.slug}`} style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600, display: 'block', marginTop: 10 }}>
+              このエリアのレポートをすべて見る →
+            </a>
+          </section>
+        )}
 
         {/* プレミアム機能プレビューカード */}
         <div className="premium-preview-card" style={{ marginBottom: 28 }}>

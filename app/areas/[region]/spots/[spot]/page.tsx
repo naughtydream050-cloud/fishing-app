@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { REGIONS } from '@/types/region'
 import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { generateBreadcrumbJsonLd } from '@/lib/jsonld'
+import { getAllReports } from '@/lib/fishingReports'
 
 export const revalidate = 86400
 
@@ -58,6 +59,11 @@ export default async function SpotDetailPage({ params }: Props) {
     spotData.difficulty === '初心者OK' ? 'var(--c-green-600)' :
     spotData.difficulty === '中級者向け' ? 'var(--c-blue-700)' :
     'var(--c-red-600)'
+
+  const spotKey = `${region}/${spot}`
+  const spotReports = getAllReports()
+    .filter((r) => r.relatedSpotSlugs.includes(spotKey))
+    .slice(0, 2)
 
   return (
     <>
@@ -151,6 +157,40 @@ export default async function SpotDetailPage({ params }: Props) {
             {spotData.tackle}
           </div>
         </section>
+
+        {/* この釣り場の釣果レポート */}
+        {spotReports.length > 0 && (
+          <section style={{ marginBottom: 24 }}>
+            <h2 style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-900)', marginBottom: 12 }}>
+              📋 この釣り場の釣果レポート
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {spotReports.map((report) => (
+                <a
+                  key={report.slug}
+                  href={`/reports/${report.slug}`}
+                  className="card card-hover"
+                  style={{ padding: '14px 16px', display: 'block', textDecoration: 'none', color: 'inherit' }}
+                >
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 6 }}>
+                    {report.fishNames.slice(0, 3).map((f) => (
+                      <span key={f} className="badge badge-fish">{f}</span>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--c-blue-900)', marginBottom: 4 }}>
+                    {report.title}
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--c-gray-600)' }}>
+                    {report.summary.slice(0, 55)}…
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--c-blue-700)', fontWeight: 600, marginTop: 6 }}>
+                    詳しく読む →
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* プレミアム機能プレビューカード */}
         <div className="premium-preview-card" style={{ marginBottom: 24 }}>
