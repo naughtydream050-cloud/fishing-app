@@ -6,51 +6,96 @@ on:
     - cron: "15 1 * * *"
     - cron: "30 2 * * 1"
 
+concurrency:
+  group: spec-ai-growth-factory-state
+  cancel-in-progress: false
+
 jobs:
   daily:
     if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 1 * * *'
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    concurrency:
-      group: spec-ai-threads-daily
-      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Sync main before daily state changes
+        run: git pull --ff-only origin main
       - name: Run deterministic Threads daily post
-        run: node growth/x-growth-factory/auto/run-daily.mjs --cron-secret "$CRON_SECRET"
+        shell: bash
+        run: |
+          set -o pipefail
+          node growth/x-growth-factory/auto/run-daily.mjs --cron-secret "$CRON_SECRET" | tee "$RUNNER_TEMP/spec-ai-daily-result.json"
         env:
           THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
       - name: Persist Growth Factory state
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add growth/x-growth-factory/queue/approved.json growth/x-growth-factory/queue/posting_log.json
-          git diff --cached --quiet || git commit -m "chore(growth): update SPEC AI Threads posting state"
-          git push
+          if git diff --cached --quiet; then
+            echo "No Growth Factory daily state changes to persist."
+            exit 0
+          fi
+
+          git commit -m "chore(growth): update SPEC AI Threads posting state"
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+
+          echo "Initial state push failed; syncing with origin/main and retrying once."
+          git pull --rebase origin main
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+
+          post_id="$(node -e "const fs=require('fs'); const p=process.env.RUNNER_TEMP + '/spec-ai-daily-result.json'; try { const j=JSON.parse(fs.readFileSync(p, 'utf8')); process.stdout.write(j.postId || 'unknown'); } catch { process.stdout.write('unknown'); }")"
+          echo "::error title=post_succeeded_state_push_failed::Daily Threads action completed but state push failed after retry. postId=${post_id}. Do not rerun posting until growth/x-growth-factory/queue/posting_log.json records this postId."
+          exit 1
 
   weekly-pdca:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 2 * * 1'
+    needs: daily
+    if: always() && (github.event_name == 'workflow_dispatch' || github.event.schedule == '30 2 * * 1')
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Sync main before weekly state changes
+        run: git pull --ff-only origin main
       - name: Run weekly PDCA
         run: node growth/x-growth-factory/auto/run-weekly-pdca.mjs
       - name: Persist PDCA state
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add growth/x-growth-factory/auto/pdca/pattern-memory.json growth/x-growth-factory/auto/pdca/weekly-pdca-report.md
-          git diff --cached --quiet || git commit -m "chore(growth): update SPEC AI Threads PDCA"
-          git push
+          if git diff --cached --quiet; then
+            echo "No Growth Factory weekly state changes to persist."
+            exit 0
+          fi
+
+          git commit -m "chore(growth): update SPEC AI Threads PDCA"
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+
+          echo "Initial weekly state push failed; syncing with origin/main and retrying once."
+          git pull --rebase origin main
+          git push origin HEAD:main
