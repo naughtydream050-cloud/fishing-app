@@ -37,6 +37,19 @@
       "status": "setup_required",
       "error": "THREADS_ACCESS_TOKEN and THREADS_USER_ID are required.",
       "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-21T00:00:00.000Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": "18133829758562751",
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "posted",
+      "error": null,
+      "notes": "Daily deterministic no-token Threads workflow. Recorded after workflow post succeeded but state push failed."
     }
   ]
 }
