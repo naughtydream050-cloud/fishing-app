@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "defaultMode": "dry-run",
+  "defaultAdapter": "manual",
+  "timezone": "Asia/Tokyo",
+  "dailyPostLimit": 1,
+  "weeklyLinkPostLimit": 2,
+  "requiredScore": 10,
+  "manualExportPath": "growth/x-growth-factory/scheduler/export/next-post.json",
+  "forbiddenClaims": [
+    "guaranteed results",
+    "guaranteed conversion",
+    "officially endorsed",
+    "used by thousands",
+    "best ai tool",
+    "viral guaranteed"
+  ],
+  "accurateProductFacts": [
+    "SPEC AI",
+    "1 successful analysis/day",
+    "10 successful analyses/day",
+    "¥300/month",
+    "summary",
+    "tasks",
+    "share-ready text"
+  ]
+}

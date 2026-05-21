@@ -10,7 +10,7 @@
     "mock": "cross-env USE_MOCK_DATA=true next dev",
     "forecast": "tsx scripts/generate-forecasts.ts",
     "generate:forecasts": "npx tsx scripts/generate-forecasts.ts",
-    "audit:content": "npx tsx scripts/audit-content.ts"
+    "audit:content": "tsx scripts/audit-content.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.0",
@@ -26,5 +26,8 @@
     "cross-env": "^7.0.3",
     "tsx": "^4.19.0",
     "typescript": "5.7"
+  },
+  "overrides": {
+    "csstype": "~3.1.3"
   }
 }

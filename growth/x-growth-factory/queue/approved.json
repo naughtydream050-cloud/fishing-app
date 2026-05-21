@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "spec-ai-2026-05-18-001",
+      "score": 10,
+      "pattern": "before-after",
+      "text": "SPEC AI takes messy notes and turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-002",
+      "score": 10,
+      "pattern": "operator-pain",
+      "text": "A meeting note is not useful until it becomes a follow-up. SPEC AI turns rough notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-003",
+      "score": 10,
+      "pattern": "tiny-workflow",
+      "text": "Tiny workflow: paste rough notes, get summary, tasks, and share-ready text. That is the whole point of SPEC AI. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-004",
+      "score": 10,
+      "pattern": "before-after-detail",
+      "text": "Before: scattered notes, unclear owners, no sendable update. After SPEC AI: summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-005",
+      "score": 10,
+      "pattern": "product-boundary",
+      "text": "SPEC AI is not a big project system. It does one small job: turn messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-006",
+      "score": 10,
+      "pattern": "meeting-followup",
+      "text": "The gap after a meeting is usually not thinking. It is turning notes into something sendable. SPEC AI makes summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-007",
+      "score": 10,
+      "pattern": "clear-positioning",
+      "text": "SPEC AI has a simple promise: messy notes in, summary, tasks, and share-ready text out. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-008",
+      "score": 10,
+      "pattern": "use-case-list",
+      "text": "Use SPEC AI when notes are too rough to send but too useful to ignore. It turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-009",
+      "score": 10,
+      "pattern": "daily-operator",
+      "text": "Daily operator problem: notes pile up faster than follow-ups. SPEC AI turns messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-010",
+      "score": 10,
+      "pattern": "pricing-clarity",
+      "text": "SPEC AI is intentionally small: 1 free successful analysis/day, or 10 successful analyses/day on Pro for ¥300/month. The job: messy notes into summary, tasks, and share-ready text.",
+      "linkIncluded": false,
+      "targetKpi": "upgradeClicks"
+    },
+    {
+      "id": "spec-ai-2026-05-18-011",
+      "score": 10,
+      "pattern": "single-job",
+      "text": "One narrow job is enough if it removes daily friction. SPEC AI turns messy notes into summary, tasks, and share text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-012",
+      "score": 10,
+      "pattern": "output-focused",
+      "text": "A useful AI output should be ready to act on. SPEC AI gives summary, tasks, and share-ready text from messy notes. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses"
+    },
+    {
+      "id": "spec-ai-2026-05-18-013",
+      "score": 10,
+      "pattern": "link-soft-cta",
+      "text": "SPEC AI turns messy notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month. https://spec-ai-alpha.vercel.app",
+      "linkIncluded": true,
+      "targetKpi": "clicks"
+    },
+    {
+      "id": "spec-ai-2026-05-18-014",
+      "score": 10,
+      "pattern": "link-app-cta",
+      "text": "Try SPEC AI when rough notes need to become a usable follow-up: summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month. https://spec-ai-alpha.vercel.app/app",
+      "linkIncluded": true,
+      "targetKpi": "clicks"
+    },
+    {
+      "id": "threads-2026-05-18-messy-to-clear",
+      "channel": "threads",
+      "score": 10,
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "linkIncluded": false,
+      "targetKpi": "freeUses",
+      "generatedBy": "deterministic-template-engine"
+    }
+  ]
+}
