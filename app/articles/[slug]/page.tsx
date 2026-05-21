@@ -6,6 +6,7 @@ import { REGIONS } from '@/types/region'
 import { FISH_SPECIES } from '@/types/fish'
 import { generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
 import DataSourceBadge from '@/components/DataSourceBadge'
+import { getLatestReports } from '@/lib/fishingReports'
 
 export const revalidate = 86400
 
@@ -201,6 +202,42 @@ export default async function ArticleDetailPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* 関連釣果レポート */}
+        {(() => {
+          const relatedReports = getLatestReports(2)
+          return relatedReports.length > 0 ? (
+            <section style={{ marginBottom: 28 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+                📋 関連釣果レポート
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {relatedReports.map((report) => (
+                  <a
+                    key={report.slug}
+                    href={`/reports/${report.slug}`}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: 10,
+                      padding: '12px 16px', textDecoration: 'none',
+                      fontSize: 14, color: 'var(--c-gray-700)',
+                    }}
+                  >
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--c-blue-900)', marginBottom: 2 }}>
+                        {report.title}
+                      </div>
+                      <div style={{ fontSize: 12, color: 'var(--c-gray-500)' }}>
+                        📍 {report.regionName} · {report.weekStart}〜{report.weekEnd}
+                      </div>
+                    </div>
+                    <span style={{ color: 'var(--c-blue-600)', fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>→</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ) : null
+        })()}
 
         {/* サブスク CTA */}
         <div style={{
