@@ -76,11 +76,10 @@ export default async function ArticleDetailPage({ params }: Props) {
 
   const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
   const articleGearCtx: GearRecommendationContext = {
-    spotId: 'article', spotName: article.title.slice(0, 20), regionId: 'nationwide',
-    fishTypes: ['アジ', 'シーバス', 'メバル'],
-    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+    regionSlug: 'nationwide',
+    fishName: 'アジ・シーバス・メバル',
   }
-  const gearSet = recommendGearSet(rawGear, articleGearCtx)
+  const gearSet = recommendGearSet(articleGearCtx, rawGear)
 
   // 関連スポットを解決
   const spotMappings = ARTICLE_SPOT_MAP[slug] ?? []

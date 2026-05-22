@@ -1,4 +1,4 @@
-import type { GearSet, GearCategory, PriceTier } from '@/lib/gearRecommendation'
+import type { GearSet, GearCategory } from '@/lib/gearRecommendation'
 
 interface GearSetCardProps {
   gearSet: GearSet | null
@@ -20,13 +20,6 @@ const CATEGORY_LABELS: Record<GearCategory, string> = {
   light:   'ライト',
   tool:    'ツール',
   wear:    'ウェア',
-  unknown: 'その他',
-}
-
-const TIER_LABELS: Record<PriceTier, string> = {
-  budget:  '入門価格帯',
-  mid:     'スタンダード',
-  premium: 'ハイエンド',
 }
 
 const CATEGORY_CHIP_COLORS: Partial<Record<GearCategory, { bg: string; text: string }>> = {
@@ -54,23 +47,10 @@ function getCategoryChipStyle(category: GearCategory): React.CSSProperties {
   }
 }
 
-function getTierChipStyle(): React.CSSProperties {
-  return {
-    background: 'var(--c-blue-50)',
-    color: 'var(--c-blue-800)',
-    fontSize: 11,
-    fontWeight: 600,
-    padding: '2px 8px',
-    borderRadius: 4,
-    display: 'inline-block',
-    border: '1px solid var(--c-blue-200, #bfdbfe)',
-  }
-}
-
 export default function GearSetCard({ gearSet, showDataSource = true }: GearSetCardProps) {
   if (!gearSet) return null
-  const primaryItems = gearSet.items.filter(i => i.isPrimaryItem)
-  const supplementaryItems = gearSet.items.filter(i => !i.isPrimaryItem)
+  const primaryItems = gearSet.items.filter(i => i.isPrimary)
+  const supplementaryItems = gearSet.items.filter(i => !i.isPrimary)
 
   return (
     <div className="card" style={{ padding: '20px 20px', borderRadius: 'var(--r-card)' }}>
@@ -80,11 +60,6 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
         <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-950)', marginBottom: 4 }}>
           🛒 {gearSet.title}
         </div>
-        {gearSet.totalEstimatedCost > 0 && (
-          <div style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>
-            推定コスト目安: ¥{gearSet.totalEstimatedCost.toLocaleString()}〜
-          </div>
-        )}
       </div>
 
       {/* データソース注記 */}
@@ -101,7 +76,7 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
         <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 16 }}>
           {primaryItems.map((scored) => (
             <div
-              key={scored.item.id}
+              key={scored.gear.id}
               style={{
                 border: '1px solid var(--c-gray-200, #e5e7eb)',
                 borderRadius: 10,
@@ -112,17 +87,14 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
                 <span style={getCategoryChipStyle(scored.category)}>
                   {CATEGORY_LABELS[scored.category]}
                 </span>
-                <span style={getTierChipStyle()}>
-                  {TIER_LABELS[scored.priceTier]}
-                </span>
               </div>
 
               <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-                {scored.item.image && (
+                {scored.gear.image && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
-                    src={scored.item.image}
-                    alt={scored.item.title}
+                    src={scored.gear.image}
+                    alt={scored.gear.title}
                     style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, borderRadius: 6 }}
                   />
                 )}
@@ -138,17 +110,17 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
                     WebkitLineClamp: 2,
                     WebkitBoxOrient: 'vertical',
                   }}>
-                    {scored.item.title}
+                    {scored.gear.title}
                   </div>
                   <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-red-600)', marginBottom: 4 }}>
-                    ¥{scored.item.price.toLocaleString()}
+                    ¥{scored.gear.price.toLocaleString()}
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--c-gray-500)', marginBottom: 10, lineHeight: 1.5 }}>
                     {scored.reason}
                   </div>
-                  {scored.item.affiliateUrl && scored.item.affiliateUrl !== '#' ? (
+                  {scored.gear.affiliateUrl && scored.gear.affiliateUrl !== '#' ? (
                     <a
-                      href={scored.item.affiliateUrl}
+                      href={scored.gear.affiliateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -192,15 +164,15 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             {supplementaryItems.map((scored) => (
-              <div key={scored.item.id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div key={scored.gear.id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <span style={getCategoryChipStyle(scored.category)}>
                   {CATEGORY_LABELS[scored.category]}
                 </span>
                 <span style={{ fontSize: 13, color: 'var(--c-gray-700)', flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
-                  {scored.item.title}
+                  {scored.gear.title}
                 </span>
                 <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-600)', flexShrink: 0 }}>
-                  ¥{scored.item.price.toLocaleString()}
+                  ¥{scored.gear.price.toLocaleString()}
                 </span>
               </div>
             ))}
