@@ -13,3 +13,7 @@ scoop-git-check.txt
 tmp/ollama-output.md
 tmp/*.output.md
 tmp/ollama-list-output.txt
+
+# Generated artifacts
+tsconfig.tsbuildinfo
+next-env.d.ts
