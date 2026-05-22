@@ -207,4 +207,14 @@ export default async function SpotDetailPage({ params }: Props) {
         {/* ナビ */}
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 24 }}>
           <a href={`/areas/${region}`} style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
-            ← {regionData.displayName}�
+            ← {regionData.displayName}のスポット一覧
+          </a>
+          <a href="/areas" style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>
+            地域一覧に戻る
+          </a>
+        </div>
+
+      </main>
+    </>
+  )
+}

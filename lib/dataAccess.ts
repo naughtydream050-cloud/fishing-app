@@ -195,4 +195,10 @@ export async function getGearById(id: string): Promise<GearPrice | null> {
     const { data, error } = await supabaseAdmin.from('gear_prices').select('*').eq('id', id).single()
     if (error || !data) return null
     return {
-      id: data.id, titl
+      id: data.id, title: data.gear_name, price: data.price,
+      platform: data.shop as 'rakuten' | 'yahoo', url: data.url,
+      affiliateUrl: data.affiliate_url, image: data.image_url,
+      shopName: data.shop_name, fetchedAt: data.fetched_at,
+    }
+  } catch { return null }
+}

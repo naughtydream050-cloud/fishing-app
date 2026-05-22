@@ -258,4 +258,52 @@ export default async function AreaRegionPage({ params }: Props) {
           </div>
           <ul style={{ fontSize: 13, color: 'var(--c-gray-700)', lineHeight: 1.8, paddingLeft: 0, listStyle: 'none', marginBottom: 14 }}>
             <li>✅ 各スポットのリアルタイム活性スコア</li>
-            <li>✅ 週間天気連
+            <li>✅ 週間天気連動の釣れやすさ予報</li>
+            <li>✅ 毎週メールで釣り予報をお届け</li>
+          </ul>
+          <a href="/subscribe" className="btn-primary" style={{ background: 'var(--c-blue-800)', color: '#fff', fontSize: '0.82rem' }} data-cta="premium-upgrade">
+            プレミアムを詳しく見る →
+          </a>
+        </div>
+
+        {/* 無料登録 CTA */}
+        <div style={{
+          background: 'linear-gradient(135deg, var(--c-green-600), var(--c-teal-600))',
+          borderRadius: 'var(--r-card)',
+          padding: '22px 22px',
+          textAlign: 'center' as const,
+          color: '#fff',
+          marginBottom: 24,
+        }}>
+          <div style={{ fontSize: 16, fontWeight: 800, marginBottom: 8 }}>
+            🔔 {regionData.displayName}の釣り情報を保存する
+          </div>
+          <div style={{ fontSize: 13, opacity: 0.9, marginBottom: 16, lineHeight: 1.6 }}>
+            無料登録で地域をお気に入りに登録。釣れる日を見逃さない。
+          </div>
+          <a href="/signup" className="btn-primary" data-cta="region-save">
+            ✅ 無料で地域を保存する
+          </a>
+        </div>
+
+        {/* 予報詳細リンク */}
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 20 }}>
+          <a href="/forecast" style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
+            📅 全国AI予報スコアを見る →
+          </a>
+          <a href="/areas" style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>
+            ← 地域一覧に戻る
+          </a>
+        </div>
+
+        {/* 免責・注意事項 */}
+        <div className="disclaimer-box">
+          <div>※ 釣れそう度は天気・簡易潮回り・過去傾向をもとにした参考情報です。釣果を保証するものではありません。</div>
+          <div>※ 潮回りは簡易推定（月齢ベース）です。実際の満潮・干潮時刻は各地の潮位表を確認してください。</div>
+          <div>※ 立入禁止区域・漁業権・安全管理を必ず確認し、ライフジャケット着用を推奨します。</div>
+        </div>
+
+      </main>
+    </>
+  )
+}

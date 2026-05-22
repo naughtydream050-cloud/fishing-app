@@ -8,6 +8,8 @@ import { MOCK_FORECASTS } from './mockForecasts'
 import type { FishingForecast } from '@/types/forecast'
 import type { RegionId } from '@/types/region'
 import type { FishId } from '@/types/fish'
+
+import type { FishId } from '@/types/fish'
 export type DataStatus = {
   source: 'supabase' | 'mock'
   reason: 'ok' | 'USE_MOCK_DATA=true' | 'missing-env' | 'no-data' | 'fetch-error'
@@ -206,4 +208,9 @@ export async function getForecastDataSourceStatus(): Promise<{
       .order('generated_at', { ascending: false })
       .limit(1)
       .single()
-    if (error || !data) return { isLive: false, lastUpdated: null,
+    if (error || !data) return { isLive: false, lastUpdated: null, reason: 'データなし' }
+    return { isLive: true, lastUpdated: formatJST(data.generated_at), reason: 'ok' }
+  } catch {
+    return { isLive: false, lastUpdated: null, reason: '接続エラー' }
+  }
+}

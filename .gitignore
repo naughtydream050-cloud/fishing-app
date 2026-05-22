@@ -12,4 +12,4 @@ scoop-git-check.txt
 # Ollama task outputs
 tmp/ollama-output.md
 tmp/*.output.md
-tmp/ollama-li
+tmp/ollama-list-output.txt

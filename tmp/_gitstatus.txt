@@ -1,4 +1,4 @@
 M  lib/productFilter.ts
 AM tmp/_gitstatus.txt
 M  tmp/do-push.bat
-M  tsconfig.tsbuildin
+M  tsconfig.tsbuildinfo

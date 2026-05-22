@@ -146,4 +146,139 @@ export default async function ArticleDetailPage({ params }: Props) {
           <p style={{ marginBottom: 16, color: 'var(--c-gray-600)', fontSize: 14 }}>
             釣り予報AIでは気象庁データとAI分析を組み合わせ、全国各地の釣り場の活性スコアを毎日更新しています。地域別の予報は「地域から探す」からチェックできます。
           </p>
-          <p style={{ fontSize: 1
+          <p style={{ fontSize: 14, color: 'var(--c-gray-600)', lineHeight: 1.7 }}>
+            地域の活性スコアが高い日を事前に確認して、釣果アップを目指しましょう。無料登録で自分の地域の予報をお気に入り登録することもできます。
+          </p>
+        </div>
+
+        {/* 関連釣り場（特定スポットカード） */}
+        {relatedSpots.length > 0 && (
+          <section style={{ marginBottom: 24 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+              📍 この記事に関連する釣り場
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {relatedSpots.map(({ spot, regionSlug }) => (
+                <a
+                  key={`${regionSlug}-${spot.id}`}
+                  href={`/areas/${regionSlug}/spots/${spot.id}`}
+                  className="card"
+                  style={{
+                    padding: '12px 16px',
+                    display: 'block',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    borderRadius: 'var(--r-card)',
+                  }}
+                >
+                  <div style={{ fontWeight: 700, color: 'var(--c-blue-900)', marginBottom: 4 }}>
+                    📍 {spot.name}
+                  </div>
+                  <div style={{ fontSize: 13, color: 'var(--c-gray-600)', marginBottom: 6 }}>
+                    {spot.fishTypes.slice(0, 3).join('・')} · {spot.difficulty}
+                  </div>
+                  <div style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
+                    詳細を見る →
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* 他の地域も見る（地域チップ） */}
+        <section style={{ marginBottom: 24 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+            🗾 他の地域の釣り場情報
+          </div>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            {REGIONS.map(r => (
+              <a key={r.id} href={`/areas/${r.slug}`} className="region-chip" data-cta="article-region-link">
+                {r.displayName}
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* 関連魚種チップ */}
+        <section style={{ marginBottom: 28 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+            🐟 関連魚種
+          </div>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            {FISH_SPECIES.map(f => (
+              <span key={f.id} className="badge badge-fish" style={{ fontSize: '0.82rem', padding: '4px 12px' }}>
+                {f.displayName}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* 関連釣果レポート */}
+        {(() => {
+          const relatedReports = getLatestReports(2)
+          return relatedReports.length > 0 ? (
+            <section style={{ marginBottom: 28 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+                📋 関連釣果レポート
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {relatedReports.map((report) => (
+                  <a
+                    key={report.slug}
+                    href={`/reports/${report.slug}`}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: 10,
+                      padding: '12px 16px', textDecoration: 'none',
+                      fontSize: 14, color: 'var(--c-gray-700)',
+                    }}
+                  >
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--c-blue-900)', marginBottom: 2 }}>
+                        {report.title}
+                      </div>
+                      <div style={{ fontSize: 12, color: 'var(--c-gray-500)' }}>
+                        📍 {report.regionName} · {report.weekStart}〜{report.weekEnd}
+                      </div>
+                    </div>
+                    <span style={{ color: 'var(--c-blue-600)', fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>→</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ) : null
+        })()}
+
+        {/* 釣行セット */}
+        <GearSetCard gearSet={gearSet} showDataSource={true} />
+
+        {/* サブスク CTA */}
+        <div style={{
+          background: 'linear-gradient(135deg, var(--c-blue-900), var(--c-teal-800))',
+          borderRadius: 'var(--r-card)',
+          padding: '24px 22px',
+          textAlign: 'center',
+          color: '#fff',
+          marginBottom: 24,
+        }}>
+          <div style={{ fontSize: 15, fontWeight: 800, marginBottom: 8 }}>
+            🔔 この地域の予報を毎週受け取る
+          </div>
+          <div style={{ fontSize: 13, opacity: 0.9, marginBottom: 16 }}>
+            無料登録で気になる地域の釣り予報をメールでお届け。釣れる日を見逃さない。
+          </div>
+          <a href="/subscribe" className="btn-primary" data-cta="article-subscribe">
+            無料で釣り予報を受け取る →
+          </a>
+        </div>
+
+        {/* ナビ */}
+        <a href="/articles" style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
+          ← 記事一覧に戻る
+        </a>
+
+      </main>
+    </>
+  )
+}

@@ -105,4 +105,12 @@ export default function GearCard({ item, rank }: Props) {
             background: '#1a4f8a', color: '#fff',
             padding: '16px 24px', borderRadius: 10,
             fontSize: 18, fontWeight: 700, textDecoration: 'none',
-            letterSp
+            letterSpacing: 0.5,
+          }}
+        >
+          最安値で見る →
+        </a>
+      )}
+    </div>
+  )
+}

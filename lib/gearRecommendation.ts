@@ -124,4 +124,6 @@ export function recommendGearSet(
     items,
     dataSource,
     isMock,
-    reason: `${fishLab
+    reason: `${fishLabel}釣りに必要な基本装備をまとめました。実際の釣果を保証するものではありません。`,
+  }
+}

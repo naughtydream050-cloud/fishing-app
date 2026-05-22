@@ -123,4 +123,8 @@ export function isFishingProduct(product: FilterableProduct): boolean {
     .join(' ')
 
   // 1. ブラックリストに該当 → 絶対に除外
-  if (BLACKLIST_RE
+  if (BLACKLIST_RE.test(text)) return false
+
+  // 2. ホワイトリストに該当するものだけ表示
+  return WHITELIST_RE.test(text)
+}
