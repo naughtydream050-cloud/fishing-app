@@ -393,22 +393,4 @@ export default async function HomePage() {
                 )
               })}
             </div>
-          )}
-        </section>
-
-        {/* ━━━━━━ 釣行セット ━━━━━━ */}
-        <section style={{ marginTop: 8 }}>
-          <GearSetCard gearSet={gearSet} showDataSource={true} />
-        </section>
-
-        {/* ━━━━━━ 免責・注意事項 ━━━━━━ */}
-        <div className="disclaimer-box">
-          <div>※ 釣れそう度は天気・簡易潮回り・過去傾向をもとにした参考情報です。釣果を保証するものではありません。</div>
-          <div>※ 潮回りは簡易推定（月齢ベース）です。実際の満潮・干潮時刻は各地の潮位表を確認してください。</div>
-          <div>※ 立入禁止区域・漁業権・安全管理を必ず確認し、ライフジャケット着用を推奨します。</div>
-        </div>
-
-      </main>
-    </>
-  )
-}
+          )}

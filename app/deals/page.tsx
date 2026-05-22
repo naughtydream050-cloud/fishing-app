@@ -42,12 +42,4 @@ export default async function DealsPage() {
           データ取得中です。しばらくお待ちください。
         </div>
       ) : (
-        <div style={{ display: 'grid', gap: 20 }}>
-          {allGear.map((item, i) => (
-            <GearCard key={item.id} item={item} rank={i + 1} />
-          ))}
-        </div>
-      )}
-    </main>
-  )
-}
+        <div style={{ display: 'gr

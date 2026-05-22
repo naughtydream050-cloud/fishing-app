@@ -1,4 +1,5 @@
-import { excludeNonFishingProducts, classifyGearCategory } from '@/lib/productFilter'
+import { isFishingProduct } from '@/lib/productFilter'
+import { classifyGearCategory } from '@/lib/gearRecommendation'
 
 export type GearPrice = {
   id: string
@@ -111,7 +112,7 @@ async function getCachedGear(keyword: string): Promise<GearPrice[] | null> {
       shopName: row.shop_name,
       fetchedAt: row.fetched_at,
     }))
-    const filtered = excludeNonFishingProducts(mapped)
+    const filtered = mapped.filter(isFishingProduct)
     return sortByDiversityAndPrice(markMockItems(filtered))
   } catch { return null }
 }
@@ -152,7 +153,7 @@ async function fetchFromProviders(keyword: string): Promise<GearPrice[]> {
     })) : []),
   ]
   // フィルタ → モックマーク → 多様性ソート
-  const filtered = excludeNonFishingProducts(raw)
+  const filtered = raw.filter(isFishingProduct)
   const marked = markMockItems(filtered)
   return sortByDiversityAndPrice(marked)
 }
