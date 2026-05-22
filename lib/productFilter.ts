@@ -53,6 +53,9 @@ const BLACKLIST_WORDS = [
   'キーバック',
   'プラリール',
   '商品カタログ',
+  // TCG/非釣具専門ショップ（shopName に含まれる店舗ID）
+  'game38japan',
+  'yu-beads-parts',
 ]
 
 // === WHITELIST ===

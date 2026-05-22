@@ -11,7 +11,7 @@ for %%A in (tmp\_gitstatus.txt) do if %%~zA==0 (
     echo Nothing to commit, pushing existing main...
 ) else (
     echo Committing...
-    git commit -m "fix: productFilter blacklist vanguard/apparel/non-fishing items"
+    git commit -m "fix: productFilter add shop-level blacklist for TCG stores"
 )
 echo.
 echo git push origin main:
