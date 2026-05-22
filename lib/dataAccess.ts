@@ -148,7 +148,12 @@ async function fetchFromProviders(keyword: string): Promise<GearPrice[]> {
       url: i.url,
       affiliateUrl: i.affiliateUrl || i.url,
       image: i.image?.medium,
-      shopName: i.seller?.name ?? '',
+      shopName: (() => {
+        // URLからショップIDを抽出: https://store.shopping.yahoo.co.jp/{shopId}/...
+        const u = i.url || i.affiliateUrl || ''
+        const m = u.match(/store\.shopping\.yahoo\.co\.jp\/([^/]+)\//)
+        return m ? m[1] : (i.seller?.name ?? '')
+      })(),
       fetchedAt: new Date().toISOString(),
     })) : []),
   ]
@@ -190,10 +195,4 @@ export async function getGearById(id: string): Promise<GearPrice | null> {
     const { data, error } = await supabaseAdmin.from('gear_prices').select('*').eq('id', id).single()
     if (error || !data) return null
     return {
-      id: data.id, title: data.gear_name, price: data.price,
-      platform: data.shop as 'rakuten' | 'yahoo', url: data.url,
-      affiliateUrl: data.affiliate_url, image: data.image_url,
-      shopName: data.shop_name, fetchedAt: data.fetched_at,
-    }
-  } catch { return null }
-}
+      id: data.id, titl

@@ -2,7 +2,7 @@ import { getTrendingGears, sortGearWithPrimaryFirst } from '@/lib/dataAccess'
 import { isFishingProduct } from '@/lib/productFilter'
 import GearCard from '@/components/GearCard'
 
-export const revalidate = 3600
+export const revalidate = 0
 
 const GEAR_KEYWORDS = ['釣り竿', 'リール', 'ルアー', 'ワーム', 'ライフジャケット', 'クーラーボックス']
 
@@ -42,4 +42,4 @@ export default async function DealsPage() {
           データ取得中です。しばらくお待ちください。
         </div>
       ) : (
-        <div style={{ display: 'gr
+        <div style={{ display: 'grid'
