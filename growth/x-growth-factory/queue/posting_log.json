@@ -50,6 +50,27 @@
       "status": "posted",
       "error": null,
       "notes": "Daily deterministic no-token Threads workflow. Recorded after workflow post succeeded but state push failed."
+    },
+    {
+      "postedAt": "2026-05-22T05:12:59.943Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": "18089930021364006",
+      "id": "launch-week-ja-day-01",
+      "language": "ja",
+      "platform": "threads",
+      "siteId": "spec-ai",
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "text": "今日の便利サイト。\n\n散らかったメモを\n「要約・タスク・共有文」に整えてくれる SPEC AI。\n\n会議後のメモ、思いつき、共有前の下書き。\nそのままだと使いにくい文章を、次に動ける形に分けてくれます。\n\nまずは1日1回無料で試せます。\nメモ整理に困った時の保存用にどうぞ。\n\nhttps://spec-ai-alpha.vercel.app",
+      "pattern": "useful-site-intro",
+      "topic": "Japanese useful websites discovery launch week",
+      "linkIncluded": true,
+      "status": "posted",
+      "error": null,
+      "notes": "Daily deterministic no-token Threads workflow."
     }
-  ]
+  ],
+  "retiredItems": []
 }
