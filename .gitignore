@@ -8,3 +8,8 @@ scoop-git-check.txt
 
 .vercel
 .env*.local
+
+# Ollama task outputs
+tmp/ollama-output.md
+tmp/*.output.md
+tmp/ollama-list-output.txt

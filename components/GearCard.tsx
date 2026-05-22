@@ -1,4 +1,5 @@
 import type { GearPrice } from '@/lib/dataAccess'
+import { isDummyUrl } from '@/lib/gearRecommendation'
 
 interface Props {
   item: GearPrice
@@ -85,20 +86,31 @@ export default function GearCard({ item, rank }: Props) {
       </div>
 
       {/* CTA Button */}
-      <a
-        href={item.affiliateUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
+      {isDummyUrl(item.affiliateUrl) ? (
+        <div style={{
           display: 'block', textAlign: 'center',
-          background: '#1a4f8a', color: '#fff',
+          background: '#e8e8e8', color: '#888',
           padding: '16px 24px', borderRadius: 10,
-          fontSize: 18, fontWeight: 700, textDecoration: 'none',
-          letterSpacing: 0.5,
-        }}
-      >
-        最安値で見る →
-      </a>
+          fontSize: 15, fontWeight: 600,
+        }}>
+          参考商品（リンク準備中）
+        </div>
+      ) : (
+        <a
+          href={item.affiliateUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'block', textAlign: 'center',
+            background: '#1a4f8a', color: '#fff',
+            padding: '16px 24px', borderRadius: 10,
+            fontSize: 18, fontWeight: 700, textDecoration: 'none',
+            letterSpacing: 0.5,
+          }}
+        >
+          最安値で見る →
+        </a>
+      )}
     </div>
   )
 }

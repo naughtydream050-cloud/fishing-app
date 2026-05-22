@@ -456,6 +456,13 @@ button, a { touch-action: manipulation; }
   min-height: 36px;
 }
 .gear-cta:hover { background: var(--c-gray-200); }
+.gear-cta-demo {
+  background: var(--c-gray-100);
+  color: var(--c-gray-400);
+  border-color: var(--c-gray-200);
+  cursor: default;
+  pointer-events: none;
+}
 
 /* ── Header ── */
 .header-root {

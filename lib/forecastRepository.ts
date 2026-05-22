@@ -8,6 +8,7 @@ import { MOCK_FORECASTS } from './mockForecasts'
 import type { FishingForecast } from '@/types/forecast'
 import type { RegionId } from '@/types/region'
 
+import type { FishId } from '@/types/fish'
 export type DataStatus = {
   source: 'supabase' | 'mock'
   reason: 'ok' | 'USE_MOCK_DATA=true' | 'missing-env' | 'no-data' | 'fetch-error'
@@ -87,7 +88,7 @@ type DbRow = {
 function dbToForecast(row: DbRow): FishingForecast {
   return {
     regionId: row.region_id as RegionId,
-    fishId: row.fish_id as string,
+    fishId: row.fish_id as FishId,
     forecastScore: row.forecast_score,
     weatherSummary: row.weather_summary,
     tideSummary: row.tide_summary,

@@ -2,6 +2,7 @@ import { REGIONS } from '@/types/region'
 import { getRegionalForecastsByRegion } from '@/lib/forecastRepository'
 import { getTrendingGears } from '@/lib/dataAccess'
 import { isFishingProduct } from '@/lib/productFilter'
+import { isDummyUrl } from '@/lib/gearRecommendation'
 import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
 import { MOCK_FISHING_REPORTS } from '@/lib/mockFishingReports'
 import { MOCK_ARTICLES } from '@/lib/mockArticles'
@@ -372,14 +373,18 @@ export default async function HomePage() {
                         </span>
                       </div>
                     </div>
-                    <a
-                      href={item.affiliateUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="gear-cta"
-                    >
-                      見る →
-                    </a>
+                    {isDummyUrl(item.affiliateUrl) ? (
+                      <span className="gear-cta gear-cta-demo">参考</span>
+                    ) : (
+                      <a
+                        href={item.affiliateUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="gear-cta"
+                      >
+                        見る →
+                      </a>
+                    )}
                   </div>
                 )
               })}
