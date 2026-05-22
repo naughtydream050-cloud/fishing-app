@@ -1,13 +1,40 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { MOCK_ARTICLES } from '@/lib/mockArticles'
+import { MOCK_SPOTS } from '@/lib/mockSpots'
 import { REGIONS } from '@/types/region'
 import { FISH_SPECIES } from '@/types/fish'
 import { generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
+import DataSourceBadge from '@/components/DataSourceBadge'
+import { getLatestReports } from '@/lib/fishingReports'
+import GearSetCard from '@/components/GearSetCard'
+import { getTrendingGears } from '@/lib/dataAccess'
+import { recommendGearSet, type GearRecommendationContext } from '@/lib/gearRecommendation'
 
 export const revalidate = 86400
 
 type Props = { params: Promise<{ slug: string }> }
+
+// 各記事に紐づく関連釣り場 (regionId/slug/spotId)
+const ARTICLE_SPOT_MAP: Record<string, { regionId: string; regionSlug: string; spotId: string }[]> = {
+  'weekly-fish-may-2026': [
+    { regionId: 'hiroshima', regionSlug: 'hiroshima', spotId: 'port' },
+    { regionId: 'tokyo_23',  regionSlug: 'tokyo_23',  spotId: 'odaiba' },
+  ],
+  'family-fishing-spots': [
+    { regionId: 'hiroshima', regionSlug: 'hiroshima', spotId: 'port' },
+    { regionId: 'tokyo_23',  regionSlug: 'tokyo_23',  spotId: 'odaiba' },
+    { regionId: 'okayama',   regionSlug: 'okayama',   spotId: 'tamano' },
+  ],
+  'rainy-day-fishing': [
+    { regionId: 'tokyo_23',  regionSlug: 'tokyo_23',  spotId: 'sumida' },
+    { regionId: 'hiroshima', regionSlug: 'hiroshima', spotId: 'port' },
+  ],
+  'ajing-beginners-guide': [
+    { regionId: 'hiroshima', regionSlug: 'hiroshima', spotId: 'port' },
+    { regionId: 'yamaguchi', regionSlug: 'yamaguchi', spotId: 'shimono' },
+  ],
+}
 
 export async function generateStaticParams() {
   return MOCK_ARTICLES.map((a) => ({ slug: a.slug }))
@@ -47,6 +74,23 @@ export default async function ArticleDetailPage({ params }: Props) {
     datePublished: article.publishedAt,
   })
 
+  const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
+  const articleGearCtx: GearRecommendationContext = {
+    spotId: 'article', spotName: article.title.slice(0, 20), regionId: 'nationwide',
+    fishTypes: ['アジ', 'シーバス', 'メバル'],
+    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+  }
+  const gearSet = recommendGearSet(rawGear, articleGearCtx)
+
+  // 関連スポットを解決
+  const spotMappings = ARTICLE_SPOT_MAP[slug] ?? []
+  const relatedSpots = spotMappings
+    .map(m => {
+      const spot = (MOCK_SPOTS[m.regionId] ?? []).find(s => s.id === m.spotId)
+      return spot ? { spot, regionSlug: m.regionSlug } : null
+    })
+    .filter((x): x is NonNullable<typeof x> => x !== null)
+
   return (
     <>
       <script
@@ -61,13 +105,19 @@ export default async function ArticleDetailPage({ params }: Props) {
       <main style={{ maxWidth: 720, margin: '0 auto', padding: '20px 16px 56px' }}>
 
         {/* Breadcrumb */}
-        <nav style={{ fontSize: 13, color: 'var(--c-gray-500)', marginBottom: 16 }}>
+        <nav style={{ fontSize: 13, color: 'var(--c-gray-500)', marginBottom: 12 }}>
           <a href="/" style={{ color: 'var(--c-blue-700)' }}>ホーム</a>
           {' › '}
           <a href="/articles" style={{ color: 'var(--c-blue-700)' }}>記事</a>
           {' › '}
           <span>{article.title.slice(0, 30)}…</span>
         </nav>
+
+        {/* データソースバッジ（記事はmockデータ） */}
+        <DataSourceBadge
+          isMock={true}
+          dataStatus={{ source: 'mock', reason: 'no-data', message: 'デモ記事（本番CMSデータ未接続）' }}
+        />
 
         {/* カテゴリ・日付 */}
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 12 }}>
@@ -101,10 +151,45 @@ export default async function ArticleDetailPage({ params }: Props) {
           </p>
         </div>
 
-        {/* 関連地域チップ */}
+        {/* 関連釣り場（特定スポットカード） */}
+        {relatedSpots.length > 0 && (
+          <section style={{ marginBottom: 24 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+              📍 この記事に関連する釣り場
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+              {relatedSpots.map(({ spot, regionSlug }) => (
+                <a
+                  key={`${regionSlug}-${spot.id}`}
+                  href={`/areas/${regionSlug}/spots/${spot.id}`}
+                  className="card"
+                  style={{
+                    padding: '12px 16px',
+                    display: 'block',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    borderRadius: 'var(--r-card)',
+                  }}
+                >
+                  <div style={{ fontWeight: 700, color: 'var(--c-blue-900)', marginBottom: 4 }}>
+                    📍 {spot.name}
+                  </div>
+                  <div style={{ fontSize: 13, color: 'var(--c-gray-600)', marginBottom: 6 }}>
+                    {spot.fishTypes.slice(0, 3).join('・')} · {spot.difficulty}
+                  </div>
+                  <div style={{ fontSize: 13, color: 'var(--c-blue-700)', fontWeight: 600 }}>
+                    詳細を見る →
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* 他の地域も見る（地域チップ） */}
         <section style={{ marginBottom: 24 }}>
           <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
-            📍 関連地域の釣り場情報
+            🗾 他の地域の釣り場情報
           </div>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             {REGIONS.map(r => (
@@ -128,6 +213,45 @@ export default async function ArticleDetailPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* 関連釣果レポート */}
+        {(() => {
+          const relatedReports = getLatestReports(2)
+          return relatedReports.length > 0 ? (
+            <section style={{ marginBottom: 28 }}>
+              <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-700)', marginBottom: 10 }}>
+                📋 関連釣果レポート
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {relatedReports.map((report) => (
+                  <a
+                    key={report.slug}
+                    href={`/reports/${report.slug}`}
+                    style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: 10,
+                      padding: '12px 16px', textDecoration: 'none',
+                      fontSize: 14, color: 'var(--c-gray-700)',
+                    }}
+                  >
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--c-blue-900)', marginBottom: 2 }}>
+                        {report.title}
+                      </div>
+                      <div style={{ fontSize: 12, color: 'var(--c-gray-500)' }}>
+                        📍 {report.regionName} · {report.weekStart}〜{report.weekEnd}
+                      </div>
+                    </div>
+                    <span style={{ color: 'var(--c-blue-600)', fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>→</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ) : null
+        })()}
+
+        {/* 釣行セット */}
+        <GearSetCard gearSet={gearSet} showDataSource={true} />
 
         {/* サブスク CTA */}
         <div style={{

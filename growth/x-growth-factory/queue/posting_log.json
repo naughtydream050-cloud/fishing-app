@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "postedAt": "2026-05-18T01:11:14.067Z",
+      "postId": null,
+      "adapter": "browser",
+      "text": "SPEC AI takes messy notes and turns them into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "before-after",
+      "linkIncluded": false,
+      "status": "skipped",
+      "error": "Browser posting not attempted because no in-app browser control tool is exposed in this session.",
+      "notes": "Do not mark as posted until visible X browser post succeeds."
+    },
+    {
+      "postedAt": "2026-05-18T01:51:15.094Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": null,
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "setup_required",
+      "error": "THREADS_ACCESS_TOKEN and THREADS_USER_ID are required.",
+      "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-18T03:14:22.844Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": null,
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "setup_required",
+      "error": "THREADS_ACCESS_TOKEN and THREADS_USER_ID are required.",
+      "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-21T09:11:11.768Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": "18133829758562751",
+      "text": "Messy notes are not the problem. The handoff is. SPEC AI turns rough notes into summary, tasks, and share-ready text. Free: 1 successful analysis/day. Pro: 10 successful analyses/day for ¥300/month.",
+      "pattern": "messy-to-clear",
+      "topic": "messy notes after a meeting",
+      "linkIncluded": false,
+      "status": "posted",
+      "error": null,
+      "notes": "Daily deterministic no-token Threads workflow. Recorded after workflow post succeeded but state push failed."
+    },
+    {
+      "postedAt": "2026-05-22T05:12:59.943Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": "18089930021364006",
+      "id": "launch-week-ja-day-01",
+      "language": "ja",
+      "platform": "threads",
+      "siteId": "spec-ai",
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-01-ja-usage-card.png",
+      "text": "今日の便利サイト。\n\n散らかったメモを\n「要約・タスク・共有文」に整えてくれる SPEC AI。\n\n会議後のメモ、思いつき、共有前の下書き。\nそのままだと使いにくい文章を、次に動ける形に分けてくれます。\n\nまずは1日1回無料で試せます。\nメモ整理に困った時の保存用にどうぞ。\n\nhttps://spec-ai-alpha.vercel.app",
+      "pattern": "useful-site-intro",
+      "topic": "Japanese useful websites discovery launch week",
+      "linkIncluded": true,
+      "status": "posted",
+      "error": null,
+      "notes": "Daily deterministic no-token Threads workflow."
+    }
+  ],
+  "retiredItems": []
+}

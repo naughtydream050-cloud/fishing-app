@@ -7,6 +7,7 @@ import { createClient } from '@supabase/supabase-js'
 import { MOCK_FORECASTS } from './mockForecasts'
 import type { FishingForecast } from '@/types/forecast'
 import type { RegionId } from '@/types/region'
+import type { FishId } from '@/types/fish'
 
 import type { FishId } from '@/types/fish'
 export type DataStatus = {

@@ -4,9 +4,11 @@ import { getTrendingGears } from '@/lib/dataAccess'
 import { isFishingProduct } from '@/lib/productFilter'
 import { isDummyUrl } from '@/lib/gearRecommendation'
 import { generateFaqJsonLd, generateBreadcrumbJsonLd, generateArticleJsonLd } from '@/lib/jsonld'
-import { MOCK_FISHING_REPORTS } from '@/lib/mockFishingReports'
 import { MOCK_ARTICLES } from '@/lib/mockArticles'
+import { getLatestReports } from '@/lib/fishingReports'
 import DataSourceBadge from '@/components/DataSourceBadge'
+import GearSetCard from '@/components/GearSetCard'
+import { recommendGearSet, type GearRecommendationContext } from '@/lib/gearRecommendation'
 import type { FishId } from '@/types/fish'
 import type { Metadata } from 'next'
 
@@ -71,8 +73,15 @@ export default async function HomePage() {
     .sort((a, b) => (b.top?.forecastScore ?? 0) - (a.top?.forecastScore ?? 0))
     .slice(0, 3)
 
+  const latestFishingReports = getLatestReports(3)
   const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
   const topGear = rawGear.filter(isFishingProduct).slice(0, 3)
+  const gearCtx: GearRecommendationContext = {
+    spotId: 'nationwide', spotName: '全国', regionId: 'nationwide',
+    fishTypes: ['アジ', 'シーバス', 'メバル'],
+    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+  }
+  const gearSet = recommendGearSet(rawGear, gearCtx)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
 
@@ -258,31 +267,26 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* ━━━━━━ 釣果報告 ━━━━━━ */}
+        {/* ━━━━━━ 釣果レポート ━━━━━━ */}
         <section className="section">
           <div className="section-header">
-            <h2 className="section-title">🐟 最近の釣果報告</h2>
+            <h2 className="section-title">📋 最近の釣果レポート</h2>
             <a href="/reports" className="section-link">すべて見る →</a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {MOCK_FISHING_REPORTS.slice(0, 3).map((report) => (
-              <a key={report.id} href={`/reports/${report.id}`} className="card card-hover report-card">
-                {report.imageUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={report.imageUrl} alt={report.area} className="report-thumb-img" />
-                ) : (
-                  <div className="report-thumb-wrap">🐟</div>
-                )}
+            {latestFishingReports.map((report) => (
+              <a key={report.slug} href={`/reports/${report.slug}`} className="card card-hover report-card">
+                <div className="report-thumb-wrap">🐟</div>
                 <div className="report-body">
-                  <div className="report-area">📍 {report.area}</div>
+                  <div className="report-area">📍 {report.regionName}</div>
                   <div className="report-title">{report.title}</div>
                   <div className="report-tags">
-                    {report.fishName.map(f => (
+                    {report.fishNames.map(f => (
                       <span key={f} className="badge badge-report">{f}</span>
                     ))}
                   </div>
-                  <div className="report-summary">{report.summary}</div>
-                  <div className="report-footer">{report.sourceName} · {report.publishedAt}</div>
+                  <div className="report-summary">{report.summary.slice(0, 60)}…</div>
+                  <div className="report-footer">編集部データ · {report.publishedAt}</div>
                 </div>
               </a>
             ))}
@@ -390,6 +394,11 @@ export default async function HomePage() {
               })}
             </div>
           )}
+        </section>
+
+        {/* ━━━━━━ 釣行セット ━━━━━━ */}
+        <section style={{ marginTop: 8 }}>
+          <GearSetCard gearSet={gearSet} showDataSource={true} />
         </section>
 
         {/* ━━━━━━ 免責・注意事項 ━━━━━━ */}

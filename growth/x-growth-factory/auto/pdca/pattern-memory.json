@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "preferredThemes": [
+    "notes",
+    "meetings",
+    "tasks",
+    "summary"
+  ],
+  "weakThemes": [],
+  "winningPatterns": [],
+  "pausedPatterns": []
+}

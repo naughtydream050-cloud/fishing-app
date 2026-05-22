@@ -1,98 +1,224 @@
-import type { GearSet } from '@/lib/gearRecommendation'
+import type { GearSet, GearCategory, PriceTier } from '@/lib/gearRecommendation'
 
-const SOURCE_LABEL: Record<string, string> = {
-  mock:   'デモデータ',
-  api:    'リアルタイム',
-  manual: '編集部データ',
+interface GearSetCardProps {
+  gearSet: GearSet
+  showDataSource?: boolean
 }
 
-function isDummyUrl(url: string): boolean {
-  return !url || url.includes('example.rakuten.co.jp') || url.includes('example.com')
+const CATEGORY_LABELS: Record<GearCategory, string> = {
+  rod:     'ロッド',
+  reel:    'リール',
+  lure:    'ルアー',
+  worm:    'ワーム',
+  jighead: 'ジグヘッド',
+  line:    'ライン',
+  hook:    'フック',
+  rig:     '仕掛け',
+  safety:  '安全装備',
+  cooler:  'クーラー',
+  storage: '収納',
+  light:   'ライト',
+  tool:    'ツール',
+  wear:    'ウェア',
+  unknown: 'その他',
 }
 
-export default function GearSetCard({ gearSet }: { gearSet: GearSet | null }) {
-  if (!gearSet) {
-    return (
-      <div className="rounded-lg border border-gray-200 p-4 text-center text-gray-500 text-sm">
-        商品データを準備中です
-      </div>
-    )
+const TIER_LABELS: Record<PriceTier, string> = {
+  budget:  '入門価格帯',
+  mid:     'スタンダード',
+  premium: 'ハイエンド',
+}
+
+const CATEGORY_CHIP_COLORS: Partial<Record<GearCategory, { bg: string; text: string }>> = {
+  rod:     { bg: 'var(--c-blue-700)',   text: '#fff' },
+  reel:    { bg: 'var(--c-blue-700)',   text: '#fff' },
+  lure:    { bg: 'var(--c-green-600)',  text: '#fff' },
+  worm:    { bg: 'var(--c-green-600)',  text: '#fff' },
+  jighead: { bg: 'var(--c-green-600)',  text: '#fff' },
+  rig:     { bg: 'var(--c-green-600)',  text: '#fff' },
+  safety:  { bg: 'var(--c-red-600)',    text: '#fff' },
+  line:    { bg: 'var(--c-amber-600)',  text: '#fff' },
+  hook:    { bg: 'var(--c-amber-600)',  text: '#fff' },
+}
+
+function getCategoryChipStyle(category: GearCategory): React.CSSProperties {
+  const colors = CATEGORY_CHIP_COLORS[category] ?? { bg: '#6b7280', text: '#fff' }
+  return {
+    background: colors.bg,
+    color: colors.text,
+    fontSize: 11,
+    fontWeight: 700,
+    padding: '2px 8px',
+    borderRadius: 4,
+    display: 'inline-block',
   }
+}
 
-  const primary      = gearSet.items.filter(i => i.isPrimary)
-  const supplementary = gearSet.items.filter(i => !i.isPrimary)
+function getTierChipStyle(): React.CSSProperties {
+  return {
+    background: 'var(--c-blue-50)',
+    color: 'var(--c-blue-800)',
+    fontSize: 11,
+    fontWeight: 600,
+    padding: '2px 8px',
+    borderRadius: 4,
+    display: 'inline-block',
+    border: '1px solid var(--c-blue-200, #bfdbfe)',
+  }
+}
+
+export default function GearSetCard({ gearSet, showDataSource = true }: GearSetCardProps) {
+  const primaryItems = gearSet.items.filter(i => i.isPrimaryItem)
+  const supplementaryItems = gearSet.items.filter(i => !i.isPrimaryItem)
 
   return (
-    <div className="rounded-xl border border-blue-100 bg-white shadow-sm p-5 space-y-4">
+    <div className="card" style={{ padding: '20px 20px', borderRadius: 'var(--r-card)' }}>
+
       {/* ヘッダー */}
-      <div className="flex items-start justify-between gap-2">
-        <h3 className="font-bold text-gray-800 text-base leading-snug">{gearSet.title}</h3>
-        <span className="shrink-0 text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-          {SOURCE_LABEL[gearSet.dataSource] ?? gearSet.dataSource}
-        </span>
+      <div style={{ marginBottom: 4 }}>
+        <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-blue-950)', marginBottom: 4 }}>
+          🛒 {gearSet.title}
+        </div>
+        {gearSet.totalEstimatedCost > 0 && (
+          <div style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>
+            推定コスト目安: ¥{gearSet.totalEstimatedCost.toLocaleString()}〜
+          </div>
+        )}
       </div>
 
-      {/* デモバナー */}
-      {gearSet.isMock && (
-        <p className="text-xs bg-yellow-50 border border-yellow-200 rounded px-3 py-2 text-yellow-800">
-          これは参考セットです。実際の商品リンクは準備中です。
-        </p>
-      )}
-
-      {/* 基本装備 */}
-      {primary.length > 0 && (
-        <div className="space-y-2">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">基本装備</p>
-          {primary.map((item, i) => {
-            const dummy = isDummyUrl(item.gear.affiliateUrl)
-            return (
-              <div key={i} className="flex items-center gap-3 p-2 rounded-lg bg-gray-50">
-                <span className="text-xs px-1.5 py-0.5 bg-blue-100 text-blue-700 rounded font-medium shrink-0">
-                  {item.category}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-800 truncate">
-                    {item.gear.title}
-                    {dummy && <span className="ml-1 text-xs text-gray-400">[デモ]</span>}
-                  </p>
-                  <p className="text-xs text-gray-500">{item.reason}</p>
-                </div>
-                {dummy ? (
-                  <span className="shrink-0 text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded">参考</span>
-                ) : (
-                  <a
-                    href={item.gear.affiliateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 text-xs bg-orange-500 hover:bg-orange-600 text-white px-2 py-1 rounded"
-                  >
-                    詳細
-                  </a>
-                )}
-              </div>
-            )
-          })}
+      {/* データソース注記 */}
+      {showDataSource && (
+        <div style={{ fontSize: 11, color: 'var(--c-gray-500)', marginBottom: 16, marginTop: 6 }}>
+          {gearSet.dataSource === 'mock'
+            ? '※ 参考データ（実際の価格はリンク先でご確認ください）'
+            : '価格は楽天・Yahoo!の最安値を表示'}
         </div>
       )}
 
-      {/* 補助アイテム */}
-      {supplementary.length > 0 && (
-        <div>
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">あると便利</p>
-          <div className="flex flex-wrap gap-2">
-            {supplementary.map((item, i) => (
-              <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
-                {item.gear.title.slice(0, 15)}{item.gear.title.length > 15 ? '…' : ''}
-              </span>
+      {/* メインアイテム */}
+      {primaryItems.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 16 }}>
+          {primaryItems.map((scored) => (
+            <div
+              key={scored.item.id}
+              style={{
+                border: '1px solid var(--c-gray-200, #e5e7eb)',
+                borderRadius: 10,
+                padding: '14px 14px',
+              }}
+            >
+              <div style={{ display: 'flex', gap: 6, marginBottom: 8, flexWrap: 'wrap' }}>
+                <span style={getCategoryChipStyle(scored.category)}>
+                  {CATEGORY_LABELS[scored.category]}
+                </span>
+                <span style={getTierChipStyle()}>
+                  {TIER_LABELS[scored.priceTier]}
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                {scored.item.image && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={scored.item.image}
+                    alt={scored.item.title}
+                    style={{ width: 64, height: 64, objectFit: 'contain', flexShrink: 0, borderRadius: 6 }}
+                  />
+                )}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: 'var(--c-blue-900)',
+                    marginBottom: 4,
+                    lineHeight: 1.4,
+                    overflow: 'hidden',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: 'vertical',
+                  }}>
+                    {scored.item.title}
+                  </div>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--c-red-600)', marginBottom: 4 }}>
+                    ¥{scored.item.price.toLocaleString()}
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--c-gray-500)', marginBottom: 10, lineHeight: 1.5 }}>
+                    {scored.reason}
+                  </div>
+                  {scored.item.affiliateUrl && scored.item.affiliateUrl !== '#' ? (
+                    <a
+                      href={scored.item.affiliateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-block',
+                        background: 'var(--c-blue-700)',
+                        color: '#fff',
+                        fontSize: 12,
+                        fontWeight: 700,
+                        padding: '6px 14px',
+                        borderRadius: 6,
+                        textDecoration: 'none',
+                      }}
+                    >
+                      最安値で見る →
+                    </a>
+                  ) : (
+                    <span style={{
+                      display: 'inline-block',
+                      background: 'var(--c-gray-200, #e5e7eb)',
+                      color: 'var(--c-gray-500)',
+                      fontSize: 12,
+                      fontWeight: 700,
+                      padding: '6px 14px',
+                      borderRadius: 6,
+                    }}>
+                      参考商品
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 補足アイテム */}
+      {supplementaryItems.length > 0 && (
+        <div style={{ borderTop: '1px solid var(--c-gray-200, #e5e7eb)', paddingTop: 12, marginTop: 4 }}>
+          <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--c-gray-500)', marginBottom: 8 }}>
+            補足アイテム
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            {supplementaryItems.map((scored) => (
+              <div key={scored.item.id} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={getCategoryChipStyle(scored.category)}>
+                  {CATEGORY_LABELS[scored.category]}
+                </span>
+                <span style={{ fontSize: 13, color: 'var(--c-gray-700)', flex: 1, overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                  {scored.item.title}
+                </span>
+                <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-600)', flexShrink: 0 }}>
+                  ¥{scored.item.price.toLocaleString()}
+                </span>
+              </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* 免責 */}
-      <p className="text-xs text-gray-400 border-t border-gray-100 pt-3">
-        商品情報は参考です。実際の釣果を保証するものではありません。
-      </p>
+      {/* フッター免責 */}
+      <div style={{
+        marginTop: 16,
+        fontSize: 11,
+        color: 'var(--c-gray-400, #9ca3af)',
+        lineHeight: 1.6,
+        borderTop: '1px solid var(--c-gray-100, #f3f4f6)',
+        paddingTop: 12,
+      }}>
+        <div>※ 価格は取得時点のものです。実際の価格はリンク先でご確認ください。</div>
+        <div>※ 釣具を購入する際はライフジャケット着用を推奨します。</div>
+      </div>
     </div>
   )
 }

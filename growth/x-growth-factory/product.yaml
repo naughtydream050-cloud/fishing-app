@@ -1,0 +1,28 @@
+project: Tiny Workflow Lab X Growth Factory
+site: spec-ai
+product_name: SPEC AI
+product_url: https://spec-ai-alpha.vercel.app
+category: AI text organization SaaS
+core_value: Turn messy notes into summaries, tasks, and share-ready text.
+audience:
+  - solo operators
+  - small business owners
+  - builders
+  - meeting-heavy teams
+offer:
+  free: 1 successful analysis/day
+  pro: 10 successful analyses/day
+  price: ¥300/month
+posting_policy:
+  cadence: 1 post/day
+  max_link_posts_per_week: 2
+  randomize_posting_time: true
+  duplicate_structure_cooldown_days: 1
+  engagement_automation: false
+model_priority:
+  - local_hremes_or_hermes_agent
+  - gemini_free_tier
+  - configured_free_grok_endpoint
+  - other_free_tier_llm
+required_gate_score: 10
+approval_mode: automated_quality_gate_only
