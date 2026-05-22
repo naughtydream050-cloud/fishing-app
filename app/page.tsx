@@ -77,11 +77,10 @@ export default async function HomePage() {
   const rawGear = await getTrendingGears('釣り竿', 'nationwide').catch(() => [])
   const topGear = rawGear.filter(isFishingProduct).slice(0, 3)
   const gearCtx: GearRecommendationContext = {
-    spotId: 'nationwide', spotName: '全国', regionId: 'nationwide',
-    fishTypes: ['アジ', 'シーバス', 'メバル'],
-    style: 'general', level: 'beginner', targetPriceTier: 'budget',
+    regionSlug: 'nationwide',
+    fishName: 'アジ・シーバス・メバル',
   }
-  const gearSet = recommendGearSet(rawGear, gearCtx)
+  const gearSet = recommendGearSet(gearCtx, rawGear)
 
   const baseUrl = 'https://fishing-app-omega.vercel.app'
 
