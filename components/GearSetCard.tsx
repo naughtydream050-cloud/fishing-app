@@ -1,4 +1,5 @@
 import type { GearSet, GearCategory } from '@/lib/gearRecommendation'
+import { isDummyUrl } from '@/lib/gearRecommendation'
 
 interface GearSetCardProps {
   gearSet: GearSet | null
@@ -118,7 +119,7 @@ export default function GearSetCard({ gearSet, showDataSource = true }: GearSetC
                   <div style={{ fontSize: 12, color: 'var(--c-gray-500)', marginBottom: 10, lineHeight: 1.5 }}>
                     {scored.reason}
                   </div>
-                  {scored.gear.affiliateUrl && scored.gear.affiliateUrl !== '#' ? (
+                  {!isDummyUrl(scored.gear.affiliateUrl) ? (
                     <a
                       href={scored.gear.affiliateUrl}
                       target="_blank"
