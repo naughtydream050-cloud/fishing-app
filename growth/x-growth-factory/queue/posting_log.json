@@ -90,6 +90,26 @@
       "status": "posted",
       "error": null,
       "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-24T05:12:21.621Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": "17912678640203810",
+      "id": "launch-week-ja-day-03",
+      "language": "ja",
+      "platform": "threads",
+      "siteId": "spec-ai",
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-03-ja-usage-card.png",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-03-ja-usage-card.png",
+      "text": "SPEC AI は、メモアプリの代わりというより\n「メモを取った後」に使う整理用ツールです。\n\nざっくり書いた内容を入れる\n↓\n分析する\n↓\n要約・タスク・共有文として取り出す\n\n記録する場所を増やすより、\n送れる形に整えたい人向け。",
+      "pattern": "actual-ui",
+      "topic": "Japanese useful websites discovery launch week",
+      "linkIncluded": false,
+      "status": "posted",
+      "error": null,
+      "notes": "Daily deterministic no-token Threads workflow."
     }
   ],
   "retiredItems": []
