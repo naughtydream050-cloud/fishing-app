@@ -11,20 +11,21 @@ export const metadata: Metadata = {
 }
 
 const FREE_FEATURES = [
+  { label: '今日の釣りスポットランキング（上位3件）', available: true },
   { label: '地域別活性スコアを毎日閲覧', available: true },
   { label: '釣果レポートを閲覧', available: true },
   { label: '釣り情報記事を読む', available: true },
-  { label: 'おすすめ釣りスポット一覧', available: true },
   { label: '釣具の最安値チェック', available: true },
 ]
 
-const PREMIUM_FEATURES = [
+const PLUS_FEATURES = [
   { label: '無料プランのすべての機能', available: true, soon: false },
-  { label: '毎週メールで釣り予報をお届け', available: true, soon: true },
-  { label: '各スポットのリアルタイム活性スコア', available: true, soon: true },
-  { label: '天気・潮汐連動の釣れやすさ予報', available: true, soon: true },
-  { label: 'プッシュ通知（釣れる日の前日にお知らせ）', available: true, soon: true },
-  { label: 'AI による個別釣りアドバイス', available: true, soon: true },
+  { label: '全スポットランキング（4位以降も全件表示）', available: true, soon: true },
+  { label: '都道府県別スポットランキング（全件）', available: true, soon: true },
+  { label: '魚種別・時間帯別スコア詳細', available: true, soon: true },
+  { label: '前日比・先週比の釣れやすさ差分', available: true, soon: true },
+  { label: 'お気に入りスポット登録と通知', available: true, soon: true },
+  { label: '毎朝メールで今日の釣り予報をお届け', available: true, soon: true },
 ]
 
 export default function SubscribePage() {
@@ -124,7 +125,7 @@ export default function SubscribePage() {
 
           <div style={{ marginBottom: 20 }}>
             <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--c-gray-500)', marginBottom: 6 }}>
-              プレミアムプラン
+              Plusプラン
             </div>
             <div style={{ fontSize: 28, fontWeight: 900, color: 'var(--c-blue-900)', marginBottom: 4 }}>
               準備中
@@ -133,7 +134,7 @@ export default function SubscribePage() {
           </div>
 
           <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {PREMIUM_FEATURES.map((f) => (
+            {PLUS_FEATURES.map((f) => (
               <li key={f.label} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: f.soon ? 'var(--c-gray-500)' : 'var(--c-gray-700)' }}>
                 <span style={{ color: f.soon ? 'var(--c-gray-400)' : 'var(--c-green-600)', fontWeight: 700, flexShrink: 0 }}>
                   {f.soon ? '◎' : '✓'}
@@ -175,8 +176,8 @@ export default function SubscribePage() {
           ❓ よくある質問
         </h2>
         {[
-          { q: '無料プランでできることは？', a: '地域別の活性スコア・釣果レポート・記事・釣具最安値をすべて無料で確認できます。' },
-          { q: 'プレミアムはいつ開始？', a: '現在準備中です。無料登録しておくと、リリース時に優先してご案内します。' },
+          { q: '無料プランでできることは？', a: '毎日更新の釣りスポットランキング上位3件・地域別活性スコア・釣果レポート・記事・釣具最安値をすべて無料で確認できます。' },
+          { q: 'Plusプランはいつ開始？', a: '現在準備中です。無料登録しておくと、リリース時に優先してご案内します。全スポットランキングや通知機能がご利用いただけます。' },
           { q: 'クレジットカードは必要？', a: '無料プランの登録にカード情報は不要です。メールアドレスのみで登録できます。' },
         ].map((item) => (
           <div key={item.q} style={{
