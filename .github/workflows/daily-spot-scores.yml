@@ -1,0 +1,36 @@
+name: Daily Spot Scores
+
+on:
+  schedule:
+    # 毎日 JST 04:00 実行 (UTC 19:00 前日)
+    - cron: '0 19 * * *'
+  workflow_dispatch: # 手動実行あり
+
+jobs:
+  generate-spot-scores:
+    name: Generate and save spot daily scores
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate and save spot scores
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          echo "[info] Starting spot score generation ($(date -u '+%Y-%m-%dT%H:%M:%SZ'))"
+          npx tsx scripts/generate-spot-scores.ts
+          echo "[info] Done"
