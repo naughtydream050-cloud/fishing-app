@@ -1,10 +1,10 @@
 # Threads Weekly PDCA Report
 
-Week of: 2026-05-21
+Week of: 2026-05-25
 
 Posts:
-- posted: 0
-- skipped: 2
+- posted: 4
+- skipped: 3
 - failed: 0
 
 Metrics:
@@ -16,6 +16,6 @@ Metrics:
 - paid conversions: 0
 
 Pattern learning:
-- best: unclear
+- best: messy-to-clear
 - weak: unclear
 - next: keep deterministic templates and review manually filled metrics
