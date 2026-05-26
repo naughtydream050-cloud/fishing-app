@@ -375,3 +375,13 @@ export async function getSpotScoreBySpotId(
     return fb ? withFallbackMeta(fb, 'fetch-error') : null
   }
 }
+ withFallbackMeta(fb, reason) : null
+    }
+
+    return withRealMeta(dbToScore(data as unknown as DbSpotScoreRow))
+  } catch (err) {
+    console.warn('[spotScoreRepository] getSpotScoreBySpotId exception:', (err as Error).message)
+    const fb = getFallbackSpotScores().find((s) => s.spot_id === spotId)
+    return fb ? withFallbackMeta(fb, 'fetch-error') : null
+  }
+}

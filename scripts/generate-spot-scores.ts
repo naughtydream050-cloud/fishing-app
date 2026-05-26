@@ -321,3 +321,21 @@ main().catch((err) => {
   console.error('[fatal]', err)
   process.exit(1)
 })
+)
+  console.log(`スキップ: ${skipCount}`)
+
+  if (!isDryRun && results.length > 0) {
+    await upsertRows(results)
+  } else {
+    console.log('[upsert] dry-run のため保存をスキップ')
+  }
+
+  console.log('\n完了')
+}
+
+main().catch((err) => {
+  console.error('[fatal]', err)
+  process.exit(1)
+})
+ss.exit(1)
+})

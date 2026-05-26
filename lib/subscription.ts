@@ -40,5 +40,5 @@ export async function isPlusUser(): Promise<boolean> {
   return (await getSubscriptionTier()) === 'plus'
 }
 
-/** 無料ユーザーに表示する上位スポット数 */
+/** 無料ユーザーに表示する上位スポット件数 */
 export const FREE_SPOT_LIMIT = 3

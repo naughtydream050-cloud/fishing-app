@@ -20,9 +20,11 @@ const FREE_FEATURES = [
 
 const PLUS_FEATURES = [
   { label: '無料プランのすべての機能', available: true, soon: false },
-  { label: '全スポットランキング（4位以降も全件表示）', available: true, soon: true },
-  { label: '都道府県別スポットランキング（全件）', available: true, soon: true },
-  { label: '魚種別・時間帯別スコア詳細', available: true, soon: true },
+  { label: '全スポットランキング（4位以降も全件表示）', available: true, soon: false },
+  { label: '都道府県別スポットランキング（全件）', available: true, soon: false },
+  { label: 'スポット別詳細理由・caution表示', available: true, soon: false },
+  { label: '時間帯別おすすめ（朝マズメ/夕マズメ/夜）', available: true, soon: false },
+  { label: '魚種別ランキング', available: true, soon: true },
   { label: '前日比・先週比の釣れやすさ差分', available: true, soon: true },
   { label: 'お気に入りスポット登録と通知', available: true, soon: true },
   { label: '毎朝メールで今日の釣り予報をお届け', available: true, soon: true },
@@ -120,7 +122,7 @@ export default function SubscribePage() {
             borderRadius: 99,
             whiteSpace: 'nowrap',
           }}>
-            近日公開予定
+            β版価格
           </div>
 
           <div style={{ marginBottom: 20 }}>
@@ -128,9 +130,9 @@ export default function SubscribePage() {
               Plusプラン
             </div>
             <div style={{ fontSize: 28, fontWeight: 900, color: 'var(--c-blue-900)', marginBottom: 4 }}>
-              準備中
+              ¥500<span style={{ fontSize: 14, fontWeight: 400 }}>/月</span>
             </div>
-            <div style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>リリース前に通知を受け取る</div>
+            <div style={{ fontSize: 13, color: 'var(--c-gray-500)' }}>いつでも解約可能</div>
           </div>
 
           <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px', display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -149,24 +151,29 @@ export default function SubscribePage() {
             ))}
           </ul>
 
-          <button
-            disabled
-            data-cta="subscribe-premium"
-            style={{
-              width: '100%',
-              padding: '10px 20px',
-              borderRadius: 10,
-              fontSize: '0.85rem',
-              fontWeight: 800,
-              background: 'var(--c-gray-200)',
-              color: 'var(--c-gray-500)',
-              border: 'none',
-              cursor: 'not-allowed',
-              minHeight: 44,
-            }}
-          >
-            通知を受け取る（準備中）
-          </button>
+          <form action="/api/stripe/create-checkout-session" method="POST">
+            <button
+              type="submit"
+              data-cta="subscribe-plus-cta"
+              style={{
+                width: '100%',
+                padding: '12px 20px',
+                borderRadius: 10,
+                fontSize: '0.9rem',
+                fontWeight: 800,
+                background: 'var(--c-blue-700, #1d4ed8)',
+                color: '#fff',
+                border: 'none',
+                cursor: 'pointer',
+                minHeight: 44,
+              }}
+            >
+              月額500円でPlusを始める →
+            </button>
+          </form>
+          <p style={{ fontSize: 11, color: 'var(--c-gray-400)', textAlign: 'center', marginTop: 8, lineHeight: 1.6 }}>
+            ※ β版価格。釣果を保証しません。天候・安全・現地ルールの確認は自己責任でお願いします。
+          </p>
         </div>
       </div>
 
@@ -177,7 +184,7 @@ export default function SubscribePage() {
         </h2>
         {[
           { q: '無料プランでできることは？', a: '毎日更新の釣りスポットランキング上位3件・地域別活性スコア・釣果レポート・記事・釣具最安値をすべて無料で確認できます。' },
-          { q: 'Plusプランはいつ開始？', a: '現在準備中です。無料登録しておくと、リリース時に優先してご案内します。全スポットランキングや通知機能がご利用いただけます。' },
+          { q: 'Plusプランで今すぐ使える機能は？', a: '全スポットランキング・都道府県別全件表示・スポット別詳細理由・時間帯別おすすめが今すぐご利用いただけます。魚種別ランキング・差分表示・お気に入り通知は近日追加予定です。' },
           { q: 'クレジットカードは必要？', a: '無料プランの登録にカード情報は不要です。メールアドレスのみで登録できます。' },
         ].map((item) => (
           <div key={item.q} style={{
@@ -209,6 +216,36 @@ export default function SubscribePage() {
         </div>
         <div style={{ fontSize: 13, opacity: 0.9, marginBottom: 18 }}>
           登録30秒。クレジットカード不要。
+        </div>
+        <a href="/signup" className="btn-primary" data-cta="subscribe-free">
+          ✅ 無料で釣り予報を受け取る
+        </a>
+      </div>
+
+    </main>
+  )
+}
+            </div>
+            <div style={{ fontSize: 13, color: 'var(--c-gray-700)', lineHeight: 1.6 }}>
+              A: {item.a}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      {/* 最終 CTA */}
+      <div style={{
+        background: 'linear-gradient(135deg, var(--c-blue-900), var(--c-teal-800))',
+        borderRadius: 'var(--r-card)',
+        padding: '26px 22px',
+        textAlign: 'center',
+        color: '#fff',
+      }}>
+        <div style={{ fontSize: 16, fontWeight: 800, marginBottom: 8 }}>
+          今すぐ無料で始める
+        </div>
+        <div style={{ fontSize: 13, opacity: 0.9, marginBottom: 18 }}>
+          登録３０秒。クレジットカード不要。
         </div>
         <a href="/signup" className="btn-primary" data-cta="subscribe-free">
           ✅ 無料で釣り予報を受け取る
