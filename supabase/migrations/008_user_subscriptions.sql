@@ -35,6 +35,8 @@ BEGIN
 END;
 $$;
 
+-- Trigger: drop first to make this migration idempotent
+DROP TRIGGER IF EXISTS user_subscriptions_updated_at ON user_subscriptions;
 CREATE TRIGGER user_subscriptions_updated_at
   BEFORE UPDATE ON user_subscriptions
   FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
