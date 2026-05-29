@@ -190,6 +190,26 @@
       "status": "skipped",
       "error": "SPEC AI facts missing or inaccurate",
       "notes": "Daily deterministic no-token Threads workflow."
+    },
+    {
+      "postedAt": "2026-05-29T05:21:56.372Z",
+      "channel": "threads",
+      "adapter": "threads_api",
+      "postId": null,
+      "id": "launch-week-ja-day-04",
+      "language": "ja",
+      "platform": "threads",
+      "siteId": "spec-ai",
+      "imageLocalPath": "growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-04-ja-usage-card.png",
+      "imageRequired": true,
+      "imageUrl": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/growth/x-growth-factory/exports/threads-calendar/launch-week/images/day-04-ja-usage-card.png",
+      "text": "便利そうだけど、いきなり課金は重い。\nそういうAIツールは多いです。\n\nSPEC AI は、まず1日1回の成功分析を無料で試せます。\nProは10回/日で月300円。\n\nメモ整理が毎日の小さな面倒になっている人は、\n無料枠で合うか見るのがちょうどよさそうです。\n\nhttps://spec-ai-alpha.vercel.app",
+      "pattern": "pricing-clarity",
+      "topic": "Japanese useful websites discovery launch week",
+      "linkIncluded": true,
+      "status": "skipped",
+      "error": "SPEC AI facts missing or inaccurate",
+      "notes": "Daily deterministic no-token Threads workflow."
     }
   ],
   "retiredItems": []
