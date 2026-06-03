@@ -306,15 +306,3 @@ export default async function SpotsPage() {
     </main>
   )
 }
-                border: '1px solid var(--c-blue-200, #bfdbfe)',
-              }}
-            >
-              {pref === 'hiroshima' ? '広島' : pref === 'okayama' ? '岡山' : pref === 'yamaguchi' ? '山口' : '東京'}
-            </a>
-          ))}
-        </div>
-      </section>
-
-    </main>
-  )
-}

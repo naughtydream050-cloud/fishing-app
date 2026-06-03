@@ -241,10 +241,3 @@ export function getFishingSpotsByPrefecture(prefecture: string): FishingSpot[] {
 export function getFishingSpotsByArea(prefecture: string, area: string): FishingSpot[] {
   return FISHING_SPOTS.filter((s) => s.prefecture === prefecture && s.area === area)
 }
-re)
-}
-
-/** 都道府県 + エリアでスポット取得 */
-export function getFishingSpotsByArea(prefecture: string, area: string): FishingSpot[] {
-  return FISHING_SPOTS.filter((s) => s.prefecture === prefecture && s.area === area)
-}

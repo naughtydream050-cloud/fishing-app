@@ -354,16 +354,3 @@ export default async function PrefectureSpotPage({ params }: Props) {
     </main>
   )
 }
-      {/* 全国ランキングへ戻る */}
-      <div style={{ marginTop: 24, textAlign: 'center' }}>
-        <a href="/spots" style={{
-          fontSize: 14, color: 'var(--c-blue-700)',
-          fontWeight: 700, textDecoration: 'none',
-        }}>
-          ← 全国スポットランキングへ
-        </a>
-      </div>
-
-    </main>
-  )
-}

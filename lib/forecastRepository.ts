@@ -8,8 +8,6 @@ import { MOCK_FORECASTS } from './mockForecasts'
 import type { FishingForecast } from '@/types/forecast'
 import type { RegionId } from '@/types/region'
 import type { FishId } from '@/types/fish'
-
-import type { FishId } from '@/types/fish'
 export type DataStatus = {
   source: 'supabase' | 'mock'
   reason: 'ok' | 'USE_MOCK_DATA=true' | 'missing-env' | 'no-data' | 'fetch-error'
