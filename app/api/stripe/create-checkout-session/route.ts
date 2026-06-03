@@ -8,33 +8,14 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server'
-import { createServerClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
 import { stripe } from '@/lib/stripe'
+import { getCurrentUser } from '@/lib/supabaseServer'
 
 export async function POST(_req: NextRequest) {
   try {
-    // 1. Auth: get current Supabase user from cookie
-    const cookieStore = await cookies()
-
-    const supabaseUrl     = process.env.NEXT_PUBLIC_SUPABASE_URL!
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-
-    const supabaseClient = createServerClient(supabaseUrl, supabaseAnonKey, {
-      cookies: {
-        getAll: () => cookieStore.getAll(),
-        // Route Handler: read-only, no need to set cookies
-        setAll: () => { /* no-op */ },
-      },
-    })
-
-    const { data: { user }, error: authError } = await supabaseClient.auth.getUser()
-
-    if (authError || !user) {
-      return NextResponse.json(
-        { error: 'Login required', redirect: '/signup' },
-        { status: 401 },
-      )
+    const user = await getCurrentUser()
+    if (!user) {
+      return NextResponse.redirect(new URL('/login?next=/subscribe', _req.url), 303)
     }
 
     // 2. Validate env
@@ -55,9 +36,15 @@ export async function POST(_req: NextRequest) {
       line_items:  [{ price: priceId, quantity: 1 }],
       success_url: `${siteUrl}/subscribe/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url:  `${siteUrl}/subscribe/cancel`,
+      client_reference_id: user.id,
       // Pass user ID in metadata so webhook can link Stripe customer -> Supabase user
       metadata: {
         supabase_user_id: user.id,
+      },
+      subscription_data: {
+        metadata: {
+          supabase_user_id: user.id,
+        },
       },
       // Pre-fill email if available
       ...(user.email ? { customer_email: user.email } : {}),
