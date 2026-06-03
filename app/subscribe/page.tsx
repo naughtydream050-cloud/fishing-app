@@ -225,33 +225,3 @@ export default function SubscribePage() {
     </main>
   )
 }
-            </div>
-            <div style={{ fontSize: 13, color: 'var(--c-gray-700)', lineHeight: 1.6 }}>
-              A: {item.a}
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* 最終 CTA */}
-      <div style={{
-        background: 'linear-gradient(135deg, var(--c-blue-900), var(--c-teal-800))',
-        borderRadius: 'var(--r-card)',
-        padding: '26px 22px',
-        textAlign: 'center',
-        color: '#fff',
-      }}>
-        <div style={{ fontSize: 16, fontWeight: 800, marginBottom: 8 }}>
-          今すぐ無料で始める
-        </div>
-        <div style={{ fontSize: 13, opacity: 0.9, marginBottom: 18 }}>
-          登録３０秒。クレジットカード不要。
-        </div>
-        <a href="/signup" className="btn-primary" data-cta="subscribe-free">
-          ✅ 無料で釣り予報を受け取る
-        </a>
-      </div>
-
-    </main>
-  )
-}

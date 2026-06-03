@@ -138,18 +138,29 @@ export async function POST(req: NextRequest) {
       case 'customer.subscription.updated': {
         const sub        = event.data.object as Stripe.Subscription
         const customerId = typeof sub.customer === 'string' ? sub.customer : ''
+        const userId     = sub.metadata?.supabase_user_id
 
         if (!customerId) {
           console.warn('[stripe/webhook] subscription event: missing customer id')
           break
         }
 
-        await updateByCustomer({
-          stripeCustomerId:     customerId,
-          stripeSubscriptionId: sub.id,
-          status:               sub.status,
-          currentPeriodEnd:     new Date(sub.current_period_end * 1000),
-        })
+        if (userId) {
+          await upsertSubscription({
+            userId,
+            stripeCustomerId:     customerId,
+            stripeSubscriptionId: sub.id,
+            status:               sub.status,
+            currentPeriodEnd:     new Date(sub.current_period_end * 1000),
+          })
+        } else {
+          await updateByCustomer({
+            stripeCustomerId:     customerId,
+            stripeSubscriptionId: sub.id,
+            status:               sub.status,
+            currentPeriodEnd:     new Date(sub.current_period_end * 1000),
+          })
+        }
 
         console.log('[stripe/webhook] subscription updated:', sub.id, sub.status)
         break

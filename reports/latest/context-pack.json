@@ -1,0 +1,84 @@
+{
+  "project": "fishing-app",
+  "phase": "subscription-production-readiness",
+  "current_goal": "Make Stripe subscription flow production-ready",
+  "status": "blocked_by_missing_server_env_and_live_payment_verification",
+  "tech_stack": ["Next.js App Router", "Supabase Auth", "Supabase Postgres", "Stripe Checkout", "Vercel"],
+  "routes": {
+    "subscribe": "/subscribe",
+    "login": "/login",
+    "signup_alias": "/signup",
+    "auth_callback": "/auth/callback",
+    "checkout_api": "/api/stripe/create-checkout-session",
+    "stripe_webhook": "/api/stripe/webhook",
+    "paid_gate": "/spots"
+  },
+  "key_files": [
+    "app/api/stripe/create-checkout-session/route.ts",
+    "app/api/stripe/webhook/route.ts",
+    "app/login/page.tsx",
+    "app/signup/page.tsx",
+    "app/auth/callback/route.ts",
+    "lib/subscription.ts",
+    "lib/supabaseServer.ts",
+    "proxy.ts",
+    "supabase/migrations/008_user_subscriptions.sql"
+  ],
+  "changed_files": [
+    "app/api/stripe/create-checkout-session/route.ts",
+    "app/api/stripe/webhook/route.ts",
+    "app/login/page.tsx",
+    "app/signup/page.tsx",
+    "app/auth/callback/route.ts",
+    "lib/subscription.ts",
+    "lib/supabaseServer.ts",
+    "proxy.ts",
+    "reports/latest/context-pack.json",
+    "reports/latest/subscription-readiness-report.md"
+  ],
+  "env_required_without_values": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "NEXT_PUBLIC_SITE_URL",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_PLUS_PRICE_ID",
+    "STRIPE_WEBHOOK_SECRET"
+  ],
+  "vercel_env_names_confirmed_without_values": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+    "NEXT_PUBLIC_SITE_URL",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_PLUS_PRICE_ID",
+    "STRIPE_WEBHOOK_SECRET"
+  ],
+  "vercel_env_missing": ["SUPABASE_SERVICE_ROLE_KEY"],
+  "auth_status": "Supabase Magic Link login route and auth callback implemented",
+  "db_status": "migration 008 file exists; live table update not verified in this session",
+  "supabase_status": "local .env.local currently resolves to placeholder Supabase URL; live read query could not run from local env",
+  "stripe_status": "Checkout and webhook code present; live test payment not completed in this session",
+  "plus_status": "Plus判定 implemented from user_subscriptions active/trialing rows",
+  "paid_gate_status": "/spots and /spots/[prefecture] already consume getSubscriptionTier; Plus users see locked rankings unlocked",
+  "build_status": "npm run build passed",
+  "lint_status": "npm run lint passed after build",
+  "local_check_status": "POST /api/stripe/create-checkout-session without login returns 303 to /login?next=/subscribe; /login renders email form; /spots renders locked free-user state",
+  "blockers": [
+    "Vercel is missing SUPABASE_SERVICE_ROLE_KEY, so Stripe webhook cannot reliably upsert user_subscriptions under RLS",
+    "Stripe test Checkout payment and webhook delivery were not executed because production env is incomplete",
+    "user_subscriptions update confirmation requires a real test checkout event after service-role env is added"
+  ],
+  "next_actions": {
+    "human": [
+      "Add SUPABASE_SERVICE_ROLE_KEY to Vercel Preview and Production without exposing the value in chat",
+      "Confirm Supabase Auth redirect allow list includes https://fishing-app-omega.vercel.app/auth/callback and local callback if testing locally"
+    ],
+    "codex": [
+      "Deploy after review",
+      "Run Stripe test checkout",
+      "Confirm user_subscriptions status aggregate updates",
+      "Verify Plus user can see full /spots ranking",
+      "Create final completion report"
+    ]
+  }
+}
