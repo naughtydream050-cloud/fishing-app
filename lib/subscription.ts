@@ -3,10 +3,12 @@ import { createSupabaseServerClient, getCurrentUser } from '@/lib/supabaseServer
 export type SubscriptionTier = 'free' | 'plus'
 
 const PLUS_STATUSES = new Set(['active', 'trialing'])
+const ADMIN_PLUS_EMAILS = new Set(['seijimimura73@gmail.com'])
 
 export async function getSubscriptionTier(): Promise<SubscriptionTier> {
   const user = await getCurrentUser()
   if (!user) return 'free'
+  if (user.email && ADMIN_PLUS_EMAILS.has(user.email.toLowerCase())) return 'plus'
 
   const supabase = await createSupabaseServerClient()
   const { data, error } = await supabase
