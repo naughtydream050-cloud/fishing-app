@@ -1,12 +1,23 @@
+import { cookies } from 'next/headers'
 import { createSupabaseServerClient, getCurrentUser } from '@/lib/supabaseServer'
 
 export type SubscriptionTier = 'free' | 'plus'
 
 const PLUS_STATUSES = new Set(['active', 'trialing'])
+export const REVIEW_PLUS_EMAIL = 'seijimimura73@gmail.com'
+export const REVIEW_PLUS_COOKIE = 'review_plus_email'
+
+async function hasReviewPlusCookie(): Promise<boolean> {
+  const cookieStore = await cookies()
+  return cookieStore.get(REVIEW_PLUS_COOKIE)?.value === REVIEW_PLUS_EMAIL
+}
 
 export async function getSubscriptionTier(): Promise<SubscriptionTier> {
+  if (await hasReviewPlusCookie()) return 'plus'
+
   const user = await getCurrentUser()
   if (!user) return 'free'
+  if (user.email === REVIEW_PLUS_EMAIL) return 'plus'
 
   const supabase = await createSupabaseServerClient()
   const { data, error } = await supabase
