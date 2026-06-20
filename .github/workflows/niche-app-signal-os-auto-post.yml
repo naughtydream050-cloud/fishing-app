@@ -57,7 +57,7 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ] && [ "${THREADS_AUTO_POST_ENABLED:-}" = "true" ]; then
             LIVE_POST="true"
             echo "THREADS_IMAGE_URL=https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/main/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/oshi-activity-management-A.png" >> "$GITHUB_ENV"
-            echo "THREADS_POST_TEXT_OVERRIDE<<'POSTTEXT'" >> "$GITHUB_ENV"
+            echo "THREADS_POST_TEXT_OVERRIDE<<POSTTEXT" >> "$GITHUB_ENV"
             echo "現場のこと、あとで見返そうと思っても散らばりがちじゃない？" >> "$GITHUB_ENV"
             echo "" >> "$GITHUB_ENV"
             echo "座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。" >> "$GITHUB_ENV"
