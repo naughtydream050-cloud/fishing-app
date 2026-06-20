@@ -2,47 +2,58 @@
   "department": "Design Intelligence Department",
   "date": "2026-06-20",
   "input_sources": [
-    "output/reports/audience_strategy.json"
+    "output/reports/audience_strategy.json",
+    "output/reports/niche_demand_score.json"
   ],
-  "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
+  "summary": "UI/card target audience, visual direction, and copy tone hints were defined before copywriting.",
   "scores": {
-    "design_confidence": 7
+    "design_confidence": 9
   },
   "risks": [],
-  "next_action": "copywriting and card image",
+  "next_action": "audience tone adapter",
   "design_strategy": {
-    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
+    "date": "2026-06-20",
+    "candidate_id": "oshi-activity-management",
+    "category": "推し活管理",
+    "pain_point": "現場ごとの座席、セトリ、遠征費、グッズ、思い出がスクショや写真フォルダに散らばる",
+    "ui_metaphor_from_market_need": "現場ログボード",
+    "target_audience_for_copy": "Z世代寄りの推し活層",
+    "audience_context": "ライブ参戦後に座席、セトリ、遠征費、グッズ、写真、メモが散らばりがちな推し活ユーザー",
+    "visual_positioning": "パステル寄りのスマホUIで、現場ごとの記録をあとで見返せるログボードとして見せる。",
     "ui_metaphor": [
-      "スマホUI",
+      "スマホの現場ログ",
       "チェックリスト",
-      "カード",
-      "メモ"
+      "写真フォルダ",
+      "感情タグ",
+      "遠征費メモ"
     ],
     "color_direction": [
-      "白",
-      "淡いグレー",
-      "アクセント1色",
-      "読みやすい余白"
+      "ミント",
+      "ラベンダー",
+      "淡いピンク",
+      "スカイブルー",
+      "白いカード"
     ],
-    "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
+    "composition": "あるある見出し + スマホUI + 現場ログの具体フィールド + 軽い質問CTA",
     "must_show_fields": [
-      "対象",
-      "状態",
-      "メモ",
-      "合計",
-      "次の行動"
+      "ライブ参戦ログ",
+      "座席",
+      "セトリメモ",
+      "チケット状態",
+      "同行者",
+      "感情タグ",
+      "遠征費合計"
     ],
     "avoid_visuals": [
-      "抽象イラストのみ",
-      "装飾過多",
-      "実装不能そうな未来UI",
-      "業務ダッシュボード過多"
+      "業務SaaS風",
+      "家計簿アプリ風",
+      "黒一色",
+      "重いダッシュボード",
+      "AI生成風の抽象背景"
     ],
-    "card_cta": "これ欲しい？それとも今の管理で十分？",
-    "design_confidence": 7,
-    "date": "2026-06-20",
-    "target_user_segment": "個人でSNS発信を続けるクリエイター",
-    "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
+    "card_cta": "これ欲しい？それともNotionで十分？",
+    "copy_tone_hint": "説明口調を避け、あるあるから入り、現場・見返す・残す・散らばるを自然に使う。",
+    "design_confidence": 9
   },
   "memory_path": "memory/design_strategy/2026-06-20.md"
 }

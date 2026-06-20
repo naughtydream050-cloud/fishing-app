@@ -1,45 +1,82 @@
 from __future__ import annotations
 
-from common import MEMORY_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_text
+from common import MEMORY_DIR, cli_parser, department_output, load_latest, read_json, save_stage, today_iso, write_text
 
 
-def _is_oshi(strategy: dict) -> bool:
-    blob = " ".join(str(strategy.get(key, "")) for key in ["target_user_segment", "primary_job", "source_app_idea"])
-    return any(token in blob for token in ["推し", "ライブ", "グッズ", "遠征", "参戦", "チケット"])
+OSHI_MARKERS = ["oshi", "推し", "推し活", "ライブ", "現場", "グッズ", "遠征", "セトリ", "座席"]
 
 
-def _oshi_design() -> dict:
+def _selected_item() -> dict:
+    scored = load_latest("niche_demand_score.json", {}).get("selected_candidate", {})
+    return (scored or {}).get("item", {}) if isinstance(scored, dict) else {}
+
+
+def _selected_market_candidate() -> dict:
+    pack = load_latest("daily_niche_ui_candidates.json", {})
+    selected_id = pack.get("selected_candidate_id", "")
+    for candidate in pack.get("candidates", []):
+        if candidate.get("candidate_id") == selected_id:
+            return candidate
+    return (pack.get("candidates") or [{}])[0]
+
+
+def _is_oshi(audience: dict, selected_item: dict, market_candidate: dict) -> bool:
+    handoff = read_json(MEMORY_DIR.parent / "data" / "web_candidate_handoff.json", {})
+    blob = " ".join(
+        [
+            str(audience),
+            str(selected_item),
+            str(market_candidate),
+            str(handoff),
+        ]
+    )
+    return "oshi-activity-management" in blob or any(marker in blob for marker in OSHI_MARKERS)
+
+
+def _oshi_design(audience: dict) -> dict:
     return {
-        "visual_positioning": "かわいく見返せる推し活ログ。管理SaaSではなく、手帳とチケット半券の中間。",
-        "ui_metaphor": ["スマホログ", "チケット半券", "手帳", "ステッカー", "感情タグ"],
-        "color_direction": ["パステルミント", "ラベンダー", "ピーチ", "淡いスカイブルー", "白いカード"],
-        "composition": "大きい悩み見出し + スマホUI + チケット風メモ + CTA",
+        "target_audience_for_copy": "Z世代寄りの推し活層",
+        "audience_context": "ライブ参戦後に座席、セトリ、遠征費、グッズ、写真、メモが散らばりがちな推し活ユーザー",
+        "visual_positioning": "パステル寄りのスマホUIで、現場ごとの記録をあとで見返せるログボードとして見せる。",
+        "ui_metaphor": ["スマホの現場ログ", "チェックリスト", "写真フォルダ", "感情タグ", "遠征費メモ"],
+        "color_direction": ["ミント", "ラベンダー", "淡いピンク", "スカイブルー", "白いカード"],
+        "composition": "あるある見出し + スマホUI + 現場ログの具体フィールド + 軽い質問CTA",
         "must_show_fields": ["ライブ参戦ログ", "座席", "セトリメモ", "チケット状態", "同行者", "感情タグ", "遠征費合計"],
-        "avoid_visuals": ["黒い業務SaaS風", "家計簿アプリ風", "濃い単色", "グラフ中心", "AI生成っぽい抽象背景"],
+        "avoid_visuals": ["業務SaaS風", "家計簿アプリ風", "黒一色", "重いダッシュボード", "AI生成風の抽象背景"],
         "card_cta": "これ欲しい？それともNotionで十分？",
+        "copy_tone_hint": "説明口調を避け、あるあるから入り、現場・見返す・残す・散らばるを自然に使う。",
         "design_confidence": 9,
     }
 
 
-def _generic_design() -> dict:
+def _generic_design(audience: dict) -> dict:
     return {
-        "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
-        "ui_metaphor": ["スマホUI", "チェックリスト", "カード", "メモ"],
-        "color_direction": ["白", "淡いグレー", "アクセント1色", "読みやすい余白"],
-        "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
+        "target_audience_for_copy": audience.get("target_user_segment", "小さな不便を感じているユーザー"),
+        "audience_context": audience.get("primary_job", "日常の小さな情報をあとで見返したい人"),
+        "visual_positioning": "すぐ実装できそうな軽いスマホUIとして、未完成SaaSではなく検証中の道具に見せる。",
+        "ui_metaphor": ["スマホUI", "メモ", "チェックリスト", "カード"],
+        "color_direction": ["白", "淡いグレー", "読みやすいアクセント色"],
+        "composition": "小さな不便のあるある + 具体フィールド + 使うかどうかの質問CTA",
         "must_show_fields": ["対象", "状態", "メモ", "合計", "次の行動"],
-        "avoid_visuals": ["抽象イラストのみ", "装飾過多", "実装不能そうな未来UI", "業務ダッシュボード過多"],
-        "card_cta": "これ欲しい？それとも今の管理で十分？",
+        "avoid_visuals": ["抽象イラストのみ", "装飾過多", "業務ダッシュボード風"],
+        "card_cta": "これ欲しい？それとも今のやり方で十分？",
+        "copy_tone_hint": "対象ユーザーの日常語で、機能説明より悩みの具体例から入る。",
         "design_confidence": 7,
     }
 
 
 def run(sample: bool = False) -> dict:
     audience = load_latest("audience_strategy.json", {}).get("audience_strategy") or {}
-    design = _oshi_design() if _is_oshi(audience) else _generic_design()
+    selected_item = _selected_item()
+    market_candidate = _selected_market_candidate()
+    design = _oshi_design(audience) if _is_oshi(audience, selected_item, market_candidate) else _generic_design(audience)
     design.update(
         {
             "date": today_iso(),
+            "candidate_id": market_candidate.get("candidate_id", ""),
+            "category": market_candidate.get("category", ""),
+            "pain_point": market_candidate.get("pain_point", ""),
+            "ui_metaphor_from_market_need": market_candidate.get("ui_metaphor", ""),
             "target_user_segment": audience.get("target_user_segment", ""),
             "source_primary_job": audience.get("primary_job", ""),
         }
@@ -52,16 +89,11 @@ def run(sample: bool = False) -> dict:
             [
                 f"# Design Intelligence - {today_iso()}",
                 "",
+                f"- target_audience_for_copy: {design['target_audience_for_copy']}",
                 f"- visual_positioning: {design['visual_positioning']}",
                 f"- composition: {design['composition']}",
                 f"- card_cta: {design['card_cta']}",
-                f"- design_confidence: {design['design_confidence']}",
-                "",
-                "## UI Metaphor",
-                *[f"- {item}" for item in design["ui_metaphor"]],
-                "",
-                "## Color Direction",
-                *[f"- {item}" for item in design["color_direction"]],
+                f"- copy_tone_hint: {design['copy_tone_hint']}",
                 "",
                 "## Must Show Fields",
                 *[f"- {item}" for item in design["must_show_fields"]],
@@ -74,11 +106,11 @@ def run(sample: bool = False) -> dict:
     )
     payload = department_output(
         "Design Intelligence Department",
-        "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
+        "UI/card target audience, visual direction, and copy tone hints were defined before copywriting.",
         scores={"design_confidence": design["design_confidence"]},
         risks=[],
-        next_action="copywriting and card image",
-        input_sources=["output/reports/audience_strategy.json"],
+        next_action="audience tone adapter",
+        input_sources=["output/reports/daily_niche_ui_candidates.json", "output/reports/audience_strategy.json", "output/reports/niche_demand_score.json"],
         extra={"design_strategy": design, "memory_path": str(memory_path.relative_to(MEMORY_DIR.parent))},
     )
     save_stage("design_strategy.json", payload)

@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-20",
+  "selected_candidate_id": "oshi-activity-management",
+  "candidates": [
+    {
+      "candidate_id": "oshi-activity-management",
+      "category": "推し活管理",
+      "pain_point": "現場ごとの座席、セトリ、遠征費、グッズ、思い出がスクショや写真フォルダに散らばる",
+      "current_workaround": "Notion、スマホメモ、写真フォルダ、家計簿アプリ、支払い履歴",
+      "why_niche": "推し活の熱量と記録欲は強いが、家計簿や汎用メモでは温度感が合いにくい",
+      "why_now": "ライブ遠征、グッズ購入、SNS共有が増え、あとで見返す記録の需要が高い",
+      "likely_target_users": [
+        "Z世代寄りの推し活層",
+        "ライブ遠征するファン",
+        "グッズ購入が多いファン"
+      ],
+      "ui_metaphor": "現場ログボード",
+      "tone_id": "gen_z_oshi_activity",
+      "priority_score": 10
+    },
+    {
+      "candidate_id": "receipt-life-organizer",
+      "category": "レシート生活整理",
+      "pain_point": "レシートや購入メモが財布、写真、家計簿アプリに分散してあとで見返せない",
+      "current_workaround": "写真フォルダ、家計簿アプリ、紙のレシート保管",
+      "why_niche": "家計管理ほど重くなく、生活ログとして残したい層がいる",
+      "why_now": "サブスク、ポイント、キャッシュレス決済で支出の記録場所が増えている",
+      "likely_target_users": [
+        "一人暮らし社会人",
+        "学生",
+        "生活費をざっくり把握したい人"
+      ],
+      "ui_metaphor": "生活レシートログ",
+      "tone_id": "default_light_problem",
+      "priority_score": 7
+    },
+    {
+      "candidate_id": "student-deadline-check",
+      "category": "学生の提出物忘れ防止",
+      "pain_point": "課題、提出物、持ち物、締切がLINE、プリント、LMSに散らばって忘れる",
+      "current_workaround": "カレンダー、LINEメモ、学校アプリ、手帳",
+      "why_niche": "学校ごとの連絡手段が混在していて、学生本人の実感が強い",
+      "why_now": "紙とオンライン課題が混在し、締切管理の負担が増えている",
+      "likely_target_users": [
+        "高校生",
+        "大学生",
+        "保護者"
+      ],
+      "ui_metaphor": "提出物チェックリスト",
+      "tone_id": "default_light_problem",
+      "priority_score": 6
+    }
+  ],
+  "selection_reason": "Highest priority niche need from market/research signals, with a clear target audience and UI metaphor.",
+  "dry_run": true
+}

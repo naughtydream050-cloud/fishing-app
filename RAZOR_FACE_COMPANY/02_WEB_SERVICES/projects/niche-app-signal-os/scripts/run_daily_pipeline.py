@@ -10,13 +10,16 @@ import analyze_viral_patterns
 import update_memory_box
 import evaluate_trend_timing
 import score_niche_demand
+import select_niche_candidate
 import audience_strategy
 import audience_tone_adapter
 import run_llm_council
 import design_intelligence
 import generate_threads_post
 import generate_card_image
+import generate_share_card
 import quality_risk_gate
+import select_post_candidate
 import post_to_threads
 import fetch_threads_insights
 import analyze_learning
@@ -29,13 +32,16 @@ STAGES = [
     ("update_memory_box", update_memory_box.run),
     ("evaluate_trend_timing", evaluate_trend_timing.run),
     ("score_niche_demand", score_niche_demand.run),
+    ("select_niche_candidate", select_niche_candidate.run),
     ("audience_strategy", audience_strategy.run),
+    ("design_intelligence", design_intelligence.run),
     ("audience_tone_adapter", audience_tone_adapter.run),
     ("run_llm_council", run_llm_council.run),
-    ("design_intelligence", design_intelligence.run),
     ("generate_threads_post", generate_threads_post.run),
-    ("generate_card_image", generate_card_image.run),
+    ("generate_share_card", generate_share_card.run),
     ("quality_risk_gate", quality_risk_gate.run),
+    ("select_post_candidate", select_post_candidate.run),
+    ("generate_card_image", generate_card_image.run),
     ("post_to_threads", post_to_threads.run),
     ("fetch_threads_insights", fetch_threads_insights.run),
     ("update_reaction_memory", update_reaction_memory.run),

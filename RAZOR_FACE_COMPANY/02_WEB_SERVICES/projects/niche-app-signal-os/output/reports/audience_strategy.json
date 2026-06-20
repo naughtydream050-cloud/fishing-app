@@ -2,49 +2,54 @@
   "department": "Audience Strategy Department",
   "date": "2026-06-20",
   "input_sources": [
-    "output/reports/niche_demand_score.json"
+    "output/reports/daily_niche_ui_candidates.json"
   ],
-  "summary": "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。",
+  "summary": "Defined who the daily niche UI-card candidate is for, what language should land, and which wording should be avoided.",
   "scores": {
-    "segment_confidence": 10
+    "segment_confidence": 9
   },
   "risks": [],
-  "next_action": "llm council",
+  "next_action": "design intelligence",
   "audience_strategy": {
-    "target_user_segment": "個人でSNS発信を続けるクリエイター",
-    "user_motivation": "投稿ネタと反応メモが分かれて改善しにくいを軽く減らしたい。重い管理ツールではなく、すぐ触れる試作UIで判断したい",
-    "primary_job": "投稿ネタと反応メモが分かれて改善しにくい",
+    "date": "2026-06-20",
+    "candidate_id": "oshi-activity-management",
+    "candidate_category": "推し活管理",
+    "source_pain_point": "現場ごとの座席、セトリ、遠征費、グッズ、思い出がスクショや写真フォルダに散らばる",
+    "source_app_idea": "現場ログボード",
+    "tone_id": "gen_z_oshi_activity",
+    "target_user_segment": "Z世代寄りの推し活層",
+    "user_motivation": "現場の記録や出費や思い出を、あとでテンションごと見返したい",
+    "primary_job": "現場ごとに座席、セトリ、遠征費、グッズ、感情メモを残す",
     "current_alternatives": [
-      "メモアプリ",
-      "スプレッドシート",
       "Notion",
+      "スマホメモ",
       "スクショ",
-      "カレンダー"
+      "写真フォルダ",
+      "支払い履歴"
     ],
     "language_to_use": [
-      "小さい面倒",
-      "あとで見返す",
-      "試作UI",
-      "ログインなし",
-      "ブラウザ保存"
+      "現場",
+      "見返す",
+      "残す",
+      "メモった",
+      "大散乱",
+      "オタクあるある",
+      "Notionで十分？"
     ],
     "language_to_avoid": [
-      "完全自動",
-      "公式連携",
-      "業務システム",
-      "万能",
-      "安全にバックアップ"
+      "管理",
+      "効率化",
+      "節約",
+      "SaaS",
+      "推し活女子",
+      "作りました"
     ],
     "comment_hooks": [
-      "これ欲しい？",
-      "今は何で管理してる？",
-      "足りない項目ある？"
+      "これ使う？",
+      "Notionで十分？",
+      "みんなのリアルな意見教えてほしい"
     ],
-    "segment_confidence": 10,
-    "date": "2026-06-20",
-    "candidate_category": "SNS投稿管理",
-    "source_pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
-    "source_app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート"
+    "segment_confidence": 9
   },
   "memory_path": "memory/audience/2026-06-20.md"
 }

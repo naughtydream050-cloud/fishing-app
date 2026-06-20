@@ -4,11 +4,33 @@ Date: 2026-06-20
 
 ## Purpose
 
-Audience Strategy defines who the idea is for. Audience Tone Adapter turns that into Threads-native copy behavior before Copywriting runs.
+Threads copy must match the target audience chosen during UI/card planning.
 
-The goal is to avoid generic explanation copy and make each post sound natural for the target audience.
+The flow is not "always use Gen Z tone." Design Intelligence first defines `target_audience_for_copy` and `copy_tone_hint` for the current app idea. Audience Tone Adapter then converts that into a concrete copy profile before Copywriting runs.
 
-## New Department
+## Pipeline Order
+
+Research -> Audience Strategy -> Design Intelligence -> Audience Tone Adapter -> Generate Threads Post -> Quality Risk Gate -> Select Post Candidate -> Card Image -> Post To Threads
+
+## Departments
+
+### Design Intelligence Department
+
+Script:
+
+- `scripts/design_intelligence.py`
+
+Outputs:
+
+- `output/reports/design_strategy.json`
+- `memory/design_strategy/YYYY-MM-DD.md`
+
+Important fields:
+
+- `target_audience_for_copy`
+- `audience_context`
+- `copy_tone_hint`
+- `card_cta`
 
 ### Audience Tone Adapter Department
 
@@ -19,6 +41,8 @@ Script:
 Inputs:
 
 - `output/reports/audience_strategy.json`
+- `output/reports/design_strategy.json`
+- `output/reports/niche_demand_score.json`
 - `data/audience_tone_rules.json`
 
 Outputs:
@@ -30,10 +54,11 @@ Used by:
 
 - `scripts/generate_threads_post.py`
 - `scripts/quality_risk_gate.py`
+- `scripts/select_post_candidate.py`
 
 ## Rule: gen_z_oshi_activity
 
-Use for `oshi-activity-management`.
+Use for `oshi-activity-management` when the UI/card target is Z世代寄りの推し活層.
 
 Use words:
 
@@ -49,53 +74,81 @@ Use words:
 - グッズ
 - 思い出
 - ログ
+- どこいった
+- 写真フォルダ
+- 支払い履歴
 
 Avoid words:
 
+- 管理
 - 効率化
-- 管理しよう
-- 節約しよう
-- 無駄遣い
-- 課金しすぎ
-- 完璧に整理
-- 推し活女子
-- 革新的
-- 業務効率
+- 節約
+- 一元管理
 - SaaS
 - 生産性
+- 革新的
+- 推し活女子
+- 完璧に整理
+- 試作UIを作ってます
+- 作ってます
+- 作りました
+- 管理できます
+- 節約しよう
+- 無駄遣い
 
 ## Copy Structure
 
 For `gen_z_oshi_activity`, Threads copy should:
 
 1. Start from an あるある / 現場 scene.
-2. Name the scattered information concretely.
-3. Present the UI as a trial, not a finished SaaS.
+2. Name scattered information concretely.
+3. Avoid developer voice and finished-product wording.
 4. Ask whether the user wants it or whether Notion is enough.
 
 Example:
 
 ```text
-現場のこと、あとで見返そうと思っても散らばりがちじゃない？
-座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。
-ライブごとにまとめて残せる推し活ログの試作UIを作ってます。
-これ欲しい？それともNotionで十分？
+推し活の記録、気づいたときにはマジで大散乱してて詰む。
+
+「え、座席どこだっけ？」
+「セトリどこにメモった？」
+「今回の遠征費、何万飛んだ？」
+「てかグッズ何買ったっけ…？」
+
+あとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。
+
+ぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？
+それともNotionで自作すれば事足りる感じ？
+みんなのリアルな意見教えてほしい！
 ```
 
-## Risk Gate Additions
+## Risk Gate
 
-`quality_risk_gate.py` now warns when:
+`quality_risk_gate.py` blocks or strongly warns when:
 
-- 投稿が説明口調すぎる
-- 若者言葉が不自然すぎる
-- 推し活向けなのに管理/節約/効率化が強すぎる
-- 完成SaaSのように誤認させる
+- The post is too explanatory for Threads.
+- Youth slang feels unnatural.
+- Oshi copy leans too hard into 管理/節約/効率化.
+- Developer voice is visible.
+- The post looks like a finished SaaS announcement.
+
+## Final Selection
+
+`scripts/select_post_candidate.py` writes `output/reports/selected_post_candidate.json`.
+
+`scripts/post_to_threads.py` uses `selected_post_text` only when:
+
+- `quality_risk_gate.json` is approved.
+- `tone_check_result.passed` is true.
+- `selected_post_candidate.json` has `selected: true`.
+
+If tone mismatch remains, publishing stops even when live posting is enabled later.
 
 ## Safety
 
-- DRY_RUN remains true.
-- AUTO_POST remains false.
-- Threads real posting remains prohibited.
+- DRY_RUN remains true by default.
+- AUTO_POST remains false by default.
+- Threads API is not called during dry-run validation.
 - No external API added.
 - No DB/Auth/payment/RLS added.
-- No secrets required.
+- No secrets required for tone adaptation.

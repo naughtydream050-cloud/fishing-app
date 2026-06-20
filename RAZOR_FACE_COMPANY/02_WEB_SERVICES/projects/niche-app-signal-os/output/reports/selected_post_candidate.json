@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-20",
+  "selected": true,
+  "selected_tone": "gen_z_oshi_activity",
+  "target_audience": "Z世代寄りの推し活層",
+  "ui_target_audience": "Z世代寄りの推し活層",
+  "tone_check_result": {
+    "passed": true,
+    "tone_id": "gen_z_oshi_activity",
+    "target_audience": "Z世代寄りの推し活層",
+    "used_words": [
+      "現場",
+      "メモった",
+      "座席",
+      "セトリ",
+      "遠征費",
+      "グッズ",
+      "ログ",
+      "写真フォルダ",
+      "マジで",
+      "詰む",
+      "大散乱",
+      "大捜索",
+      "オタクあるある",
+      "ぶっちゃけ"
+    ],
+    "used_avoid_words": [],
+    "line_count": 9,
+    "starts_with_aruaru": true,
+    "developer_voice": false
+  },
+  "selected_post_text": "推し活の記録、気づいたときにはマジで大散乱してて詰む。\n\n「え、座席どこだっけ？」\n「セトリどこにメモった？」\n「今回の遠征費、何万飛んだ？」\n「てかグッズ何買ったっけ…？」\n\nあとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。\n\nぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？\nそれともNotionで自作すれば事足りる感じ？\nみんなのリアルな意見教えてほしい！",
+  "candidate_post_text": "推し活の記録、気づいたときにはマジで大散乱してて詰む。\n\n「え、座席どこだっけ？」\n「セトリどこにメモった？」\n「今回の遠征費、何万飛んだ？」\n「てかグッズ何買ったっけ…？」\n\nあとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。\n\nぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？\nそれともNotionで自作すれば事足りる感じ？\nみんなのリアルな意見教えてほしい！",
+  "rejected_reason_if_any": "",
+  "source": [
+    "output/reports/threads_post.json",
+    "output/reports/quality_risk_gate.json",
+    "output/reports/audience_tone_profile.json"
+  ]
+}

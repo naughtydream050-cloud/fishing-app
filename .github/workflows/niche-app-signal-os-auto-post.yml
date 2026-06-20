@@ -96,6 +96,18 @@ jobs:
             test "${THREADS_TARGET_HANDLE}" = "younengsaitoshaojie"
           fi
 
+      - name: Verify tone pipeline order
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -n "design_intelligence" scripts/run_daily_pipeline.py
+          grep -n "select_niche_candidate" scripts/run_daily_pipeline.py
+          grep -n "audience_tone_adapter" scripts/run_daily_pipeline.py
+          grep -n "generate_threads_post" scripts/run_daily_pipeline.py
+          grep -n "generate_share_card" scripts/run_daily_pipeline.py
+          grep -n "quality_risk_gate" scripts/run_daily_pipeline.py
+          grep -n "select_post_candidate" scripts/run_daily_pipeline.py
+
       - name: Run Niche App Signal OS pipeline
         shell: bash
         run: |

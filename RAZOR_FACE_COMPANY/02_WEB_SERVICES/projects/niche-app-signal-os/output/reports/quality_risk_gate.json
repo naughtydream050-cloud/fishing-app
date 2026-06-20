@@ -6,18 +6,47 @@
     "output/reports/threads_post.json",
     "output/reports/audience_tone_profile.json"
   ],
-  "summary": "品質、類似、対象明確性、自動投稿リスクを評価しました。",
+  "summary": "Quality, safety, and audience-tone fit were checked before any publishing step.",
   "scores": {
-    "quality_score": 9,
+    "quality_score": 8,
     "risk_score": 2,
     "copycat_score": 1,
     "same_pattern_days": 1,
+    "tone_block_count": 0,
     "tone_warning_count": 0
   },
   "risks": [],
-  "next_action": "publish dry-run",
+  "next_action": "select post candidate",
   "approved": true,
   "publish_decision": "dry_run",
   "block_reasons": [],
-  "tone_warnings": []
+  "tone_warnings": [],
+  "tone_check_result": {
+    "passed": true,
+    "tone_id": "gen_z_oshi_activity",
+    "target_audience": "Z世代寄りの推し活層",
+    "used_words": [
+      "現場",
+      "メモった",
+      "座席",
+      "セトリ",
+      "遠征費",
+      "グッズ",
+      "ログ",
+      "写真フォルダ",
+      "マジで",
+      "詰む",
+      "大散乱",
+      "大捜索",
+      "オタクあるある",
+      "ぶっちゃけ"
+    ],
+    "used_avoid_words": [],
+    "line_count": 9,
+    "starts_with_aruaru": true,
+    "developer_voice": false,
+    "ui_target_audience": "Z世代寄りの推し活層",
+    "block_count": 0,
+    "warning_count": 0
+  }
 }

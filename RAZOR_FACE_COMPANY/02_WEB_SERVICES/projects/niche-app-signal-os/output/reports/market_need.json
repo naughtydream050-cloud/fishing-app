@@ -1,0 +1,21 @@
+{
+  "department": "Market Need Department",
+  "date": "2026-06-20",
+  "input_sources": [
+    "output/reports/niche_demand_score.json",
+    "memory/reaction/"
+  ],
+  "summary": "Selected daily niche demand candidates for Threads UI-card generation.",
+  "scores": {
+    "candidate_count": 3,
+    "selected_priority_score": 10
+  },
+  "risks": [],
+  "next_action": "audience strategy",
+  "daily_niche_ui_candidates": {
+    "date": "2026-06-20",
+    "selected_candidate_id": "oshi-activity-management",
+    "selection_reason": "Highest priority niche need from market/research signals, with a clear target audience and UI metaphor."
+  },
+  "memory_path": "memory/market_needs/2026-06-20.md"
+}

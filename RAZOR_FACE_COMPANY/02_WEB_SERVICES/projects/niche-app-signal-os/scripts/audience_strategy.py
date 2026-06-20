@@ -3,51 +3,52 @@ from __future__ import annotations
 from common import MEMORY_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_text
 
 
-def _text_blob(item: dict) -> str:
-    return " ".join(str(item.get(key, "")) for key in ["niche_category", "target_user", "pain_point", "app_idea", "original_text"])
+def _selected_market_candidate() -> dict:
+    pack = load_latest("daily_niche_ui_candidates.json", {})
+    selected_id = pack.get("selected_candidate_id", "")
+    for candidate in pack.get("candidates", []):
+        if candidate.get("candidate_id") == selected_id:
+            return candidate
+    return (pack.get("candidates") or [{}])[0]
 
 
-def _oshi_strategy(item: dict, score: int) -> dict:
-    return {
-        "target_user_segment": "推し活の予定、現場記録、グッズ、遠征費、思い出メモが複数アプリに散らかるライト-ミドル層",
-        "user_motivation": "管理したいというより、現場ごとの記憶と出費をあとでかわいく見返したい",
-        "primary_job": "現場ごとに、ライブ参戦ログ・座席・セトリ・チケット状態・同行者・感情タグ・遠征費をまとめる",
-        "current_alternatives": ["Notion", "スマホメモ", "カレンダー", "スクショ", "写真フォルダ", "家計簿アプリ"],
-        "language_to_use": ["現場ごと", "見返す", "推し活ログ", "試作UI", "ログインなし", "ブラウザ保存"],
-        "language_to_avoid": ["完全管理", "節約", "業務管理", "SaaS", "自動同期", "公式連携"],
-        "comment_hooks": ["これ欲しい？", "Notionで十分？", "足りない項目ある？"],
-        "segment_confidence": min(10, max(7, score)),
-    }
-
-
-def _generic_strategy(item: dict, score: int) -> dict:
-    target = item.get("target_user") or "小さい面倒をスマホで管理したい人"
-    pain = item.get("pain_point") or "あとから探す情報が散らかる"
+def _strategy_for(candidate: dict) -> dict:
+    tone_id = candidate.get("tone_id", "default_light_problem")
+    if tone_id == "gen_z_oshi_activity":
+        return {
+            "target_user_segment": "Z世代寄りの推し活層",
+            "user_motivation": "現場の記録や出費や思い出を、あとでテンションごと見返したい",
+            "primary_job": "現場ごとに座席、セトリ、遠征費、グッズ、感情メモを残す",
+            "current_alternatives": ["Notion", "スマホメモ", "スクショ", "写真フォルダ", "支払い履歴"],
+            "language_to_use": ["現場", "見返す", "残す", "メモった", "大散乱", "オタクあるある", "Notionで十分？"],
+            "language_to_avoid": ["管理", "効率化", "節約", "SaaS", "推し活女子", "作りました"],
+            "comment_hooks": ["これ使う？", "Notionで十分？", "みんなのリアルな意見教えてほしい"],
+            "segment_confidence": 9,
+        }
+    target = ", ".join(candidate.get("likely_target_users", [])) or "小さな不便を感じるユーザー"
     return {
         "target_user_segment": target,
-        "user_motivation": f"{pain}を軽く減らしたい。重い管理ツールではなく、すぐ触れる試作UIで判断したい",
-        "primary_job": pain,
-        "current_alternatives": ["メモアプリ", "スプレッドシート", "Notion", "スクショ", "カレンダー"],
-        "language_to_use": ["小さい面倒", "あとで見返す", "試作UI", "ログインなし", "ブラウザ保存"],
-        "language_to_avoid": ["完全自動", "公式連携", "業務システム", "万能", "安全にバックアップ"],
-        "comment_hooks": ["これ欲しい？", "今は何で管理してる？", "足りない項目ある？"],
-        "segment_confidence": min(10, max(5, score)),
+        "user_motivation": "小さな不便を軽く残して、あとで探す時間を減らしたい",
+        "primary_job": candidate.get("pain_point", "あとで見返したい情報を残す"),
+        "current_alternatives": ["スマホメモ", "スクショ", "Notion", "カレンダー"],
+        "language_to_use": ["あとで見返す", "散らばる", "メモ", "ログ", "これ欲しい？"],
+        "language_to_avoid": ["革新的", "完全自動", "業務効率", "SaaS", "生産性"],
+        "comment_hooks": ["これ欲しい？", "今のやり方で十分？"],
+        "segment_confidence": 7,
     }
 
 
 def run(sample: bool = False) -> dict:
-    selected = load_latest("niche_demand_score.json", {}).get("selected_candidate") or {}
-    item = selected.get("item") or {}
-    score = int(selected.get("score") or 0)
-    blob = _text_blob(item)
-    is_oshi = any(token in blob for token in ["推し", "ライブ", "グッズ", "遠征", "参戦", "チケット"])
-    strategy = _oshi_strategy(item, score) if is_oshi else _generic_strategy(item, score)
+    candidate = _selected_market_candidate()
+    strategy = _strategy_for(candidate)
     strategy.update(
         {
             "date": today_iso(),
-            "candidate_category": item.get("niche_category", ""),
-            "source_pain_point": item.get("pain_point", ""),
-            "source_app_idea": item.get("app_idea", ""),
+            "candidate_id": candidate.get("candidate_id", ""),
+            "candidate_category": candidate.get("category", ""),
+            "source_pain_point": candidate.get("pain_point", ""),
+            "source_app_idea": candidate.get("ui_metaphor", ""),
+            "tone_id": candidate.get("tone_id", "default_light_problem"),
         }
     )
 
@@ -58,6 +59,7 @@ def run(sample: bool = False) -> dict:
             [
                 f"# Audience Strategy - {today_iso()}",
                 "",
+                f"- candidate_id: {strategy['candidate_id']}",
                 f"- target_user_segment: {strategy['target_user_segment']}",
                 f"- user_motivation: {strategy['user_motivation']}",
                 f"- primary_job: {strategy['primary_job']}",
@@ -77,11 +79,11 @@ def run(sample: bool = False) -> dict:
     )
     payload = department_output(
         "Audience Strategy Department",
-        "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。",
+        "Defined who the daily niche UI-card candidate is for, what language should land, and which wording should be avoided.",
         scores={"segment_confidence": strategy["segment_confidence"]},
         risks=[] if strategy["segment_confidence"] >= 7 else ["audience_segment_needs_more_evidence"],
-        next_action="llm council",
-        input_sources=["output/reports/niche_demand_score.json"],
+        next_action="design intelligence",
+        input_sources=["output/reports/daily_niche_ui_candidates.json"],
         extra={"audience_strategy": strategy, "memory_path": str(memory_path.relative_to(MEMORY_DIR.parent))},
     )
     save_stage("audience_strategy.json", payload)
@@ -89,5 +91,5 @@ def run(sample: bool = False) -> dict:
 
 
 if __name__ == "__main__":
-    args = cli_parser("Define audience strategy before copy/design").parse_args()
+    args = cli_parser("Define audience strategy for the daily niche UI candidate").parse_args()
     run(sample=args.sample)

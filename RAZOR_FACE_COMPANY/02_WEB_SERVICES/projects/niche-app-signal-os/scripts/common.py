@@ -61,6 +61,7 @@ def ensure_dirs() -> None:
         OUTPUT_DIR / "card_images",
         OUTPUT_DIR / "reports",
         MEMORY_DIR / "research",
+        MEMORY_DIR / "market_needs",
         MEMORY_DIR / "audience",
         MEMORY_DIR / "audience_tone",
         MEMORY_DIR / "design_strategy",

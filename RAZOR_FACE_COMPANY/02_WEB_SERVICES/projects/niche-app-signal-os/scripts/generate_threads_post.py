@@ -3,133 +3,187 @@ from __future__ import annotations
 from common import OUTPUT_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_json, write_text
 
 
+FORBIDDEN_OSHI_WORDS = [
+    "試作UIを作ってます",
+    "作ってます",
+    "作りました",
+    "一元管理",
+    "効率化",
+    "管理できます",
+    "生産性",
+    "SaaS",
+    "革新的",
+    "推し活女子",
+    "完璧に整理",
+    "節約しよう",
+    "無駄遣い",
+]
+
+
 def _selected_item() -> dict:
     scored = load_latest("niche_demand_score.json", {}).get("selected_candidate", {})
-    return (scored or {}).get("item", {})
+    return (scored or {}).get("item", {}) if isinstance(scored, dict) else {}
+
+
+def _tone_profile() -> dict:
+    report = load_latest("audience_tone_profile.json", {})
+    return report.get("audience_tone_profile") or {}
+
+
+def _content_line_count(text: str) -> int:
+    return len([line for line in text.splitlines() if line.strip()])
+
+
+def _tone_check(text: str, profile: dict) -> dict:
+    avoid_words = list(dict.fromkeys((profile.get("avoid_words") or []) + FORBIDDEN_OSHI_WORDS))
+    use_words = profile.get("use_words") or []
+    used_avoid = [word for word in avoid_words if word and word in text]
+    used_words = [word for word in use_words if word and word in text]
+    starts_with_aruaru = text.startswith(("推し活の記録って", "推し活の記録、", "現場のあと", "ライブ後"))
+    developer_markers = ["作って", "試作", "開発", "リリース", "実装"]
+    developer_voice = any(marker in text for marker in developer_markers)
+    tone_id = profile.get("tone_id", "")
+    line_count = _content_line_count(text)
+    passed = not used_avoid and not developer_voice
+    if tone_id == "gen_z_oshi_activity":
+        passed = passed and starts_with_aruaru and len(used_words) >= 6 and line_count <= int(profile.get("max_lines", 9))
+    return {
+        "passed": passed,
+        "tone_id": tone_id,
+        "used_words": used_words,
+        "used_avoid_words": used_avoid,
+        "line_count": line_count,
+        "starts_with_aruaru": starts_with_aruaru,
+        "developer_voice": developer_voice,
+        "target_audience": profile.get("target_audience", ""),
+    }
 
 
 def _oshi_variants(profile: dict) -> list[dict]:
-    cta = profile.get("cta") or "これ欲しい？それともNotionで十分？"
     return [
         {
             "variant_id": "A",
-            "angle": "現場ごとに散らばる情報",
+            "angle": "現場ごとに散らばる情報あるある",
             "text": "\n".join(
                 [
-                    "現場のこと、あとで見返そうと思っても散らばりがちじゃない？",
-                    "座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。",
-                    "ライブごとにまとめて残せる推し活ログの試作UIを作ってます。",
-                    cta,
+                    "推し活の記録、気づいたときにはマジで大散乱してて詰む。",
+                    "",
+                    "「え、座席どこだっけ？」",
+                    "「セトリどこにメモった？」",
+                    "「今回の遠征費、何万飛んだ？」",
+                    "「てかグッズ何買ったっけ…？」",
+                    "",
+                    "あとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。",
+                    "",
+                    "ぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？",
+                    "それともNotionで自作すれば事足りる感じ？",
+                    "みんなのリアルな意見教えてほしい！",
                 ]
             ),
-            "why": "あるあるから入り、管理/節約ではなく見返す・残す文脈に寄せる",
+            "why": "説明口調を避け、推し活の雑談に近いラフなあるあるから反応を取りにいく。",
         },
         {
             "variant_id": "B",
-            "angle": "あとで見たいのに探せない",
+            "angle": "あとで見たい情報がどこいった問題",
             "text": "\n".join(
                 [
-                    "ライブ終わった直後は全部覚えてるのに、あとで見たい時に限って散らばる。",
-                    "座席、セトリ、同行者、遠征費、買ったグッズ、メモった感想。",
-                    "現場ごとに残せるログUI、あったら使う？",
-                    cta,
+                    "現場のあと、あとで見たい情報ほどどこいった？ってならない？",
+                    "",
+                    "座席、セトリ、グッズ、遠征費。",
+                    "メモった場所も写真フォルダも支払い履歴も全部ばらばら。",
+                    "",
+                    "思い出ごと現場ログに残せたら使う？",
+                    "Notionで十分？",
                 ]
             ),
-            "why": "余韻と記録の痛みに寄せる",
+            "why": "検索できない悩みを前面に出し、専用ログ仮説への反応を聞く。",
         },
         {
             "variant_id": "C",
-            "angle": "Notionで十分か聞く",
+            "angle": "Notionで十分かを聞く",
             "text": "\n".join(
                 [
-                    "推し活の現場ログ、Notionで作れるけど毎回ちゃんと残すのはちょっと重い。",
-                    "座席、チケット状態、セトリ、遠征費、思い出だけサッと残せる画面を試作中。",
-                    "こういうの欲しい？それともNotionで十分？",
+                    "推し活の現場ログ、Notionで足りてる？",
+                    "",
+                    "座席は画像、セトリはメモ、遠征費は支払い履歴、グッズは写真フォルダ。",
+                    "あとで見返す時だけ、だいたい散らばる。",
+                    "",
+                    "現場ごとに残す専用ログ、あったら使う？",
                 ]
             ),
-            "why": "代替手段との比較でコメントを誘う",
+            "why": "既存代替手段との比較でコメントを誘う。",
         },
     ]
 
 
 def _generic_variants(profile: dict, item: dict) -> list[dict]:
     pain = item.get("pain_point") or "あとで見返したい情報が散らばる"
-    idea = item.get("app_idea") or "小さい面倒を軽く残せる試作UI"
-    cta = profile.get("cta") or "これ欲しい？それとも今の管理で十分？"
     return [
         {
             "variant_id": "A",
-            "angle": "小さい面倒あるある",
+            "angle": "小さな不便あるある",
             "text": "\n".join(
                 [
-                    f"{pain}、地味にあるあるじゃない？",
-                    f"今のメモやスクショだとあとで探しにくいので、{idea}を試作しています。",
-                    cta,
+                    f"{pain}の、地味にあるあるじゃない？",
+                    "",
+                    "メモした場所だけ覚えてなくて、あとで探す時間が増えるやつ。",
+                    "",
+                    "これだけ残せる小さなログ、あったら使う？",
+                    "今のやり方で十分？",
                 ]
             ),
-            "why": "説明よりも小さい共感から入る",
+            "why": "一般ニッチ向けの軽い問題提起。",
         }
     ]
 
 
-def _tone_warnings(text: str, profile: dict) -> list[str]:
-    warnings = []
-    avoid_words = profile.get("avoid_words", [])
-    used_avoid = [word for word in avoid_words if word and word in text]
-    use_words = profile.get("use_words", [])
-    used_count = sum(1 for word in use_words if word and word in text)
-    if used_avoid:
-        warnings.append(f"avoid_words_used: {', '.join(used_avoid)}")
-    if profile.get("tone_id") == "gen_z_oshi_activity" and used_count < 4:
-        warnings.append("oshi_tone_use_words_too_few")
-    if "このアプリは" in text or "提供します" in text:
-        warnings.append("too_explanatory_or_finished_product_like")
-    return warnings
-
-
 def run(sample: bool = False) -> dict:
     council = load_latest("llm_council.json", {}).get("decision_payload", {})
-    tone_report = load_latest("audience_tone_profile.json", {})
-    profile = tone_report.get("audience_tone_profile") or {}
+    profile = _tone_profile()
     item = _selected_item()
     tone_id = profile.get("tone_id", "default_light_problem")
 
     variants = _oshi_variants(profile) if tone_id == "gen_z_oshi_activity" else _generic_variants(profile, item)
     for variant in variants:
         variant["tone_id"] = tone_id
-        variant["warnings"] = _tone_warnings(variant["text"], profile)
-        variant["line_count"] = len(variant["text"].splitlines())
+        variant["tone_check_result"] = _tone_check(variant["text"], profile)
+        variant["line_count"] = _content_line_count(variant["text"])
         variant["length"] = len(variant["text"])
 
-    selected = variants[0]
+    passed_variants = [variant for variant in variants if variant["tone_check_result"]["passed"]]
+    selected = passed_variants[0] if passed_variants else variants[0]
+
     variants_payload = {
         "date": today_iso(),
         "tone_id": tone_id,
+        "target_audience": profile.get("target_audience", ""),
+        "ui_target_audience": profile.get("ui_target_audience", ""),
         "selected_variant_id": selected["variant_id"],
         "variants": variants,
         "profile_source": "output/reports/audience_tone_profile.json",
+        "all_variants_tone_checked": True,
     }
     write_json(OUTPUT_DIR / "reports" / "threads_tone_variants.json", variants_payload)
 
+    post = {
+        "date": today_iso(),
+        "text": selected["text"],
+        "alt_text": "推し活ログボードのスマホUI風カード。ライブ参戦ログ、座席、セトリメモ、チケット状態、同行者、感情タグ、遠征費合計を見返せる画面。",
+        "topic_tags": ["推し活", "ライブ参戦ログ", "現場ログ"] if tone_id == "gen_z_oshi_activity" else [item.get("niche_category", "ニッチアプリ")],
+        "decision": council.get("decision", "dry_run"),
+        "tone_id": tone_id,
+        "target_audience": profile.get("target_audience", ""),
+        "variant_id": selected["variant_id"],
+        "tone_check_result": selected["tone_check_result"],
+    }
     payload = department_output(
         "Copywriting Department",
-        "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。",
-        scores={"length": selected["length"], "line_count": selected["line_count"], "variant_count": len(variants)},
-        risks=selected["warnings"],
-        next_action="card image",
+        "Generated Threads variants from the Audience Tone Profile and selected tone-checked copy.",
+        scores={"length": len(selected["text"]), "line_count": _content_line_count(selected["text"]), "variant_count": len(variants)},
+        risks=[] if selected["tone_check_result"]["passed"] else ["no_tone_checked_variant_available"],
+        next_action="quality risk gate",
         input_sources=["output/reports/llm_council.json", "output/reports/audience_tone_profile.json"],
-        extra={
-            "post": {
-                "date": today_iso(),
-                "text": selected["text"],
-                "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
-                "topic_tags": [item.get("niche_category", council.get("selected_niche", "個人開発"))],
-                "decision": council.get("decision", "dry_run"),
-                "tone_id": tone_id,
-                "variant_id": selected["variant_id"],
-            },
-            "tone_variants_path": "output/reports/threads_tone_variants.json",
-        },
+        extra={"post": post, "tone_variants_path": "output/reports/threads_tone_variants.json"},
     )
     save_stage("threads_post.json", payload)
     write_text(OUTPUT_DIR / "thread_posts" / f"{today_iso()}.md", selected["text"] + "\n")

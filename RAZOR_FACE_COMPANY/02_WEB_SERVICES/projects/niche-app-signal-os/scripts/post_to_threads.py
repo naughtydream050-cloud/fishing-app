@@ -79,20 +79,6 @@ def _target_guard(expected_handle: str, env_handle: str) -> tuple[bool, str]:
     return True, "target_handle_ok"
 
 
-def _apply_post_overrides(post: dict) -> dict:
-    overridden = dict(post)
-    text_override = os.getenv("THREADS_POST_TEXT_OVERRIDE", "").strip()
-    alt_override = os.getenv("THREADS_ALT_TEXT_OVERRIDE", "").strip()
-    tags_override = os.getenv("THREADS_TOPIC_TAGS_OVERRIDE", "").strip()
-    if text_override:
-        overridden["text"] = text_override.replace("\\n", "\n")
-    if alt_override:
-        overridden["alt_text"] = alt_override
-    if tags_override:
-        overridden["topic_tags"] = [tag.strip() for tag in tags_override.split(",") if tag.strip()]
-    return overridden
-
-
 def _publish_live_text_or_image(post: dict) -> dict:
     token = os.getenv("THREADS_ACCESS_TOKEN", "")
     user_id = os.getenv("THREADS_USER_ID", "")
@@ -124,7 +110,11 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
     auto_post = env_bool("AUTO_POST", False)
     threads_auto_enabled = env_bool("THREADS_AUTO_POST_ENABLED", False)
     gate = load_latest("quality_risk_gate.json", {})
-    post = _apply_post_overrides(load_latest("threads_post.json", {}).get("post", {}))
+    selected_candidate = load_latest("selected_post_candidate.json", {})
+    generated_post = load_latest("threads_post.json", {}).get("post", {})
+    post = dict(generated_post)
+    if selected_candidate.get("selected") and selected_candidate.get("selected_post_text"):
+        post["text"] = selected_candidate["selected_post_text"]
     image_url = os.getenv("THREADS_IMAGE_URL", "").strip()
     target = _target_config()
     expected_handle = target.get("handle", "")
@@ -143,14 +133,16 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "content_hash": content_hash,
         "duplicate": False,
         "missing_secrets": [],
-        "image_url_present": bool(image_url),
-        "post_text_override": bool(os.getenv("THREADS_POST_TEXT_OVERRIDE", "").strip()),
+        "selected_candidate": bool(selected_candidate.get("selected")),
     }
 
     target_ok, target_message = _target_guard(expected_handle, env_target_handle)
     if not gate.get("approved"):
         status = "blocked_by_risk_gate"
         risks.extend(gate.get("risks", []))
+    elif not selected_candidate.get("selected"):
+        status = "blocked_by_post_selection"
+        risks.append(selected_candidate.get("rejected_reason_if_any") or "selected_post_candidate_missing_or_rejected")
     elif not auto_post:
         risks.append("AUTO_POST=false")
     elif forced_dry_run:
@@ -217,7 +209,13 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         scores={"auto_post": auto_post, "dry_run": forced_dry_run, "threads_auto_post_enabled": threads_auto_enabled},
         risks=risks,
         next_action="fetch insights" if status == "posted" else "manual review or fix posting preflight",
-        input_sources=["output/reports/quality_risk_gate.json", "output/reports/threads_post.json", "data/manual_threads_target.json", "data/post_history.json"],
+        input_sources=[
+            "output/reports/quality_risk_gate.json",
+            "output/reports/selected_post_candidate.json",
+            "output/reports/threads_post.json",
+            "data/manual_threads_target.json",
+            "data/post_history.json",
+        ],
         extra={
             "status": status,
             "thread_id": thread_id,

@@ -5,24 +5,52 @@
     "output/reports/llm_council.json",
     "output/reports/audience_tone_profile.json"
   ],
-  "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。",
+  "summary": "Generated Threads variants from the Audience Tone Profile and selected tone-checked copy.",
   "scores": {
-    "length": 116,
-    "line_count": 3,
-    "variant_count": 1
+    "length": 222,
+    "line_count": 9,
+    "variant_count": 2
   },
   "risks": [],
-  "next_action": "card image",
+  "next_action": "quality risk gate",
   "post": {
     "date": "2026-06-20",
-    "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
-    "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
+    "text": "推し活の記録、気づいたときにはマジで大散乱してて詰む。\n\n「え、座席どこだっけ？」\n「セトリどこにメモった？」\n「今回の遠征費、何万飛んだ？」\n「てかグッズ何買ったっけ…？」\n\nあとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。\n\nぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？\nそれともNotionで自作すれば事足りる感じ？\nみんなのリアルな意見教えてほしい！",
+    "alt_text": "推し活ログボードのスマホUI風カード。ライブ参戦ログ、座席、セトリメモ、チケット状態、同行者、感情タグ、遠征費合計を見返せる画面。",
     "topic_tags": [
-      "SNS投稿管理"
+      "推し活",
+      "ライブ参戦ログ",
+      "現場ログ"
     ],
-    "decision": "post",
-    "tone_id": "default_light_problem",
-    "variant_id": "A"
+    "decision": "dry_run",
+    "tone_id": "gen_z_oshi_activity",
+    "target_audience": "Z世代寄りの推し活層",
+    "variant_id": "A",
+    "tone_check_result": {
+      "passed": true,
+      "tone_id": "gen_z_oshi_activity",
+      "target_audience": "Z世代寄りの推し活層",
+      "used_words": [
+        "現場",
+        "メモった",
+        "座席",
+        "セトリ",
+        "遠征費",
+        "グッズ",
+        "ログ",
+        "写真フォルダ",
+        "マジで",
+        "詰む",
+        "大散乱",
+        "大捜索",
+        "オタクあるある",
+        "ぶっちゃけ"
+      ],
+      "used_avoid_words": [],
+      "line_count": 9,
+      "starts_with_aruaru": true,
+      "developer_voice": false
+    }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
 }
