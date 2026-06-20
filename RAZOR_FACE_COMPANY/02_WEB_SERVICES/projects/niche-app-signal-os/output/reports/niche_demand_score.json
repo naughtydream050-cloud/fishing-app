@@ -1,8 +1,59 @@
 {
+  "department": "Planning Department",
+  "date": "2026-06-20",
+  "input_sources": [
+    "output/reports/research_inputs.json",
+    "output/reports/trend_timing.json"
+  ],
+  "summary": "Niche App Signal Scoreで今日の候補を選びました。",
+  "scores": {
+    "selected_score": 10,
+    "candidate_count": 1
+  },
+  "risks": [],
+  "next_action": "llm council",
+  "scored_candidates": [
+    {
+      "score": 10,
+      "item": {
+        "source_platform": "manual",
+        "source_url": "",
+        "original_text": "SNSの投稿ネタと反応メモが分かれていて、何が伸びたか忘れる。",
+        "image_path": "",
+        "impressions": 0,
+        "likes": 16,
+        "replies": 5,
+        "reposts": 2,
+        "saves_or_bookmarks_if_available": 5,
+        "niche_category": "SNS投稿管理",
+        "target_user": "個人でSNS発信を続けるクリエイター",
+        "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+        "app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
+        "wording_pattern": "何が伸びたか忘れる",
+        "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
+        "why_it_worked_hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
+      }
+    }
+  ],
   "selected_candidate": {
-    "score": 1,
+    "score": 10,
     "item": {
-      "target_user": "unclear"
+      "source_platform": "manual",
+      "source_url": "",
+      "original_text": "SNSの投稿ネタと反応メモが分かれていて、何が伸びたか忘れる。",
+      "image_path": "",
+      "impressions": 0,
+      "likes": 16,
+      "replies": 5,
+      "reposts": 2,
+      "saves_or_bookmarks_if_available": 5,
+      "niche_category": "SNS投稿管理",
+      "target_user": "個人でSNS発信を続けるクリエイター",
+      "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+      "app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
+      "wording_pattern": "何が伸びたか忘れる",
+      "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
+      "why_it_worked_hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
     }
   }
 }

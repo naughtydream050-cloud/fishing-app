@@ -1,38 +1,18 @@
 {
   "date": "2026-06-20",
-  "tone_id": "gen_z_oshi_activity",
+  "tone_id": "default_light_problem",
   "selected_variant_id": "A",
-  "profile_source": "output/reports/audience_tone_profile.json",
   "variants": [
     {
       "variant_id": "A",
-      "tone_id": "gen_z_oshi_activity",
-      "angle": "現場ごとに散らばる情報",
-      "text": "現場のこと、あとで見返そうと思っても散らばりがちじゃない？\n座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。\nライブごとにまとめて残せる推し活ログの試作UIを作ってます。\nこれ欲しい？それともNotionで十分？",
-      "why": "あるあるから入り、管理/節約ではなく見返す・残す文脈に寄せる",
-      "warnings": [],
-      "line_count": 4,
-      "length": 112
-    },
-    {
-      "variant_id": "B",
-      "tone_id": "gen_z_oshi_activity",
-      "angle": "あとで見たいのに探せない",
-      "text": "ライブ終わった直後は全部覚えてるのに、あとで見たい時に限って散らばる。\n座席、セトリ、同行者、遠征費、買ったグッズ、メモった感想。\n現場ごとに残せるログUI、あったら使う？\nこれ欲しい？それともNotionで十分？",
-      "why": "余韻と記録の痛みに寄せる",
-      "warnings": [],
-      "line_count": 4,
-      "length": 106
-    },
-    {
-      "variant_id": "C",
-      "tone_id": "gen_z_oshi_activity",
-      "angle": "Notionで十分か聞く",
-      "text": "推し活の現場ログ、Notionで作れるけど毎回ちゃんと残すのはちょっと重い。\n座席、チケット状態、セトリ、遠征費、思い出だけサッと残せる画面を試作中。\nこういうの欲しい？それともNotionで十分？",
-      "why": "代替手段との比較でコメントを誘う",
+      "angle": "小さい面倒あるある",
+      "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
+      "why": "説明よりも小さい共感から入る",
+      "tone_id": "default_light_problem",
       "warnings": [],
       "line_count": 3,
-      "length": 94
+      "length": 116
     }
-  ]
+  ],
+  "profile_source": "output/reports/audience_tone_profile.json"
 }

@@ -1,28 +1,23 @@
 {
   "department": "Risk Control Department",
-  "date": "2026-06-11",
+  "date": "2026-06-20",
   "input_sources": [
     "output/reports/llm_council.json",
-    "output/reports/threads_post.json"
+    "output/reports/threads_post.json",
+    "output/reports/audience_tone_profile.json"
   ],
   "summary": "品質、類似、対象明確性、自動投稿リスクを評価しました。",
   "scores": {
-    "quality_score": 4,
-    "risk_score": 6,
+    "quality_score": 9,
+    "risk_score": 2,
     "copycat_score": 1,
-    "same_pattern_days": 1
+    "same_pattern_days": 1,
+    "tone_warning_count": 0
   },
-  "risks": [
-    "quality_score < 7",
-    "risk_score > 4",
-    "target_user == unclear"
-  ],
-  "next_action": "stop without posting",
-  "approved": false,
-  "publish_decision": "skip",
-  "block_reasons": [
-    "quality_score < 7",
-    "risk_score > 4",
-    "target_user == unclear"
-  ]
+  "risks": [],
+  "next_action": "publish dry-run",
+  "approved": true,
+  "publish_decision": "dry_run",
+  "block_reasons": [],
+  "tone_warnings": []
 }

@@ -1,6 +1,6 @@
 {
   "department": "Executive Department",
-  "date": "2026-06-11",
+  "date": "2026-06-20",
   "input_sources": [
     "output/reports/threads_insights.json"
   ],
@@ -20,6 +20,8 @@
       "idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
       "reason": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる",
       "signal_score": 10,
+      "audience_segment": "個人でSNS発信を続けるクリエイター",
+      "design_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
       "next_step": "反応が重複したらLPまたは待機リストMVPにする"
     }
   ],
@@ -27,8 +29,80 @@
     {
       "category": "SNS投稿管理",
       "angle": "なぜ「投稿ネタと反応メモが分かれて改善しにくい」をアプリ化したくなるのか",
-      "signal_score": 10
+      "signal_score": 10,
+      "audience_segment": "個人でSNS発信を続けるクリエイター"
     }
   ],
-  "weekly_report": "memory/reports/weekly_report.md"
+  "weekly_report": "memory/reports/weekly_report.md",
+  "audience_strategy": {
+    "target_user_segment": "個人でSNS発信を続けるクリエイター",
+    "user_motivation": "投稿ネタと反応メモが分かれて改善しにくいを軽く減らしたい。重い管理ツールではなく、すぐ触れる試作UIで判断したい",
+    "primary_job": "投稿ネタと反応メモが分かれて改善しにくい",
+    "current_alternatives": [
+      "メモアプリ",
+      "スプレッドシート",
+      "Notion",
+      "スクショ",
+      "カレンダー"
+    ],
+    "language_to_use": [
+      "小さい面倒",
+      "あとで見返す",
+      "試作UI",
+      "ログインなし",
+      "ブラウザ保存"
+    ],
+    "language_to_avoid": [
+      "完全自動",
+      "公式連携",
+      "業務システム",
+      "万能",
+      "安全にバックアップ"
+    ],
+    "comment_hooks": [
+      "これ欲しい？",
+      "今は何で管理してる？",
+      "足りない項目ある？"
+    ],
+    "segment_confidence": 10,
+    "date": "2026-06-20",
+    "candidate_category": "SNS投稿管理",
+    "source_pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+    "source_app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート"
+  },
+  "design_strategy": {
+    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
+    "ui_metaphor": [
+      "スマホUI",
+      "チェックリスト",
+      "カード",
+      "メモ"
+    ],
+    "color_direction": [
+      "白",
+      "淡いグレー",
+      "アクセント1色",
+      "読みやすい余白"
+    ],
+    "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
+    "must_show_fields": [
+      "対象",
+      "状態",
+      "メモ",
+      "合計",
+      "次の行動"
+    ],
+    "avoid_visuals": [
+      "抽象イラストのみ",
+      "装飾過多",
+      "実装不能そうな未来UI",
+      "業務ダッシュボード過多"
+    ],
+    "card_cta": "これ欲しい？それとも今の管理で十分？",
+    "design_confidence": 7,
+    "date": "2026-06-20",
+    "target_user_segment": "個人でSNS発信を続けるクリエイター",
+    "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
+  },
+  "reaction_memory_entries": 0
 }

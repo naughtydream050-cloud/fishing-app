@@ -1,55 +1,48 @@
 {
   "department": "Design Intelligence Department",
-  "date": "2026-06-18",
+  "date": "2026-06-20",
   "input_sources": [
-    "output/reports/audience_strategy.json",
-    "output/reports/oshi_mvp_marketing_review.md",
-    "output/reports/oshi_mvp_final_gpt_consult.md"
+    "output/reports/audience_strategy.json"
   ],
   "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
   "scores": {
-    "design_confidence": 9
+    "design_confidence": 7
   },
   "risks": [],
   "next_action": "copywriting and card image",
   "design_strategy": {
-    "date": "2026-06-18",
-    "candidate_id": "oshi-activity-management",
-    "target_user_segment": "推し活の予定、現場記録、グッズ、遠征費、思い出メモが複数アプリに散らかるライト-ミドル層",
-    "visual_positioning": "かわいく見返せる推し活ログ。管理SaaSではなく、手帳とチケット半券の中間。",
+    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
     "ui_metaphor": [
-      "スマホログ",
-      "チケット半券",
-      "手帳",
-      "ステッカー",
-      "感情タグ"
+      "スマホUI",
+      "チェックリスト",
+      "カード",
+      "メモ"
     ],
     "color_direction": [
-      "パステルミント",
-      "ラベンダー",
-      "ピーチ",
-      "淡いスカイブルー",
-      "白いカード"
+      "白",
+      "淡いグレー",
+      "アクセント1色",
+      "読みやすい余白"
     ],
-    "composition": "大きい悩み見出し + スマホUI + チケット風メモ + CTA",
+    "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
     "must_show_fields": [
-      "ライブ参戦ログ",
-      "座席",
-      "セトリメモ",
-      "チケット状態",
-      "同行者",
-      "感情タグ",
-      "遠征費合計"
+      "対象",
+      "状態",
+      "メモ",
+      "合計",
+      "次の行動"
     ],
     "avoid_visuals": [
-      "黒い業務SaaS風",
-      "家計簿アプリ風",
-      "濃い単色",
-      "グラフ中心",
-      "AI生成っぽい抽象背景"
+      "抽象イラストのみ",
+      "装飾過多",
+      "実装不能そうな未来UI",
+      "業務ダッシュボード過多"
     ],
-    "card_cta": "これ欲しい？それともNotionで十分？",
-    "design_confidence": 9
+    "card_cta": "これ欲しい？それとも今の管理で十分？",
+    "design_confidence": 7,
+    "date": "2026-06-20",
+    "target_user_segment": "個人でSNS発信を続けるクリエイター",
+    "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
   },
-  "memory_path": "memory/design_strategy/2026-06-18.md"
+  "memory_path": "memory/design_strategy/2026-06-20.md"
 }

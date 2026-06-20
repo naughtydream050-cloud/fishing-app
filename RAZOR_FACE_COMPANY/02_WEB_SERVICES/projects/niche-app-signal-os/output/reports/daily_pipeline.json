@@ -1,7 +1,7 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-06-04",
-  "dry_run": true,
+  "date": "2026-06-20",
+  "dry_run": false,
   "sample": false,
   "status": "ok",
   "failed": null,
@@ -32,14 +32,29 @@
       "summary": "Niche App Signal Scoreで今日の候補を選びました。"
     },
     {
+      "stage": "audience_strategy",
+      "status": "ok",
+      "summary": "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。"
+    },
+    {
+      "stage": "audience_tone_adapter",
+      "status": "ok",
+      "summary": "Audience Strategyを受け取り、Threads投稿文の口調・語彙・構成を調整しました。"
+    },
+    {
       "stage": "run_llm_council",
       "status": "ok",
       "summary": "API未設定のため、5役の圧縮会議をルールベースfallbackで生成しました。"
     },
     {
+      "stage": "design_intelligence",
+      "status": "ok",
+      "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。"
+    },
+    {
       "stage": "generate_threads_post",
       "status": "ok",
-      "summary": "Threads向け投稿案を生成しました。"
+      "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。"
     },
     {
       "stage": "generate_card_image",
@@ -54,12 +69,17 @@
     {
       "stage": "post_to_threads",
       "status": "ok",
-      "summary": "Threads投稿処理をDRY_RUN安全側で評価しました。"
+      "summary": "Threads投稿処理をAUTO_POST/DRY_RUN/target/duplicate/Secrets guard付きで評価しました。"
     },
     {
       "stage": "fetch_threads_insights",
       "status": "ok",
       "summary": "DRY_RUNでは投稿IDがないため、Insightsはnullで保存して継続しました。"
+    },
+    {
+      "stage": "update_reaction_memory",
+      "status": "ok",
+      "summary": "手動投稿後の反応をMemoryへ戻すためのスキーマと集計受け皿を更新しました。実投稿やAPI取得は行いません。"
     },
     {
       "stage": "analyze_learning",
@@ -72,6 +92,10 @@
     "output/card_images/",
     "output/reports/",
     "memory/research/",
+    "memory/audience/",
+    "memory/audience_tone/",
+    "memory/design_strategy/",
+    "memory/reaction/",
     "memory/council/",
     "memory/reports/"
   ]

@@ -1,8 +1,9 @@
 {
   "department": "Design Department",
-  "date": "2026-06-11",
+  "date": "2026-06-20",
   "input_sources": [
-    "output/reports/llm_council.json"
+    "output/reports/llm_council.json",
+    "output/reports/design_strategy.json"
   ],
   "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
   "scores": {
@@ -14,7 +15,30 @@
   ],
   "next_action": "risk gate",
   "card_paths": [
-    "output\\card_images\\2026-06-11.svg",
-    "output\\card_images\\2026-06-11.html"
-  ]
+    "output/card_images/2026-06-20.svg",
+    "output/card_images/2026-06-20.html"
+  ],
+  "design_strategy": {
+    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
+    "ui_metaphor": [
+      "スマホUI",
+      "チェックリスト",
+      "カード",
+      "メモ"
+    ],
+    "color_direction": [
+      "白",
+      "淡いグレー",
+      "アクセント1色",
+      "読みやすい余白"
+    ],
+    "must_show_fields": [
+      "対象",
+      "状態",
+      "メモ",
+      "合計",
+      "次の行動"
+    ],
+    "card_cta": "これ欲しい？それとも今の管理で十分？"
+  }
 }

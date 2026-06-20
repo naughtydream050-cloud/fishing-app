@@ -1,53 +1,50 @@
 {
   "department": "Audience Strategy Department",
-  "date": "2026-06-18",
+  "date": "2026-06-20",
   "input_sources": [
-    "output/reports/niche_demand_score.json",
-    "handoff/oshi-activity-management/MVP_SPEC.md",
-    "output/reports/oshi_mvp_marketing_review.md"
+    "output/reports/niche_demand_score.json"
   ],
   "summary": "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。",
   "scores": {
-    "segment_confidence": 9
+    "segment_confidence": 10
   },
   "risks": [],
   "next_action": "llm council",
   "audience_strategy": {
-    "date": "2026-06-18",
-    "candidate_id": "oshi-activity-management",
-    "target_user_segment": "推し活の予定、現場記録、グッズ、遠征費、思い出メモが複数アプリに散らかるライト-ミドル層",
-    "user_motivation": "管理したいというより、現場ごとの記憶と出費をあとでかわいく見返したい",
-    "primary_job": "現場ごとに、ライブ参戦ログ・座席・セトリ・チケット状態・同行者・感情タグ・遠征費をまとめる",
+    "target_user_segment": "個人でSNS発信を続けるクリエイター",
+    "user_motivation": "投稿ネタと反応メモが分かれて改善しにくいを軽く減らしたい。重い管理ツールではなく、すぐ触れる試作UIで判断したい",
+    "primary_job": "投稿ネタと反応メモが分かれて改善しにくい",
     "current_alternatives": [
+      "メモアプリ",
+      "スプレッドシート",
       "Notion",
-      "スマホメモ",
-      "カレンダー",
       "スクショ",
-      "写真フォルダ",
-      "家計簿アプリ"
+      "カレンダー"
     ],
     "language_to_use": [
-      "現場ごと",
-      "見返す",
-      "推し活ログ",
+      "小さい面倒",
+      "あとで見返す",
       "試作UI",
       "ログインなし",
       "ブラウザ保存"
     ],
     "language_to_avoid": [
-      "完全管理",
-      "節約",
-      "業務管理",
-      "SaaS",
-      "自動同期",
-      "公式連携"
+      "完全自動",
+      "公式連携",
+      "業務システム",
+      "万能",
+      "安全にバックアップ"
     ],
     "comment_hooks": [
       "これ欲しい？",
-      "Notionで十分？",
+      "今は何で管理してる？",
       "足りない項目ある？"
     ],
-    "segment_confidence": 9
+    "segment_confidence": 10,
+    "date": "2026-06-20",
+    "candidate_category": "SNS投稿管理",
+    "source_pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+    "source_app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート"
   },
-  "memory_path": "memory/audience/2026-06-18.md"
+  "memory_path": "memory/audience/2026-06-20.md"
 }
