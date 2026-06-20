@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -98,6 +99,10 @@ def _publish_live_text_or_image(post: dict) -> dict:
     creation_id = container.get("id")
     if not creation_id:
         raise RuntimeError("Threads container response did not include id")
+    if image_url:
+        delay = int(os.getenv("THREADS_MEDIA_PUBLISH_DELAY_SECONDS", "35"))
+        if delay > 0:
+            time.sleep(delay)
     published = _threads_post(
         f"{graph_base}/{urllib.parse.quote(user_id)}/threads_publish",
         {"creation_id": creation_id, "access_token": token},
@@ -226,6 +231,8 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         },
     )
     save_stage("publishing.json", payload)
+    if env_bool("REQUIRE_POST_SUCCESS", False) and status != "posted":
+        raise SystemExit(f"Threads live post did not complete: {status}")
     return payload
 
 

@@ -25,6 +25,8 @@ jobs:
       THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
       THREADS_TARGET_HANDLE: younengsaitoshaojie
       THREADS_IMAGE_URL: https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/${{ github.sha }}/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-20-oshi-activity-management.png
+      THREADS_MEDIA_PUBLISH_DELAY_SECONDS: "35"
+      REQUIRE_POST_SUCCESS: "true"
 
     steps:
       - name: Checkout repository
