@@ -79,6 +79,20 @@ def _target_guard(expected_handle: str, env_handle: str) -> tuple[bool, str]:
     return True, "target_handle_ok"
 
 
+def _apply_post_overrides(post: dict) -> dict:
+    overridden = dict(post)
+    text_override = os.getenv("THREADS_POST_TEXT_OVERRIDE", "").strip()
+    alt_override = os.getenv("THREADS_ALT_TEXT_OVERRIDE", "").strip()
+    tags_override = os.getenv("THREADS_TOPIC_TAGS_OVERRIDE", "").strip()
+    if text_override:
+        overridden["text"] = text_override.replace("\\n", "\n")
+    if alt_override:
+        overridden["alt_text"] = alt_override
+    if tags_override:
+        overridden["topic_tags"] = [tag.strip() for tag in tags_override.split(",") if tag.strip()]
+    return overridden
+
+
 def _publish_live_text_or_image(post: dict) -> dict:
     token = os.getenv("THREADS_ACCESS_TOKEN", "")
     user_id = os.getenv("THREADS_USER_ID", "")
@@ -110,7 +124,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
     auto_post = env_bool("AUTO_POST", False)
     threads_auto_enabled = env_bool("THREADS_AUTO_POST_ENABLED", False)
     gate = load_latest("quality_risk_gate.json", {})
-    post = load_latest("threads_post.json", {}).get("post", {})
+    post = _apply_post_overrides(load_latest("threads_post.json", {}).get("post", {}))
     image_url = os.getenv("THREADS_IMAGE_URL", "").strip()
     target = _target_config()
     expected_handle = target.get("handle", "")
@@ -129,6 +143,8 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "content_hash": content_hash,
         "duplicate": False,
         "missing_secrets": [],
+        "image_url_present": bool(image_url),
+        "post_text_override": bool(os.getenv("THREADS_POST_TEXT_OVERRIDE", "").strip()),
     }
 
     target_ok, target_message = _target_guard(expected_handle, env_target_handle)
