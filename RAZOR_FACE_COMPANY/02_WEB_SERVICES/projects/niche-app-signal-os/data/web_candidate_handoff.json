@@ -1,0 +1,51 @@
+{
+  "candidate_id": "oshi-activity-management",
+  "date": "2026-06-05",
+  "category": "推し活管理",
+  "target_user": "複数の推し活予定をスマホで管理する人",
+  "pain_points": [
+    "ライブ記録が写真アプリとメモに分かれる",
+    "推し活の予定と当落メモが散らばる",
+    "買ったグッズと未開封在庫を把握できない",
+    "遠征費と参戦記録がバラバラになる"
+  ],
+  "mvp_features": [
+    "現場予定の一覧",
+    "当落ステータス管理",
+    "入金期限メモ",
+    "同行者メモ",
+    "グッズ/遠征費の簡易メモ"
+  ],
+  "note_angle": "なぜ推し活の予定と当落メモは、普通のカレンダーだけだと散らばるのか",
+  "monetization_path": [
+    "無料: ローカル保存の現場メモ",
+    "有料候補: CSV出力、通知、テンプレ、複数カテゴリ管理",
+    "将来候補: note記事からWebアプリ待機リストへ誘導"
+  ],
+  "confidence_score": 10,
+  "evidence_sources": [
+    "output/thread_posts/2026-06-05.md",
+    "output/thread_posts/2026-06-05.json",
+    "memory/research/2026-06-05.md",
+    "memory/council/2026-06-05.md",
+    "output/thread_posts/2026-06-06.md",
+    "output/thread_posts/2026-06-06.json",
+    "memory/research/2026-06-06.md",
+    "memory/council/2026-06-06.md",
+    "output/thread_posts/2026-06-07.md",
+    "output/thread_posts/2026-06-07.json",
+    "memory/research/2026-06-07.md",
+    "memory/council/2026-06-07.md",
+    "output/thread_posts/2026-06-08.md",
+    "output/thread_posts/2026-06-08.json",
+    "memory/research/2026-06-08.md",
+    "memory/council/2026-06-08.md"
+  ],
+  "next_action": "GPTへhandoff packを相談してからWeb MVP実装判断を行う",
+  "safety": {
+    "auto_post": false,
+    "dry_run": true,
+    "threads_real_posting": false,
+    "external_api_added": false
+  }
+}

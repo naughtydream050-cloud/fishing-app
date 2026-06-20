@@ -1,0 +1,20 @@
+{
+  "department": "Trend Timing Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/research_inputs.json"
+  ],
+  "summary": "日付とカテゴリから投稿タイミングを軽量評価しました。",
+  "scores": {
+    "max_timing_score": 6
+  },
+  "risks": [],
+  "next_action": "niche demand scoring",
+  "timing": [
+    {
+      "category": "SNS投稿管理",
+      "timing_score": 6,
+      "reason": "週末や予定系カテゴリは会話化しやすい"
+    }
+  ]
+}

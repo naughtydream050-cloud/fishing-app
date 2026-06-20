@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "Manual-post reaction memory. Keep empty until the owner records real post results.",
+  "entries": [],
+  "fields": {
+    "date": "YYYY-MM-DD",
+    "candidate_id": "example: oshi-activity-management",
+    "post_variant": "example: A",
+    "manual_post_url": "optional",
+    "likes": "number or null",
+    "replies": "number or null",
+    "reposts": "number or null",
+    "saves": "number or null",
+    "profile_clicks": "number or null",
+    "comments": [
+      "raw comment snippets or summaries"
+    ],
+    "objections": [
+      "example: Notionで十分"
+    ],
+    "requested_fields": [
+      "example: 写真, リマインド"
+    ],
+    "design_feedback": [
+      "example: かわいい, 見づらい"
+    ],
+    "next_decision": "hold | note | lp | mvp_revision | saas_candidate"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "patterns": [
+    {
+      "category": "遠征費管理",
+      "pain_point": "遠征費と記録が散らばる",
+      "wording_pattern": "あとから見返したい",
+      "visual_pattern": "旅程カード + 費用サマリー",
+      "engagement_signal": 41,
+      "hypothesis": "楽しい記録と現実的な費用管理が同時に刺さる"
+    }
+  ]
+}

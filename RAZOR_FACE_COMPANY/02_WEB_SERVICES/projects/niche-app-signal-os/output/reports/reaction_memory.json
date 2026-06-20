@@ -1,0 +1,20 @@
+{
+  "department": "Reaction Memory Department",
+  "date": "2026-06-18",
+  "input_sources": [
+    "data/reaction_memory.json"
+  ],
+  "summary": "手動投稿後の反応をMemoryへ戻すためのスキーマと集計受け皿を更新しました。実投稿やAPI取得は行いません。",
+  "scores": {
+    "reaction_entries": 0,
+    "top_reaction_score": 0
+  },
+  "risks": [
+    "no_live_reaction_yet"
+  ],
+  "next_action": "candidate scoring",
+  "reaction_memory": "data/reaction_memory.json",
+  "memory_path": "memory/reaction/2026-06-18.md",
+  "top_entries": [],
+  "threads_api_called": false
+}

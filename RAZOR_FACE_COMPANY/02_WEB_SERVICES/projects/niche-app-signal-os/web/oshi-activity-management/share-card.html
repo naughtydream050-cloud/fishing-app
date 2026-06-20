@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1080, initial-scale=1" />
+    <title>推し活ログボード Share Card</title>
+    <link rel="stylesheet" href="./share-card.css" />
+  </head>
+  <body>
+    <main class="share-card" aria-label="推し活ログボードの投稿用UIカード">
+      <section class="hero-copy">
+        <p class="kicker">Local-first prototype / DRY_RUN</p>
+        <h1>現場ごとに<br />散らかる情報</h1>
+        <p class="lead">
+          予定、座席、セトリ、チケット、同行者、遠征費。
+          あとで見返したい推し活メモを、ひとつの現場ログへ。
+        </p>
+      </section>
+
+      <section class="ticket-strip" aria-label="現場メモ">
+        <span>LIVE LOG</span>
+        <strong>横浜アリーナ</strong>
+        <em>2026.07.18</em>
+      </section>
+
+      <section class="phone-frame" aria-label="スマホUIプレビュー">
+        <div class="phone-speaker" aria-hidden="true"></div>
+        <div class="phone-screen">
+          <header class="app-header">
+            <div>
+              <p>推し活ログボード</p>
+              <h2>星影ツアー 横浜公演</h2>
+            </div>
+            <span class="status-pill">抽選申込済み</span>
+          </header>
+
+          <div class="hero-panel">
+            <span>遠征費合計</span>
+            <strong>¥38,400</strong>
+            <small>交通費 + ホテル + グッズ</small>
+          </div>
+
+          <div class="tag-row" aria-label="感情タグ">
+            <span>余韻</span>
+            <span>神席</span>
+            <span>泣いた</span>
+          </div>
+
+          <div class="ui-card live-card">
+            <div class="card-head">
+              <span class="icon-dot"></span>
+              <h3>ライブ参戦ログ</h3>
+            </div>
+            <dl class="detail-grid">
+              <div>
+                <dt>座席</dt>
+                <dd>アリーナ B3 / 12列</dd>
+              </div>
+              <div>
+                <dt>チケット状態</dt>
+                <dd>申込済み</dd>
+              </div>
+              <div>
+                <dt>同行者</dt>
+                <dd>友人A</dd>
+              </div>
+              <div>
+                <dt>感情タグ</dt>
+                <dd>余韻</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="ui-card memo-card">
+            <div class="card-head">
+              <span class="icon-dot warm"></span>
+              <h3>セトリメモ</h3>
+            </div>
+            <p>
+              3曲目の入りで会場が一気に明るくなった。
+              MCは遠征の話。アンコール前に銀テ。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="side-notes" aria-label="保存したい情報">
+        <div>
+          <span>席</span>
+          <strong>B3 / 12列</strong>
+        </div>
+        <div>
+          <span>同行</span>
+          <strong>友人A</strong>
+        </div>
+        <div>
+          <span>感情</span>
+          <strong>余韻</strong>
+        </div>
+      </section>
+
+      <section class="cta-area">
+        <p>これ欲しい？それともNotionで十分？</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+# Web MVP Validation
+
+- status: ok_with_python_unavailable
+- web_dir: web/oshi-activity-management
+- required_files: true
+- required_text: true
+- required_crud_js: true
+- uses_localStorage: true
+- has_import_export: true
+- has_empty_state: true
+- has_gpt_followup_fields: true
+- node_syntax_check: true
+- mojibake_marker_check: true
+- manual_review_artifacts: true
+- final_gpt_consult_artifact: true
+- no_external_api_call: true
+- context_dry_run: true
+- context_auto_post_false: true
+- context_threads_api_not_called: true
+- python_validate_web_mvp: failed_python_windowsapps_alias
+- node_equivalent_checks: passed
+- failures: 0

@@ -1,0 +1,78 @@
+{
+  "project": "niche-app-signal-os",
+  "date": "2026-06-04",
+  "dry_run": true,
+  "sample": false,
+  "status": "ok",
+  "failed": null,
+  "stages": [
+    {
+      "stage": "collect_research_inputs",
+      "status": "ok",
+      "summary": "1件の手動/JSONリサーチ入力を正規化しました。"
+    },
+    {
+      "stage": "analyze_viral_patterns",
+      "status": "ok",
+      "summary": "反応されやすい悩み、言い回し、画像構造を軽量集計しました。"
+    },
+    {
+      "stage": "update_memory_box",
+      "status": "ok",
+      "summary": "Obsidian互換Markdownへ今日のリサーチ記録を保存しました。"
+    },
+    {
+      "stage": "evaluate_trend_timing",
+      "status": "ok",
+      "summary": "日付とカテゴリから投稿タイミングを軽量評価しました。"
+    },
+    {
+      "stage": "score_niche_demand",
+      "status": "ok",
+      "summary": "Niche App Signal Scoreで今日の候補を選びました。"
+    },
+    {
+      "stage": "run_llm_council",
+      "status": "ok",
+      "summary": "API未設定のため、5役の圧縮会議をルールベースfallbackで生成しました。"
+    },
+    {
+      "stage": "generate_threads_post",
+      "status": "ok",
+      "summary": "Threads向け投稿案を生成しました。"
+    },
+    {
+      "stage": "generate_card_image",
+      "status": "ok",
+      "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。"
+    },
+    {
+      "stage": "quality_risk_gate",
+      "status": "ok",
+      "summary": "品質、類似、対象明確性、自動投稿リスクを評価しました。"
+    },
+    {
+      "stage": "post_to_threads",
+      "status": "ok",
+      "summary": "Threads投稿処理をDRY_RUN安全側で評価しました。"
+    },
+    {
+      "stage": "fetch_threads_insights",
+      "status": "ok",
+      "summary": "DRY_RUNでは投稿IDがないため、Insightsはnullで保存して継続しました。"
+    },
+    {
+      "stage": "analyze_learning",
+      "status": "ok",
+      "summary": "次週seed weight、Web化候補、note化候補、週次レポートを更新しました。"
+    }
+  ],
+  "artifacts": [
+    "output/thread_posts/",
+    "output/card_images/",
+    "output/reports/",
+    "memory/research/",
+    "memory/council/",
+    "memory/reports/"
+  ]
+}

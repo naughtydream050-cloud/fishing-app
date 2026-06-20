@@ -1,0 +1,10 @@
+{
+  "decision_payload": {
+    "date": "2026-06-12",
+    "selected_niche": "unclear",
+    "decision": "post",
+    "risk_score": 6,
+    "quality_score": 4,
+    "reason_to_skip": "low quality fixture"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "department": "Viral Pattern Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/research_inputs.json"
+  ],
+  "summary": "反応されやすい悩み、言い回し、画像構造を軽量集計しました。",
+  "scores": {
+    "category_count": 1,
+    "pattern_count": 1
+  },
+  "risks": [],
+  "next_action": "memory update",
+  "top_categories": [
+    [
+      "SNS投稿管理",
+      1
+    ]
+  ],
+  "top_wording_patterns": [
+    [
+      "何が伸びたか忘れる",
+      1
+    ]
+  ],
+  "top_visual_patterns": [
+    [
+      "投稿カード + 反応スコア + 次回メモ",
+      1
+    ]
+  ],
+  "patterns": [
+    {
+      "category": "SNS投稿管理",
+      "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+      "wording_pattern": "何が伸びたか忘れる",
+      "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
+      "engagement_signal": 42,
+      "hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
+    }
+  ]
+}

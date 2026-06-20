@@ -1,0 +1,26 @@
+[
+  {
+    "source_platform": "manual",
+    "source_url": "",
+    "original_text": "SNSの投稿ネタと反応メモが分かれていて、何が伸びたか忘れる。",
+    "image_path": "",
+    "impressions": 0,
+    "likes": 16,
+    "replies": 5,
+    "reposts": 2,
+    "saves_or_bookmarks_if_available": 5,
+    "engagement_numbers": {
+      "likes": 16,
+      "replies": 5,
+      "reposts": 2,
+      "saves": 5
+    },
+    "niche_category": "SNS投稿管理",
+    "target_user": "個人でSNS発信を続けるクリエイター",
+    "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
+    "app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
+    "wording_pattern": "何が伸びたか忘れる",
+    "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
+    "why_it_worked_hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
+  }
+]

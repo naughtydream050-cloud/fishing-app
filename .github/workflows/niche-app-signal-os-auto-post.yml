@@ -1,0 +1,103 @@
+name: Niche App Signal OS Auto Post
+
+on:
+  workflow_dispatch:
+    inputs:
+      live_post:
+        description: "Set true to allow Threads posting through all guards."
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    - cron: "10 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  daily-post:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os
+    env:
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
+      CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      THREADS_TARGET_HANDLE: younengsaitoshaojie
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve posting mode
+        shell: bash
+        run: |
+          set -euo pipefail
+          LIVE_POST="false"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.live_post }}" = "true" ]; then
+            LIVE_POST="true"
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${THREADS_AUTO_POST_ENABLED:-}" = "true" ]; then
+            LIVE_POST="true"
+          fi
+
+          if [ "$LIVE_POST" = "true" ]; then
+            echo "AUTO_POST=true" >> "$GITHUB_ENV"
+            echo "DRY_RUN=false" >> "$GITHUB_ENV"
+            echo "PIPELINE_ARGS=--live-post" >> "$GITHUB_ENV"
+          else
+            echo "AUTO_POST=false" >> "$GITHUB_ENV"
+            echo "DRY_RUN=true" >> "$GITHUB_ENV"
+            echo "PIPELINE_ARGS=--dry-run" >> "$GITHUB_ENV"
+          fi
+          echo "Resolved live_post=${LIVE_POST}"
+
+      - name: Preflight guard
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "DRY_RUN=${DRY_RUN}"
+          echo "AUTO_POST=${AUTO_POST}"
+          echo "THREADS_TARGET_HANDLE=${THREADS_TARGET_HANDLE}"
+          if [ "${AUTO_POST}" = "true" ]; then
+            test "${DRY_RUN}" = "false"
+            test "${THREADS_AUTO_POST_ENABLED:-}" = "true"
+            test -n "${THREADS_ACCESS_TOKEN:-}"
+            test -n "${THREADS_USER_ID:-}"
+            test "${THREADS_TARGET_HANDLE}" = "younengsaitoshaojie"
+          fi
+
+      - name: Run Niche App Signal OS pipeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/run_daily_pipeline.py ${PIPELINE_ARGS}
+
+      - name: Commit generated artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            output \
+            memory \
+            data/post_log.json \
+            data/post_history.json \
+            reports/latest/context-pack.json
+          if git diff --cached --quiet; then
+            echo "No generated artifact changes."
+          else
+            git commit -m "chore: run niche app signal os pipeline"
+            git push
+          fi

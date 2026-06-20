@@ -1,0 +1,55 @@
+{
+  "department": "Design Intelligence Department",
+  "date": "2026-06-18",
+  "input_sources": [
+    "output/reports/audience_strategy.json",
+    "output/reports/oshi_mvp_marketing_review.md",
+    "output/reports/oshi_mvp_final_gpt_consult.md"
+  ],
+  "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
+  "scores": {
+    "design_confidence": 9
+  },
+  "risks": [],
+  "next_action": "copywriting and card image",
+  "design_strategy": {
+    "date": "2026-06-18",
+    "candidate_id": "oshi-activity-management",
+    "target_user_segment": "推し活の予定、現場記録、グッズ、遠征費、思い出メモが複数アプリに散らかるライト-ミドル層",
+    "visual_positioning": "かわいく見返せる推し活ログ。管理SaaSではなく、手帳とチケット半券の中間。",
+    "ui_metaphor": [
+      "スマホログ",
+      "チケット半券",
+      "手帳",
+      "ステッカー",
+      "感情タグ"
+    ],
+    "color_direction": [
+      "パステルミント",
+      "ラベンダー",
+      "ピーチ",
+      "淡いスカイブルー",
+      "白いカード"
+    ],
+    "composition": "大きい悩み見出し + スマホUI + チケット風メモ + CTA",
+    "must_show_fields": [
+      "ライブ参戦ログ",
+      "座席",
+      "セトリメモ",
+      "チケット状態",
+      "同行者",
+      "感情タグ",
+      "遠征費合計"
+    ],
+    "avoid_visuals": [
+      "黒い業務SaaS風",
+      "家計簿アプリ風",
+      "濃い単色",
+      "グラフ中心",
+      "AI生成っぽい抽象背景"
+    ],
+    "card_cta": "これ欲しい？それともNotionで十分？",
+    "design_confidence": 9
+  },
+  "memory_path": "memory/design_strategy/2026-06-18.md"
+}

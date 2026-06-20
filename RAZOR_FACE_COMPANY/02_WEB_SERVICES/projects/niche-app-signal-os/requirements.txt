@@ -1,0 +1,3 @@
+# MVP uses Python standard library only.
+# Optional future screenshot support:
+# playwright

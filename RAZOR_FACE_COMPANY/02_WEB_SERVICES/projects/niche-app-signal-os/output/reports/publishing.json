@@ -1,0 +1,20 @@
+{
+  "department": "Publishing Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/quality_risk_gate.json"
+  ],
+  "summary": "7日DRY_RUNではThreads API投稿処理を呼ばず、投稿ログだけ保存しました。",
+  "scores": {
+    "auto_post": false,
+    "dry_run": true
+  },
+  "risks": [
+    "AUTO_POST=false",
+    "threads_api_not_called"
+  ],
+  "next_action": "fetch insights",
+  "status": "dry_run_saved",
+  "thread_id": null,
+  "api_called": false
+}

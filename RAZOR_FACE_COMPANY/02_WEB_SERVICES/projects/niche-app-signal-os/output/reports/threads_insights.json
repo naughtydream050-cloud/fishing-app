@@ -1,0 +1,25 @@
+{
+  "department": "Analytics Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/publishing.json"
+  ],
+  "summary": "DRY_RUNでは投稿IDがないため、Insightsはnullで保存して継続しました。",
+  "scores": {
+    "insight_fields": 9
+  },
+  "risks": [],
+  "next_action": "learning analysis",
+  "insights": {
+    "views": null,
+    "likes": null,
+    "replies": null,
+    "reposts": null,
+    "quotes": null,
+    "shares": null,
+    "profile_visits": null,
+    "follows": null,
+    "clicks": null
+  },
+  "source_status": "dry_run_saved"
+}

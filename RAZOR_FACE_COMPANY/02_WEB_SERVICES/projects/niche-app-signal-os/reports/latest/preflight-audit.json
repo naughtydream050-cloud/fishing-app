@@ -1,0 +1,38 @@
+{
+  "project": "niche-app-signal-os",
+  "date": "2026-06-05",
+  "status": "ok",
+  "days_expected": 7,
+  "counts": {
+    "thread_md": 7,
+    "thread_json": 7,
+    "card_svg": 7,
+    "card_html": 7,
+    "research_md": 7,
+    "council_md": 7,
+    "post_log_entries": 7,
+    "daily_outputs": 7
+  },
+  "extra_generated_counts": {
+    "thread_md": 8,
+    "thread_json": 8,
+    "card_svg": 8,
+    "card_html": 8,
+    "research_md": 8,
+    "council_md": 8
+  },
+  "safety": {
+    "dry_run": true,
+    "auto_post_false": true,
+    "threads_api_not_called": true,
+    "post_log_dry_run_only": true,
+    "low_quality_gate_blocks": true
+  },
+  "missing_paths": [],
+  "mojibake_files": [],
+  "secret_value_hits": [],
+  "post_statuses": [
+    "dry_run_saved"
+  ],
+  "failures": []
+}

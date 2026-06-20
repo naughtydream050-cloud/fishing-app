@@ -1,0 +1,69 @@
+{
+  "date": "2026-06-09",
+  "post": {
+    "date": "2026-06-09",
+    "text": "「レシート写真が家計管理に変わらない」、地味に面倒。\nメモ、スクショ、予定、支払い情報が別々で、あとから探す時間が増える。\nレシート撮影だけで家計管理したい人ほど、たぶん小さいストレスが積み上がる。\nこういう「スクショと写真から支出候補だけを自動で下書きする家計簿箱」みたいなアプリがあったら便利じゃない？\nこれ欲しい？",
+    "alt_text": "レシート写真が家計管理に変わらないを解決する架空アプリUIの説明カード",
+    "topic_tags": [
+      "レシート家計簿"
+    ],
+    "decision": "post"
+  },
+  "gate": {
+    "approved": true,
+    "scores": {
+      "quality_score": 9,
+      "risk_score": 2,
+      "copycat_score": 1,
+      "same_pattern_days": 1
+    },
+    "risks": [],
+    "publish_decision": "dry_run"
+  },
+  "council": {
+    "date": "2026-06-09",
+    "selected_niche": "レシート家計簿",
+    "council": {
+      "trend_scout": "レシート家計簿は具体的な生活場面があり、コメントが返りやすい。",
+      "niche_analyst": "対象はレシート撮影だけで家計管理したい人。悩みは「レシート写真が家計管理に変わらない」。",
+      "product_builder": "MVPは「スクショと写真から支出候補だけを自動で下書きする家計簿箱」を1画面モックで見せる。",
+      "growth_reviewer": "完成品宣伝ではなく「これ欲しい？」寄りで反応を見る。",
+      "risk_reviewer": "元投稿の文面や画像は使わず、DRY_RUN素材として保存する。"
+    },
+    "decision": "post",
+    "post_angle": "レシート写真が家計管理に変わらないを一言で刺し、スクショと写真から支出候補だけを自動で下書きする家計簿箱の架空UIを見せる。",
+    "image_card": {
+      "headline": "レシート写真が家計管理に変わらない",
+      "mock_ui": [
+        "レシート家計簿",
+        "レシート撮影だけで家計管理したい人",
+        "メモ/期限/費用をまとめる"
+      ],
+      "footer": "こんなサイトあったら便利？"
+    },
+    "post_text": "",
+    "risk_score": 2,
+    "quality_score": 9,
+    "reason_to_skip": null
+  },
+  "card": {
+    "department": "Design Department",
+    "date": "2026-06-09",
+    "input_sources": [
+      "output/reports/llm_council.json"
+    ],
+    "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
+    "scores": {
+      "width": 1080,
+      "height": 1350
+    },
+    "risks": [
+      "png_screenshot_requires_optional_playwright"
+    ],
+    "next_action": "risk gate",
+    "card_paths": [
+      "output\\card_images\\2026-06-09.svg",
+      "output\\card_images\\2026-06-09.html"
+    ]
+  }
+}
