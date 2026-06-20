@@ -1,0 +1,3 @@
+dry-run trigger
+requested_at: 2026-06-20T00:00:00Z
+purpose: verify market-input based DRY_RUN without live posting
