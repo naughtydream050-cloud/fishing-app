@@ -1,0 +1,69 @@
+{
+  "date": "2026-06-06",
+  "post": {
+    "date": "2026-06-06",
+    "text": "「ライブ記録が写真アプリとメモに分かれる」、地味に面倒。\nメモ、スクショ、予定、支払い情報が別々で、あとから探す時間が増える。\nライブ参戦の思い出を残したいファンほど、たぶん小さいストレスが積み上がる。\nこういう「セトリ、座席、感想、写真を公演ごとに残せる参戦ログ」みたいなアプリがあったら便利じゃない？\nこれ欲しい？",
+    "alt_text": "ライブ記録が写真アプリとメモに分かれるを解決する架空アプリUIの説明カード",
+    "topic_tags": [
+      "ライブ参戦記録"
+    ],
+    "decision": "post"
+  },
+  "gate": {
+    "approved": true,
+    "scores": {
+      "quality_score": 9,
+      "risk_score": 2,
+      "copycat_score": 1,
+      "same_pattern_days": 1
+    },
+    "risks": [],
+    "publish_decision": "dry_run"
+  },
+  "council": {
+    "date": "2026-06-06",
+    "selected_niche": "ライブ参戦記録",
+    "council": {
+      "trend_scout": "ライブ参戦記録は具体的な生活場面があり、コメントが返りやすい。",
+      "niche_analyst": "対象はライブ参戦の思い出を残したいファン。悩みは「ライブ記録が写真アプリとメモに分かれる」。",
+      "product_builder": "MVPは「セトリ、座席、感想、写真を公演ごとに残せる参戦ログ」を1画面モックで見せる。",
+      "growth_reviewer": "完成品宣伝ではなく「これ欲しい？」寄りで反応を見る。",
+      "risk_reviewer": "元投稿の文面や画像は使わず、DRY_RUN素材として保存する。"
+    },
+    "decision": "post",
+    "post_angle": "ライブ記録が写真アプリとメモに分かれるを一言で刺し、セトリ、座席、感想、写真を公演ごとに残せる参戦ログの架空UIを見せる。",
+    "image_card": {
+      "headline": "ライブ記録が写真アプリとメモに分かれる",
+      "mock_ui": [
+        "ライブ参戦記録",
+        "ライブ参戦の思い出を残したいファン",
+        "メモ/期限/費用をまとめる"
+      ],
+      "footer": "こんなサイトあったら便利？"
+    },
+    "post_text": "",
+    "risk_score": 2,
+    "quality_score": 9,
+    "reason_to_skip": null
+  },
+  "card": {
+    "department": "Design Department",
+    "date": "2026-06-06",
+    "input_sources": [
+      "output/reports/llm_council.json"
+    ],
+    "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
+    "scores": {
+      "width": 1080,
+      "height": 1350
+    },
+    "risks": [
+      "png_screenshot_requires_optional_playwright"
+    ],
+    "next_action": "risk gate",
+    "card_paths": [
+      "output\\card_images\\2026-06-06.svg",
+      "output\\card_images\\2026-06-06.html"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "department": "Design Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/llm_council.json"
+  ],
+  "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
+  "scores": {
+    "width": 1080,
+    "height": 1350
+  },
+  "risks": [
+    "png_screenshot_requires_optional_playwright"
+  ],
+  "next_action": "risk gate",
+  "card_paths": [
+    "output\\card_images\\2026-06-11.svg",
+    "output\\card_images\\2026-06-11.html"
+  ]
+}

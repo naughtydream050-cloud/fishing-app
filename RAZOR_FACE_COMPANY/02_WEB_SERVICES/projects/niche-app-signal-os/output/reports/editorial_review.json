@@ -1,0 +1,160 @@
+{
+  "date": "2026-06-05",
+  "status": "ok",
+  "counts": {
+    "daily_outputs": 7,
+    "post_log_entries": 7,
+    "build_candidates": 7,
+    "note_candidates": 7
+  },
+  "category_rollup": [
+    {
+      "category": "推し活管理",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "推し活の予定と当落メモが散らばる",
+      "sample_target_user": "複数の推し活予定をスマホで管理する人"
+    },
+    {
+      "category": "ライブ参戦記録",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "ライブ記録が写真アプリとメモに分かれる",
+      "sample_target_user": "ライブ参戦の思い出を残したいファン"
+    },
+    {
+      "category": "グッズ管理",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "買ったグッズと未開封在庫を把握できない",
+      "sample_target_user": "推しグッズを複数シリーズで買うファン"
+    },
+    {
+      "category": "遠征費管理",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "遠征費と参戦記録がバラバラになる",
+      "sample_target_user": "ライブ遠征をするファン"
+    },
+    {
+      "category": "レシート家計簿",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "レシート写真が家計管理に変わらない",
+      "sample_target_user": "レシート撮影だけで家計管理したい人"
+    },
+    {
+      "category": "大学生向け家計簿",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "少額出費とサブスクの合計が見えない",
+      "sample_target_user": "バイト代で生活費を管理する大学生"
+    },
+    {
+      "category": "SNS投稿管理",
+      "days": 1,
+      "avg_quality": 9.0,
+      "avg_risk": 2.0,
+      "review_score": 16,
+      "sample_pain": "投稿ネタと反応メモが分かれて改善しにくい",
+      "sample_target_user": "個人でSNS発信を続けるクリエイター"
+    }
+  ],
+  "web_shortlist": [
+    {
+      "date": "2026-06-05",
+      "category": "推し活管理",
+      "idea": "現場予定、当落、入金、同行者メモを一画面でまとめる推し活ボード",
+      "target_user": "複数の推し活予定をスマホで管理する人",
+      "signal_score": 10,
+      "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
+    },
+    {
+      "date": "2026-06-06",
+      "category": "ライブ参戦記録",
+      "idea": "セトリ、座席、感想、写真を公演ごとに残せる参戦ログ",
+      "target_user": "ライブ参戦の思い出を残したいファン",
+      "signal_score": 10,
+      "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
+    },
+    {
+      "date": "2026-06-07",
+      "category": "グッズ管理",
+      "idea": "写真でグッズ在庫、購入日、交換予定を管理する推しグッズ棚",
+      "target_user": "推しグッズを複数シリーズで買うファン",
+      "signal_score": 10,
+      "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
+    }
+  ],
+  "note_shortlist": [
+    {
+      "date": "2026-06-05",
+      "category": "推し活管理",
+      "angle": "なぜ「推し活の予定と当落メモが散らばる」をアプリ化したくなるのか",
+      "signal_score": 10
+    },
+    {
+      "date": "2026-06-06",
+      "category": "ライブ参戦記録",
+      "angle": "なぜ「ライブ記録が写真アプリとメモに分かれる」をアプリ化したくなるのか",
+      "signal_score": 10
+    },
+    {
+      "date": "2026-06-07",
+      "category": "グッズ管理",
+      "angle": "なぜ「買ったグッズと未開封在庫を把握できない」をアプリ化したくなるのか",
+      "signal_score": 10
+    }
+  ],
+  "sample_post": "「推し活の予定と当落メモが散らばる」、地味に面倒。\nメモ、スクショ、予定、支払い情報が別々で、あとから探す時間が増える。\n複数の推し活予定をスマホで管理する人ほど、たぶん小さいストレスが積み上がる。\nこういう「現場予定、当落、入金、同行者メモを一画面でまとめる推し活ボード」みたいなアプリがあったら便利じゃない？\nそれともNotionで十分？",
+  "decisions": {
+    "date": "2026-06-05",
+    "mode": "dry_run_editorial_review",
+    "auto_post": false,
+    "dry_run": true,
+    "threads_api_called": false,
+    "keep_categories": [
+      "推し活管理",
+      "ライブ参戦記録",
+      "グッズ管理",
+      "遠征費管理"
+    ],
+    "reduce_categories": [],
+    "web_candidate_focus": {
+      "date": "2026-06-05",
+      "category": "推し活管理",
+      "idea": "現場予定、当落、入金、同行者メモを一画面でまとめる推し活ボード",
+      "target_user": "複数の推し活予定をスマホで管理する人",
+      "signal_score": 10,
+      "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
+    },
+    "note_candidate_focus": {
+      "date": "2026-06-05",
+      "category": "推し活管理",
+      "angle": "なぜ「推し活の予定と当落メモが散らばる」をアプリ化したくなるのか",
+      "signal_score": 10
+    },
+    "next_manual_review": [
+      "投稿文が宣伝に見えないか確認する",
+      "画像カードがスマホで読めるか確認する",
+      "Web化候補を1つだけ選び、LP化の前に需要仮説を書く",
+      "AUTO_POST=true判断は別相談にする"
+    ]
+  },
+  "risks": [
+    "AUTO_POST remains false",
+    "No live engagement yet; all decisions are DRY_RUN hypotheses"
+  ]
+}

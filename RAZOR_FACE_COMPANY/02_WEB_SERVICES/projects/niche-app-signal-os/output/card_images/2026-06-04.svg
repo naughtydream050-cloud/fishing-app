@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#f6f1e8"/>
+<rect x="90" y="96" width="900" height="1158" rx="32" fill="#fdfaf4" stroke="#d9cbb8" stroke-width="3"/>
+<text x="135" y="194" font-size="42" fill="#1f2933" font-family="Arial, sans-serif" font-weight="700">こんな小さい面倒ない？</text>
+<foreignObject x="135" y="238" width="810" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,'Yu Gothic',sans-serif;font-size:52px;font-weight:700;line-height:1.24;color:#17202a;">推し活の予定と当落メモが散らばる</div></foreignObject>
+<rect x="135" y="410" width="810" height="560" rx="28" fill="#eef6f2" stroke="#b8d2c6" stroke-width="3"/>
+<text x="176" y="480" font-size="28" fill="#617064" font-family="Arial, sans-serif">架空アプリUI</text>
+<rect x="135" y="445" width="810" height="78" rx="18" fill="#ffffff" stroke="#d6dee8"/><text x="176" y="494" font-size="34" fill="#1d2733">推し活管理</text>
+<rect x="135" y="561" width="810" height="78" rx="18" fill="#ffffff" stroke="#d6dee8"/><text x="176" y="610" font-size="34" fill="#1d2733">複数の推し活予定をスマホで管理する人</text>
+<rect x="135" y="677" width="810" height="78" rx="18" fill="#ffffff" stroke="#d6dee8"/><text x="176" y="726" font-size="34" fill="#1d2733">メモ/期限/費用をまとめる</text>
+<rect x="176" y="900" width="308" height="34" rx="17" fill="#2f6f68"/>
+<rect x="506" y="900" width="232" height="34" rx="17" fill="#d88a48"/>
+<text x="135" y="1088" font-size="38" fill="#1f2933" font-family="Arial, 'Yu Gothic', sans-serif" font-weight="700">こんなサイトあったら便利？</text>
+<text x="135" y="1170" font-size="26" fill="#60707f" font-family="Arial, sans-serif">Niche App Signal OS / DRY RUN</text>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "department": "Copywriting Department",
+  "date": "2026-06-20",
+  "input_sources": [
+    "output/reports/llm_council.json",
+    "output/reports/audience_tone_profile.json"
+  ],
+  "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。",
+  "scores": {
+    "length": 112,
+    "line_count": 4,
+    "variant_count": 3
+  },
+  "risks": [],
+  "next_action": "card image",
+  "post": {
+    "date": "2026-06-20",
+    "text": "現場のこと、あとで見返そうと思っても散らばりがちじゃない？\n座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。\nライブごとにまとめて残せる推し活ログの試作UIを作ってます。\nこれ欲しい？それともNotionで十分？",
+    "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
+    "topic_tags": [
+      "推し活管理"
+    ],
+    "decision": "dry_run",
+    "tone_id": "gen_z_oshi_activity",
+    "variant_id": "A"
+  },
+  "tone_variants_path": "output/reports/threads_tone_variants.json"
+}

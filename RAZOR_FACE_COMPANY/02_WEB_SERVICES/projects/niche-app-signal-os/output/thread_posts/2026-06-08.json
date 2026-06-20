@@ -1,0 +1,69 @@
+{
+  "date": "2026-06-08",
+  "post": {
+    "date": "2026-06-08",
+    "text": "「遠征費と参戦記録がバラバラになる」、地味に面倒。\nメモ、スクショ、予定、支払い情報が別々で、あとから探す時間が増える。\nライブ遠征をするファンほど、たぶん小さいストレスが積み上がる。\nこういう「ライブ遠征ごとに費用と思い出をまとめるミニ家計簿」みたいなアプリがあったら便利じゃない？\nこれ、アプリ化したら使う？",
+    "alt_text": "遠征費と参戦記録がバラバラになるを解決する架空アプリUIの説明カード",
+    "topic_tags": [
+      "遠征費管理"
+    ],
+    "decision": "post"
+  },
+  "gate": {
+    "approved": true,
+    "scores": {
+      "quality_score": 9,
+      "risk_score": 2,
+      "copycat_score": 1,
+      "same_pattern_days": 1
+    },
+    "risks": [],
+    "publish_decision": "dry_run"
+  },
+  "council": {
+    "date": "2026-06-08",
+    "selected_niche": "遠征費管理",
+    "council": {
+      "trend_scout": "遠征費管理は具体的な生活場面があり、コメントが返りやすい。",
+      "niche_analyst": "対象はライブ遠征をするファン。悩みは「遠征費と参戦記録がバラバラになる」。",
+      "product_builder": "MVPは「ライブ遠征ごとに費用と思い出をまとめるミニ家計簿」を1画面モックで見せる。",
+      "growth_reviewer": "完成品宣伝ではなく「これ欲しい？」寄りで反応を見る。",
+      "risk_reviewer": "元投稿の文面や画像は使わず、DRY_RUN素材として保存する。"
+    },
+    "decision": "post",
+    "post_angle": "遠征費と参戦記録がバラバラになるを一言で刺し、ライブ遠征ごとに費用と思い出をまとめるミニ家計簿の架空UIを見せる。",
+    "image_card": {
+      "headline": "遠征費と参戦記録がバラバラになる",
+      "mock_ui": [
+        "遠征費管理",
+        "ライブ遠征をするファン",
+        "メモ/期限/費用をまとめる"
+      ],
+      "footer": "こんなサイトあったら便利？"
+    },
+    "post_text": "",
+    "risk_score": 2,
+    "quality_score": 9,
+    "reason_to_skip": null
+  },
+  "card": {
+    "department": "Design Department",
+    "date": "2026-06-08",
+    "input_sources": [
+      "output/reports/llm_council.json"
+    ],
+    "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
+    "scores": {
+      "width": 1080,
+      "height": 1350
+    },
+    "risks": [
+      "png_screenshot_requires_optional_playwright"
+    ],
+    "next_action": "risk gate",
+    "card_paths": [
+      "output\\card_images\\2026-06-08.svg",
+      "output\\card_images\\2026-06-08.html"
+    ]
+  }
+}

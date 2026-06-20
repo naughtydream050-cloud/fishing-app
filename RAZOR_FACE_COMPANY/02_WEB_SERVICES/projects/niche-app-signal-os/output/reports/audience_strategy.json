@@ -1,0 +1,53 @@
+{
+  "department": "Audience Strategy Department",
+  "date": "2026-06-18",
+  "input_sources": [
+    "output/reports/niche_demand_score.json",
+    "handoff/oshi-activity-management/MVP_SPEC.md",
+    "output/reports/oshi_mvp_marketing_review.md"
+  ],
+  "summary": "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。",
+  "scores": {
+    "segment_confidence": 9
+  },
+  "risks": [],
+  "next_action": "llm council",
+  "audience_strategy": {
+    "date": "2026-06-18",
+    "candidate_id": "oshi-activity-management",
+    "target_user_segment": "推し活の予定、現場記録、グッズ、遠征費、思い出メモが複数アプリに散らかるライト-ミドル層",
+    "user_motivation": "管理したいというより、現場ごとの記憶と出費をあとでかわいく見返したい",
+    "primary_job": "現場ごとに、ライブ参戦ログ・座席・セトリ・チケット状態・同行者・感情タグ・遠征費をまとめる",
+    "current_alternatives": [
+      "Notion",
+      "スマホメモ",
+      "カレンダー",
+      "スクショ",
+      "写真フォルダ",
+      "家計簿アプリ"
+    ],
+    "language_to_use": [
+      "現場ごと",
+      "見返す",
+      "推し活ログ",
+      "試作UI",
+      "ログインなし",
+      "ブラウザ保存"
+    ],
+    "language_to_avoid": [
+      "完全管理",
+      "節約",
+      "業務管理",
+      "SaaS",
+      "自動同期",
+      "公式連携"
+    ],
+    "comment_hooks": [
+      "これ欲しい？",
+      "Notionで十分？",
+      "足りない項目ある？"
+    ],
+    "segment_confidence": 9
+  },
+  "memory_path": "memory/audience/2026-06-18.md"
+}

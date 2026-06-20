@@ -1,0 +1,34 @@
+{
+  "department": "Executive Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/threads_insights.json"
+  ],
+  "summary": "次週seed weight、Web化候補、note化候補、週次レポートを更新しました。",
+  "scores": {
+    "build_candidates": 1,
+    "note_candidates": 1
+  },
+  "risks": [],
+  "next_action": "review artifacts",
+  "next_week_seed_weights": {
+    "SNS投稿管理": 10
+  },
+  "build_candidates": [
+    {
+      "category": "SNS投稿管理",
+      "idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
+      "reason": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる",
+      "signal_score": 10,
+      "next_step": "反応が重複したらLPまたは待機リストMVPにする"
+    }
+  ],
+  "note_candidates": [
+    {
+      "category": "SNS投稿管理",
+      "angle": "なぜ「投稿ネタと反応メモが分かれて改善しにくい」をアプリ化したくなるのか",
+      "signal_score": 10
+    }
+  ],
+  "weekly_report": "memory/reports/weekly_report.md"
+}

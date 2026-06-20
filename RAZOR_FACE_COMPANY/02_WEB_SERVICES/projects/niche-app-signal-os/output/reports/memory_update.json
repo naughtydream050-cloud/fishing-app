@@ -1,0 +1,15 @@
+{
+  "department": "Memory Department",
+  "date": "2026-06-11",
+  "input_sources": [
+    "output/reports/research_inputs.json",
+    "output/reports/viral_patterns.json"
+  ],
+  "summary": "Obsidian互換Markdownへ今日のリサーチ記録を保存しました。",
+  "scores": {
+    "research_items": 1
+  },
+  "risks": [],
+  "next_action": "trend timing",
+  "memory_path": "memory/research/2026-06-11.md"
+}

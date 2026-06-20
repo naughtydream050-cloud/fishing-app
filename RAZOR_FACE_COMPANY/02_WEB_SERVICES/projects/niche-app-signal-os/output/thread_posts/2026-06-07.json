@@ -1,0 +1,69 @@
+{
+  "date": "2026-06-07",
+  "post": {
+    "date": "2026-06-07",
+    "text": "「買ったグッズと未開封在庫を把握できない」、地味に面倒。\nメモ、スクショ、予定、支払い情報が別々で、あとから探す時間が増える。\n推しグッズを複数シリーズで買うファンほど、たぶん小さいストレスが積み上がる。\nこういう「写真でグッズ在庫、購入日、交換予定を管理する推しグッズ棚」みたいなアプリがあったら便利じゃない？\n自分なら何を追加したい？",
+    "alt_text": "買ったグッズと未開封在庫を把握できないを解決する架空アプリUIの説明カード",
+    "topic_tags": [
+      "グッズ管理"
+    ],
+    "decision": "post"
+  },
+  "gate": {
+    "approved": true,
+    "scores": {
+      "quality_score": 9,
+      "risk_score": 2,
+      "copycat_score": 1,
+      "same_pattern_days": 1
+    },
+    "risks": [],
+    "publish_decision": "dry_run"
+  },
+  "council": {
+    "date": "2026-06-07",
+    "selected_niche": "グッズ管理",
+    "council": {
+      "trend_scout": "グッズ管理は具体的な生活場面があり、コメントが返りやすい。",
+      "niche_analyst": "対象は推しグッズを複数シリーズで買うファン。悩みは「買ったグッズと未開封在庫を把握できない」。",
+      "product_builder": "MVPは「写真でグッズ在庫、購入日、交換予定を管理する推しグッズ棚」を1画面モックで見せる。",
+      "growth_reviewer": "完成品宣伝ではなく「これ欲しい？」寄りで反応を見る。",
+      "risk_reviewer": "元投稿の文面や画像は使わず、DRY_RUN素材として保存する。"
+    },
+    "decision": "post",
+    "post_angle": "買ったグッズと未開封在庫を把握できないを一言で刺し、写真でグッズ在庫、購入日、交換予定を管理する推しグッズ棚の架空UIを見せる。",
+    "image_card": {
+      "headline": "買ったグッズと未開封在庫を把握できない",
+      "mock_ui": [
+        "グッズ管理",
+        "推しグッズを複数シリーズで買うファン",
+        "メモ/期限/費用をまとめる"
+      ],
+      "footer": "こんなサイトあったら便利？"
+    },
+    "post_text": "",
+    "risk_score": 2,
+    "quality_score": 9,
+    "reason_to_skip": null
+  },
+  "card": {
+    "department": "Design Department",
+    "date": "2026-06-07",
+    "input_sources": [
+      "output/reports/llm_council.json"
+    ],
+    "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。",
+    "scores": {
+      "width": 1080,
+      "height": 1350
+    },
+    "risks": [
+      "png_screenshot_requires_optional_playwright"
+    ],
+    "next_action": "risk gate",
+    "card_paths": [
+      "output\\card_images\\2026-06-07.svg",
+      "output\\card_images\\2026-06-07.html"
+    ]
+  }
+}

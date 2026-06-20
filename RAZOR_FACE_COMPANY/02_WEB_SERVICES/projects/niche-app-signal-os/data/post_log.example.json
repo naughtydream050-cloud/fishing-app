@@ -1,0 +1,12 @@
+[
+  {
+    "date": "YYYY-MM-DD",
+    "status": "dry_run_saved",
+    "auto_post": false,
+    "dry_run": true,
+    "thread_id": null,
+    "post_text": "",
+    "alt_text": "",
+    "topic_tags": []
+  }
+]

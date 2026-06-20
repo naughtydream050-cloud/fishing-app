@@ -1,0 +1,39 @@
+name: Daily Threads Signal Post
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 23 * * *"
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    env:
+      DRY_RUN: "true"
+      AUTO_POST: "false"
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_TARGET_HANDLE: ${{ secrets.THREADS_TARGET_HANDLE }}
+      THREADS_AUTO_POST_ENABLED: "false"
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run daily dry-run pipeline
+        working-directory: 02_WEB_SERVICES/projects/niche-app-signal-os
+        run: python scripts/run_daily_pipeline.py --dry-run
+      - name: Upload signal artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: niche-app-signal-os-${{ github.run_id }}
+          path: |
+            02_WEB_SERVICES/projects/niche-app-signal-os/output/thread_posts/
+            02_WEB_SERVICES/projects/niche-app-signal-os/output/card_images/
+            02_WEB_SERVICES/projects/niche-app-signal-os/output/reports/
+            02_WEB_SERVICES/projects/niche-app-signal-os/memory/research/
+            02_WEB_SERVICES/projects/niche-app-signal-os/memory/council/
+            02_WEB_SERVICES/projects/niche-app-signal-os/memory/reports/
+          if-no-files-found: warn
