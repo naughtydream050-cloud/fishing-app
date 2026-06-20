@@ -1,0 +1,62 @@
+name: Niche App Signal OS Live Review Post
+
+on:
+  push:
+    branches:
+      - codex/live-review-post
+    paths:
+      - ".github/workflows/niche-app-signal-os-live-review-post.yml"
+      - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/**"
+
+permissions:
+  contents: read
+
+jobs:
+  live-review-post:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os
+    env:
+      DRY_RUN: "false"
+      AUTO_POST: "true"
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
+      THREADS_TARGET_HANDLE: younengsaitoshaojie
+      THREADS_IMAGE_URL: https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/${{ github.sha }}/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-20-oshi-activity-management.png
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Live posting preflight
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${DRY_RUN}" = "false"
+          test "${AUTO_POST}" = "true"
+          test "${THREADS_AUTO_POST_ENABLED:-}" = "true"
+          test -n "${THREADS_ACCESS_TOKEN:-}"
+          test -n "${THREADS_USER_ID:-}"
+          test "${THREADS_TARGET_HANDLE}" = "younengsaitoshaojie"
+          test -f output/reports/selected_post_candidate.json
+          test -f output/share-cards/2026-06-20-oshi-activity-management.png
+          python -c "import json; from pathlib import Path; selected=json.loads(Path('output/reports/selected_post_candidate.json').read_text(encoding='utf-8')); assert selected.get('selected') is True; assert selected.get('tone_check_result', {}).get('passed') is True; assert selected.get('selected_post_text', '').strip(); print('selected_post_candidate_ok')"
+
+      - name: Publish selected post to Threads
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/post_to_threads.py
+
+      - name: Show publish status
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -c "import json; from pathlib import Path; payload=json.loads(Path('output/reports/publishing.json').read_text(encoding='utf-8')); print(json.dumps({'status': payload.get('status'), 'thread_id': payload.get('thread_id'), 'api_called': payload.get('api_called'), 'risks': payload.get('risks', [])}, ensure_ascii=False, indent=2))"
