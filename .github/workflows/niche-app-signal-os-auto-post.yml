@@ -59,6 +59,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          echo "RUN_DATE=$(TZ=Asia/Tokyo date +%F)" >> "$GITHUB_ENV"
           LIVE_POST="false"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.live_post }}" = "true" ]; then
             LIVE_POST="true"
