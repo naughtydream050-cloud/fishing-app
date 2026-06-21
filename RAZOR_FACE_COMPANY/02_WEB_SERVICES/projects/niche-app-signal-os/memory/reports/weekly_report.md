@@ -12,6 +12,6 @@
 - note_candidates: see data/note_candidates.json
 - audience_segment: 高校生・大学生・専門学生
 - design_positioning: 市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。
-- reaction_memory_entries: 0
+- reaction_memory_entries: 1
 - increase_next_week: categories with replies/saves
 - decrease_next_week: unclear target user or repeated pattern

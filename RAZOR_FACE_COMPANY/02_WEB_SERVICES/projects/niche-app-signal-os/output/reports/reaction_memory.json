@@ -7,16 +7,34 @@
   ],
   "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets.",
   "scores": {
-    "reaction_entries": 0,
+    "reaction_entries": 1,
     "top_reaction_score": 0
   },
-  "risks": [
-    "no_live_reaction_yet"
-  ],
+  "risks": [],
   "next_action": "candidate scoring",
   "reaction_memory": "data/reaction_memory.json",
   "memory_path": "memory/reaction/2026-06-21.md",
-  "top_entries": [],
-  "added_live_initial_entry": false,
+  "top_entries": [
+    {
+      "date": "2026-06-21",
+      "candidate_id": "student-deadline-check",
+      "post_variant": "student_casual",
+      "manual_post_url": "https://www.threads.net/@younengsaitoshaojie/post/18087027443624576",
+      "post_id": "18087027443624576",
+      "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+      "likes": null,
+      "replies": null,
+      "reposts": null,
+      "saves": null,
+      "profile_clicks": null,
+      "comments": [],
+      "objections": [],
+      "requested_fields": [],
+      "design_feedback": [],
+      "next_decision": "hold",
+      "reaction_score": 0
+    }
+  ],
+  "added_live_initial_entry": true,
   "threads_api_called": false
 }

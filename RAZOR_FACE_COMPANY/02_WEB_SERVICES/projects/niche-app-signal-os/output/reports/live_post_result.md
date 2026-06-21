@@ -1,10 +1,10 @@
 # Live Post Result - 2026-06-21
 
-- status: dry_run_saved
-- posting_attempted: False
-- api_called: False
-- post_id: 
-- post_url: 
+- status: posted
+- posting_attempted: True
+- api_called: True
+- post_id: 18087027443624576
+- post_url: https://www.threads.net/@younengsaitoshaojie/post/18087027443624576
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: student-deadline-check
 - selected_image_path: output/share-cards/2026-06-21-student-deadline-check.png
@@ -23,4 +23,3 @@ LINEに残す
 それとも今のやり方で十分？
 
 ## Risks
-- AUTO_POST=false
