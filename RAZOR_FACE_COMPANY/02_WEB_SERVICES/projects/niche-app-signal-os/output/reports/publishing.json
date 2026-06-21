@@ -11,8 +11,8 @@
   ],
   "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards.",
   "scores": {
-    "auto_post": false,
-    "dry_run": true,
+    "auto_post": true,
+    "dry_run": false,
     "threads_auto_post_enabled": true
   },
   "risks": [
@@ -25,22 +25,22 @@
   "target_guard": "target_handle_ok",
   "live_preflight": {
     "gate_approved": false,
-    "auto_post": false,
+    "auto_post": true,
     "threads_auto_post_enabled": true,
-    "dry_run": true,
+    "dry_run": false,
     "target_handle": "younengsaitoshaojie",
     "expected_target_handle": "younengsaitoshaojie",
-    "content_hash": "1cc15d8cfb4a1d759a47b961cf7f2a9882c255678450fdb4437edf30a3bf6f68",
+    "content_hash": "f969543e2e8bc4dc2360e4297b8414ebc2a84156d7cf3421005978256bc6181f",
     "duplicate": false,
     "missing_secrets": [],
     "selected_candidate": false,
     "post_source_audit_allowed": false
   },
-  "log_entry": "{'date': '2026-06-21', 'created_at': '2026-06-21T11:30:27.457773+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': False, 'threads_auto_post_enabled': True, 'dry_run': True, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '1cc15d8cfb4a1d759a47b961cf7f2a9882c255678450fdb4437edf30a3bf6f68', 'post_text': 'レシート/支払い履歴のあと見返し、あとで見返したい時ほど散らばらない？\\n\\n写真フォルダに残す\\nカード明細に残す\\nEC購入履歴に残す\\n家計簿アプリを別々に見るに残す\\n\\nレシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい\\n\\n購入証跡ログブックUIで一か所に残せたら使う？\\nそれとも今のやり方で十分？', 'alt_text': 'レシート/支払い履歴のあと見返しのスマホUI風カード', 'topic_tags': ['レシート/支払い履歴のあと見返し', 'ニッチアプリ', 'DRY_RUN'], 'candidate_id': 'receipt-payment-lookback', 'selected_image_path': 'output/share-cards/2026-06-21-receipt-payment-lookback.png', 'post_text_hash': '4e1d5846405ab43a16868ffc7160141c79609613a2a394c345b1daf6b60834c0'}",
+  "log_entry": "{'date': '2026-06-21', 'created_at': '2026-06-21T11:30:28.571864+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': True, 'threads_auto_post_enabled': True, 'dry_run': False, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': 'f969543e2e8bc4dc2360e4297b8414ebc2a84156d7cf3421005978256bc6181f', 'post_text': 'レシート/支払い履歴のあと見返し、あとで見返したい時ほど散らばらない？\\n\\n写真フォルダに残す\\nカード明細に残す\\nEC購入履歴に残す\\n家計簿アプリを別々に見るに残す\\n\\nレシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい\\n\\n購入証跡ログブックUIで一か所に残せたら使う？\\nそれとも今のやり方で十分？', 'alt_text': 'レシート/支払い履歴のあと見返しのスマホUI風カード', 'topic_tags': ['レシート/支払い履歴のあと見返し', 'ニッチアプリ', 'DRY_RUN'], 'candidate_id': 'receipt-payment-lookback', 'selected_image_path': 'output/share-cards/2026-06-21-receipt-payment-lookback.png', 'post_text_hash': '4e1d5846405ab43a16868ffc7160141c79609613a2a394c345b1daf6b60834c0'}",
   "api_called": false,
   "live_post_result": {
     "date": "2026-06-21",
-    "created_at": "2026-06-21T11:30:27.457773+00:00",
+    "created_at": "2026-06-21T11:30:28.571864+00:00",
     "status": "blocked_by_post_source_audit",
     "posting_attempted": false,
     "api_called": false,

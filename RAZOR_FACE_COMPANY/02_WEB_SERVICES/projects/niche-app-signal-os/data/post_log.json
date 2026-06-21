@@ -197,5 +197,26 @@
     "candidate_id": "receipt-payment-lookback",
     "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
     "post_text_hash": "4e1d5846405ab43a16868ffc7160141c79609613a2a394c345b1daf6b60834c0"
+  },
+  {
+    "date": "2026-06-21",
+    "created_at": "2026-06-21T11:30:28.571864+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "f969543e2e8bc4dc2360e4297b8414ebc2a84156d7cf3421005978256bc6181f",
+    "post_text": "レシート/支払い履歴のあと見返し、あとで見返したい時ほど散らばらない？\n\n写真フォルダに残す\nカード明細に残す\nEC購入履歴に残す\n家計簿アプリを別々に見るに残す\n\nレシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい\n\n購入証跡ログブックUIで一か所に残せたら使う？\nそれとも今のやり方で十分？",
+    "alt_text": "レシート/支払い履歴のあと見返しのスマホUI風カード",
+    "topic_tags": [
+      "レシート/支払い履歴のあと見返し",
+      "ニッチアプリ",
+      "DRY_RUN"
+    ],
+    "candidate_id": "receipt-payment-lookback",
+    "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
+    "post_text_hash": "4e1d5846405ab43a16868ffc7160141c79609613a2a394c345b1daf6b60834c0"
   }
 ]
