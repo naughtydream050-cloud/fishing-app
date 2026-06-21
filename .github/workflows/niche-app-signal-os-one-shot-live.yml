@@ -1,0 +1,97 @@
+name: Niche App Signal OS One Shot Live Post
+
+on:
+  push:
+    branches:
+      - codex/niche-market-auto-post-live
+
+permissions:
+  contents: write
+
+jobs:
+  one-shot-live-post:
+    if: contains(github.event.head_commit.message, '[niche-live-post-now]')
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os
+    env:
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_AUTO_POST_ENABLED: ${{ secrets.THREADS_AUTO_POST_ENABLED }}
+      CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      THREADS_TARGET_HANDLE: younengsaitoshaojie
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: codex/niche-market-auto-post-live
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Preflight live guard
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${THREADS_AUTO_POST_ENABLED:-}" = "true"
+          test -n "${THREADS_ACCESS_TOKEN:-}"
+          test -n "${THREADS_USER_ID:-}"
+          test "${THREADS_TARGET_HANDLE}" = "younengsaitoshaojie"
+
+      - name: Run market-backed dry-run pipeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          AUTO_POST=false DRY_RUN=true python scripts/run_daily_pipeline.py --dry-run
+
+      - name: Commit generated artifacts before live post
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output memory data/post_log.json data/post_history.json reports/latest/context-pack.json
+          if git diff --cached --quiet; then
+            echo "No generated artifact changes."
+          else
+            git commit -m "chore: prepare niche app signal os live post"
+            git push
+          fi
+
+      - name: Live post through guarded selected candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          POST_COMMIT_SHA="$(git rev-parse HEAD)"
+          AUTO_POST=true DRY_RUN=false GITHUB_SHA="${POST_COMMIT_SHA}" python scripts/post_to_threads.py
+          python scripts/fetch_threads_insights.py
+          python scripts/update_reaction_memory.py
+          python scripts/analyze_learning.py
+
+      - name: Commit live posting result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            data/post_log.json \
+            data/post_history.json \
+            data/reaction_memory.json \
+            output/reports/publishing.json \
+            output/reports/live_post_result.json \
+            output/reports/live_post_result.md \
+            output/reports/threads_insights.json \
+            output/reports/reaction_memory.json \
+            output/reports/learning.json \
+            memory/reaction \
+            memory/reports/weekly_report.md \
+            reports/latest/context-pack.json
+          if git diff --cached --quiet; then
+            echo "No live posting result changes."
+          else
+            git commit -m "chore: record niche app signal os live post"
+            git push
+          fi
