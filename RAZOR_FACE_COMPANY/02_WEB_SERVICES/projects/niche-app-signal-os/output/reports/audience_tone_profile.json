@@ -1,46 +1,66 @@
 {
   "department": "Audience Tone Adapter Department",
-  "date": "2026-06-21",
-  "input_sources": [
-    "output/reports/audience_strategy.json",
-    "data/audience_tone_rules.json"
-  ],
-  "summary": "Audience Strategyを受け取り、Threads投稿文の口調・語彙・構成を調整しました。",
+  "date": "2026-06-20",
+  "input_sources": [],
+  "summary": "Converted candidate audience strategy into a concrete Threads tone profile.",
   "scores": {
-    "use_word_count": 5,
+    "use_word_count": 8,
     "avoid_word_count": 5
   },
   "risks": [],
-  "next_action": "copywriting",
+  "next_action": "",
   "audience_tone_profile": {
-    "date": "2026-06-21",
-    "tone_id": "default_light_problem",
-    "target_user_segment": "個人でSNS発信を続けるクリエイター",
-    "entry_style": "小さい面倒",
-    "tone": "軽い問題提起と試作UIの相談",
-    "use_words": [
-      "あとで見返す",
-      "散らばる",
+    "date": "2026-06-20",
+    "candidate_id": "live-trip-packing-check",
+    "tone_id": "gen_z_oshi_activity",
+    "target_audience": "Z世代寄りの推し活・現場遠征層",
+    "target_user_segment": "ライブやイベントに遠征する10代後半から30代のファン",
+    "ui_target_audience": "ライブやイベントに遠征する10代後半から30代のファン",
+    "audience_context": "ライブやイベントに遠征する10代後半から30代のファン",
+    "copy_tone_hint": [
+      "現場",
+      "忘れがち",
       "メモ",
-      "ログ",
-      "試作UI"
+      "スクショ",
+      "あとで見返す",
+      "持ち物",
+      "遠征",
+      "これ使う？"
+    ],
+    "tone": "casual problem-first Threads copy",
+    "use_words": [
+      "現場",
+      "忘れがち",
+      "メモ",
+      "スクショ",
+      "あとで見返す",
+      "持ち物",
+      "遠征",
+      "これ使う？"
     ],
     "avoid_words": [
-      "革新的",
-      "完全自動",
-      "業務効率",
+      "効率化",
+      "管理しよう",
       "SaaS",
-      "生産性"
+      "生産性",
+      "完璧に整理"
     ],
-    "structure": [
-      "小さい面倒",
-      "今の代替手段",
-      "試作UI",
-      "欲しいか聞くCTA"
+    "opening_style": [
+      "あるあるから入る",
+      "アプリ説明から入らない",
+      "1文を短くする"
     ],
-    "cta": "これ欲しい？それとも今の管理で十分？",
-    "max_lines": 5,
-    "source": "output/reports/audience_strategy.json"
+    "cta_style": [
+      "これ欲しい？",
+      "今のやり方で十分？",
+      "専用であったら使う？"
+    ],
+    "max_lines": 12,
+    "source": [
+      "output/reports/audience_strategy.json",
+      "output/reports/design_strategy.json",
+      "data/audience_tone_rules.json"
+    ]
   },
-  "memory_path": "memory/audience_tone/2026-06-21.md"
+  "memory_path": "memory/audience_tone/2026-06-20.md"
 }

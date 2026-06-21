@@ -3,83 +3,67 @@ from __future__ import annotations
 from common import cli_parser, department_output, load_latest, save_stage
 
 
-BLOCK_REASONS = {
-    "quality_low": "quality_score < 7",
-    "risk_high": "risk_score > 4",
-    "copycat_high": "copycat_score > 5",
-    "target_unclear": "target_user == unclear",
-    "same_pattern": "same_pattern_days >= 3",
-}
+GLOBAL_BLOCK_WORDS = ["SaaS", "生産性", "革新的", "完全自動化", "業務効率"]
+OSHI_BLOCK_WORDS = ["推し活女子", "完璧に整理", "効率化", "管理しよう", "節約しよう", "無駄遣い"]
+DEVELOPER_MARKERS = ["作りました", "作ってます", "試作UIを作ってます", "リリースしました"]
 
 
-def _tone_warnings(text: str, tone_profile: dict) -> list[str]:
+def _tone_gate(text: str, tone_profile: dict) -> tuple[list[str], list[str], dict]:
+    avoid_words = list(dict.fromkeys((tone_profile.get("avoid_words") or []) + GLOBAL_BLOCK_WORDS))
+    if tone_profile.get("tone_id") == "gen_z_oshi_activity":
+        avoid_words.extend(OSHI_BLOCK_WORDS)
+    used_avoid = [word for word in avoid_words if word and word in text]
+    used_words = [word for word in tone_profile.get("use_words", []) if word and word in text]
+    blocks = []
     warnings = []
-    tone_id = tone_profile.get("tone_id", "")
-    avoid_words = [word for word in tone_profile.get("avoid_words", []) if word]
-    used_avoid = [word for word in avoid_words if word in text]
     if used_avoid:
-        warnings.append(f"tone_avoid_words_used: {', '.join(used_avoid)}")
-
-    explanatory_markers = ["このアプリは", "本サービス", "提供します", "解決します", "機能です"]
-    if sum(1 for marker in explanatory_markers if marker in text) >= 2:
-        warnings.append("too_explanatory_for_threads")
-
-    unnatural_youth_markers = ["ぴえん", "卍", "草すぎ", "尊すぎて無理み"]
-    if any(marker in text for marker in unnatural_youth_markers):
-        warnings.append("unnatural_youth_slang")
-
-    management_markers = ["管理", "節約", "効率化", "生産性", "無駄遣い", "課金しすぎ"]
-    if tone_id == "gen_z_oshi_activity" and sum(1 for marker in management_markers if marker in text) >= 2:
-        warnings.append("oshi_tone_too_management_or_saving_heavy")
-
-    finished_product_markers = ["リリースしました", "正式版", "SaaS", "登録してください", "今すぐ使えます"]
-    if any(marker in text for marker in finished_product_markers):
-        warnings.append("finished_saas_misread_risk")
-
-    if tone_id == "gen_z_oshi_activity" and not text.startswith(("現場", "ライブ", "推し活")):
-        warnings.append("oshi_post_should_start_with_aruaru_or_scene")
-
-    return warnings
+        blocks.append("tone_avoid_words_used: " + ", ".join(used_avoid))
+    if any(marker in text for marker in DEVELOPER_MARKERS):
+        blocks.append("developer_voice_too_strong")
+    if "できます" in text and "これ" not in text:
+        warnings.append("copy_may_sound_like_app_description")
+    if tone_profile.get("tone_id") == "gen_z_oshi_activity" and not any(word in text for word in ["現場", "遠征", "チケット", "身分証", "持ち物"]):
+        blocks.append("oshi_or_event_tone_missing_context_words")
+    return blocks, warnings, {
+        "passed": not blocks,
+        "tone_id": tone_profile.get("tone_id", ""),
+        "target_audience": tone_profile.get("target_audience", ""),
+        "used_words": used_words,
+        "used_avoid_words": used_avoid,
+        "block_count": len(blocks),
+        "warning_count": len(warnings),
+    }
 
 
 def run(sample: bool = False) -> dict:
-    council = load_latest("llm_council.json", {}).get("decision_payload", {})
     post = load_latest("threads_post.json", {}).get("post", {})
     tone_profile = load_latest("audience_tone_profile.json", {}).get("audience_tone_profile", {})
     selected = load_latest("niche_demand_score.json", {}).get("selected_candidate", {})
-    item = (selected or {}).get("item", {})
-    quality_score = int(council.get("quality_score", 0))
-    risk_score = int(council.get("risk_score", 9))
-    copycat_score = 1 if post.get("text") else 0
-    same_pattern_days = 1
+    item = (selected or {}).get("item", {}) if isinstance(selected, dict) else {}
     blocks = []
-    if quality_score < 7:
-        blocks.append(BLOCK_REASONS["quality_low"])
-    if risk_score > 4:
-        blocks.append(BLOCK_REASONS["risk_high"])
-    if copycat_score > 5:
-        blocks.append(BLOCK_REASONS["copycat_high"])
     if item.get("target_user") == "unclear":
-        blocks.append(BLOCK_REASONS["target_unclear"])
-    if same_pattern_days >= 3:
-        blocks.append(BLOCK_REASONS["same_pattern"])
-    tone_warnings = _tone_warnings(post.get("text", ""), tone_profile)
-    approved = not blocks and council.get("decision") in {"post", "dry_run"}
-    publish_decision = "dry_run" if approved else "skip"
+        blocks.append("target_user_unclear")
+    if int(selected.get("evidence_count", 0) or 0) < 1:
+        blocks.append("market_evidence_count_zero")
+    if post.get("candidate_id") and post.get("candidate_id") != selected.get("candidate_id"):
+        blocks.append("post_candidate_mismatch")
+    tone_blocks, tone_warnings, tone_check_result = _tone_gate(post.get("text", ""), tone_profile)
+    blocks.extend(tone_blocks)
+    approved = not blocks
     payload = department_output(
         "Risk Control Department",
-        "品質、類似、対象明確性、自動投稿リスクを評価しました。",
-        scores={
-            "quality_score": quality_score,
-            "risk_score": risk_score,
-            "copycat_score": copycat_score,
-            "same_pattern_days": same_pattern_days,
-            "tone_warning_count": len(tone_warnings),
-        },
+        "Checked market evidence, candidate consistency, and audience tone before post selection.",
+        scores={"tone_block_count": len(tone_blocks), "tone_warning_count": len(tone_warnings)},
         risks=blocks + tone_warnings,
-        next_action="publish dry-run" if approved else "stop without posting",
-        input_sources=["output/reports/llm_council.json", "output/reports/threads_post.json", "output/reports/audience_tone_profile.json"],
-        extra={"approved": approved, "publish_decision": publish_decision, "block_reasons": blocks, "tone_warnings": tone_warnings},
+        next_action="select post candidate" if approved else "stop without posting",
+        input_sources=["output/reports/niche_demand_score.json", "output/reports/threads_post.json", "output/reports/audience_tone_profile.json"],
+        extra={
+            "approved": approved,
+            "publish_decision": "dry_run" if approved else "skip",
+            "block_reasons": blocks,
+            "tone_warnings": tone_warnings,
+            "tone_check_result": tone_check_result,
+        },
     )
     save_stage("quality_risk_gate.json", payload)
     return payload

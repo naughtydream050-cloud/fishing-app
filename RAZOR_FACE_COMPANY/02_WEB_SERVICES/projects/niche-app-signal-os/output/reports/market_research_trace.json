@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-20",
+  "selected_candidate_id": "live-trip-packing-check",
+  "selected_category": "ライブ遠征の持ち物チェック",
+  "selected_pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+  "market_sources_used": [
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "遠征前、チケットと身分証と充電器を何回も確認してしまう"
+    },
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "現場の持ち物リストを毎回作り直すのが地味に面倒"
+    },
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "前回忘れたものを次の現場でまた忘れそうになる"
+    }
+  ],
+  "market_evidence_count": 3,
+  "source_evidence_count": 3,
+  "why_selected_today": "ライブ遠征の持ち物チェック has 3 manual evidence texts, clear target users, current workaround pain, and a concrete UI metaphor.",
+  "stage_presence": {
+    "research_inputs": true,
+    "niche_demand_score": true,
+    "daily_niche_ui_candidates": true
+  },
+  "posting_trace_ready": true
+}

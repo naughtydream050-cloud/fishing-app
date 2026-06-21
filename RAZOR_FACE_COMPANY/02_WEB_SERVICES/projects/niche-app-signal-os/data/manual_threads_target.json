@@ -4,8 +4,7 @@
     "display_name": "有能サイト紹介",
     "handle": "younengsaitoshaojie",
     "profile_url": null,
-    "source": "user-provided screenshot",
-    "observed_profile_text": "便利なWebサイトとAIツールを紹介。仕事・メモ・発信がラクになる小さな道具を発掘します。気になるものは保存用にどうぞ。"
+    "source": "user-provided screenshot"
   },
   "posting_mode": {
     "dry_run": true,
@@ -14,13 +13,11 @@
     "chrome_posting": false,
     "manual_owner_review_required": true
   },
-  "fit_notes": [
-    "アカウントのテーマは便利なWebサイト/AIツール紹介なので、oshi-activity-managementは「小さなWeb試作」「保存したくなる道具」として出す。",
-    "推し活文脈が強すぎると既存プロフィールから少しズレるため、投稿文では『現場ごとのログ』『あとで見返す』を残しつつ、『便利な小道具』の文脈を足す。",
-    "実投稿は行わず、手動投稿前レビューのみ行う。"
-  ],
-  "recommended_manual_post": {
-    "text": "現場のこと、あとで見返そうと思っても散らばりがちじゃない？\n座席はスクショ、セトリはメモ、遠征費は決済履歴、グッズは写真。\nライブごとにまとめて残せる推し活ログの試作UIを作ってます。\nこれ欲しい？それともNotionで十分？",
-    "image": "output/share-cards/oshi-activity-management-A.png"
+  "normal_operation": {
+    "fixed_post_text_allowed": false,
+    "fixed_image_allowed": false,
+    "required_post_text_source": "output/reports/selected_post_candidate.json:selected_post_text",
+    "required_image_source": "output/reports/selected_post_candidate.json:selected_image_path",
+    "required_audit_source": "output/reports/post_source_audit.json"
   }
 }

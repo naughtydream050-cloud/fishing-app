@@ -1,18 +1,32 @@
 {
-  "date": "2026-06-21",
-  "tone_id": "default_light_problem",
+  "date": "2026-06-20",
+  "candidate_id": "live-trip-packing-check",
+  "tone_id": "gen_z_oshi_activity",
+  "target_audience": "Z世代寄りの推し活・現場遠征層",
   "selected_variant_id": "A",
   "variants": [
     {
       "variant_id": "A",
-      "angle": "小さい面倒あるある",
-      "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
-      "why": "説明よりも小さい共感から入る",
-      "tone_id": "default_light_problem",
-      "warnings": [],
-      "line_count": 3,
-      "length": 116
+      "candidate_id": "live-trip-packing-check",
+      "angle": "standard",
+      "text": "ライブ遠征の持ち物チェック、前日になると普通にバタつかない？\n\nチケットどこ\n身分証いるっけ\n充電器入れたっけ\n前回忘れたやつ何だっけ\n\n毎回スクショとメモを行ったり来たりして、出発前に小さく焦るやつ。\n\n現場前チェックリスト風スマホUIで、現場前にまとめて残せたら使う？\nこれ欲しい？",
+      "tone_id": "gen_z_oshi_activity",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "gen_z_oshi_activity",
+        "used_words": [
+          "現場",
+          "メモ",
+          "スクショ",
+          "持ち物",
+          "遠征"
+        ],
+        "used_avoid_words": [],
+        "line_count": 8,
+        "target_audience": "Z世代寄りの推し活・現場遠征層"
+      },
+      "length": 143
     }
   ],
-  "profile_source": "output/reports/audience_tone_profile.json"
+  "all_variants_tone_checked": true
 }

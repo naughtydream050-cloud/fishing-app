@@ -13,10 +13,6 @@ on:
           - "true"
   schedule:
     - cron: "10 0 * * *"
-  push:
-    branches: [main]
-    paths:
-      - ".github/niche-app-signal-os/dry-run-now.txt"
 
 permissions:
   contents: write
@@ -54,16 +50,14 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] && [ "${THREADS_AUTO_POST_ENABLED:-}" = "true" ]; then
             LIVE_POST="true"
           fi
-          if [ "${{ github.event_name }}" = "push" ]; then
-            # Push trigger is dry-run only. It must never inject fixed text/image overrides.
-            LIVE_POST="false"
-          fi
 
           if [ "$LIVE_POST" = "true" ]; then
-            echo "AUTO_POST=true" >> "$GITHUB_ENV"
-            echo "DRY_RUN=false" >> "$GITHUB_ENV"
-            echo "PIPELINE_ARGS=--live-post" >> "$GITHUB_ENV"
+            echo "LIVE_POST=true" >> "$GITHUB_ENV"
+            echo "AUTO_POST=false" >> "$GITHUB_ENV"
+            echo "DRY_RUN=true" >> "$GITHUB_ENV"
+            echo "PIPELINE_ARGS=--dry-run" >> "$GITHUB_ENV"
           else
+            echo "LIVE_POST=false" >> "$GITHUB_ENV"
             echo "AUTO_POST=false" >> "$GITHUB_ENV"
             echo "DRY_RUN=true" >> "$GITHUB_ENV"
             echo "PIPELINE_ARGS=--dry-run" >> "$GITHUB_ENV"
@@ -76,20 +70,34 @@ jobs:
           set -euo pipefail
           echo "DRY_RUN=${DRY_RUN}"
           echo "AUTO_POST=${AUTO_POST}"
+          echo "LIVE_POST=${LIVE_POST}"
           echo "THREADS_TARGET_HANDLE=${THREADS_TARGET_HANDLE}"
-          if [ "${AUTO_POST}" = "true" ]; then
-            test "${DRY_RUN}" = "false"
+          if [ "${LIVE_POST}" = "true" ]; then
             test "${THREADS_AUTO_POST_ENABLED:-}" = "true"
             test -n "${THREADS_ACCESS_TOKEN:-}"
             test -n "${THREADS_USER_ID:-}"
             test "${THREADS_TARGET_HANDLE}" = "younengsaitoshaojie"
           fi
 
+      - name: Verify tone pipeline order
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -n "design_intelligence" scripts/run_daily_pipeline.py
+          grep -n "select_niche_candidate" scripts/run_daily_pipeline.py
+          grep -n "build_market_research_trace" scripts/run_daily_pipeline.py
+          grep -n "audience_tone_adapter" scripts/run_daily_pipeline.py
+          grep -n "generate_threads_post" scripts/run_daily_pipeline.py
+          grep -n "generate_share_card" scripts/run_daily_pipeline.py
+          grep -n "quality_risk_gate" scripts/run_daily_pipeline.py
+          grep -n "select_post_candidate" scripts/run_daily_pipeline.py
+          grep -n "post_source_audit" scripts/run_daily_pipeline.py
+
       - name: Run Niche App Signal OS pipeline
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/run_daily_pipeline.py ${PIPELINE_ARGS}
+          AUTO_POST=false DRY_RUN=true python scripts/run_daily_pipeline.py ${PIPELINE_ARGS}
 
       - name: Commit generated artifacts
         shell: bash
@@ -107,5 +115,41 @@ jobs:
             echo "No generated artifact changes."
           else
             git commit -m "chore: run niche app signal os pipeline"
+            git push
+          fi
+
+      - name: Live post through guarded selected candidate
+        if: env.LIVE_POST == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          POST_COMMIT_SHA="$(git rev-parse HEAD)"
+          AUTO_POST=true DRY_RUN=false GITHUB_SHA="${POST_COMMIT_SHA}" python scripts/post_to_threads.py
+          python scripts/fetch_threads_insights.py
+          python scripts/update_reaction_memory.py
+          python scripts/analyze_learning.py
+
+      - name: Commit live posting result
+        if: env.LIVE_POST == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            data/post_log.json \
+            data/post_history.json \
+            data/reaction_memory.json \
+            output/reports/publishing.json \
+            output/reports/live_post_result.json \
+            output/reports/live_post_result.md \
+            output/reports/threads_insights.json \
+            output/reports/reaction_memory.json \
+            output/reports/learning.json \
+            memory/reaction \
+            memory/reports/weekly_report.md \
+            reports/latest/context-pack.json
+          if git diff --cached --quiet; then
+            echo "No live posting result changes."
+          else
+            git commit -m "chore: record niche app signal os live post"
             git push
           fi

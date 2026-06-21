@@ -1,47 +1,92 @@
 from __future__ import annotations
 
-from common import DATA_DIR, cli_parser, department_output, ensure_dirs, load_research_items, read_json, sample_research_items, save_stage
+from common import DATA_DIR, MEMORY_DIR, cli_parser, department_output, ensure_dirs, read_json, save_stage, today_iso, write_text
+
+
+REQUIRED_FIELDS = [
+    "candidate_id",
+    "category",
+    "pain_point",
+    "target_user",
+    "current_workaround",
+    "evidence_texts",
+    "source_type",
+    "why_niche",
+    "why_now",
+    "existing_alternatives",
+    "expected_ui_metaphor",
+]
+
+
+def _items_from_file() -> list[dict]:
+    raw = read_json(DATA_DIR / "market_research_inputs.json", {"items": []})
+    items = raw.get("items", raw) if isinstance(raw, dict) else raw
+    return list(items or [])
+
+
+def _normalize(item: dict) -> dict:
+    evidence_texts = item.get("evidence_texts") or []
+    if isinstance(evidence_texts, str):
+        evidence_texts = [evidence_texts]
+    existing_alternatives = item.get("existing_alternatives") or []
+    if isinstance(existing_alternatives, str):
+        existing_alternatives = [existing_alternatives]
+    missing = [field for field in REQUIRED_FIELDS if not item.get(field)]
+    return {
+        "candidate_id": str(item.get("candidate_id", "")).strip(),
+        "category": str(item.get("category", "")).strip(),
+        "pain_point": str(item.get("pain_point", "")).strip(),
+        "target_user": str(item.get("target_user", "unclear")).strip() or "unclear",
+        "current_workaround": str(item.get("current_workaround", "")).strip(),
+        "evidence_texts": [str(text).strip() for text in evidence_texts if str(text).strip()],
+        "source_type": str(item.get("source_type", "manual")).strip(),
+        "why_niche": str(item.get("why_niche", "")).strip(),
+        "why_now": str(item.get("why_now", "")).strip(),
+        "existing_alternatives": [str(text).strip() for text in existing_alternatives if str(text).strip()],
+        "expected_ui_metaphor": str(item.get("expected_ui_metaphor", "")).strip(),
+        "missing_fields": missing,
+    }
 
 
 def run(sample: bool = False) -> dict:
     ensure_dirs()
-    runtime = DATA_DIR / "research_sources.runtime.json"
-    items = sample_research_items() if sample else (read_json(runtime, None) if runtime.exists() else load_research_items())
-    normalized = []
-    for item in items:
-        normalized.append(
-            {
-                "source_platform": item.get("source_platform", "manual"),
-                "source_url": item.get("source_url", ""),
-                "original_text": item.get("original_text", ""),
-                "image_path": item.get("image_path", ""),
-                "impressions": item.get("impressions", 0),
-                "likes": item.get("likes", 0),
-                "replies": item.get("replies", 0),
-                "reposts": item.get("reposts", 0),
-                "saves_or_bookmarks_if_available": item.get("saves_or_bookmarks_if_available"),
-                "niche_category": item.get("niche_category", "生活の小さい面倒解決"),
-                "target_user": item.get("target_user", "unclear"),
-                "pain_point": item.get("pain_point", ""),
-                "app_idea": item.get("app_idea", ""),
-                "wording_pattern": item.get("wording_pattern", ""),
-                "visual_pattern": item.get("visual_pattern", ""),
-                "why_it_worked_hypothesis": item.get("why_it_worked_hypothesis", ""),
-            }
-        )
+    normalized = [_normalize(item) for item in _items_from_file()]
+    usable = [item for item in normalized if item["evidence_texts"] and item["candidate_id"]]
+    excluded = [item for item in normalized if item not in usable]
+
+    memory_path = MEMORY_DIR / "research" / f"{today_iso()}.md"
+    write_text(
+        memory_path,
+        "\n".join(
+            [
+                f"# Research Inputs - {today_iso()}",
+                "",
+                f"- usable_candidates: {len(usable)}",
+                f"- excluded_candidates: {len(excluded)}",
+                "",
+                "## Candidates",
+                *[
+                    f"- {item['candidate_id']}: {item['pain_point']} / evidence={len(item['evidence_texts'])}"
+                    for item in usable
+                ],
+                "",
+            ]
+        ),
+    )
+
     payload = department_output(
         "Research Department",
-        f"{len(normalized)}件の手動/JSONリサーチ入力を正規化しました。",
-        scores={"items": len(normalized)},
-        risks=[],
-        next_action="viral pattern analysis",
-        input_sources=sorted({i["source_platform"] for i in normalized}),
-        extra={"items": normalized},
+        "Loaded daily market research inputs from data/market_research_inputs.json and removed candidates without evidence.",
+        scores={"items": len(normalized), "usable_candidates": len(usable), "excluded_candidates": len(excluded)},
+        risks=[] if usable else ["no_market_research_inputs_with_evidence"],
+        next_action="score niche demand",
+        input_sources=["data/market_research_inputs.json"],
+        extra={"items": usable, "excluded_items": excluded, "memory_path": str(memory_path.relative_to(MEMORY_DIR.parent))},
     )
     save_stage("research_inputs.json", payload)
     return payload
 
 
 if __name__ == "__main__":
-    args = cli_parser("Collect manual research inputs").parse_args()
+    args = cli_parser("Collect market research inputs").parse_args()
     run(sample=args.sample)

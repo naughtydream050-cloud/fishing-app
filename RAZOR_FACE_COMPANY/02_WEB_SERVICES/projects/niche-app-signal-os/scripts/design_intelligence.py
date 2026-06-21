@@ -3,47 +3,47 @@ from __future__ import annotations
 from common import MEMORY_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_text
 
 
-def _is_oshi(strategy: dict) -> bool:
-    blob = " ".join(str(strategy.get(key, "")) for key in ["target_user_segment", "primary_job", "source_app_idea"])
-    return any(token in blob for token in ["推し", "ライブ", "グッズ", "遠征", "参戦", "チケット"])
+FIELD_PRESETS = {
+    "live-trip-packing-check": ["チケット", "身分証", "充電器", "双眼鏡", "モバイルバッテリー", "現場メモ"],
+    "subscription-overlap-check": ["サービス", "月額", "更新日", "無料期間", "使った日", "見直しメモ"],
+    "student-deadline-check": ["授業", "提出物", "締切", "提出先", "持ち物", "明日やる"],
+    "goods-stock-log": ["グッズ名", "所持数", "交換予定", "保管場所", "写真", "持ち出し"],
+    "receipt-payment-lookback": ["購入日", "お店", "金額", "支払い方法", "レシート", "保証メモ"],
+}
 
 
-def _oshi_design() -> dict:
-    return {
-        "visual_positioning": "かわいく見返せる推し活ログ。管理SaaSではなく、手帳とチケット半券の中間。",
-        "ui_metaphor": ["スマホログ", "チケット半券", "手帳", "ステッカー", "感情タグ"],
-        "color_direction": ["パステルミント", "ラベンダー", "ピーチ", "淡いスカイブルー", "白いカード"],
-        "composition": "大きい悩み見出し + スマホUI + チケット風メモ + CTA",
-        "must_show_fields": ["ライブ参戦ログ", "座席", "セトリメモ", "チケット状態", "同行者", "感情タグ", "遠征費合計"],
-        "avoid_visuals": ["黒い業務SaaS風", "家計簿アプリ風", "濃い単色", "グラフ中心", "AI生成っぽい抽象背景"],
-        "card_cta": "これ欲しい？それともNotionで十分？",
-        "design_confidence": 9,
-    }
-
-
-def _generic_design() -> dict:
-    return {
-        "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
-        "ui_metaphor": ["スマホUI", "チェックリスト", "カード", "メモ"],
-        "color_direction": ["白", "淡いグレー", "アクセント1色", "読みやすい余白"],
-        "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
-        "must_show_fields": ["対象", "状態", "メモ", "合計", "次の行動"],
-        "avoid_visuals": ["抽象イラストのみ", "装飾過多", "実装不能そうな未来UI", "業務ダッシュボード過多"],
-        "card_cta": "これ欲しい？それとも今の管理で十分？",
-        "design_confidence": 7,
-    }
+def _selected_market_candidate() -> dict:
+    pack = load_latest("daily_niche_ui_candidates.json", {})
+    selected_id = pack.get("selected_candidate_id", "")
+    for candidate in pack.get("candidates", []):
+        if candidate.get("candidate_id") == selected_id:
+            return candidate
+    return {}
 
 
 def run(sample: bool = False) -> dict:
     audience = load_latest("audience_strategy.json", {}).get("audience_strategy") or {}
-    design = _oshi_design() if _is_oshi(audience) else _generic_design()
-    design.update(
-        {
-            "date": today_iso(),
-            "target_user_segment": audience.get("target_user_segment", ""),
-            "source_primary_job": audience.get("primary_job", ""),
-        }
-    )
+    candidate = _selected_market_candidate()
+    candidate_id = candidate.get("candidate_id", "")
+    fields = FIELD_PRESETS.get(candidate_id) or ["メモ", "状態", "日付", "あとで見返す", "次の行動"]
+    design = {
+        "date": today_iso(),
+        "candidate_id": candidate_id,
+        "category": candidate.get("category", ""),
+        "pain_point": candidate.get("pain_point", ""),
+        "target_audience_for_copy": audience.get("target_user_segment", candidate.get("target_user", "")),
+        "audience_context": candidate.get("target_user", ""),
+        "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
+        "ui_metaphor_from_market_need": candidate.get("expected_ui_metaphor", ""),
+        "ui_metaphor": [candidate.get("expected_ui_metaphor", "スマホログUI")],
+        "color_direction": ["パステル", "白ベース", "淡いアクセント", "読みやすい濃色テキスト"],
+        "composition": "上部にあるあるコピー、中央に候補専用スマホUI、下部に軽いCTA",
+        "must_show_fields": fields,
+        "avoid_visuals": ["抽象イラストだけ", "管理画面すぎるUI", "ビジネスSaaS風", "文字過多"],
+        "card_cta": "これ欲しい？今のやり方で十分？",
+        "copy_tone_hint": audience.get("language_to_use", []),
+        "design_confidence": 8 if candidate_id else 0,
+    }
 
     memory_path = MEMORY_DIR / "design_strategy" / f"{today_iso()}.md"
     write_text(
@@ -52,33 +52,23 @@ def run(sample: bool = False) -> dict:
             [
                 f"# Design Intelligence - {today_iso()}",
                 "",
-                f"- visual_positioning: {design['visual_positioning']}",
+                f"- candidate_id: {candidate_id}",
+                f"- ui_metaphor: {design['ui_metaphor_from_market_need']}",
                 f"- composition: {design['composition']}",
-                f"- card_cta: {design['card_cta']}",
-                f"- design_confidence: {design['design_confidence']}",
-                "",
-                "## UI Metaphor",
-                *[f"- {item}" for item in design["ui_metaphor"]],
-                "",
-                "## Color Direction",
-                *[f"- {item}" for item in design["color_direction"]],
                 "",
                 "## Must Show Fields",
-                *[f"- {item}" for item in design["must_show_fields"]],
-                "",
-                "## Avoid Visuals",
-                *[f"- {item}" for item in design["avoid_visuals"]],
+                *[f"- {item}" for item in fields],
                 "",
             ]
         ),
     )
     payload = department_output(
         "Design Intelligence Department",
-        "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
+        "Created candidate-specific UI card direction from the selected market need.",
         scores={"design_confidence": design["design_confidence"]},
-        risks=[],
-        next_action="copywriting and card image",
-        input_sources=["output/reports/audience_strategy.json"],
+        risks=[] if candidate_id else ["no_selected_market_candidate"],
+        next_action="audience tone adapter",
+        input_sources=["output/reports/daily_niche_ui_candidates.json", "output/reports/audience_strategy.json"],
         extra={"design_strategy": design, "memory_path": str(memory_path.relative_to(MEMORY_DIR.parent))},
     )
     save_stage("design_strategy.json", payload)

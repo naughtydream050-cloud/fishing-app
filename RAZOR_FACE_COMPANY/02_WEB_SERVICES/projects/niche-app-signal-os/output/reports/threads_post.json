@@ -1,28 +1,42 @@
 {
   "department": "Copywriting Department",
-  "date": "2026-06-21",
-  "input_sources": [
-    "output/reports/llm_council.json",
-    "output/reports/audience_tone_profile.json"
-  ],
-  "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。",
+  "date": "2026-06-20",
+  "input_sources": [],
+  "summary": "Generated candidate-specific Threads copy from the selected market need and audience tone profile.",
   "scores": {
-    "length": 116,
-    "line_count": 3,
+    "length": 143,
     "variant_count": 1
   },
   "risks": [],
-  "next_action": "card image",
+  "next_action": "",
   "post": {
-    "date": "2026-06-21",
-    "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
-    "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
+    "date": "2026-06-20",
+    "candidate_id": "live-trip-packing-check",
+    "text": "ライブ遠征の持ち物チェック、前日になると普通にバタつかない？\n\nチケットどこ\n身分証いるっけ\n充電器入れたっけ\n前回忘れたやつ何だっけ\n\n毎回スクショとメモを行ったり来たりして、出発前に小さく焦るやつ。\n\n現場前チェックリスト風スマホUIで、現場前にまとめて残せたら使う？\nこれ欲しい？",
+    "alt_text": "ライブ遠征の持ち物チェックのスマホUI風カード",
     "topic_tags": [
-      "SNS投稿管理"
+      "ライブ遠征の持ち物チェック",
+      "ニッチアプリ",
+      "DRY_RUN"
     ],
-    "decision": "post",
-    "tone_id": "default_light_problem",
-    "variant_id": "A"
+    "decision": "dry_run",
+    "tone_id": "gen_z_oshi_activity",
+    "target_audience": "Z世代寄りの推し活・現場遠征層",
+    "variant_id": "A",
+    "tone_check_result": {
+      "passed": true,
+      "tone_id": "gen_z_oshi_activity",
+      "used_words": [
+        "現場",
+        "メモ",
+        "スクショ",
+        "持ち物",
+        "遠征"
+      ],
+      "used_avoid_words": [],
+      "line_count": 8,
+      "target_audience": "Z世代寄りの推し活・現場遠征層"
+    }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
 }

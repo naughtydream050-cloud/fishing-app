@@ -1,59 +1,233 @@
 {
-  "department": "Planning Department",
-  "date": "2026-06-21",
+  "department": "Market Need Department",
+  "date": "2026-06-20",
   "input_sources": [
-    "output/reports/research_inputs.json",
-    "output/reports/trend_timing.json"
+    "output/reports/research_inputs.json"
   ],
-  "summary": "Niche App Signal Scoreで今日の候補を選びました。",
+  "summary": "Scored market-backed niche needs and selected the highest eligible candidate without fixed fallback.",
   "scores": {
-    "selected_score": 10,
-    "candidate_count": 1
+    "candidate_count": 5,
+    "selected_score": 9.35
   },
   "risks": [],
-  "next_action": "llm council",
+  "next_action": "select niche candidate",
   "scored_candidates": [
     {
-      "score": 10,
+      "candidate_id": "live-trip-packing-check",
+      "category": "ライブ遠征の持ち物チェック",
+      "score": 9.35,
+      "eligible_for_post": true,
+      "evidence_count": 3,
+      "pain_strength": 9,
+      "niche_specificity": 9,
+      "workaround_pain": 10,
+      "ui_imagination_score": 9,
+      "postability_score": 10,
       "item": {
-        "source_platform": "manual",
-        "source_url": "",
-        "original_text": "SNSの投稿ネタと反応メモが分かれていて、何が伸びたか忘れる。",
-        "image_path": "",
-        "impressions": 0,
-        "likes": 16,
-        "replies": 5,
-        "reposts": 2,
-        "saves_or_bookmarks_if_available": 5,
-        "niche_category": "SNS投稿管理",
-        "target_user": "個人でSNS発信を続けるクリエイター",
-        "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
-        "app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
-        "wording_pattern": "何が伸びたか忘れる",
-        "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
-        "why_it_worked_hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
-      }
+        "candidate_id": "live-trip-packing-check",
+        "category": "ライブ遠征の持ち物チェック",
+        "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+        "target_user": "ライブやイベントに遠征する10代後半から30代のファン",
+        "current_workaround": "スマホメモ、スクショ、LINEの自分宛て、手書きメモで確認している",
+        "evidence_texts": [
+          "遠征前、チケットと身分証と充電器を何回も確認してしまう",
+          "現場の持ち物リストを毎回作り直すのが地味に面倒",
+          "前回忘れたものを次の現場でまた忘れそうになる"
+        ],
+        "source_type": "manual_observation",
+        "why_niche": "旅行アプリやToDoアプリはあるが、ライブ遠征の持ち物と現場導線に寄せた専用UIは少ない",
+        "why_now": "ライブ遠征が戻り、スマホチケット・モバイルバッテリー・本人確認など確認項目が増えている",
+        "existing_alternatives": [
+          "スマホメモ",
+          "Notion",
+          "紙のチェックリスト",
+          "LINE Keep"
+        ],
+        "expected_ui_metaphor": "現場前チェックリスト風スマホUI",
+        "missing_fields": []
+      },
+      "rejected_reason_if_any": null
+    },
+    {
+      "candidate_id": "subscription-overlap-check",
+      "category": "サブスク整理",
+      "score": 9.35,
+      "eligible_for_post": true,
+      "evidence_count": 3,
+      "pain_strength": 9,
+      "niche_specificity": 9,
+      "workaround_pain": 10,
+      "ui_imagination_score": 9,
+      "postability_score": 10,
+      "item": {
+        "candidate_id": "subscription-overlap-check",
+        "category": "サブスク整理",
+        "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
+        "target_user": "サブスクを複数使う社会人と学生",
+        "current_workaround": "カード明細、家計簿アプリ、メモ、アプリ内の契約画面を別々に見る",
+        "evidence_texts": [
+          "気づいたら使っていないサブスクに毎月払っていた",
+          "カード明細だけだと何のサービスかすぐ分からない",
+          "無料期間の終わりを忘れて課金されがち"
+        ],
+        "source_type": "manual_observation",
+        "why_niche": "家計簿よりも契約更新日・無料期間・利用頻度に絞ると小さな需要がある",
+        "why_now": "AIツールや動画サービスの月額課金が増えている",
+        "existing_alternatives": [
+          "家計簿アプリ",
+          "カード明細",
+          "カレンダー通知",
+          "スプレッドシート"
+        ],
+        "expected_ui_metaphor": "月額カレンダーと契約カードUI",
+        "missing_fields": []
+      },
+      "rejected_reason_if_any": null
+    },
+    {
+      "candidate_id": "student-deadline-check",
+      "category": "学生の提出物忘れ防止",
+      "score": 9.35,
+      "eligible_for_post": true,
+      "evidence_count": 3,
+      "pain_strength": 9,
+      "niche_specificity": 9,
+      "workaround_pain": 10,
+      "ui_imagination_score": 9,
+      "postability_score": 10,
+      "item": {
+        "candidate_id": "student-deadline-check",
+        "category": "学生の提出物忘れ防止",
+        "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+        "target_user": "高校生・大学生・専門学生",
+        "current_workaround": "学校ポータル、LINE、カレンダー、スマホメモを行き来する",
+        "evidence_texts": [
+          "課題の締切を学校ポータルで見落とす",
+          "提出物が授業ごとに別の場所に書かれていて探すのが面倒",
+          "明日必要なものだけ一目で見たい"
+        ],
+        "source_type": "manual_observation",
+        "why_niche": "汎用ToDoでは授業単位・提出先・持ち物の文脈が薄い",
+        "why_now": "学校連絡のオンライン化で情報の置き場所が増えている",
+        "existing_alternatives": [
+          "学校ポータル",
+          "Googleカレンダー",
+          "スマホメモ",
+          "LINE"
+        ],
+        "expected_ui_metaphor": "時間割連動の提出物ボード",
+        "missing_fields": []
+      },
+      "rejected_reason_if_any": null
+    },
+    {
+      "candidate_id": "goods-stock-log",
+      "category": "グッズ在庫管理",
+      "score": 9.35,
+      "eligible_for_post": true,
+      "evidence_count": 3,
+      "pain_strength": 9,
+      "niche_specificity": 9,
+      "workaround_pain": 10,
+      "ui_imagination_score": 9,
+      "postability_score": 10,
+      "item": {
+        "candidate_id": "goods-stock-log",
+        "category": "グッズ在庫管理",
+        "pain_point": "アクスタ、缶バッジ、トレカの所持数・交換予定・保管場所が写真フォルダとメモに散らばる",
+        "target_user": "グッズを複数買い・交換する推し活層",
+        "current_workaround": "写真フォルダ、スプレッドシート、Xの下書き、スマホメモで管理している",
+        "evidence_texts": [
+          "同じグッズを何個持っているか分からなくなる",
+          "交換予定の相手と品物をメモだけで追うのが大変",
+          "現場で何を持っていくか毎回写真を探す"
+        ],
+        "source_type": "manual_observation",
+        "why_niche": "在庫管理アプリは業務寄りで、推し活の交換・持ち出し・写真確認には重い",
+        "why_now": "ランダムグッズや交換文化で小さな在庫確認ニーズが増えている",
+        "existing_alternatives": [
+          "写真フォルダ",
+          "スプレッドシート",
+          "Notion",
+          "スマホメモ"
+        ],
+        "expected_ui_metaphor": "写真付きグッズ棚UI",
+        "missing_fields": []
+      },
+      "rejected_reason_if_any": null
+    },
+    {
+      "candidate_id": "receipt-payment-lookback",
+      "category": "レシート/支払い履歴のあと見返し",
+      "score": 9.35,
+      "eligible_for_post": true,
+      "evidence_count": 3,
+      "pain_strength": 9,
+      "niche_specificity": 9,
+      "workaround_pain": 10,
+      "ui_imagination_score": 9,
+      "postability_score": 10,
+      "item": {
+        "candidate_id": "receipt-payment-lookback",
+        "category": "レシート/支払い履歴のあと見返し",
+        "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+        "target_user": "ネット購入や電子決済が多い生活者",
+        "current_workaround": "写真フォルダ、カード明細、EC購入履歴、家計簿アプリを別々に見る",
+        "evidence_texts": [
+          "返品したい時にレシート画像が見つからない",
+          "何をどこで買ったか支払い履歴だけでは思い出せない",
+          "保証書や領収書をあとから探すのが面倒"
+        ],
+        "source_type": "manual_observation",
+        "why_niche": "家計簿よりも購入証跡のあと見返しに特化すると用途が明確",
+        "why_now": "電子決済とEC購入が増え、購入証跡が複数サービスに分散している",
+        "existing_alternatives": [
+          "写真フォルダ",
+          "家計簿アプリ",
+          "カード明細",
+          "EC購入履歴"
+        ],
+        "expected_ui_metaphor": "購入証跡ログブックUI",
+        "missing_fields": []
+      },
+      "rejected_reason_if_any": null
     }
   ],
   "selected_candidate": {
-    "score": 10,
+    "candidate_id": "live-trip-packing-check",
+    "category": "ライブ遠征の持ち物チェック",
+    "score": 9.35,
+    "eligible_for_post": true,
+    "evidence_count": 3,
+    "pain_strength": 9,
+    "niche_specificity": 9,
+    "workaround_pain": 10,
+    "ui_imagination_score": 9,
+    "postability_score": 10,
     "item": {
-      "source_platform": "manual",
-      "source_url": "",
-      "original_text": "SNSの投稿ネタと反応メモが分かれていて、何が伸びたか忘れる。",
-      "image_path": "",
-      "impressions": 0,
-      "likes": 16,
-      "replies": 5,
-      "reposts": 2,
-      "saves_or_bookmarks_if_available": 5,
-      "niche_category": "SNS投稿管理",
-      "target_user": "個人でSNS発信を続けるクリエイター",
-      "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
-      "app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
-      "wording_pattern": "何が伸びたか忘れる",
-      "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
-      "why_it_worked_hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
-    }
-  }
+      "candidate_id": "live-trip-packing-check",
+      "category": "ライブ遠征の持ち物チェック",
+      "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+      "target_user": "ライブやイベントに遠征する10代後半から30代のファン",
+      "current_workaround": "スマホメモ、スクショ、LINEの自分宛て、手書きメモで確認している",
+      "evidence_texts": [
+        "遠征前、チケットと身分証と充電器を何回も確認してしまう",
+        "現場の持ち物リストを毎回作り直すのが地味に面倒",
+        "前回忘れたものを次の現場でまた忘れそうになる"
+      ],
+      "source_type": "manual_observation",
+      "why_niche": "旅行アプリやToDoアプリはあるが、ライブ遠征の持ち物と現場導線に寄せた専用UIは少ない",
+      "why_now": "ライブ遠征が戻り、スマホチケット・モバイルバッテリー・本人確認など確認項目が増えている",
+      "existing_alternatives": [
+        "スマホメモ",
+        "Notion",
+        "紙のチェックリスト",
+        "LINE Keep"
+      ],
+      "expected_ui_metaphor": "現場前チェックリスト風スマホUI",
+      "missing_fields": []
+    },
+    "rejected_reason_if_any": null
+  },
+  "report_path": "output/reports/niche_demand_score.md"
 }

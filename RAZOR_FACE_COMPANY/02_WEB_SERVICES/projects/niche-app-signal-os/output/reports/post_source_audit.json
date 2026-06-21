@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-20",
+  "selected_candidate_id": "live-trip-packing-check",
+  "selected_category": "ライブ遠征の持ち物チェック",
+  "selected_pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+  "market_sources_used": [
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "遠征前、チケットと身分証と充電器を何回も確認してしまう"
+    },
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "現場の持ち物リストを毎回作り直すのが地味に面倒"
+    },
+    {
+      "source_type": "manual_observation",
+      "evidence_text": "前回忘れたものを次の現場でまた忘れそうになる"
+    }
+  ],
+  "market_evidence_count": 3,
+  "source_evidence_count": 3,
+  "why_selected_today": "ライブ遠征の持ち物チェック has 3 manual evidence texts, clear target users, current workaround pain, and a concrete UI metaphor.",
+  "previous_candidate_id": "",
+  "duplicate_check_result": {
+    "passed": true,
+    "reasons": []
+  },
+  "selected_post_text": "ライブ遠征の持ち物チェック、前日になると普通にバタつかない？\n\nチケットどこ\n身分証いるっけ\n充電器入れたっけ\n前回忘れたやつ何だっけ\n\n毎回スクショとメモを行ったり来たりして、出発前に小さく焦るやつ。\n\n現場前チェックリスト風スマホUIで、現場前にまとめて残せたら使う？\nこれ欲しい？",
+  "selected_post_text_hash": "0b591c4dfd13bab0f40ff8238592899500d98d21f077498635e229973207b44c",
+  "selected_image_path": "output/share-cards/2026-06-20-live-trip-packing-check.png",
+  "image_generated_from_candidate": true,
+  "tone_profile_used": "gen_z_oshi_activity",
+  "design_strategy_used": true,
+  "risk_gate_result": true,
+  "fixed_override_used": false,
+  "posting_allowed": true,
+  "blocks": []
+}
