@@ -1,6 +1,6 @@
 {
   "department": "Executive Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/threads_insights.json"
   ],
@@ -65,7 +65,7 @@
       "足りない項目ある？"
     ],
     "segment_confidence": 10,
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "candidate_category": "SNS投稿管理",
     "source_pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
     "source_app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート"
@@ -100,7 +100,7 @@
     ],
     "card_cta": "これ欲しい？それとも今の管理で十分？",
     "design_confidence": 7,
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "target_user_segment": "個人でSNS発信を続けるクリエイター",
     "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
   },

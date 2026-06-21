@@ -1,6 +1,6 @@
 {
   "department": "Audience Tone Adapter Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/audience_strategy.json",
     "data/audience_tone_rules.json"
@@ -13,7 +13,7 @@
   "risks": [],
   "next_action": "copywriting",
   "audience_tone_profile": {
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "tone_id": "default_light_problem",
     "target_user_segment": "個人でSNS発信を続けるクリエイター",
     "entry_style": "小さい面倒",
@@ -42,5 +42,5 @@
     "max_lines": 5,
     "source": "output/reports/audience_strategy.json"
   },
-  "memory_path": "memory/audience_tone/2026-06-20.md"
+  "memory_path": "memory/audience_tone/2026-06-21.md"
 }

@@ -1,6 +1,6 @@
 {
   "department": "Analytics Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/publishing.json"
   ],
@@ -8,7 +8,9 @@
   "scores": {
     "insight_fields": 9
   },
-  "risks": [],
+  "risks": [
+    "no_live_thread_id"
+  ],
   "next_action": "learning analysis",
   "insights": {
     "views": null,
@@ -21,5 +23,5 @@
     "follows": null,
     "clicks": null
   },
-  "source_status": "dry_run_saved"
+  "source_status": "duplicate_blocked"
 }

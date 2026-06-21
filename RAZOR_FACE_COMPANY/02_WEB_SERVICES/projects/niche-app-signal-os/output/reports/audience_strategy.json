@@ -1,6 +1,6 @@
 {
   "department": "Audience Strategy Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/niche_demand_score.json"
   ],
@@ -41,10 +41,10 @@
       "足りない項目ある？"
     ],
     "segment_confidence": 10,
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "candidate_category": "SNS投稿管理",
     "source_pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
     "source_app_idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート"
   },
-  "memory_path": "memory/audience/2026-06-20.md"
+  "memory_path": "memory/audience/2026-06-21.md"
 }

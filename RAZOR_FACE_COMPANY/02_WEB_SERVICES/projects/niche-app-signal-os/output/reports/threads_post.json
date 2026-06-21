@@ -1,6 +1,6 @@
 {
   "department": "Copywriting Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/llm_council.json",
     "output/reports/audience_tone_profile.json"
@@ -14,7 +14,7 @@
   "risks": [],
   "next_action": "card image",
   "post": {
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
     "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
     "topic_tags": [

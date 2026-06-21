@@ -1,6 +1,6 @@
 {
   "department": "Design Intelligence Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/audience_strategy.json"
   ],
@@ -40,9 +40,9 @@
     ],
     "card_cta": "これ欲しい？それとも今の管理で十分？",
     "design_confidence": 7,
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "target_user_segment": "個人でSNS発信を続けるクリエイター",
     "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
   },
-  "memory_path": "memory/design_strategy/2026-06-20.md"
+  "memory_path": "memory/design_strategy/2026-06-21.md"
 }

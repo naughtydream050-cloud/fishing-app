@@ -1,6 +1,6 @@
 {
   "department": "Design Department",
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "input_sources": [
     "output/reports/llm_council.json",
     "output/reports/design_strategy.json"
@@ -15,8 +15,8 @@
   ],
   "next_action": "risk gate",
   "card_paths": [
-    "output/card_images/2026-06-20.svg",
-    "output/card_images/2026-06-20.html"
+    "output/card_images/2026-06-21.svg",
+    "output/card_images/2026-06-21.html"
   ],
   "design_strategy": {
     "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",

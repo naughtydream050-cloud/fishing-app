@@ -139,5 +139,21 @@
     "topic_tags": [
       "SNS投稿管理"
     ]
+  },
+  {
+    "date": "2026-06-21",
+    "created_at": "2026-06-21T05:17:10.987594+00:00",
+    "status": "duplicate_blocked",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "9d8991e1fabf7b60cbf9e6a43942ec03c3be3c7c0a02495dcfa4eafec2d0079c",
+    "post_text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
+    "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
+    "topic_tags": [
+      "SNS投稿管理"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # Weekly Report
 
-- updated: 2026-06-20
+- updated: 2026-06-21
 - strongest_category: SNS投稿管理
 - signal_score: 10
 - weak_categories: insufficient data

@@ -1,7 +1,7 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-06-20",
-  "dry_run": true,
+  "date": "2026-06-21",
+  "dry_run": false,
   "sample": false,
   "status": "ok",
   "failed": null,
