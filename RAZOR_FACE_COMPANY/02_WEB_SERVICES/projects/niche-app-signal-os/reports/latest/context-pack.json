@@ -123,5 +123,14 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ]
+  ],
+  "publishing": {
+    "status": "posted",
+    "posting_attempted": true,
+    "api_called": true,
+    "post_id": "18024763187841835",
+    "post_url": "https://www.threads.net/@younengsaitoshaojie/post/18024763187841835",
+    "selected_candidate_id": "receipt-payment-lookback",
+    "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png"
+  }
 }
