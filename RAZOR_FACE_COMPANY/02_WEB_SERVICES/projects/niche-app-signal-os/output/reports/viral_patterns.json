@@ -7,36 +7,58 @@
   "summary": "反応されやすい悩み、言い回し、画像構造を軽量集計しました。",
   "scores": {
     "category_count": 1,
-    "pattern_count": 1
+    "pattern_count": 5
   },
   "risks": [],
   "next_action": "memory update",
   "top_categories": [
     [
-      "SNS投稿管理",
-      1
+      "unknown",
+      5
     ]
   ],
-  "top_wording_patterns": [
-    [
-      "何が伸びたか忘れる",
-      1
-    ]
-  ],
-  "top_visual_patterns": [
-    [
-      "投稿カード + 反応スコア + 次回メモ",
-      1
-    ]
-  ],
+  "top_wording_patterns": [],
+  "top_visual_patterns": [],
   "patterns": [
     {
-      "category": "SNS投稿管理",
-      "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
-      "wording_pattern": "何が伸びたか忘れる",
-      "visual_pattern": "投稿カード + 反応スコア + 次回メモ",
-      "engagement_signal": 42,
-      "hypothesis": "発信者が自分ごと化しやすく、Notionで十分かという議論も起きる"
+      "category": null,
+      "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+      "wording_pattern": null,
+      "visual_pattern": null,
+      "engagement_signal": 0,
+      "hypothesis": null
+    },
+    {
+      "category": null,
+      "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
+      "wording_pattern": null,
+      "visual_pattern": null,
+      "engagement_signal": 0,
+      "hypothesis": null
+    },
+    {
+      "category": null,
+      "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+      "wording_pattern": null,
+      "visual_pattern": null,
+      "engagement_signal": 0,
+      "hypothesis": null
+    },
+    {
+      "category": null,
+      "pain_point": "アクスタ、缶バッジ、トレカの所持数・交換予定・保管場所が写真フォルダとメモに散らばる",
+      "wording_pattern": null,
+      "visual_pattern": null,
+      "engagement_signal": 0,
+      "hypothesis": null
+    },
+    {
+      "category": null,
+      "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+      "wording_pattern": null,
+      "visual_pattern": null,
+      "engagement_signal": 0,
+      "hypothesis": null
     }
   ]
 }

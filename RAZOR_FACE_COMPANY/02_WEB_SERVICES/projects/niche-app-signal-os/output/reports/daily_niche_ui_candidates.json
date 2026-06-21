@@ -1,81 +1,7 @@
 {
-  "date": "2026-06-20",
-  "selected_candidate_id": "live-trip-packing-check",
+  "date": "2026-06-21",
+  "selected_candidate_id": "student-deadline-check",
   "candidates": [
-    {
-      "candidate_id": "live-trip-packing-check",
-      "category": "ライブ遠征の持ち物チェック",
-      "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
-      "target_user": "ライブやイベントに遠征する10代後半から30代のファン",
-      "current_workaround": "スマホメモ、スクショ、LINEの自分宛て、手書きメモで確認している",
-      "why_niche": "旅行アプリやToDoアプリはあるが、ライブ遠征の持ち物と現場導線に寄せた専用UIは少ない",
-      "why_now": "ライブ遠征が戻り、スマホチケット・モバイルバッテリー・本人確認など確認項目が増えている",
-      "existing_alternatives": [
-        "スマホメモ",
-        "Notion",
-        "紙のチェックリスト",
-        "LINE Keep"
-      ],
-      "likely_target_users": [
-        "ライブやイベントに遠征する10代後半から30代のファン"
-      ],
-      "ui_metaphor": "現場前チェックリスト風スマホUI",
-      "expected_ui_metaphor": "現場前チェックリスト風スマホUI",
-      "tone_id": "gen_z_oshi_activity",
-      "priority_score": 9.35,
-      "market_sources": [
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "遠征前、チケットと身分証と充電器を何回も確認してしまう"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "現場の持ち物リストを毎回作り直すのが地味に面倒"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "前回忘れたものを次の現場でまた忘れそうになる"
-        }
-      ],
-      "market_evidence_count": 3
-    },
-    {
-      "candidate_id": "subscription-overlap-check",
-      "category": "サブスク整理",
-      "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
-      "target_user": "サブスクを複数使う社会人と学生",
-      "current_workaround": "カード明細、家計簿アプリ、メモ、アプリ内の契約画面を別々に見る",
-      "why_niche": "家計簿よりも契約更新日・無料期間・利用頻度に絞ると小さな需要がある",
-      "why_now": "AIツールや動画サービスの月額課金が増えている",
-      "existing_alternatives": [
-        "家計簿アプリ",
-        "カード明細",
-        "カレンダー通知",
-        "スプレッドシート"
-      ],
-      "likely_target_users": [
-        "サブスクを複数使う社会人と学生"
-      ],
-      "ui_metaphor": "月額カレンダーと契約カードUI",
-      "expected_ui_metaphor": "月額カレンダーと契約カードUI",
-      "tone_id": "student_casual",
-      "priority_score": 9.35,
-      "market_sources": [
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "気づいたら使っていないサブスクに毎月払っていた"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "カード明細だけだと何のサービスかすぐ分からない"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "無料期間の終わりを忘れて課金されがち"
-        }
-      ],
-      "market_evidence_count": 3
-    },
     {
       "candidate_id": "student-deadline-check",
       "category": "学生の提出物忘れ防止",
@@ -112,10 +38,84 @@
         }
       ],
       "market_evidence_count": 3
+    },
+    {
+      "candidate_id": "receipt-payment-lookback",
+      "category": "レシート/支払い履歴のあと見返し",
+      "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+      "target_user": "ネット購入や電子決済が多い生活者",
+      "current_workaround": "写真フォルダ、カード明細、EC購入履歴、家計簿アプリを別々に見る",
+      "why_niche": "家計簿よりも購入証跡のあと見返しに特化すると用途が明確",
+      "why_now": "電子決済とEC購入が増え、購入証跡が複数サービスに分散している",
+      "existing_alternatives": [
+        "写真フォルダ",
+        "家計簿アプリ",
+        "カード明細",
+        "EC購入履歴"
+      ],
+      "likely_target_users": [
+        "ネット購入や電子決済が多い生活者"
+      ],
+      "ui_metaphor": "購入証跡ログブックUI",
+      "expected_ui_metaphor": "購入証跡ログブックUI",
+      "tone_id": "default_light_problem",
+      "priority_score": 9.35,
+      "market_sources": [
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "返品したい時にレシート画像が見つからない"
+        },
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "何をどこで買ったか支払い履歴だけでは思い出せない"
+        },
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "保証書や領収書をあとから探すのが面倒"
+        }
+      ],
+      "market_evidence_count": 3
+    },
+    {
+      "candidate_id": "subscription-overlap-check",
+      "category": "サブスク整理",
+      "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
+      "target_user": "サブスクを複数使う社会人と学生",
+      "current_workaround": "カード明細、家計簿アプリ、メモ、アプリ内の契約画面を別々に見る",
+      "why_niche": "家計簿よりも契約更新日・無料期間・利用頻度に絞ると小さな需要がある",
+      "why_now": "AIツールや動画サービスの月額課金が増えている",
+      "existing_alternatives": [
+        "家計簿アプリ",
+        "カード明細",
+        "カレンダー通知",
+        "スプレッドシート"
+      ],
+      "likely_target_users": [
+        "サブスクを複数使う社会人と学生"
+      ],
+      "ui_metaphor": "月額カレンダーと契約カードUI",
+      "expected_ui_metaphor": "月額カレンダーと契約カードUI",
+      "tone_id": "student_casual",
+      "priority_score": 9.1,
+      "market_sources": [
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "気づいたら使っていないサブスクに毎月払っていた"
+        },
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "カード明細だけだと何のサービスかすぐ分からない"
+        },
+        {
+          "source_type": "manual_observation",
+          "evidence_text": "無料期間の終わりを忘れて課金されがち"
+        }
+      ],
+      "market_evidence_count": 3
     }
   ],
   "selection_reason": "Highest scored market-backed candidate; previous candidate avoided.",
-  "previous_candidate_id": "",
+  "previous_candidate_id": "live-trip-packing-check",
   "dry_run": true,
   "market_evidence_required": true
 }

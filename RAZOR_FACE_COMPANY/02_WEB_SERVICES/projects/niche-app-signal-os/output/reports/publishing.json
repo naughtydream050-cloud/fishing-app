@@ -3,36 +3,55 @@
   "date": "2026-06-21",
   "input_sources": [
     "output/reports/quality_risk_gate.json",
+    "output/reports/selected_post_candidate.json",
+    "output/reports/post_source_audit.json",
     "output/reports/threads_post.json",
     "data/manual_threads_target.json",
     "data/post_history.json"
   ],
-  "summary": "Threads投稿処理をAUTO_POST/DRY_RUN/target/duplicate/Secrets guard付きで評価しました。",
+  "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards.",
   "scores": {
-    "auto_post": true,
-    "dry_run": false,
+    "auto_post": false,
+    "dry_run": true,
     "threads_auto_post_enabled": true
   },
   "risks": [
-    "duplicate post content for target handle"
+    "AUTO_POST=false"
   ],
   "next_action": "manual review or fix posting preflight",
-  "status": "duplicate_blocked",
+  "status": "dry_run_saved",
   "thread_id": null,
   "target_guard": "target_handle_ok",
   "live_preflight": {
     "gate_approved": true,
-    "auto_post": true,
+    "auto_post": false,
     "threads_auto_post_enabled": true,
-    "dry_run": false,
+    "dry_run": true,
     "target_handle": "younengsaitoshaojie",
     "expected_target_handle": "younengsaitoshaojie",
-    "content_hash": "9d8991e1fabf7b60cbf9e6a43942ec03c3be3c7c0a02495dcfa4eafec2d0079c",
-    "duplicate": true,
+    "content_hash": "f19695ffe949cf13ffdb3f031bd324e0001bc679213272cb147bb748b80b031c",
+    "duplicate": false,
     "missing_secrets": [],
-    "image_url_present": false,
-    "post_text_override": false
+    "selected_candidate": true,
+    "post_source_audit_allowed": true
   },
-  "log_entry": "{'date': '2026-06-21', 'created_at': '2026-06-21T05:17:10.987594+00:00', 'status': 'duplicate_blocked', 'auto_post': True, 'threads_auto_post_enabled': True, 'dry_run': False, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '9d8991e1fabf7b60cbf9e6a43942ec03c3be3c7c0a02495dcfa4eafec2d0079c', 'post_text': '投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\\nこれ欲しい？それとも今の管理で十分？', 'alt_text': '推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。', 'topic_tags': ['SNS投稿管理']}",
-  "api_called": false
+  "log_entry": "{'date': '2026-06-21', 'created_at': '2026-06-21T11:25:56.250281+00:00', 'status': 'dry_run_saved', 'auto_post': False, 'threads_auto_post_enabled': True, 'dry_run': True, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': 'f19695ffe949cf13ffdb3f031bd324e0001bc679213272cb147bb748b80b031c', 'post_text': '学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\\n\\n学校ポータルに残す\\nLINEに残す\\nカレンダーに残す\\nスマホメモを行き来するに残す\\n\\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\\n\\n時間割連動の提出物ボードで一か所に残せたら使う？\\nそれとも今のやり方で十分？', 'alt_text': '学生の提出物忘れ防止のスマホUI風カード', 'topic_tags': ['学生の提出物忘れ防止', 'ニッチアプリ', 'DRY_RUN'], 'candidate_id': 'student-deadline-check', 'selected_image_path': 'output/share-cards/2026-06-21-student-deadline-check.png', 'post_text_hash': '4fd8d7171a51926996de4e9c3d06c617bcccbe8baac52325eed92f1318905e6b'}",
+  "api_called": false,
+  "live_post_result": {
+    "date": "2026-06-21",
+    "created_at": "2026-06-21T11:25:56.250281+00:00",
+    "status": "dry_run_saved",
+    "posting_attempted": false,
+    "api_called": false,
+    "post_id": null,
+    "post_url": "",
+    "target_handle": "younengsaitoshaojie",
+    "selected_candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+    "selected_post_text": "学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\n\n学校ポータルに残す\nLINEに残す\nカレンダーに残す\nスマホメモを行き来するに残す\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n時間割連動の提出物ボードで一か所に残せたら使う？\nそれとも今のやり方で十分？",
+    "posted_at": null,
+    "risks": [
+      "AUTO_POST=false"
+    ]
+  }
 }

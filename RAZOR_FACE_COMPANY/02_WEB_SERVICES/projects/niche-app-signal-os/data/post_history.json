@@ -44,6 +44,20 @@
       "dry_run": false,
       "auto_post": true,
       "threads_auto_post_enabled": true
+    },
+    {
+      "date": "2026-06-21",
+      "created_at": "2026-06-21T11:25:56.250281+00:00",
+      "status": "dry_run_saved",
+      "target_handle": "younengsaitoshaojie",
+      "content_hash": "f19695ffe949cf13ffdb3f031bd324e0001bc679213272cb147bb748b80b031c",
+      "thread_id": null,
+      "dry_run": true,
+      "auto_post": false,
+      "threads_auto_post_enabled": true,
+      "candidate_id": "student-deadline-check",
+      "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+      "post_text_hash": "4fd8d7171a51926996de4e9c3d06c617bcccbe8baac52325eed92f1318905e6b"
     }
   ]
 }

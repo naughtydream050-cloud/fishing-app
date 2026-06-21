@@ -1,0 +1,57 @@
+{
+  "department": "Market Research Trace Department",
+  "date": "2026-06-21",
+  "input_sources": [
+    "output/reports/research_inputs.json",
+    "output/reports/viral_patterns.json",
+    "output/reports/trend_timing.json",
+    "output/reports/niche_demand_score.json",
+    "output/reports/daily_niche_ui_candidates.json"
+  ],
+  "summary": "Traced the selected candidate back to current market/research evidence.",
+  "scores": {
+    "market_evidence_count": 3
+  },
+  "risks": [],
+  "next_action": "audience strategy",
+  "market_research_trace": {
+    "date": "2026-06-21",
+    "selected_candidate_id": "student-deadline-check",
+    "selected_category": "学生の提出物忘れ防止",
+    "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+    "market_sources_used": [
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "課題の締切を学校ポータルで見落とす"
+      },
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
+      },
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "明日必要なものだけ一目で見たい"
+      }
+    ],
+    "market_evidence_count": 3,
+    "source_evidence_count": 3,
+    "why_selected_today": "Selected from current scored research inputs.",
+    "stages": {
+      "collect_research_inputs": {
+        "present": true,
+        "item_count": 5
+      },
+      "analyze_viral_patterns": {
+        "present": true
+      },
+      "evaluate_trend_timing": {
+        "present": true
+      },
+      "score_niche_demand": {
+        "present": true,
+        "candidate_count": 5
+      }
+    },
+    "posting_trace_ready": true
+  }
+}

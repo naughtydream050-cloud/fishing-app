@@ -1,29 +1,40 @@
 {
-  "date": "2026-06-20",
-  "selected_candidate_id": "live-trip-packing-check",
-  "selected_category": "ライブ遠征の持ち物チェック",
-  "selected_pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+  "date": "2026-06-21",
+  "selected_candidate_id": "student-deadline-check",
+  "selected_category": "学生の提出物忘れ防止",
+  "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
   "market_sources_used": [
     {
       "source_type": "manual_observation",
-      "evidence_text": "遠征前、チケットと身分証と充電器を何回も確認してしまう"
+      "evidence_text": "課題の締切を学校ポータルで見落とす"
     },
     {
       "source_type": "manual_observation",
-      "evidence_text": "現場の持ち物リストを毎回作り直すのが地味に面倒"
+      "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
     },
     {
       "source_type": "manual_observation",
-      "evidence_text": "前回忘れたものを次の現場でまた忘れそうになる"
+      "evidence_text": "明日必要なものだけ一目で見たい"
     }
   ],
   "market_evidence_count": 3,
   "source_evidence_count": 3,
-  "why_selected_today": "ライブ遠征の持ち物チェック has 3 manual evidence texts, clear target users, current workaround pain, and a concrete UI metaphor.",
-  "stage_presence": {
-    "research_inputs": true,
-    "niche_demand_score": true,
-    "daily_niche_ui_candidates": true
+  "why_selected_today": "Selected from current scored research inputs.",
+  "stages": {
+    "collect_research_inputs": {
+      "present": true,
+      "item_count": 5
+    },
+    "analyze_viral_patterns": {
+      "present": true
+    },
+    "evaluate_trend_timing": {
+      "present": true
+    },
+    "score_niche_demand": {
+      "present": true,
+      "candidate_count": 5
+    }
   },
   "posting_trace_ready": true
 }

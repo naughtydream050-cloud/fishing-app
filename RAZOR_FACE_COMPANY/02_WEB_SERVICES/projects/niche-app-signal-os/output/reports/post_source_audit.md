@@ -1,18 +1,17 @@
-# Post Source Audit - 2026-06-20
+# Post Source Audit - 2026-06-21
 
-- selected_candidate_id: live-trip-packing-check
-- selected_category: ライブ遠征の持ち物チェック
-- selected_pain_point: ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる
+- selected_candidate_id: student-deadline-check
+- selected_category: 学生の提出物忘れ防止
+- selected_pain_point: 課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
 - market_evidence_count: 3
-- why_selected_today: ライブ遠征の持ち物チェック has 3 manual evidence texts, clear target users, current workaround pain, and a concrete UI metaphor.
+- why_selected_today: Selected from current scored research inputs.
 - previous_candidate_id: 
-- duplicate_check_result: {"passed":true,"reasons":[]}
-- selected_image_path: output/share-cards/2026-06-20-live-trip-packing-check.png
-- image_generated_from_candidate: true
-- tone_profile_used: gen_z_oshi_activity
-- design_strategy_used: true
-- risk_gate_result: true
-- posting_allowed: true
+- duplicate_check_result: {'passed': True, 'reasons': []}
+- selected_image_path: output/share-cards/2026-06-21-student-deadline-check.png
+- image_generated_from_candidate: True
+- tone_profile_used: student_casual
+- design_strategy_used: True
+- risk_gate_result: True
+- posting_allowed: True
 
 ## Blocks
-

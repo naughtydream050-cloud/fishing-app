@@ -1,6 +1,12 @@
-# Market Research Trace - 2026-06-20
+# Market Research Trace - 2026-06-21
 
-- selected_candidate_id: live-trip-packing-check
-- selected_category: ライブ遠征の持ち物チェック
+- selected_candidate_id: student-deadline-check
+- selected_category: 学生の提出物忘れ防止
+- selected_pain_point: 課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
 - market_evidence_count: 3
-- why_selected_today: ライブ遠征の持ち物チェック has 3 manual evidence texts, clear target users, current workaround pain, and a concrete UI metaphor.
+- why_selected_today: Selected from current scored research inputs.
+
+## Sources
+- : 
+- : 
+- : 

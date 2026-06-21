@@ -1,7 +1,7 @@
-# Daily Share Card Report - 2026-06-20
+# Daily Share Card Report - 2026-06-21
 
-- candidate_id: live-trip-packing-check
-- category: ライブ遠征の持ち物チェック
-- html: output/share-cards/2026-06-20-live-trip-packing-check.html
-- png: output/share-cards/2026-06-20-live-trip-packing-check.png
+- candidate_id: student-deadline-check
+- category: 学生の提出物忘れ防止
+- html: output/share-cards/2026-06-21-student-deadline-check.html
+- png: output/share-cards/2026-06-21-student-deadline-check.png
 - png_status: ok

@@ -155,5 +155,26 @@
     "topic_tags": [
       "SNS投稿管理"
     ]
+  },
+  {
+    "date": "2026-06-21",
+    "created_at": "2026-06-21T11:25:56.250281+00:00",
+    "status": "dry_run_saved",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "f19695ffe949cf13ffdb3f031bd324e0001bc679213272cb147bb748b80b031c",
+    "post_text": "学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\n\n学校ポータルに残す\nLINEに残す\nカレンダーに残す\nスマホメモを行き来するに残す\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n時間割連動の提出物ボードで一か所に残せたら使う？\nそれとも今のやり方で十分？",
+    "alt_text": "学生の提出物忘れ防止のスマホUI風カード",
+    "topic_tags": [
+      "学生の提出物忘れ防止",
+      "ニッチアプリ",
+      "DRY_RUN"
+    ],
+    "candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+    "post_text_hash": "4fd8d7171a51926996de4e9c3d06c617bcccbe8baac52325eed92f1318905e6b"
   }
 ]

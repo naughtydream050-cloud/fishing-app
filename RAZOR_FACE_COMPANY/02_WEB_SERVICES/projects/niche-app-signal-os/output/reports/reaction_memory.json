@@ -2,9 +2,10 @@
   "department": "Reaction Memory Department",
   "date": "2026-06-21",
   "input_sources": [
-    "data/reaction_memory.json"
+    "data/reaction_memory.json",
+    "output/reports/publishing.json"
   ],
-  "summary": "手動投稿後の反応をMemoryへ戻すためのスキーマと集計受け皿を更新しました。実投稿やAPI取得は行いません。",
+  "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets.",
   "scores": {
     "reaction_entries": 0,
     "top_reaction_score": 0
@@ -16,5 +17,6 @@
   "reaction_memory": "data/reaction_memory.json",
   "memory_path": "memory/reaction/2026-06-21.md",
   "top_entries": [],
+  "added_live_initial_entry": false,
   "threads_api_called": false
 }

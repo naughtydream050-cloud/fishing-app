@@ -1,29 +1,47 @@
 {
-  "date": "2026-06-20",
-  "candidate_id": "live-trip-packing-check",
-  "tone_id": "gen_z_oshi_activity",
-  "target_audience": "Z世代寄りの推し活・現場遠征層",
+  "date": "2026-06-21",
+  "candidate_id": "student-deadline-check",
+  "tone_id": "student_casual",
+  "target_audience": "students tracking deadlines and hand-ins",
   "selected_variant_id": "A",
   "variants": [
     {
       "variant_id": "A",
-      "candidate_id": "live-trip-packing-check",
+      "candidate_id": "student-deadline-check",
       "angle": "standard",
-      "text": "ライブ遠征の持ち物チェック、前日になると普通にバタつかない？\n\nチケットどこ\n身分証いるっけ\n充電器入れたっけ\n前回忘れたやつ何だっけ\n\n毎回スクショとメモを行ったり来たりして、出発前に小さく焦るやつ。\n\n現場前チェックリスト風スマホUIで、現場前にまとめて残せたら使う？\nこれ欲しい？",
-      "tone_id": "gen_z_oshi_activity",
+      "text": "学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\n\n学校ポータルに残す\nLINEに残す\nカレンダーに残す\nスマホメモを行き来するに残す\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n時間割連動の提出物ボードで一か所に残せたら使う？\nそれとも今のやり方で十分？",
+      "tone_id": "student_casual",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "gen_z_oshi_activity",
+        "tone_id": "student_casual",
         "used_words": [
-          "現場",
-          "メモ",
-          "スクショ",
-          "持ち物",
-          "遠征"
+          "提出物",
+          "締切",
+          "授業ごと"
         ],
         "used_avoid_words": [],
         "line_count": 8,
-        "target_audience": "Z世代寄りの推し活・現場遠征層"
+        "target_audience": "students tracking deadlines and hand-ins"
+      },
+      "length": 149
+    },
+    {
+      "variant_id": "B",
+      "candidate_id": "student-deadline-check",
+      "angle": "short",
+      "text": "学生の提出物忘れ防止って、地味に毎回探さない？\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n今は学校ポータル、LINE、カレンダー、スマホメモを行き来するで何とかしてるけど、あとで見返す時に散らばりがち。\n\n時間割連動の提出物ボードみたいに残せたら使う？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物",
+          "締切",
+          "授業ごと"
+        ],
+        "used_avoid_words": [],
+        "line_count": 4,
+        "target_audience": "students tracking deadlines and hand-ins"
       },
       "length": 143
     }

@@ -1,741 +1,127 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-06-20",
-  "status": "ok",
-  "mode": "seven_day_dry_run_batch",
+  "date": "2026-06-21",
   "dry_run": true,
-  "auto_post": false,
-  "threads_api_called": false,
-  "days": 7,
-  "daily_outputs": [
+  "sample": false,
+  "status": "ok",
+  "failed": null,
+  "stages": [
     {
-      "date": "2026-06-05",
-      "category": "推し活管理",
-      "target_user": "複数の推し活予定をスマホで管理する人",
-      "pain_point": "推し活の予定と当落メモが散らばる",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-05.md",
-      "json": "output/thread_posts/2026-06-05.json",
-      "card_svg": "output/card_images/2026-06-05.svg",
-      "card_html": "output/card_images/2026-06-05.html",
-      "research_memory": "memory/research/2026-06-05.md",
-      "council_memory": "memory/council/2026-06-05.md"
+      "stage": "collect_research_inputs",
+      "status": "ok",
+      "summary": "Loaded daily market research inputs from data/market_research_inputs.json and removed candidates without evidence."
     },
     {
-      "date": "2026-06-06",
-      "category": "ライブ参戦記録",
-      "target_user": "ライブ参戦の思い出を残したいファン",
-      "pain_point": "ライブ記録が写真アプリとメモに分かれる",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-06.md",
-      "json": "output/thread_posts/2026-06-06.json",
-      "card_svg": "output/card_images/2026-06-06.svg",
-      "card_html": "output/card_images/2026-06-06.html",
-      "research_memory": "memory/research/2026-06-06.md",
-      "council_memory": "memory/council/2026-06-06.md"
+      "stage": "analyze_viral_patterns",
+      "status": "ok",
+      "summary": "反応されやすい悩み、言い回し、画像構造を軽量集計しました。"
     },
     {
-      "date": "2026-06-07",
-      "category": "グッズ管理",
-      "target_user": "推しグッズを複数シリーズで買うファン",
-      "pain_point": "買ったグッズと未開封在庫を把握できない",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-07.md",
-      "json": "output/thread_posts/2026-06-07.json",
-      "card_svg": "output/card_images/2026-06-07.svg",
-      "card_html": "output/card_images/2026-06-07.html",
-      "research_memory": "memory/research/2026-06-07.md",
-      "council_memory": "memory/council/2026-06-07.md"
+      "stage": "update_memory_box",
+      "status": "ok",
+      "summary": "Obsidian互換Markdownへ今日のリサーチ記録を保存しました。"
     },
     {
-      "date": "2026-06-08",
-      "category": "遠征費管理",
-      "target_user": "ライブ遠征をするファン",
-      "pain_point": "遠征費と参戦記録がバラバラになる",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-08.md",
-      "json": "output/thread_posts/2026-06-08.json",
-      "card_svg": "output/card_images/2026-06-08.svg",
-      "card_html": "output/card_images/2026-06-08.html",
-      "research_memory": "memory/research/2026-06-08.md",
-      "council_memory": "memory/council/2026-06-08.md"
+      "stage": "evaluate_trend_timing",
+      "status": "ok",
+      "summary": "日付とカテゴリから投稿タイミングを軽量評価しました。"
     },
     {
-      "date": "2026-06-09",
-      "category": "レシート家計簿",
-      "target_user": "レシート撮影だけで家計管理したい人",
-      "pain_point": "レシート写真が家計管理に変わらない",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-09.md",
-      "json": "output/thread_posts/2026-06-09.json",
-      "card_svg": "output/card_images/2026-06-09.svg",
-      "card_html": "output/card_images/2026-06-09.html",
-      "research_memory": "memory/research/2026-06-09.md",
-      "council_memory": "memory/council/2026-06-09.md"
+      "stage": "score_niche_demand",
+      "status": "ok",
+      "summary": "Scored market-backed niche needs and selected the highest eligible candidate without fixed fallback."
     },
     {
-      "date": "2026-06-10",
-      "category": "大学生向け家計簿",
-      "target_user": "バイト代で生活費を管理する大学生",
-      "pain_point": "少額出費とサブスクの合計が見えない",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-10.md",
-      "json": "output/thread_posts/2026-06-10.json",
-      "card_svg": "output/card_images/2026-06-10.svg",
-      "card_html": "output/card_images/2026-06-10.html",
-      "research_memory": "memory/research/2026-06-10.md",
-      "council_memory": "memory/council/2026-06-10.md"
+      "stage": "select_niche_candidate",
+      "status": "ok",
+      "summary": "Selected daily niche demand candidates only from scored market inputs with evidence."
     },
     {
-      "date": "2026-06-11",
-      "category": "SNS投稿管理",
-      "target_user": "個人でSNS発信を続けるクリエイター",
-      "pain_point": "投稿ネタと反応メモが分かれて改善しにくい",
-      "quality_score": 9,
-      "risk_score": 2,
-      "approved": true,
-      "posted": false,
-      "md": "output/thread_posts/2026-06-11.md",
-      "json": "output/thread_posts/2026-06-11.json",
-      "card_svg": "output/card_images/2026-06-11.svg",
-      "card_html": "output/card_images/2026-06-11.html",
-      "research_memory": "memory/research/2026-06-11.md",
-      "council_memory": "memory/council/2026-06-11.md"
+      "stage": "build_market_research_trace",
+      "status": "ok",
+      "summary": "Traced the selected candidate back to current market/research evidence."
+    },
+    {
+      "stage": "audience_strategy",
+      "status": "ok",
+      "summary": "Defined the target segment and wording for the selected market-backed candidate."
+    },
+    {
+      "stage": "design_intelligence",
+      "status": "ok",
+      "summary": "Created candidate-specific UI card direction from the selected market need."
+    },
+    {
+      "stage": "audience_tone_adapter",
+      "status": "ok",
+      "summary": "Converted candidate audience strategy into a concrete Threads tone profile."
+    },
+    {
+      "stage": "run_llm_council",
+      "status": "ok",
+      "summary": "API未設定のため、5役の圧縮会議をルールベースfallbackで生成しました。"
+    },
+    {
+      "stage": "generate_threads_post",
+      "status": "ok",
+      "summary": "Generated candidate-specific Threads copy from the selected market need and audience tone profile."
+    },
+    {
+      "stage": "generate_share_card",
+      "status": "ok",
+      "summary": "Generated a candidate-specific Threads UI card image from the selected market need."
+    },
+    {
+      "stage": "generate_card_image",
+      "status": "ok",
+      "summary": "1080x1350のカード画像素材をHTML/SVGで生成しました。"
+    },
+    {
+      "stage": "quality_risk_gate",
+      "status": "ok",
+      "summary": "Checked market evidence, candidate consistency, and audience tone before post selection."
+    },
+    {
+      "stage": "select_post_candidate",
+      "status": "ok",
+      "summary": "Selected only tone-adapted copy approved by the quality risk gate."
+    },
+    {
+      "stage": "post_source_audit",
+      "status": "ok",
+      "summary": "Audited that the selected post and image are backed by today's market research and are not duplicated."
+    },
+    {
+      "stage": "post_to_threads",
+      "status": "ok",
+      "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards."
+    },
+    {
+      "stage": "fetch_threads_insights",
+      "status": "ok",
+      "summary": "Threads insights are initialized as null unless a later metrics fetch supplies real values."
+    },
+    {
+      "stage": "update_reaction_memory",
+      "status": "ok",
+      "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets."
+    },
+    {
+      "stage": "analyze_learning",
+      "status": "ok",
+      "summary": "Next seed weights, web candidates, note candidates, and weekly report were updated from the selected market candidate."
     }
   ],
-  "low_quality_gate": {
-    "approved": false,
-    "block_reasons": [
-      "quality_score < 7",
-      "risk_score > 4",
-      "target_user == unclear"
-    ],
-    "scores": {
-      "quality_score": 4,
-      "risk_score": 6,
-      "copycat_score": 1,
-      "same_pattern_days": 1
-    }
-  },
   "artifacts": [
-    "data/build_candidates.json",
-    "data/category_decisions.json",
-    "data/note_candidate_shortlist.json",
-    "data/note_candidates.json",
-    "data/post_log.json",
-    "data/web_candidate_handoff.json",
-    "data/web_candidate_shortlist.json",
-    "docs/CODEX_GPT_HANDOFF_CONSULTATION_RESULT.md",
-    "docs/CODEX_GPT_MARKETING_STRATEGY_RESULT.md",
-    "docs/CODEX_GPT_WEB_MVP_CONSULTATION_RESULT.md",
-    "handoff/oshi-activity-management/BUILD_HANDOFF.md",
-    "handoff/oshi-activity-management/FEEDBACK_CHECKLIST.md",
-    "handoff/oshi-activity-management/FIRST_MANUAL_POST_CANDIDATE.md",
-    "handoff/oshi-activity-management/LP_FIRST_VIEW_COPY.md",
-    "handoff/oshi-activity-management/LP_FLOW.md",
-    "handoff/oshi-activity-management/MARKETING_STRATEGY.md",
-    "handoff/oshi-activity-management/MARKETING_VALIDATION_PACK.md",
-    "handoff/oshi-activity-management/MVP_SPEC.md",
-    "handoff/oshi-activity-management/NEXT_BUILD_PROMPT.md",
-    "handoff/oshi-activity-management/NOTE_ANGLE.md",
-    "handoff/oshi-activity-management/NOTE_DRAFT_OUTLINE.md",
-    "handoff/oshi-activity-management/NOTE_OUTLINE.md",
-    "handoff/oshi-activity-management/THREADS_DRY_RUN_CAMPAIGN.md",
-    "handoff/oshi-activity-management/THREADS_DRY_RUN_POSTS.md",
-    "handoff/oshi-activity-management/THREADS_EVIDENCE.md",
-    "memory/council/*.md",
-    "memory/reports/weekly_report.md",
-    "memory/research/*.md",
-    "output/card_images/*.html",
-    "output/card_images/*.svg",
-    "output/reports/dry_run_batch_report.md",
-    "output/reports/editorial_review.json",
-    "output/reports/editorial_review.md",
-    "output/reports/gpt_followup_completion_report.md",
-    "output/reports/marketing_strategy_completion_report.md",
-    "output/reports/oshi_mvp_build_report.md",
-    "output/reports/oshi_mvp_manual_qa_checklist.md",
-    "output/reports/oshi_mvp_marketing_review.md",
-    "output/reports/preflight_audit.md",
-    "output/reports/sample_post_review.md",
-    "output/reports/web_candidate_handoff_report.json",
-    "output/reports/web_candidate_handoff_report.md",
-    "output/reports/web_mvp_validation.json",
-    "output/reports/web_mvp_validation.md",
-    "output/thread_posts/*.json",
-    "output/thread_posts/*.md",
-    "reports/latest/preflight-audit.json",
-    "scripts/validate_web_mvp.py",
-    "web/oshi-activity-management/README.md",
-    "web/oshi-activity-management/app.js",
-    "web/oshi-activity-management/index.html",
-    "web/oshi-activity-management/styles.css",
-    "docs/HARNESS_AUDIENCE_DESIGN_LOOP.md",
-    "output/reports/harness_audience_design_loop_report.md",
-    "scripts/audience_strategy.py",
-    "scripts/design_intelligence.py",
-    "scripts/update_reaction_memory.py",
-    "data/reaction_memory.json",
-    "memory/audience/*.md",
-    "memory/design_strategy/*.md",
-    "memory/reaction/*.md",
-    "output/reports/audience_strategy.json",
-    "output/reports/design_strategy.json",
-    "output/reports/reaction_memory.json",
-    "memory/audience/2026-06-18.md",
-    "memory/design_strategy/2026-06-18.md",
-    "memory/reaction/2026-06-18.md",
-    "data/audience_tone_rules.json",
-    "scripts/audience_tone_adapter.py",
-    "output/reports/audience_tone_profile.json",
-    "output/reports/threads_tone_variants.json",
-    "memory/audience_tone/2026-06-20.md",
-    "docs/THREADS_TONE_PIPELINE.md",
-    "output/reports/threads_tone_pipeline_report.md",
-    "output/thread_posts/2026-06-20.md",
-    "data/manual_threads_target.json",
-    "output/reports/manual_threads_target_report.md",
-    "scripts/post_to_threads.py",
-    "data/post_history.json",
-    "docs/THREADS_API_SETUP.md",
-    "docs/AUTO_POST_SETUP.md",
-    "output/reports/threads_auto_post_pipeline_report.md",
-    ".env.example",
-    ".github/workflows/daily_threads_signal_post.yml",
-    "scripts/select_post_candidate.py",
-    "output/reports/selected_post_candidate.json",
-    "output/reports/audience_tone_enforcement_report.md",
-    "scripts/select_niche_candidate.py",
-    "scripts/generate_share_card.py",
-    "output/reports/daily_niche_ui_candidates.json",
-    "output/reports/daily_niche_ui_candidates.md",
-    "output/reports/daily_share_card.json",
-    "output/reports/daily_share_card_report.md",
-    "output/share-cards/2026-06-20-oshi-activity-management.png",
-    "memory/market_needs/2026-06-20.md"
-  ],
-  "preflight_audit": {
-    "status": "ok",
-    "path": "reports/latest/preflight-audit.json",
-    "counts": {
-      "thread_md": 7,
-      "thread_json": 7,
-      "card_svg": 7,
-      "card_html": 7,
-      "research_md": 7,
-      "council_md": 7,
-      "post_log_entries": 7,
-      "daily_outputs": 7
-    },
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "post_log_dry_run_only": true,
-      "low_quality_gate_blocks": true
-    },
-    "failures": [],
-    "mojibake_files": [],
-    "secret_value_hits": []
-  },
-  "editorial_review": {
-    "status": "ok",
-    "path": "output/reports/editorial_review.json",
-    "keep_categories": [
-      "推し活管理",
-      "ライブ参戦記録",
-      "グッズ管理",
-      "遠征費管理"
-    ],
-    "reduce_categories": [],
-    "web_candidate_focus": {
-      "date": "2026-06-05",
-      "category": "推し活管理",
-      "idea": "現場予定、当落、入金、同行者メモを一画面でまとめる推し活ボード",
-      "target_user": "複数の推し活予定をスマホで管理する人",
-      "signal_score": 10,
-      "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-    },
-    "note_candidate_focus": {
-      "date": "2026-06-05",
-      "category": "推し活管理",
-      "angle": "なぜ「推し活の予定と当落メモが散らばる」をアプリ化したくなるのか",
-      "signal_score": 10
-    }
-  },
-  "web_candidate_handoff": {
-    "status": "ok",
-    "path": "output/reports/web_candidate_handoff_report.json",
-    "candidate_id": "oshi-activity-management",
-    "category": "推し活管理",
-    "handoff_dir": "handoff/oshi-activity-management",
-    "files": [
-      "handoff/oshi-activity-management/BUILD_HANDOFF.md",
-      "handoff/oshi-activity-management/MVP_SPEC.md",
-      "handoff/oshi-activity-management/NOTE_ANGLE.md",
-      "handoff/oshi-activity-management/THREADS_EVIDENCE.md",
-      "handoff/oshi-activity-management/NEXT_BUILD_PROMPT.md",
-      "data/web_candidate_handoff.json"
-    ],
-    "safety": {
-      "auto_post": false,
-      "dry_run": true,
-      "threads_real_posting": false,
-      "external_api_added": false
-    }
-  },
-  "web_mvp": {
-    "status": "ok_with_python_unavailable",
-    "path": "web/oshi-activity-management/index.html",
-    "validation": "output/reports/web_mvp_validation.json",
-    "build_report": "output/reports/oshi_mvp_build_report.md",
-    "scope": [
-      "dashboard",
-      "live_log",
-      "goods_management",
-      "travel_cost",
-      "memo_memory",
-      "localStorage",
-      "sample_data",
-      "create_edit_delete",
-      "list_view",
-      "simple_metrics",
-      "empty_state",
-      "json_import_export"
-    ],
-    "checks": {
-      "required_files": true,
-      "required_text": true,
-      "required_crud_js": true,
-      "uses_localStorage": true,
-      "has_import_export": true,
-      "has_empty_state": true,
-      "node_syntax_check": true,
-      "node_static_check": true,
-      "no_external_url": true,
-      "no_external_api_call": true,
-      "no_secret_names": true,
-      "no_db_auth_payment_rls_added": true,
-      "auto_post_not_enabled": true,
-      "manual_review_artifacts": true,
-      "mojibake_marker_check": true,
-      "has_gpt_followup_fields": true
-    },
-    "safety": {
-      "context_dry_run": true,
-      "context_auto_post_false": true,
-      "context_threads_api_not_called": true,
-      "threads_posting_not_run": true
-    },
-    "limitations": {
-      "python_validator": "failed_python_windowsapps_alias_on_2026-06-18",
-      "browser_smoke_test": "not_run_browser_plugin_node_repl_spawn_setup_refresh_failed"
-    },
-    "fields_added": [
-      "ticket_status",
-      "companion",
-      "emotion_tag"
-    ]
-  },
-  "web_mvp_consultation": {
-    "status": "answered",
-    "route": "Codex in-app browser ChatGPT tab via named pipe",
-    "path": "docs/CODEX_GPT_WEB_MVP_CONSULTATION_RESULT.md",
-    "decision": "A. Proceed with local-first Web MVP implementation now.",
-    "constraints": [
-      "DRY_RUN=true",
-      "AUTO_POST=false",
-      "No Threads posting",
-      "No secrets",
-      "No DB/Auth/payment/RLS",
-      "No external API",
-      "localStorage only",
-      "Do not modify the posting pipeline except to preserve safety"
-    ]
-  },
-  "marketing_strategy": {
-    "status": "completed_after_gpt_consultation",
-    "date": "2026-06-06",
-    "candidate_id": "oshi-activity-management",
-    "consultation": {
-      "attempts": [
-        {
-          "route": "Chrome MCP",
-          "status": "limited",
-          "note": "Open tabs/history accessible, but target chat was not found and ChatGPT page inspection timed out."
-        },
-        {
-          "route": "Codex desktop in-app browser",
-          "status": "success",
-          "chat_title": "マーケ戦略",
-          "chat_url": "https://chatgpt.com/c/6a033d1a-cf1c-83a2-8d0a-c7b4e0641ffc"
-        }
-      ],
-      "result_path": "docs/CODEX_GPT_MARKETING_STRATEGY_RESULT.md"
-    },
-    "decision": "Start with DRY_RUN Threads variants; choose note or LP based on response signals.",
-    "generated": [
-      "handoff/oshi-activity-management/MARKETING_VALIDATION_PACK.md",
-      "handoff/oshi-activity-management/THREADS_DRY_RUN_POSTS.md",
-      "handoff/oshi-activity-management/NOTE_DRAFT_OUTLINE.md",
-      "handoff/oshi-activity-management/LP_FIRST_VIEW_COPY.md",
-      "handoff/oshi-activity-management/FEEDBACK_CHECKLIST.md",
-      "docs/CODEX_GPT_MARKETING_STRATEGY_RESULT.md",
-      "output/reports/marketing_strategy_completion_report.md"
-    ],
-    "guards": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_live_posting": true,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    },
-    "gpt_consultation": {
-      "route": "Codex desktop in-app browser",
-      "chat_title": "マーケ戦略",
-      "chat_url": "https://chatgpt.com/c/6a033d1a-cf1c-83a2-8d0a-c7b4e0641ffc",
-      "decision": "Build Marketing Validation Pack before any live posting."
-    },
-    "primary_angle": "A. 現場ごとに散らかる情報",
-    "comparison_angles": [
-      "B. グッズ/遠征費でお金が見えない",
-      "C. 思い出が残らない"
-    ],
-    "field_candidates": [
-      "ticket_status",
-      "companion",
-      "emotion_tag"
-    ]
-  },
-  "gpt_followup_completion": {
-    "status": "completed_with_tool_limitations",
-    "date": "2026-06-18",
-    "requested": "Short consultation in Chrome marketing strategy tab, then complete remaining work.",
-    "chrome": {
-      "target_chat": "マーケ戦略",
-      "url": "https://chatgpt.com/c/6a033d1a-cf1c-83a2-8d0a-c7b4e0641ffc",
-      "tab_visible": true,
-      "interaction_status": "failed_timeout"
-    },
-    "computer_use": {
-      "status": "failed_setup",
-      "error": "Package subpath computer_use_client_base.js is not defined by exports"
-    },
-    "completed_work": [
-      "Added ticket_status to live log MVP",
-      "Added companion to live log MVP",
-      "Added emotion_tag to live log MVP",
-      "Rebuilt MVP files as readable Japanese UTF-8",
-      "Updated Web MVP validator requirements"
-    ],
-    "report": "output/reports/gpt_followup_completion_report.md",
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_live_posting": true,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    }
-  },
-  "manual_post_review": {
-    "status": "prepared",
-    "date": "2026-06-18",
-    "qa_checklist": "output/reports/oshi_mvp_manual_qa_checklist.md",
-    "marketing_review": "output/reports/oshi_mvp_marketing_review.md",
-    "first_manual_post_candidate": "handoff/oshi-activity-management/FIRST_MANUAL_POST_CANDIDATE.md",
-    "final_gpt_consult": "output/reports/oshi_mvp_final_gpt_consult.md",
-    "gpt_final_decision": "このまま手動QAへ。完遂前の追加実装は不要です。追加実装は不要。完遂OK。",
-    "manual_post_stop_conditions": [
-      "保存・編集・削除・import/exportのどれかでデータが壊れる。",
-      "スマホ表示で主要操作が分かりにくい、または押せない。",
-      "投稿文やLP文が「管理・節約・効率化」寄りで、推し活の温度感を壊している。"
-    ],
-    "recommendation": "Manual QA first; if passed, use Variant A / 現場ごとに散らかる情報 as first manual post candidate.",
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_live_posting": true,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    }
-  },
-  "harness_upgrade": {
-    "audience_strategy_department": true,
-    "design_intelligence_department": true,
-    "reaction_memory_department": true,
-    "purpose": "niche demand x audience understanding x matching UI design x reaction learning",
-    "docs": "docs/HARNESS_AUDIENCE_DESIGN_LOOP.md",
-    "report": "output/reports/harness_audience_design_loop_report.md",
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    },
-    "current_audience_strategy": "output/reports/audience_strategy.json",
-    "current_design_strategy": "output/reports/design_strategy.json",
-    "current_reaction_memory": "output/reports/reaction_memory.json",
-    "audience_tone_adapter_department": true
-  },
-  "audience_tone_adapter": {
-    "status": "implemented",
-    "department": "Audience Tone Adapter Department",
-    "rules": "data/audience_tone_rules.json",
-    "profile": "output/reports/audience_tone_profile.json",
-    "variants": "output/reports/threads_tone_variants.json",
-    "memory": "memory/audience_tone/2026-06-20.md",
-    "selected_tone_id": "gen_z_oshi_activity",
-    "selected_variant": "A",
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    }
-  },
-  "manual_threads_target": {
-    "status": "configured_manual_review_only",
-    "platform": "Threads",
-    "display_name": "有能サイト紹介",
-    "handle": "younengsaitoshaojie",
-    "target_config": "data/manual_threads_target.json",
-    "report": "output/reports/manual_threads_target_report.md",
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "real_threads_posting": false,
-      "chrome_posting": false,
-      "manual_owner_review_required": true
-    }
-  },
-  "threads_auto_post_pipeline": {
-    "status": "guard_structure_implemented_no_live_test",
-    "api_token_available": false,
-    "auto_post": false,
-    "dry_run": true,
-    "chrome_posting": false,
-    "files": {
-      "posting_script": "scripts/post_to_threads.py",
-      "post_history": "data/post_history.json",
-      "target_guard": "data/manual_threads_target.json",
-      "setup_doc": "docs/THREADS_API_SETUP.md",
-      "report": "output/reports/threads_auto_post_pipeline_report.md"
-    },
-    "required_secrets": [
-      "THREADS_ACCESS_TOKEN",
-      "THREADS_USER_ID",
-      "THREADS_TARGET_HANDLE",
-      "THREADS_AUTO_POST_ENABLED"
-    ],
-    "guards": [
-      "AUTO_POST=true required",
-      "DRY_RUN=false required",
-      "THREADS_AUTO_POST_ENABLED=true required",
-      "target handle match required",
-      "duplicate posted content blocked",
-      "missing API secrets safe stop"
-    ],
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_not_called": true,
-      "no_chrome_posting": true,
-      "no_dummy_token": true,
-      "no_secret_values": true
-    }
-  },
-  "threads_secret_reuse_check": {
-    "status": "completed",
-    "report": "output/reports/threads_secret_reuse_check.md",
-    "repo_root": "D:/Development",
-    "git_remote": "https://github.com/naughtydream050-cloud/fishing-app.git",
-    "same_as_fishing_app": true,
-    "can_reuse_secrets": true,
-    "workflow": ".github/workflows/niche-app-signal-os-secret-reuse-check.yml",
-    "workflow_updated": true,
-    "referenced_secrets": [
-      "THREADS_ACCESS_TOKEN",
-      "THREADS_USER_ID",
-      "THREADS_AUTO_POST_ENABLED",
-      "CRON_SECRET",
-      "THREADS_TARGET_HANDLE"
-    ],
-    "secrets_exposed": false,
-    "posting_attempted": false,
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_called": false,
-      "no_secret_values": true
-    }
-  },
-  "threads_auto_post_github_ready": {
-    "status": "workflow_configured_no_live_run",
-    "workflow": ".github/workflows/niche-app-signal-os-auto-post.yml",
-    "report": "output/reports/threads_auto_post_github_ready.md",
-    "manual_dry_run": {
-      "workflow_dispatch_live_post": false,
-      "dry_run": true,
-      "auto_post": false
-    },
-    "manual_live_run": {
-      "workflow_dispatch_live_post": true,
-      "dry_run": false,
-      "auto_post": true,
-      "requires_threads_auto_post_enabled": true
-    },
-    "scheduled_run": {
-      "cron": "10 0 * * *",
-      "live_only_when_threads_auto_post_enabled_secret_is_true": true
-    },
-    "target_handle": "younengsaitoshaojie",
-    "secrets_referenced": [
-      "THREADS_ACCESS_TOKEN",
-      "THREADS_USER_ID",
-      "THREADS_AUTO_POST_ENABLED",
-      "CRON_SECRET"
-    ],
-    "secrets_exposed": false,
-    "posting_attempted": false
-  },
-  "audience_tone_enforcement": {
-    "status": "implemented_no_posting",
-    "date": "2026-06-20",
-    "purpose": "Use the UI/card target audience to adapt Threads post tone before final selection.",
-    "pipeline_order": [
-      "Research",
-      "Audience Strategy",
-      "Design Intelligence",
-      "Audience Tone Adapter",
-      "Generate Threads Post",
-      "Quality Risk Gate",
-      "Select Post Candidate",
-      "Card Image",
-      "Post To Threads"
-    ],
-    "files": {
-      "rules": "data/audience_tone_rules.json",
-      "design_strategy": "output/reports/design_strategy.json",
-      "tone_profile": "output/reports/audience_tone_profile.json",
-      "variants": "output/reports/threads_tone_variants.json",
-      "selected_candidate": "output/reports/selected_post_candidate.json",
-      "final_post_md": "output/thread_posts/2026-06-20.md",
-      "report": "output/reports/audience_tone_enforcement_report.md"
-    },
-    "selected_tone": "gen_z_oshi_activity",
-    "target_audience": "Z?????????",
-    "selected_post_text": "推し活の記録、気づいたときにはマジで大散乱してて詰む。\n\n「え、座席どこだっけ？」\n「セトリどこにメモった？」\n「今回の遠征費、何万飛んだ？」\n「てかグッズ何買ったっけ…？」\n\nあとで見返したいのに、毎回スクショと写真フォルダを一生スクロールして大捜索するやつ、マジでオタクあるある。\n\nぶっちゃけ、現場ごとに一撃で全部まとめられるログアプリとかあったら使う？\nそれともNotionで自作すれば事足りる感じ？\nみんなのリアルな意見教えてほしい！",
-    "tone_check": {
-      "passed": true,
-      "forbidden_words": [],
-      "developer_voice": false,
-      "explanatory_tone": false
-    },
-    "workflow_check": {
-      "local_workflow": "D:/Development/.github/workflows/niche-app-signal-os-auto-post.yml",
-      "verifies_tone_pipeline_order": true,
-      "post_to_threads_uses_selected_candidate": true,
-      "tone_mismatch_blocks_posting": true
-    },
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_called": false,
-      "secrets_exposed": false,
-      "no_external_api_added": true,
-      "no_db_auth_payment_rls_added": true
-    },
-    "validation_note": "Python was unavailable locally; JSON/static checks used Node and PowerShell."
-  },
-  "daily_niche_ui_generation": {
-    "status": "implemented_dry_run",
-    "date": "2026-06-20",
-    "purpose": "Generate Threads post text and a smartphone UI share-card image from market-discovered niche demand candidates.",
-    "daily_flow": [
-      "Research / Market Signal",
-      "Market Need Department",
-      "Audience Strategy",
-      "Design Intelligence",
-      "Audience Tone Adapter",
-      "Copywriting",
-      "UI Share Card Generator",
-      "Quality Gate",
-      "DRY_RUN Output",
-      "Reaction Memory"
-    ],
-    "selected_candidate": {
-      "candidate_id": "oshi-activity-management",
-      "category": "?????",
-      "target_audience": "Z?????????",
-      "ui_metaphor": "???????"
-    },
-    "outputs": {
-      "candidates_json": "output/reports/daily_niche_ui_candidates.json",
-      "candidates_md": "output/reports/daily_niche_ui_candidates.md",
-      "post_md": "output/thread_posts/2026-06-20.md",
-      "share_card_png": "output/share-cards/2026-06-20-oshi-activity-management.png",
-      "share_card_report": "output/reports/daily_share_card_report.md",
-      "market_memory": "memory/market_needs/2026-06-20.md"
-    },
-    "safety": {
-      "dry_run": true,
-      "auto_post_false": true,
-      "threads_api_called": false,
-      "external_api_added": false,
-      "secrets_used": false,
-      "db_auth_payment_rls_added": false
-    }
-  },
-  "post_source_audit": {
-    "path": "output/reports/post_source_audit.json",
-    "posting_allowed": true,
-    "market_evidence_count": 3,
-    "blocks": []
-  },
-  "updated_at": "2026-06-20T09:00:03.087Z",
-  "market_research_inputs": {
-    "path": "data/market_research_inputs.json",
-    "usable_candidates": 5
-  },
-  "niche_demand_score": {
-    "path": "output/reports/niche_demand_score.json",
-    "scored_candidates": 5,
-    "selected_candidate_id": "live-trip-packing-check"
-  },
-  "selected_post_candidate": {
-    "path": "output/reports/selected_post_candidate.json",
-    "selected": true,
-    "selected_candidate_id": "live-trip-packing-check",
-    "selected_image_path": "output/share-cards/2026-06-20-live-trip-packing-check.png"
-  },
-  "production_operation_readiness": {
-    "path": "output/reports/production_operation_readiness.json",
-    "workflow_ready": true,
-    "local_dispatch_available": false,
-    "selected_candidate_id": "live-trip-packing-check",
-    "posting_allowed": true
-  }
+    "output/thread_posts/",
+    "output/card_images/",
+    "output/reports/",
+    "memory/research/",
+    "memory/audience/",
+    "memory/audience_tone/",
+    "memory/design_strategy/",
+    "memory/reaction/",
+    "memory/council/",
+    "memory/reports/"
+  ]
 }

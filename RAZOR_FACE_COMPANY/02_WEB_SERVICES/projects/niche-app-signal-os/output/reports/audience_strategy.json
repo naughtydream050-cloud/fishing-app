@@ -1,50 +1,49 @@
 {
   "department": "Audience Strategy Department",
-  "date": "2026-06-20",
-  "input_sources": [],
+  "date": "2026-06-21",
+  "input_sources": [
+    "output/reports/daily_niche_ui_candidates.json"
+  ],
   "summary": "Defined the target segment and wording for the selected market-backed candidate.",
   "scores": {
     "segment_confidence": 8
   },
   "risks": [],
-  "next_action": "",
+  "next_action": "design intelligence",
   "audience_strategy": {
-    "date": "2026-06-20",
-    "candidate_id": "live-trip-packing-check",
-    "candidate_category": "ライブ遠征の持ち物チェック",
-    "target_user_segment": "ライブやイベントに遠征する10代後半から30代のファン",
-    "tone_id": "gen_z_oshi_activity",
+    "candidate_id": "student-deadline-check",
+    "candidate_category": "学生の提出物忘れ防止",
+    "target_user_segment": "高校生・大学生・専門学生",
+    "tone_id": "student_casual",
     "user_motivation": "今のやり方で足りているようで、毎回少し探す・忘れる・見返せない不便を減らしたい",
-    "primary_job": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+    "primary_job": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
     "current_alternatives": [
+      "学校ポータル",
+      "Googleカレンダー",
       "スマホメモ",
-      "Notion",
-      "紙のチェックリスト",
-      "LINE Keep"
+      "LINE"
     ],
     "language_to_use": [
-      "現場",
-      "忘れがち",
-      "メモ",
-      "スクショ",
-      "あとで見返す",
-      "持ち物",
-      "遠征",
-      "これ使う？"
+      "提出物",
+      "締切",
+      "明日いるやつ",
+      "授業ごと",
+      "見落とす",
+      "これ欲しい？"
     ],
     "language_to_avoid": [
-      "効率化",
-      "管理しよう",
-      "SaaS",
-      "生産性",
-      "完璧に整理"
+      "学習管理システム",
+      "業務効率",
+      "革新的",
+      "完全自動化"
     ],
     "comment_hooks": [
       "これ欲しい？",
       "今のやり方で十分？",
       "専用であったら使う？"
     ],
-    "segment_confidence": 8
+    "segment_confidence": 8,
+    "date": "2026-06-21"
   },
-  "memory_path": "memory/audience/2026-06-20.md"
+  "memory_path": "memory/audience/2026-06-21.md"
 }

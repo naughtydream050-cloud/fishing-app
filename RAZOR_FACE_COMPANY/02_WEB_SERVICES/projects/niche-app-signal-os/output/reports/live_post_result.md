@@ -1,11 +1,13 @@
-# Selected Post Candidate - 2026-06-21
+# Live Post Result - 2026-06-21
 
-- selected: True
+- status: dry_run_saved
+- posting_attempted: False
+- api_called: False
+- post_id: 
+- post_url: 
+- target_handle: younengsaitoshaojie
 - selected_candidate_id: student-deadline-check
-- selected_category: 学生の提出物忘れ防止
-- market_evidence_count: 3
 - selected_image_path: output/share-cards/2026-06-21-student-deadline-check.png
-- rejected_reason_if_any: 
 
 ## Selected Post Text
 学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？
@@ -19,3 +21,6 @@ LINEに残す
 
 時間割連動の提出物ボードで一か所に残せたら使う？
 それとも今のやり方で十分？
+
+## Risks
+- AUTO_POST=false
