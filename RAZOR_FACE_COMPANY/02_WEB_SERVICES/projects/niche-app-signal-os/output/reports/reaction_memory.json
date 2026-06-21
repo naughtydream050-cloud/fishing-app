@@ -7,7 +7,7 @@
   ],
   "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets.",
   "scores": {
-    "reaction_entries": 1,
+    "reaction_entries": 2,
     "top_reaction_score": 0
   },
   "risks": [],
@@ -33,8 +33,27 @@
       "design_feedback": [],
       "next_decision": "hold",
       "reaction_score": 0
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "receipt-payment-lookback",
+      "post_variant": "default_light_problem",
+      "manual_post_url": "https://www.threads.net/@younengsaitoshaojie/post/18024763187841835",
+      "post_id": "18024763187841835",
+      "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
+      "likes": null,
+      "replies": null,
+      "reposts": null,
+      "saves": null,
+      "profile_clicks": null,
+      "comments": [],
+      "objections": [],
+      "requested_fields": [],
+      "design_feedback": [],
+      "next_decision": "hold",
+      "reaction_score": 0
     }
   ],
-  "added_live_initial_entry": false,
+  "added_live_initial_entry": true,
   "threads_api_called": false
 }
