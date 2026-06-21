@@ -8,7 +8,9 @@
   "scores": {
     "insight_fields": 9
   },
-  "risks": [],
+  "risks": [
+    "no_live_thread_id"
+  ],
   "next_action": "reaction memory",
   "insights": {
     "views": null,
@@ -21,6 +23,6 @@
     "follows": null,
     "clicks": null
   },
-  "source_status": "posted",
-  "thread_id": "18087027443624576"
+  "source_status": "dry_run_saved",
+  "thread_id": null
 }

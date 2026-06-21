@@ -1,49 +1,41 @@
 {
   "date": "2026-06-21",
-  "candidate_id": "student-deadline-check",
-  "tone_id": "student_casual",
-  "target_audience": "students tracking deadlines and hand-ins",
+  "candidate_id": "receipt-payment-lookback",
+  "tone_id": "default_light_problem",
+  "target_audience": "ネット購入や電子決済が多い生活者",
   "selected_variant_id": "A",
   "variants": [
     {
       "variant_id": "A",
-      "candidate_id": "student-deadline-check",
+      "candidate_id": "receipt-payment-lookback",
       "angle": "standard",
-      "text": "学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\n\n学校ポータルに残す\nLINEに残す\nカレンダーに残す\nスマホメモを行き来するに残す\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n時間割連動の提出物ボードで一か所に残せたら使う？\nそれとも今のやり方で十分？",
-      "tone_id": "student_casual",
+      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
         "line_count": 8,
-        "target_audience": "students tracking deadlines and hand-ins"
+        "target_audience": "ネット購入や電子決済が多い生活者"
       },
-      "length": 149
+      "length": 135
     },
     {
       "variant_id": "B",
-      "candidate_id": "student-deadline-check",
+      "candidate_id": "receipt-payment-lookback",
       "angle": "short",
-      "text": "学生の提出物忘れ防止って、地味に毎回探さない？\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n今は学校ポータル、LINE、カレンダー、スマホメモを行き来するで何とかしてるけど、あとで見返す時に散らばりがち。\n\n時間割連動の提出物ボードみたいに残せたら使う？",
-      "tone_id": "student_casual",
+      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\nこれ、専用であったら使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
-        "line_count": 4,
-        "target_audience": "students tracking deadlines and hand-ins"
+        "line_count": 7,
+        "target_audience": "ネット購入や電子決済が多い生活者"
       },
-      "length": 143
+      "length": 107
     }
   ],
   "all_variants_tone_checked": true

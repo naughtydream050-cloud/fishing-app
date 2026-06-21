@@ -13,10 +13,10 @@
   },
   "risks": [],
   "next_action": "quality gate",
-  "candidate_id": "student-deadline-check",
+  "candidate_id": "receipt-payment-lookback",
   "card_paths": {
-    "html": "output/share-cards/2026-06-21-student-deadline-check.html",
-    "png": "output/share-cards/2026-06-21-student-deadline-check.png"
+    "html": "output/share-cards/2026-06-21-receipt-payment-lookback.html",
+    "png": "output/share-cards/2026-06-21-receipt-payment-lookback.png"
   },
   "png_generated": true,
   "png_status": "ok",
