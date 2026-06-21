@@ -37,6 +37,24 @@
       "requested_fields": [],
       "design_feedback": [],
       "next_decision": "hold"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "student-deadline-check",
+      "post_variant": "student_casual",
+      "manual_post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
+      "post_id": "17884012131597637",
+      "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+      "likes": null,
+      "replies": null,
+      "reposts": null,
+      "saves": null,
+      "profile_clicks": null,
+      "comments": [],
+      "objections": [],
+      "requested_fields": [],
+      "design_feedback": [],
+      "next_decision": "hold"
     }
   ],
   "fields": {

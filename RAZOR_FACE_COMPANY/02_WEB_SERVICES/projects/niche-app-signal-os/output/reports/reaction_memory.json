@@ -7,7 +7,7 @@
   ],
   "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets.",
   "scores": {
-    "reaction_entries": 2,
+    "reaction_entries": 3,
     "top_reaction_score": 0
   },
   "risks": [],
@@ -52,8 +52,27 @@
       "design_feedback": [],
       "next_decision": "hold",
       "reaction_score": 0
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "student-deadline-check",
+      "post_variant": "student_casual",
+      "manual_post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
+      "post_id": "17884012131597637",
+      "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+      "likes": null,
+      "replies": null,
+      "reposts": null,
+      "saves": null,
+      "profile_clicks": null,
+      "comments": [],
+      "objections": [],
+      "requested_fields": [],
+      "design_feedback": [],
+      "next_decision": "hold",
+      "reaction_score": 0
     }
   ],
-  "added_live_initial_entry": false,
+  "added_live_initial_entry": true,
   "threads_api_called": false
 }
