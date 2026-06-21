@@ -1,0 +1,50 @@
+{
+  "department": "Post Candidate Selection Department",
+  "date": "2026-06-22",
+  "input_sources": [
+    "output/reports/market_research_trace.json",
+    "output/reports/threads_post.json",
+    "output/reports/daily_share_card.json",
+    "output/reports/quality_risk_gate.json",
+    "output/reports/audience_tone_profile.json"
+  ],
+  "summary": "Selected only tone-adapted copy approved by the quality risk gate.",
+  "scores": {
+    "selected": true,
+    "text_length": 96
+  },
+  "risks": [],
+  "next_action": "card image then publishing guard",
+  "selected": true,
+  "selected_candidate_id": "student-deadline-check",
+  "selected_category": "学生の提出物忘れ防止",
+  "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+  "market_research_trace": "output/reports/market_research_trace.json",
+  "market_evidence_count": 3,
+  "selected_tone": "student_casual",
+  "target_audience": "students tracking deadlines and hand-ins",
+  "ui_target_audience": "高校生・大学生・専門学生",
+  "tone_check_result": {
+    "passed": true,
+    "tone_id": "student_casual",
+    "used_words": [
+      "提出物"
+    ],
+    "used_avoid_words": [],
+    "line_count": 6,
+    "target_audience": "students tracking deadlines and hand-ins",
+    "max_recent_similarity": 0.064
+  },
+  "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+  "candidate_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+  "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+  "image_generated_from_candidate": true,
+  "rejected_reason_if_any": "",
+  "source": [
+    "output/reports/market_research_trace.json",
+    "output/reports/threads_post.json",
+    "output/reports/daily_share_card.json",
+    "output/reports/quality_risk_gate.json",
+    "output/reports/audience_tone_profile.json"
+  ]
+}

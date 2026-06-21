@@ -1,48 +1,59 @@
 {
   "department": "Design Intelligence Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
+    "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_strategy.json"
   ],
-  "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。",
+  "summary": "Created candidate-specific UI card direction from the selected market need.",
   "scores": {
-    "design_confidence": 7
+    "design_confidence": 8
   },
   "risks": [],
-  "next_action": "copywriting and card image",
+  "next_action": "audience tone adapter",
   "design_strategy": {
-    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
+    "date": "2026-06-22",
+    "candidate_id": "student-deadline-check",
+    "category": "学生の提出物忘れ防止",
+    "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+    "target_audience_for_copy": "高校生・大学生・専門学生",
+    "audience_context": "高校生・大学生・専門学生",
+    "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
+    "ui_metaphor_from_market_need": "時間割連動の提出物ボード",
     "ui_metaphor": [
-      "スマホUI",
-      "チェックリスト",
-      "カード",
-      "メモ"
+      "時間割連動の提出物ボード"
     ],
     "color_direction": [
-      "白",
-      "淡いグレー",
-      "アクセント1色",
-      "読みやすい余白"
+      "パステル",
+      "白ベース",
+      "淡いアクセント",
+      "読みやすい濃色テキスト"
     ],
-    "composition": "痛み見出し + 具体フィールド + スマホUI + 質問CTA",
+    "composition": "上部にあるあるコピー、中央に候補専用スマホUI、下部に軽いCTA",
     "must_show_fields": [
-      "対象",
-      "状態",
-      "メモ",
-      "合計",
-      "次の行動"
+      "授業",
+      "提出物",
+      "締切",
+      "提出先",
+      "持ち物",
+      "明日やる"
     ],
     "avoid_visuals": [
-      "抽象イラストのみ",
-      "装飾過多",
-      "実装不能そうな未来UI",
-      "業務ダッシュボード過多"
+      "抽象イラストだけ",
+      "管理画面すぎるUI",
+      "ビジネスSaaS風",
+      "文字過多"
     ],
-    "card_cta": "これ欲しい？それとも今の管理で十分？",
-    "design_confidence": 7,
-    "date": "2026-06-21",
-    "target_user_segment": "個人でSNS発信を続けるクリエイター",
-    "source_primary_job": "投稿ネタと反応メモが分かれて改善しにくい"
+    "card_cta": "これ欲しい？今のやり方で十分？",
+    "copy_tone_hint": [
+      "提出物",
+      "締切",
+      "明日いるやつ",
+      "授業ごと",
+      "見落とす",
+      "これ欲しい？"
+    ],
+    "design_confidence": 8
   },
-  "memory_path": "memory/design_strategy/2026-06-21.md"
+  "memory_path": "memory/design_strategy/2026-06-22.md"
 }

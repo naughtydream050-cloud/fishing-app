@@ -1,17 +1,15 @@
 {
   "department": "Analytics Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/publishing.json"
   ],
-  "summary": "DRY_RUNでは投稿IDがないため、Insightsはnullで保存して継続しました。",
+  "summary": "Threads insights are initialized as null unless a later metrics fetch supplies real values.",
   "scores": {
     "insight_fields": 9
   },
-  "risks": [
-    "no_live_thread_id"
-  ],
-  "next_action": "learning analysis",
+  "risks": [],
+  "next_action": "reaction memory",
   "insights": {
     "views": null,
     "likes": null,
@@ -23,5 +21,6 @@
     "follows": null,
     "clicks": null
   },
-  "source_status": "duplicate_blocked"
+  "source_status": "posted",
+  "thread_id": "17884012131597637"
 }

@@ -1,6 +1,6 @@
 {
   "department": "LLM Council Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/niche_demand_score.json"
   ],
@@ -13,22 +13,22 @@
   "next_action": "copywriting",
   "provider": "rules_fallback",
   "decision_payload": {
-    "date": "2026-06-21",
-    "selected_niche": "SNS投稿管理",
+    "date": "2026-06-22",
+    "selected_niche": "生活の小さい面倒解決",
     "council": {
-      "trend_scout": "SNS投稿管理は具体的な生活場面があり、コメントが返りやすい。",
-      "niche_analyst": "対象は個人でSNS発信を続けるクリエイター。悩みは「投稿ネタと反応メモが分かれて改善しにくい」。",
-      "product_builder": "MVPは「投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート」を1画面モックで見せる。",
+      "trend_scout": "生活の小さい面倒解決は具体的な生活場面があり、コメントが返りやすい。",
+      "niche_analyst": "対象は高校生・大学生・専門学生。悩みは「課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい」。",
+      "product_builder": "MVPは「小さい面倒を1画面で整理するミニアプリ」を1画面モックで見せる。",
       "growth_reviewer": "完成品宣伝ではなく「これ欲しい？」寄りで反応を見る。",
       "risk_reviewer": "元投稿の文面や画像は使わず、DRY_RUN素材として保存する。"
     },
     "decision": "post",
-    "post_angle": "投稿ネタと反応メモが分かれて改善しにくいを一言で刺し、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートの架空UIを見せる。",
+    "post_angle": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすいを一言で刺し、小さい面倒を1画面で整理するミニアプリの架空UIを見せる。",
     "image_card": {
-      "headline": "投稿ネタと反応メモが分かれて改善しにくい",
+      "headline": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
       "mock_ui": [
-        "SNS投稿管理",
-        "個人でSNS発信を続けるクリエイター",
+        "生活の小さい面倒解決",
+        "高校生・大学生・専門学生",
         "メモ/期限/費用をまとめる"
       ],
       "footer": "こんなサイトあったら便利？"

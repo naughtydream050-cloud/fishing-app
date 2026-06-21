@@ -1,6 +1,6 @@
 {
   "department": "Trend Timing Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/research_inputs.json"
   ],
@@ -12,7 +12,27 @@
   "next_action": "niche demand scoring",
   "timing": [
     {
-      "category": "SNS投稿管理",
+      "category": "",
+      "timing_score": 6,
+      "reason": "週末や予定系カテゴリは会話化しやすい"
+    },
+    {
+      "category": "",
+      "timing_score": 6,
+      "reason": "週末や予定系カテゴリは会話化しやすい"
+    },
+    {
+      "category": "",
+      "timing_score": 6,
+      "reason": "週末や予定系カテゴリは会話化しやすい"
+    },
+    {
+      "category": "",
+      "timing_score": 6,
+      "reason": "週末や予定系カテゴリは会話化しやすい"
+    },
+    {
+      "category": "",
       "timing_score": 6,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     }

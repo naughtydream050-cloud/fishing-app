@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-21",
+  "repository": "naughtydream050-cloud/fishing-app",
+  "target_project": "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os",
+  "target_account": {
+    "display_name": "有能サイト紹介",
+    "handle": "younengsaitoshaojie"
+  },
+  "workflow": {
+    "path": ".github/workflows/niche-app-signal-os-auto-post.yml",
+    "entrypoint": "GitHub Actions workflow_dispatch / schedule",
+    "schedule_utc": "10 0 * * *",
+    "schedule_jst": "毎日09:10 JST",
+    "dry_run_dispatch": "live_post=false",
+    "live_dispatch": "live_post=true",
+    "live_requires_threads_auto_post_enabled": true,
+    "generation_committed_before_live_post": true,
+    "fixed_post_override_allowed": false,
+    "fixed_image_url_allowed": false
+  },
+  "dry_run_artifacts_checked": {
+    "selected_candidate_id": "live-trip-packing-check",
+    "selected_candidate_not_fixed_oshi": true,
+    "market_evidence_count": 3,
+    "selected_image_path": "output/share-cards/2026-06-20-live-trip-packing-check.png",
+    "image_path_contains_candidate_id": true,
+    "selected_post_text_present": true,
+    "post_source_audit_posting_allowed": true,
+    "post_source_audit_blocks": []
+  },
+  "local_execution_blockers": [
+    "gh CLI is not installed, so workflow_dispatch cannot be started from this machine.",
+    "local python points to WindowsApps python.exe and does not run scripts locally.",
+    "current branch is codex/fix-dispatch-workflow and is not current with origin/main; fetched origin/main but did not merge over a dirty worktree."
+  ],
+  "github_ui_dry_run_steps": [
+    "Open GitHub repo naughtydream050-cloud/fishing-app.",
+    "Go to Actions > Niche App Signal OS Auto Post.",
+    "Run workflow on the branch containing these changes.",
+    "Set live_post=false.",
+    "Confirm artifacts include selected_post_candidate.json, post_source_audit.json, and a candidate-specific PNG."
+  ],
+  "github_ui_live_test_steps": [
+    "Run only after dry-run succeeds.",
+    "Confirm repository secrets are set: THREADS_ACCESS_TOKEN, THREADS_USER_ID, THREADS_AUTO_POST_ENABLED=true.",
+    "Confirm workflow env THREADS_TARGET_HANDLE is younengsaitoshaojie.",
+    "Run workflow with live_post=true once.",
+    "Confirm output/reports/live_post_result.md, data/post_history.json, and data/reaction_memory.json are updated."
+  ]
+}

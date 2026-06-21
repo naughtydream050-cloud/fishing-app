@@ -5,9 +5,9 @@ from common import DATA_DIR, MEMORY_DIR, cli_parser, department_output, load_lat
 
 def run(sample: bool = False) -> dict:
     selected = load_latest("niche_demand_score.json", {}).get("selected_candidate", {})
-    item = (selected or {}).get("item", {})
-    category = item.get("niche_category", "生活の小さい面倒解決")
-    score = int((selected or {}).get("score", 0))
+    item = (selected or {}).get("item", {}) if isinstance(selected, dict) else {}
+    category = item.get("category") or item.get("niche_category", "生活の小さな不便解決")
+    score = int(float((selected or {}).get("score", 0)))
     audience = load_latest("audience_strategy.json", {}).get("audience_strategy", {})
     design = load_latest("design_strategy.json", {}).get("design_strategy", {})
     reaction_memory = read_json(DATA_DIR / "reaction_memory.json", {"entries": []})
@@ -16,18 +16,20 @@ def run(sample: bool = False) -> dict:
     build_candidates = [
         {
             "category": category,
-            "idea": item.get("app_idea", ""),
-            "reason": item.get("why_it_worked_hypothesis", ""),
+            "candidate_id": item.get("candidate_id", ""),
+            "idea": item.get("expected_ui_metaphor", ""),
+            "reason": item.get("why_niche", ""),
             "signal_score": score,
             "audience_segment": audience.get("target_user_segment", ""),
             "design_positioning": design.get("visual_positioning", ""),
-            "next_step": "反応が重複したらLPまたは待機リストMVPにする",
+            "next_step": "反応が強ければLPまたは待機リストMVPに進める",
         }
     ]
     note_candidates = [
         {
             "category": category,
-            "angle": f"なぜ「{item.get('pain_point', '小さい面倒')}」をアプリ化したくなるのか",
+            "candidate_id": item.get("candidate_id", ""),
+            "angle": f"なぜ「{item.get('pain_point', '小さな不便')}」をアプリ化したくなるのか",
             "signal_score": score,
             "audience_segment": audience.get("target_user_segment", ""),
         }
@@ -41,6 +43,7 @@ def run(sample: bool = False) -> dict:
             "",
             f"- updated: {today_iso()}",
             f"- strongest_category: {category}",
+            f"- selected_candidate_id: {item.get('candidate_id', '')}",
             f"- signal_score: {score}",
             "- weak_categories: insufficient data",
             "- commentable_pain: specific scattered information, deadline, or cost tracking",
@@ -59,11 +62,11 @@ def run(sample: bool = False) -> dict:
     write_text(MEMORY_DIR / "reports" / "weekly_report.md", weekly)
     payload = department_output(
         "Executive Department",
-        "次週seed weight、Web化候補、note化候補、週次レポートを更新しました。",
+        "Next seed weights, web candidates, note candidates, and weekly report were updated from the selected market candidate.",
         scores={"build_candidates": len(build_candidates), "note_candidates": len(note_candidates)},
         risks=[],
         next_action="review artifacts",
-        input_sources=["output/reports/threads_insights.json"],
+        input_sources=["output/reports/threads_insights.json", "data/reaction_memory.json"],
         extra={
             "next_week_seed_weights": next_weights,
             "build_candidates": build_candidates,

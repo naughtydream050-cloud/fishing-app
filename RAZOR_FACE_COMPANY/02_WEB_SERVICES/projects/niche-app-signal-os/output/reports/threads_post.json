@@ -1,28 +1,44 @@
 {
-  "department": "Copywriting Department",
-  "date": "2026-06-21",
+  "department": "Scriptwriter Department",
+  "date": "2026-06-22",
   "input_sources": [
-    "output/reports/llm_council.json",
-    "output/reports/audience_tone_profile.json"
+    "output/reports/daily_niche_ui_candidates.json",
+    "output/reports/audience_tone_profile.json",
+    "data/post_log.json"
   ],
-  "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。",
+  "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 116,
-    "line_count": 3,
-    "variant_count": 1
+    "length": 96,
+    "variant_count": 10,
+    "max_recent_similarity": 0.064
   },
   "risks": [],
-  "next_action": "card image",
+  "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-06-21",
-    "text": "投稿ネタと反応メモが分かれて改善しにくい、地味にあるあるじゃない？\n今のメモやスクショだとあとで探しにくいので、投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノートを試作しています。\nこれ欲しい？それとも今の管理で十分？",
-    "alt_text": "推し活ログの試作UI。現場ごとに座席、セトリ、チケット状態、同行者、感情タグ、遠征費を見返せるカード。",
+    "date": "2026-06-22",
+    "candidate_id": "student-deadline-check",
+    "text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+    "alt_text": "学生の提出物忘れ防止のスマホアプリ画面",
     "topic_tags": [
-      "SNS投稿管理"
+      "学生の提出物忘れ防止",
+      "ニッチアプリ"
     ],
-    "decision": "post",
-    "tone_id": "default_light_problem",
-    "variant_id": "A"
+    "decision": "dry_run",
+    "tone_id": "student_casual",
+    "target_audience": "students tracking deadlines and hand-ins",
+    "variant_id": "02",
+    "pattern_id": "single_purpose_screen",
+    "tone_check_result": {
+      "passed": true,
+      "tone_id": "student_casual",
+      "used_words": [
+        "提出物"
+      ],
+      "used_avoid_words": [],
+      "line_count": 6,
+      "target_audience": "students tracking deadlines and hand-ins",
+      "max_recent_similarity": 0.064
+    }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
 }

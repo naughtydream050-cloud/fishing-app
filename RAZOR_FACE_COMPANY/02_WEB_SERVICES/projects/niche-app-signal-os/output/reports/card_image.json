@@ -1,6 +1,6 @@
 {
   "department": "Design Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/llm_council.json",
     "output/reports/design_strategy.json"
@@ -15,30 +15,28 @@
   ],
   "next_action": "risk gate",
   "card_paths": [
-    "output/card_images/2026-06-21.svg",
-    "output/card_images/2026-06-21.html"
+    "output/card_images/2026-06-22.svg",
+    "output/card_images/2026-06-22.html"
   ],
   "design_strategy": {
-    "visual_positioning": "すぐ実装できそうな軽いスマホUI。重いSaaSではなく、日常の小さい面倒を解く試作。",
+    "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
     "ui_metaphor": [
-      "スマホUI",
-      "チェックリスト",
-      "カード",
-      "メモ"
+      "時間割連動の提出物ボード"
     ],
     "color_direction": [
-      "白",
-      "淡いグレー",
-      "アクセント1色",
-      "読みやすい余白"
+      "パステル",
+      "白ベース",
+      "淡いアクセント",
+      "読みやすい濃色テキスト"
     ],
     "must_show_fields": [
-      "対象",
-      "状態",
-      "メモ",
-      "合計",
-      "次の行動"
+      "授業",
+      "提出物",
+      "締切",
+      "提出先",
+      "持ち物",
+      "明日やる"
     ],
-    "card_cta": "これ欲しい？それとも今の管理で十分？"
+    "card_cta": "これ欲しい？今のやり方で十分？"
   }
 }

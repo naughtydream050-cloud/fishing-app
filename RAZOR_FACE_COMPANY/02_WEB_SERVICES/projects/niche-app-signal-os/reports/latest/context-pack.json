@@ -1,7 +1,7 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-06-21",
-  "dry_run": false,
+  "date": "2026-06-22",
+  "dry_run": true,
   "sample": false,
   "status": "ok",
   "failed": null,
@@ -9,7 +9,7 @@
     {
       "stage": "collect_research_inputs",
       "status": "ok",
-      "summary": "1件の手動/JSONリサーチ入力を正規化しました。"
+      "summary": "Loaded daily market research inputs from data/market_research_inputs.json and removed candidates without evidence."
     },
     {
       "stage": "analyze_viral_patterns",
@@ -29,17 +29,32 @@
     {
       "stage": "score_niche_demand",
       "status": "ok",
-      "summary": "Niche App Signal Scoreで今日の候補を選びました。"
+      "summary": "Scored market-backed niche needs and selected the highest eligible candidate without fixed fallback."
+    },
+    {
+      "stage": "select_niche_candidate",
+      "status": "ok",
+      "summary": "Selected daily niche demand candidates only from scored market inputs with evidence."
+    },
+    {
+      "stage": "build_market_research_trace",
+      "status": "ok",
+      "summary": "Traced the selected candidate back to current market/research evidence."
     },
     {
       "stage": "audience_strategy",
       "status": "ok",
-      "summary": "投稿案を作る前に、誰に刺すか・どんな言葉なら自分ごと化するかを定義しました。"
+      "summary": "Defined the target segment and wording for the selected market-backed candidate."
+    },
+    {
+      "stage": "design_intelligence",
+      "status": "ok",
+      "summary": "Created candidate-specific UI card direction from the selected market need."
     },
     {
       "stage": "audience_tone_adapter",
       "status": "ok",
-      "summary": "Audience Strategyを受け取り、Threads投稿文の口調・語彙・構成を調整しました。"
+      "summary": "Converted candidate audience strategy into a concrete Threads tone profile."
     },
     {
       "stage": "run_llm_council",
@@ -47,14 +62,14 @@
       "summary": "API未設定のため、5役の圧縮会議をルールベースfallbackで生成しました。"
     },
     {
-      "stage": "design_intelligence",
-      "status": "ok",
-      "summary": "UIカード生成前に、対象ユーザー層へ刺さる見た目・色・構図・避ける表現を定義しました。"
-    },
-    {
       "stage": "generate_threads_post",
       "status": "ok",
-      "summary": "Audience Tone Profileを参照し、Threads向け投稿variantを生成しました。"
+      "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template."
+    },
+    {
+      "stage": "generate_share_card",
+      "status": "ok",
+      "summary": "Generated a smartphone-first app UI screenshot without sales-copy framing."
     },
     {
       "stage": "generate_card_image",
@@ -64,27 +79,37 @@
     {
       "stage": "quality_risk_gate",
       "status": "ok",
-      "summary": "品質、類似、対象明確性、自動投稿リスクを評価しました。"
+      "summary": "Checked market evidence, candidate consistency, and audience tone before post selection."
+    },
+    {
+      "stage": "select_post_candidate",
+      "status": "ok",
+      "summary": "Selected only tone-adapted copy approved by the quality risk gate."
+    },
+    {
+      "stage": "post_source_audit",
+      "status": "ok",
+      "summary": "Audited that the selected post and image are backed by today's market research and are not duplicated."
     },
     {
       "stage": "post_to_threads",
       "status": "ok",
-      "summary": "Threads投稿処理をAUTO_POST/DRY_RUN/target/duplicate/Secrets guard付きで評価しました。"
+      "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards."
     },
     {
       "stage": "fetch_threads_insights",
       "status": "ok",
-      "summary": "DRY_RUNでは投稿IDがないため、Insightsはnullで保存して継続しました。"
+      "summary": "Threads insights are initialized as null unless a later metrics fetch supplies real values."
     },
     {
       "stage": "update_reaction_memory",
       "status": "ok",
-      "summary": "手動投稿後の反応をMemoryへ戻すためのスキーマと集計受け皿を更新しました。実投稿やAPI取得は行いません。"
+      "summary": "Reaction memory was updated with an initial live-post record when available, without reading secrets."
     },
     {
       "stage": "analyze_learning",
       "status": "ok",
-      "summary": "次週seed weight、Web化候補、note化候補、週次レポートを更新しました。"
+      "summary": "Next seed weights, web candidates, note candidates, and weekly report were updated from the selected market candidate."
     }
   ],
   "artifacts": [
@@ -98,5 +123,14 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ]
+  ],
+  "publishing": {
+    "status": "posted",
+    "posting_attempted": true,
+    "api_called": true,
+    "post_id": "17884012131597637",
+    "post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
+    "selected_candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png"
+  }
 }

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, initial-scale=1">
+<title>receipt-payment-lookback</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;width:1080px;height:1350px;background:#fffaf7;font-family:"Noto Sans CJK JP","Noto Sans JP","Yu Gothic","Hiragino Sans",Arial,sans-serif;color:#25212e}
+.canvas{width:1080px;height:1350px;padding:70px 72px;background:linear-gradient(155deg,#fff6fb 0%,#eefbff 52%,#f6fff0 100%)}
+.top{height:230px;display:flex;flex-direction:column;justify-content:flex-end}
+.eyebrow{font-size:29px;font-weight:800;color:#7b6aa0;margin-bottom:18px}
+h1{font-size:54px;line-height:1.18;margin:0;font-weight:900;letter-spacing:0;color:#272236}
+.phone-wrap{height:800px;display:flex;align-items:center;justify-content:center}
+.phone{width:650px;height:742px;border-radius:58px;background:#252232;padding:24px;box-shadow:0 34px 70px rgba(92,70,112,.24)}
+.screen{height:100%;border-radius:40px;background:#fffefd;padding:34px 30px;overflow:hidden}
+.app-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.app-title{font-size:31px;font-weight:900;max-width:430px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill{font-size:21px;font-weight:900;color:#6f5eb2;background:#eee9ff;border-radius:999px;padding:10px 16px}
+.hero-card{background:#e9fff5;border:2px solid #bdeed9;border-radius:26px;padding:20px 22px;margin-bottom:18px}
+.hero-card .label{font-size:21px;color:#6e7781;font-weight:800}
+.hero-card .main{font-size:32px;line-height:1.25;font-weight:900;margin-top:8px}
+.row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;background:#fff;border:2px solid #eee9f6;border-radius:22px;padding:17px 20px;margin:12px 0;box-shadow:0 8px 20px rgba(92,77,118,.06)}
+.row span{font-size:22px;color:#82778e;font-weight:900}
+.row strong{font-size:25px;line-height:1.25;color:#2d2838}
+.footer{height:180px;display:flex;align-items:flex-start;justify-content:space-between;gap:26px}
+.cta{font-size:39px;line-height:1.25;font-weight:900;color:#2c2538;max-width:710px}
+.badge{font-size:24px;font-weight:900;color:#fff;background:#ff7aa8;border-radius:999px;padding:16px 22px;white-space:nowrap}
+</style>
+</head>
+<body>
+<main class="canvas">
+  <section class="top">
+    <div class="eyebrow">こういう小さい不便、専用で欲しくない？</div>
+    <h1>レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい</h1>
+  </section>
+  <section class="phone-wrap">
+    <div class="phone"><div class="screen">
+      <div class="app-head"><div class="app-title">レシート/支払い履歴のあと見返し</div><div class="pill">DRY RUN</div></div>
+      <div class="hero-card"><div class="label">今日の画面メタファー</div><div class="main">購入証跡ログブックUI</div></div>
+      <div class="row"><span>購入日</span><strong>6/18</strong></div>
+<div class="row"><span>お店</span><strong>EC / コンビニ</strong></div>
+<div class="row"><span>金額</span><strong>4,280円</strong></div>
+<div class="row"><span>支払い方法</span><strong>カード</strong></div>
+<div class="row"><span>レシート</span><strong>写真あり</strong></div>
+    </div></div>
+  </section>
+  <section class="footer">
+    <div class="cta">これ欲しい？今のやり方で十分？</div>
+    <div class="badge">Threads案</div>
+  </section>
+</main>
+</body>
+</html>

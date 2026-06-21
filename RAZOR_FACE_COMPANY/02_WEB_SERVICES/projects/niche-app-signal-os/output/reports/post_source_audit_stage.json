@@ -1,0 +1,58 @@
+{
+  "department": "Post Source Audit Department",
+  "date": "2026-06-22",
+  "input_sources": [
+    "output/reports/market_research_trace.json",
+    "output/reports/selected_post_candidate.json",
+    "output/reports/daily_share_card.json",
+    "output/reports/design_strategy.json",
+    "output/reports/audience_tone_profile.json",
+    "output/reports/quality_risk_gate.json",
+    "data/post_history.json"
+  ],
+  "summary": "Audited that the selected post and image are backed by today's market research and are not duplicated.",
+  "scores": {
+    "market_evidence_count": 3,
+    "posting_allowed": true
+  },
+  "risks": [],
+  "next_action": "post to threads",
+  "post_source_audit": {
+    "date": "2026-06-22",
+    "selected_candidate_id": "student-deadline-check",
+    "selected_category": "学生の提出物忘れ防止",
+    "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+    "market_sources_used": [
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "課題の締切を学校ポータルで見落とす"
+      },
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
+      },
+      {
+        "source_type": "manual_observation",
+        "evidence_text": "明日必要なものだけ一目で見たい"
+      }
+    ],
+    "market_evidence_count": 3,
+    "source_evidence_count": 3,
+    "why_selected_today": "Selected from current scored research inputs.",
+    "previous_candidate_id": "receipt-payment-lookback",
+    "duplicate_check_result": {
+      "passed": true,
+      "reasons": []
+    },
+    "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+    "selected_post_text_hash": "d41ee2b401cf1a0cc8013c09087f4b24664e17cd918de190c0008381a75d87fd",
+    "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+    "image_generated_from_candidate": true,
+    "tone_profile_used": "student_casual",
+    "design_strategy_used": true,
+    "risk_gate_result": true,
+    "fixed_override_used": false,
+    "posting_allowed": true,
+    "blocks": []
+  }
+}
