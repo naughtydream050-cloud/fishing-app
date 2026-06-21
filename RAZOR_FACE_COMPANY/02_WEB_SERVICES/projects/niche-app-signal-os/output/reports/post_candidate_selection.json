@@ -11,7 +11,7 @@
   "summary": "Selected only tone-adapted copy approved by the quality risk gate.",
   "scores": {
     "selected": true,
-    "text_length": 126
+    "text_length": 96
   },
   "risks": [],
   "next_action": "card image then publishing guard",
@@ -28,16 +28,15 @@
     "passed": true,
     "tone_id": "student_casual",
     "used_words": [
-      "締切",
-      "授業ごと"
+      "提出物"
     ],
     "used_avoid_words": [],
-    "line_count": 8,
+    "line_count": 6,
     "target_audience": "students tracking deadlines and hand-ins",
-    "max_recent_similarity": 0.17
+    "max_recent_similarity": 0.064
   },
-  "selected_post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
-  "candidate_post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+  "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+  "candidate_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
   "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
   "image_generated_from_candidate": true,
   "rejected_reason_if_any": "",

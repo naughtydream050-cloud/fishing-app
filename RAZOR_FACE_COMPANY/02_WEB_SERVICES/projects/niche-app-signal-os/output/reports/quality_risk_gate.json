@@ -11,7 +11,7 @@
   "scores": {
     "tone_block_count": 0,
     "tone_warning_count": 0,
-    "max_recent_similarity": 0.17
+    "max_recent_similarity": 0.064
   },
   "risks": [],
   "next_action": "select post candidate",
@@ -24,8 +24,7 @@
     "tone_id": "student_casual",
     "target_audience": "students tracking deadlines and hand-ins",
     "used_words": [
-      "締切",
-      "授業ごと"
+      "提出物"
     ],
     "used_avoid_words": [],
     "block_count": 0,

@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "created_at": "2026-06-21T23:45:56.907845+00:00",
+  "created_at": "2026-06-21T23:52:39.675227+00:00",
   "status": "dry_run_saved",
   "posting_attempted": false,
   "api_called": false,
@@ -9,8 +9,8 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "student-deadline-check",
   "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/84e281d5697db549ee6cf32239223a9642e57171/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
-  "selected_post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/1e654184b6e936e45f859a5af2402f8e1a074901/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
+  "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
   "posted_at": null,
   "risks": [
     "AUTO_POST=false"

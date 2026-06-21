@@ -3,8 +3,8 @@
   "candidate_id": "student-deadline-check",
   "tone_id": "student_casual",
   "target_audience": "students tracking deadlines and hand-ins",
-  "selected_variant_id": "01",
-  "selected_pattern_id": "time_melts_scene",
+  "selected_variant_id": "02",
+  "selected_pattern_id": "single_purpose_screen",
   "variant_count": 10,
   "variants": [
     {
@@ -14,7 +14,7 @@
       "text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
       "tone_id": "student_casual",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "student_casual",
         "used_words": [
           "締切",
@@ -23,7 +23,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.17
+        "max_recent_similarity": 1.0
       },
       "length": 126
     },
@@ -42,7 +42,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.059
+        "max_recent_similarity": 0.064
       },
       "length": 96
     },
@@ -63,7 +63,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.162
+        "max_recent_similarity": 0.197
       },
       "length": 127
     },
@@ -82,7 +82,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.047
+        "max_recent_similarity": 0.051
       },
       "length": 107
     },
@@ -142,7 +142,7 @@
         "used_avoid_words": [],
         "line_count": 5,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.057
+        "max_recent_similarity": 0.099
       },
       "length": 108
     },
@@ -161,7 +161,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.077
+        "max_recent_similarity": 0.078
       },
       "length": 120
     },
