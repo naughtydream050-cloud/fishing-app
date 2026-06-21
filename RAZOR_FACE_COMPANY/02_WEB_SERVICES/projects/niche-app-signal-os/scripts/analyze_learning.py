@@ -82,5 +82,5 @@ def run(sample: bool = False) -> dict:
 
 
 if __name__ == "__main__":
-    args = cli_parser("Analyze learning")
+    args = cli_parser("Analyze learning").parse_args()
     run(sample=args.sample)

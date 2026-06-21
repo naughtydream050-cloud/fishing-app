@@ -124,5 +124,5 @@ def run(sample: bool = False) -> dict:
 
 
 if __name__ == "__main__":
-    args = cli_parser("Update reaction memory schema and summary")
+    args = cli_parser("Update reaction memory schema and summary").parse_args()
     run(sample=args.sample)

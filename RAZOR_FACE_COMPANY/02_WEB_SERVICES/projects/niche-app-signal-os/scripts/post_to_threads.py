@@ -317,6 +317,10 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         },
     )
     save_stage("publishing.json", payload)
+    print(f"publishing_status={status}")
+    print(f"posting_attempted={status in {'posted', 'threads_api_error'}}")
+    if thread_id:
+        print(f"thread_id={thread_id}")
     return payload
 
 
