@@ -1,28 +1,27 @@
 # Live Post Result - 2026-06-21
 
-- status: blocked_by_post_source_audit
+- status: dry_run_saved
 - posting_attempted: False
 - api_called: False
 - post_id: 
 - post_url: 
 - target_handle: younengsaitoshaojie
-- selected_candidate_id: student-deadline-check
-- selected_image_path: output/share-cards/2026-06-21-student-deadline-check.png
+- selected_candidate_id: receipt-payment-lookback
+- selected_image_path: output/share-cards/2026-06-21-receipt-payment-lookback.png
 - image_url_available: True
 
 ## Selected Post Text
-提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？
+レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？
 
-ポータル見る
-LINEさかのぼる
-授業プリント探す
-カレンダーも一応見る
+写真フォルダ
+カード明細
+EC購入履歴
+コンビニの紙レシート
 
-で、結局どれが最新か分からんやつ。
+返品したい時とか、保証を見たい時に限って大捜索になるやつ。
 
-授業ごとに、締切・提出先・持ち物だけまとまるボードあったら使う？
-それとも今のやり方で足りてる？
+買ったもの単位で、金額・店・レシート写真を残せたら使う？
+家計簿アプリで十分？
 
 ## Risks
-- same_candidate_id_as_previous_post
-- same_image_path_as_previous_post
+- AUTO_POST=false

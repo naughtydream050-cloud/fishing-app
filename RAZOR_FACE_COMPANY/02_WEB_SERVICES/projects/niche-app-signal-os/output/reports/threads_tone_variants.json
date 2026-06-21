@@ -1,48 +1,41 @@
 {
   "date": "2026-06-21",
-  "candidate_id": "student-deadline-check",
-  "tone_id": "student_casual",
-  "target_audience": "students tracking deadlines and hand-ins",
+  "candidate_id": "receipt-payment-lookback",
+  "tone_id": "default_light_problem",
+  "target_audience": "ネット購入や電子決済が多い生活者",
   "selected_variant_id": "A",
   "variants": [
     {
       "variant_id": "A",
-      "candidate_id": "student-deadline-check",
+      "candidate_id": "receipt-payment-lookback",
       "angle": "standard",
-      "text": "提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？\n\nポータル見る\nLINEさかのぼる\n授業プリント探す\nカレンダーも一応見る\n\nで、結局どれが最新か分からんやつ。\n\n授業ごとに、締切・提出先・持ち物だけまとまるボードあったら使う？\nそれとも今のやり方で足りてる？",
-      "tone_id": "student_casual",
+      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
         "line_count": 8,
-        "target_audience": "students tracking deadlines and hand-ins"
+        "target_audience": "ネット購入や電子決済が多い生活者"
       },
-      "length": 141
+      "length": 135
     },
     {
       "variant_id": "B",
-      "candidate_id": "student-deadline-check",
+      "candidate_id": "receipt-payment-lookback",
       "angle": "short",
-      "text": "提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？\nポータル見る\nLINEさかのぼる\n授業プリント探す\nカレンダーも一応見る\nで、結局どれが最新か分からんやつ。\n\nこれ、専用であったら使う？",
-      "tone_id": "student_casual",
+      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\nこれ、専用であったら使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物",
-          "締切"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
         "line_count": 7,
-        "target_audience": "students tracking deadlines and hand-ins"
+        "target_audience": "ネット購入や電子決済が多い生活者"
       },
-      "length": 104
+      "length": 107
     }
   ],
   "all_variants_tone_checked": true
