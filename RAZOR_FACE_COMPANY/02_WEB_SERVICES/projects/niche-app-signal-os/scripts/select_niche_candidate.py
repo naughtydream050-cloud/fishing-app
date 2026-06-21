@@ -1,11 +1,13 @@
 from __future__ import annotations
 
-from common import MEMORY_DIR, OUTPUT_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_json, write_text
+from common import DATA_DIR, MEMORY_DIR, OUTPUT_DIR, cli_parser, department_output, load_latest, read_json, save_stage, today_iso, write_json, write_text
 
 
-def _previous_candidate_id() -> str:
-    history = load_latest("post_source_audit.json", {})
-    return history.get("selected_candidate_id", "") if isinstance(history, dict) else ""
+def _previous_posted_candidate_id() -> str:
+    history = read_json(DATA_DIR / "post_history.json", {"entries": []})
+    entries = history.get("entries", []) if isinstance(history, dict) else []
+    posted = [entry for entry in entries if isinstance(entry, dict) and entry.get("status") == "posted"]
+    return posted[-1].get("candidate_id", "") if posted else ""
 
 
 def _tone_id(item: dict) -> str:
@@ -47,7 +49,7 @@ def _candidate_from_score(entry: dict) -> dict:
 
 def run(sample: bool = False) -> dict:
     scored = load_latest("niche_demand_score.json", {}).get("scored_candidates", [])
-    previous_id = _previous_candidate_id()
+    previous_id = _previous_posted_candidate_id()
     candidates = [
         _candidate_from_score(entry)
         for entry in scored
