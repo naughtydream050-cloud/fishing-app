@@ -125,11 +125,8 @@ jobs:
           set -euo pipefail
           POST_COMMIT_SHA="$(git rev-parse HEAD)"
           AUTO_POST=true DRY_RUN=false GITHUB_SHA="${POST_COMMIT_SHA}" python scripts/post_to_threads.py
-          python scripts/fetch_threads_insights.py
-          python scripts/update_reaction_memory.py
-          python scripts/analyze_learning.py
 
-      - name: Commit live posting result
+      - name: Commit live posting result immediately
         if: env.LIVE_POST == 'true'
         shell: bash
         run: |
@@ -137,10 +134,33 @@ jobs:
           git add \
             data/post_log.json \
             data/post_history.json \
-            data/reaction_memory.json \
             output/reports/publishing.json \
             output/reports/live_post_result.json \
             output/reports/live_post_result.md \
+            reports/latest/context-pack.json
+          if git diff --cached --quiet; then
+            echo "No immediate live posting result changes."
+          else
+            git commit -m "chore: record niche app signal os live post result"
+            git push
+          fi
+
+      - name: Update reaction memory after live post
+        if: env.LIVE_POST == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/fetch_threads_insights.py
+          python scripts/update_reaction_memory.py
+          python scripts/analyze_learning.py
+
+      - name: Commit live reaction memory
+        if: env.LIVE_POST == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            data/reaction_memory.json \
             output/reports/threads_insights.json \
             output/reports/reaction_memory.json \
             output/reports/learning.json \
@@ -148,8 +168,8 @@ jobs:
             memory/reports/weekly_report.md \
             reports/latest/context-pack.json
           if git diff --cached --quiet; then
-            echo "No live posting result changes."
+            echo "No live reaction memory changes."
           else
-            git commit -m "chore: record niche app signal os live post"
+            git commit -m "chore: update niche app signal os reaction memory"
             git push
           fi

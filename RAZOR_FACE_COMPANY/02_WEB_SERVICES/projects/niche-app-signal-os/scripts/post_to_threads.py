@@ -17,6 +17,8 @@ REQUIRED_THREAD_SECRETS = [
     "THREADS_AUTO_POST_ENABLED",
 ]
 
+REPO_PROJECT_PREFIX = "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/"
+
 
 def _threads_post(url: str, fields: dict[str, str]) -> dict:
     data = urllib.parse.urlencode(fields).encode("utf-8")
@@ -80,14 +82,13 @@ def _target_guard(expected_handle: str, env_handle: str) -> tuple[bool, str]:
     return True, "target_handle_ok"
 
 
-def _publish_live_text_or_image(post: dict) -> dict:
+def _publish_live_text_or_image(post: dict, image_url: str) -> dict:
     token = os.getenv("THREADS_ACCESS_TOKEN", "")
     user_id = os.getenv("THREADS_USER_ID", "")
     graph_base = os.getenv("THREADS_GRAPH_BASE_URL", "https://graph.threads.net/v1.0").rstrip("/")
     if not token or not user_id:
         raise RuntimeError("missing THREADS_ACCESS_TOKEN or THREADS_USER_ID")
     text = post.get("text", "")
-    image_url = os.getenv("THREADS_IMAGE_URL", "").strip()
     container_fields = {
         "media_type": "IMAGE" if image_url else "TEXT",
         "text": text,
@@ -119,7 +120,10 @@ def _image_url_from_audit(audit: dict) -> str:
         return ""
     github_sha = os.getenv("GITHUB_SHA", "").strip()
     if github_sha:
-        return "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/" + github_sha + "/" + selected_image_path
+        repo_path = selected_image_path
+        if not repo_path.startswith(REPO_PROJECT_PREFIX):
+            repo_path = REPO_PROJECT_PREFIX + repo_path.lstrip("/")
+        return "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/" + github_sha + "/" + repo_path
     return ""
 
 
@@ -154,6 +158,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "missing_secrets": [],
         "selected_candidate": bool(selected_candidate.get("selected")),
         "post_source_audit_allowed": bool(source_audit.get("posting_allowed")),
+        "image_url_available": bool(image_url),
     }
 
     target_ok, target_message = _target_guard(expected_handle, env_target_handle)
@@ -166,6 +171,9 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
     elif not source_audit.get("posting_allowed"):
         status = "blocked_by_post_source_audit"
         risks.extend(source_audit.get("blocks", []) or ["post_source_audit_not_allowed"])
+    elif source_audit.get("selected_image_path") and not image_url:
+        status = "blocked_by_missing_image_url"
+        risks.append("selected_image_path exists but no publishable image URL was resolved")
     elif not gate.get("approved"):
         status = "blocked_by_risk_gate"
         risks.extend(gate.get("risks", []))
@@ -194,7 +202,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
             risks.append("duplicate post content for target handle")
         else:
             try:
-                live = _publish_live_text_or_image(post)
+                live = _publish_live_text_or_image(post, image_url)
                 status = "posted"
                 thread_id = live.get("published", {}).get("id")
             except urllib.error.HTTPError as exc:
@@ -219,6 +227,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "topic_tags": post.get("topic_tags", []),
         "candidate_id": source_audit.get("selected_candidate_id", selected_candidate.get("selected_candidate_id", "")),
         "selected_image_path": source_audit.get("selected_image_path", selected_candidate.get("selected_image_path", "")),
+        "image_url": image_url,
         "post_text_hash": hashlib.sha256(post.get("text", "").encode("utf-8")).hexdigest() if post.get("text") else "",
     }
     append_json_log(DATA_DIR / "post_log.json", log_entry)
@@ -250,6 +259,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "target_handle": env_target_handle or expected_handle,
         "selected_candidate_id": log_entry["candidate_id"],
         "selected_image_path": log_entry["selected_image_path"],
+        "image_url": image_url,
         "selected_post_text": post.get("text", ""),
         "posted_at": log_entry["created_at"] if status == "posted" else None,
         "risks": risks,
@@ -269,6 +279,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
                 f"- target_handle: {live_result['target_handle']}",
                 f"- selected_candidate_id: {live_result['selected_candidate_id']}",
                 f"- selected_image_path: {live_result['selected_image_path']}",
+                f"- image_url_available: {bool(image_url)}",
                 "",
                 "## Selected Post Text",
                 post.get("text", ""),

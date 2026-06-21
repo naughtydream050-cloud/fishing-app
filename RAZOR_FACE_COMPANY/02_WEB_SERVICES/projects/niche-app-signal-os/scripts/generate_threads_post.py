@@ -3,6 +3,75 @@ from __future__ import annotations
 from common import OUTPUT_DIR, cli_parser, department_output, load_latest, save_stage, today_iso, write_json, write_text
 
 
+POST_TEMPLATES = {
+    "student-deadline-check": [
+        "提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？",
+        "",
+        "ポータル見る",
+        "LINEさかのぼる",
+        "授業プリント探す",
+        "カレンダーも一応見る",
+        "",
+        "で、結局どれが最新か分からんやつ。",
+        "",
+        "授業ごとに、締切・提出先・持ち物だけまとまるボードあったら使う？",
+        "それとも今のやり方で足りてる？",
+    ],
+    "subscription-overlap-check": [
+        "サブスク、気づいたら毎月ちょっとずつ増えてない？",
+        "",
+        "動画",
+        "音楽",
+        "AIツール",
+        "クラウド",
+        "",
+        "カード明細見ても、何の料金か一瞬で分からないやつ。",
+        "",
+        "更新日と使ってる感だけ見えるサブスク棚、あったら見る？",
+        "それとも明細チェックで十分？",
+    ],
+    "receipt-payment-lookback": [
+        "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？",
+        "",
+        "写真フォルダ",
+        "カード明細",
+        "EC購入履歴",
+        "コンビニの紙レシート",
+        "",
+        "返品したい時とか、保証を見たい時に限って大捜索になるやつ。",
+        "",
+        "買ったもの単位で、金額・店・レシート写真を残せたら使う？",
+        "家計簿アプリで十分？",
+    ],
+    "live-trip-packing-check": [
+        "ライブ遠征の前日って、持ち物確認だけで地味にバタつかない？",
+        "",
+        "チケット",
+        "身分証",
+        "充電器",
+        "双眼鏡",
+        "",
+        "スクショとメモを行ったり来たりして、出発前に毎回ちょっと焦るやつ。",
+        "",
+        "現場ごとに持ち物だけ残せるチェックボードあったら使う？",
+        "Notionで十分？",
+    ],
+    "goods-stock-log": [
+        "グッズの所持数、気づいたら自分でも分からなくならない？",
+        "",
+        "アクスタ何個あるっけ",
+        "交換予定どこにメモったっけ",
+        "保管場所どこだっけ",
+        "現場に何持っていくんだっけ",
+        "",
+        "写真フォルダとメモを探す時間、地味に長いやつ。",
+        "",
+        "写真つきで所持数と交換予定だけ見れる棚アプリ、使う？",
+        "今のメモで十分？",
+    ],
+}
+
+
 def _selected_candidate() -> dict:
     pack = load_latest("daily_niche_ui_candidates.json", {})
     selected_id = pack.get("selected_candidate_id", "")
@@ -17,45 +86,29 @@ def _split_workaround(text: str) -> list[str]:
     return parts[:4]
 
 
-def _variant_text(candidate: dict, profile: dict, style: str) -> str:
+def _fallback_text(candidate: dict, profile: dict, style: str) -> str:
     category = candidate.get("category", "この不便")
     pain = candidate.get("pain_point", "")
     workaround = _split_workaround(candidate.get("current_workaround", ""))
     metaphor = candidate.get("expected_ui_metaphor", "ログアプリ")
     cta = (profile.get("cta_style") or ["これ欲しい？今のやり方で十分？"])[0]
-    if profile.get("tone_id") == "gen_z_oshi_activity":
-        lines = [
-            f"{category}、前日になると普通にバタつかない？",
-            "",
-            "チケットどこ",
-            "身分証いるっけ",
-            "充電器入れたっけ",
-            "前回忘れたやつ何だっけ",
-            "",
-            "毎回スクショとメモを行ったり来たりして、出発前に小さく焦るやつ。",
-            "",
-            f"{metaphor}で、現場前にまとめて残せたら使う？",
-            cta,
-        ]
-        return "\n".join(lines)
     if style == "short":
         return "\n".join(
             [
-                f"{category}って、地味に毎回探さない？",
+                f"{category}、あとで探す時だけ急に面倒にならない？",
                 "",
                 pain,
                 "",
-                f"今は{candidate.get('current_workaround', 'メモ')}で何とかしてるけど、あとで見返す時に散らばりがち。",
-                "",
-                f"{metaphor}みたいに残せたら使う？",
+                f"{metaphor}みたいにパッと残せたら使う？",
+                cta,
             ]
         )
     bullets = workaround or ["メモ", "スクショ", "カレンダー"]
     return "\n".join(
         [
-            f"{category}、あとで見返したい時ほど散らばらない？",
+            f"{category}って、地味に置き場所が散らばらない？",
             "",
-            *[f"{item}に残す" for item in bullets],
+            *bullets,
             "",
             pain,
             "",
@@ -63,6 +116,16 @@ def _variant_text(candidate: dict, profile: dict, style: str) -> str:
             "それとも今のやり方で十分？",
         ]
     )
+
+
+def _variant_text(candidate: dict, profile: dict, style: str) -> str:
+    candidate_id = candidate.get("candidate_id", "")
+    template = POST_TEMPLATES.get(candidate_id)
+    if template and style == "standard":
+        return "\n".join(template)
+    if template and style == "short":
+        return "\n".join([line for line in template if line][:6] + ["", "これ、専用であったら使う？"])
+    return _fallback_text(candidate, profile, style)
 
 
 def _tone_check(text: str, profile: dict) -> dict:
