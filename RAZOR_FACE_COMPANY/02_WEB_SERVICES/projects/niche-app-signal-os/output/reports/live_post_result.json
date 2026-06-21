@@ -1,18 +1,19 @@
 {
   "date": "2026-06-21",
-  "created_at": "2026-06-21T15:05:16.091176+00:00",
-  "status": "dry_run_saved",
+  "created_at": "2026-06-21T15:07:14.134058+00:00",
+  "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
   "post_id": null,
   "post_url": "",
   "target_handle": "younengsaitoshaojie",
-  "selected_candidate_id": "receipt-payment-lookback",
-  "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/39ee818bacd3659594a160f310fee4d05db7d974/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-21-receipt-payment-lookback.png",
-  "selected_post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
+  "selected_candidate_id": "student-deadline-check",
+  "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/55b22b91f4ff595467e7bc64ad6bc639fbba3319/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-21-student-deadline-check.png",
+  "selected_post_text": "提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？\n\nポータル見る\nLINEさかのぼる\n授業プリント探す\nカレンダーも一応見る\n\nで、結局どれが最新か分からんやつ。\n\n授業ごとに、締切・提出先・持ち物だけまとまるボードあったら使う？\nそれとも今のやり方で足りてる？",
   "posted_at": null,
   "risks": [
-    "AUTO_POST=false"
+    "same_candidate_id_as_previous_post",
+    "same_image_path_as_previous_post"
   ]
 }

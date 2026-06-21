@@ -282,5 +282,27 @@
     "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
     "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/39ee818bacd3659594a160f310fee4d05db7d974/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-21-receipt-payment-lookback.png",
     "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
+  },
+  {
+    "date": "2026-06-21",
+    "created_at": "2026-06-21T15:07:14.134058+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "0be05a87d4f4e4a69179054aa58a1cb38021ffe605debcb9f539efd8bed37e3b",
+    "post_text": "提出物って、締切そのものより「どこに書いてあったっけ？」で詰まない？\n\nポータル見る\nLINEさかのぼる\n授業プリント探す\nカレンダーも一応見る\n\nで、結局どれが最新か分からんやつ。\n\n授業ごとに、締切・提出先・持ち物だけまとまるボードあったら使う？\nそれとも今のやり方で足りてる？",
+    "alt_text": "学生の提出物忘れ防止のスマホUI風カード",
+    "topic_tags": [
+      "学生の提出物忘れ防止",
+      "ニッチアプリ",
+      "DRY_RUN"
+    ],
+    "candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/55b22b91f4ff595467e7bc64ad6bc639fbba3319/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-21-student-deadline-check.png",
+    "post_text_hash": "1cf2eb82061565afeced60f67f3c64575b5721c141bfafb6112f6fe2d84554a6"
   }
 ]

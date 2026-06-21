@@ -22,7 +22,7 @@
       "idea": "時間割連動の提出物ボード",
       "reason": "汎用ToDoでは授業単位・提出先・持ち物の文脈が薄い",
       "signal_score": 9,
-      "audience_segment": "ネット購入や電子決済が多い生活者",
+      "audience_segment": "高校生・大学生・専門学生",
       "design_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
       "next_step": "反応が強ければLPまたは待機リストMVPに進める"
     }
@@ -33,37 +33,36 @@
       "candidate_id": "student-deadline-check",
       "angle": "なぜ「課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい」をアプリ化したくなるのか",
       "signal_score": 9,
-      "audience_segment": "ネット購入や電子決済が多い生活者"
+      "audience_segment": "高校生・大学生・専門学生"
     }
   ],
   "weekly_report": "memory/reports/weekly_report.md",
   "audience_strategy": {
-    "candidate_id": "receipt-payment-lookback",
-    "candidate_category": "レシート/支払い履歴のあと見返し",
-    "target_user_segment": "ネット購入や電子決済が多い生活者",
-    "tone_id": "default_light_problem",
+    "candidate_id": "student-deadline-check",
+    "candidate_category": "学生の提出物忘れ防止",
+    "target_user_segment": "高校生・大学生・専門学生",
+    "tone_id": "student_casual",
     "user_motivation": "今のやり方で足りているようで、毎回少し探す・忘れる・見返せない不便を減らしたい",
-    "primary_job": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+    "primary_job": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
     "current_alternatives": [
-      "写真フォルダ",
-      "家計簿アプリ",
-      "カード明細",
-      "EC購入履歴"
+      "学校ポータル",
+      "Googleカレンダー",
+      "スマホメモ",
+      "LINE"
     ],
     "language_to_use": [
-      "あとで見返す",
-      "散らばる",
-      "探す",
-      "メモ",
-      "ログ",
+      "提出物",
+      "締切",
+      "明日いるやつ",
+      "授業ごと",
+      "見落とす",
       "これ欲しい？"
     ],
     "language_to_avoid": [
+      "学習管理システム",
+      "業務効率",
       "革新的",
-      "SaaS",
-      "生産性",
-      "完全自動化",
-      "業務効率"
+      "完全自動化"
     ],
     "comment_hooks": [
       "これ欲しい？",
@@ -75,15 +74,15 @@
   },
   "design_strategy": {
     "date": "2026-06-21",
-    "candidate_id": "receipt-payment-lookback",
-    "category": "レシート/支払い履歴のあと見返し",
-    "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
-    "target_audience_for_copy": "ネット購入や電子決済が多い生活者",
-    "audience_context": "ネット購入や電子決済が多い生活者",
+    "candidate_id": "student-deadline-check",
+    "category": "学生の提出物忘れ防止",
+    "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+    "target_audience_for_copy": "高校生・大学生・専門学生",
+    "audience_context": "高校生・大学生・専門学生",
     "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
-    "ui_metaphor_from_market_need": "購入証跡ログブックUI",
+    "ui_metaphor_from_market_need": "時間割連動の提出物ボード",
     "ui_metaphor": [
-      "購入証跡ログブックUI"
+      "時間割連動の提出物ボード"
     ],
     "color_direction": [
       "パステル",
@@ -93,12 +92,12 @@
     ],
     "composition": "上部にあるあるコピー、中央に候補専用スマホUI、下部に軽いCTA",
     "must_show_fields": [
-      "購入日",
-      "お店",
-      "金額",
-      "支払い方法",
-      "レシート",
-      "保証メモ"
+      "授業",
+      "提出物",
+      "締切",
+      "提出先",
+      "持ち物",
+      "明日やる"
     ],
     "avoid_visuals": [
       "抽象イラストだけ",
@@ -108,11 +107,11 @@
     ],
     "card_cta": "これ欲しい？今のやり方で十分？",
     "copy_tone_hint": [
-      "あとで見返す",
-      "散らばる",
-      "探す",
-      "メモ",
-      "ログ",
+      "提出物",
+      "締切",
+      "明日いるやつ",
+      "授業ごと",
+      "見落とす",
       "これ欲しい？"
     ],
     "design_confidence": 8
