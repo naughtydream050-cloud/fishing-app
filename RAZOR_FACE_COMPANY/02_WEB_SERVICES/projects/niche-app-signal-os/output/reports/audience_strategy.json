@@ -1,6 +1,6 @@
 {
   "department": "Audience Strategy Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json"
   ],
@@ -44,7 +44,7 @@
       "専用であったら使う？"
     ],
     "segment_confidence": 8,
-    "date": "2026-06-21"
+    "date": "2026-06-22"
   },
-  "memory_path": "memory/audience/2026-06-21.md"
+  "memory_path": "memory/audience/2026-06-22.md"
 }

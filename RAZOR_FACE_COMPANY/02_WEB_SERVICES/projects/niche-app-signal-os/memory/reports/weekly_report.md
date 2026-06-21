@@ -1,6 +1,6 @@
 # Weekly Report
 
-- updated: 2026-06-21
+- updated: 2026-06-22
 - strongest_category: 学生の提出物忘れ防止
 - selected_candidate_id: student-deadline-check
 - signal_score: 9

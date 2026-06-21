@@ -1,6 +1,6 @@
 {
   "department": "Post Candidate Selection Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/threads_post.json",
@@ -34,7 +34,7 @@
   },
   "selected_post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
   "candidate_post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
-  "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
+  "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
   "image_generated_from_candidate": true,
   "rejected_reason_if_any": "",
   "source": [

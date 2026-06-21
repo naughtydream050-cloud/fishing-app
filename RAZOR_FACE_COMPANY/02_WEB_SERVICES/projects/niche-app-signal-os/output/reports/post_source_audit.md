@@ -1,4 +1,4 @@
-# Post Source Audit - 2026-06-21
+# Post Source Audit - 2026-06-22
 
 - selected_candidate_id: receipt-payment-lookback
 - selected_category: レシート/支払い履歴のあと見返し
@@ -7,7 +7,7 @@
 - why_selected_today: Selected from current scored research inputs.
 - previous_candidate_id: student-deadline-check
 - duplicate_check_result: {'passed': True, 'reasons': []}
-- selected_image_path: output/share-cards/2026-06-21-receipt-payment-lookback.png
+- selected_image_path: output/share-cards/2026-06-22-receipt-payment-lookback.png
 - image_generated_from_candidate: True
 - tone_profile_used: default_light_problem
 - design_strategy_used: True

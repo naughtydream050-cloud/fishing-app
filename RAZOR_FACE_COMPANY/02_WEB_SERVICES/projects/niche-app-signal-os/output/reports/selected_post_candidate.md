@@ -1,10 +1,10 @@
-# Selected Post Candidate - 2026-06-21
+# Selected Post Candidate - 2026-06-22
 
 - selected: True
 - selected_candidate_id: receipt-payment-lookback
 - selected_category: レシート/支払い履歴のあと見返し
 - market_evidence_count: 3
-- selected_image_path: output/share-cards/2026-06-21-receipt-payment-lookback.png
+- selected_image_path: output/share-cards/2026-06-22-receipt-payment-lookback.png
 - rejected_reason_if_any: 
 
 ## Selected Post Text

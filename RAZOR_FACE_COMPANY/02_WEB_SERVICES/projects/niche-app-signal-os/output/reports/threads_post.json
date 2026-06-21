@@ -1,6 +1,6 @@
 {
   "department": "Copywriting Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json"
@@ -13,7 +13,7 @@
   "risks": [],
   "next_action": "generate share card",
   "post": {
-    "date": "2026-06-21",
+    "date": "2026-06-22",
     "candidate_id": "receipt-payment-lookback",
     "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
     "alt_text": "レシート/支払い履歴のあと見返しのスマホUI風カード",

@@ -1,4 +1,4 @@
-# Market Research Trace - 2026-06-21
+# Market Research Trace - 2026-06-22
 
 - selected_candidate_id: receipt-payment-lookback
 - selected_category: レシート/支払い履歴のあと見返し

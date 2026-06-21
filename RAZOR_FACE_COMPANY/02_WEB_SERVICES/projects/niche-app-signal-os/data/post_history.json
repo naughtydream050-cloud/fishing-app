@@ -156,6 +156,20 @@
       "candidate_id": "receipt-payment-lookback",
       "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
       "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
+    },
+    {
+      "date": "2026-06-22",
+      "created_at": "2026-06-21T22:46:50.037585+00:00",
+      "status": "dry_run_saved",
+      "target_handle": "younengsaitoshaojie",
+      "content_hash": "48436248e54fe4f552074df2ed23247da9d46e755dd7f840c8833756a4d1eb7d",
+      "thread_id": null,
+      "dry_run": true,
+      "auto_post": false,
+      "threads_auto_post_enabled": true,
+      "candidate_id": "receipt-payment-lookback",
+      "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
+      "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
     }
   ]
 }

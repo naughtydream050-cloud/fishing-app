@@ -326,5 +326,27 @@
     "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
     "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/e0c165bd545a28502383348fe512789f9995702c/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-21-receipt-payment-lookback.png",
     "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
+  },
+  {
+    "date": "2026-06-22",
+    "created_at": "2026-06-21T22:46:50.037585+00:00",
+    "status": "dry_run_saved",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "48436248e54fe4f552074df2ed23247da9d46e755dd7f840c8833756a4d1eb7d",
+    "post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
+    "alt_text": "レシート/支払い履歴のあと見返しのスマホUI風カード",
+    "topic_tags": [
+      "レシート/支払い履歴のあと見返し",
+      "ニッチアプリ",
+      "DRY_RUN"
+    ],
+    "candidate_id": "receipt-payment-lookback",
+    "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/7b1e1f966aacadacfecbadd1c6ffb2d569a3d34b/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-receipt-payment-lookback.png",
+    "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "department": "Executive Department",
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "input_sources": [
     "output/reports/threads_insights.json",
     "data/reaction_memory.json"
@@ -71,10 +71,10 @@
       "専用であったら使う？"
     ],
     "segment_confidence": 8,
-    "date": "2026-06-21"
+    "date": "2026-06-22"
   },
   "design_strategy": {
-    "date": "2026-06-21",
+    "date": "2026-06-22",
     "candidate_id": "receipt-payment-lookback",
     "category": "レシート/支払い履歴のあと見返し",
     "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
