@@ -82,11 +82,6 @@
       "summary": "Checked market evidence, candidate consistency, and audience tone before post selection."
     },
     {
-      "stage": "publish_guard",
-      "status": "stopped",
-      "summary": "risk gate blocked live posting"
-    },
-    {
       "stage": "select_post_candidate",
       "status": "ok",
       "summary": "Selected only tone-adapted copy approved by the quality risk gate."
@@ -128,14 +123,5 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ],
-  "publishing": {
-    "status": "blocked_by_post_source_audit",
-    "posting_attempted": false,
-    "api_called": false,
-    "post_id": null,
-    "post_url": "",
-    "selected_candidate_id": "receipt-payment-lookback",
-    "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png"
-  }
+  ]
 }

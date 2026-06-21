@@ -2,6 +2,7 @@
   "department": "Risk Control Department",
   "date": "2026-06-21",
   "input_sources": [
+    "output/reports/market_research_trace.json",
     "output/reports/niche_demand_score.json",
     "output/reports/threads_post.json",
     "output/reports/audience_tone_profile.json"
@@ -11,22 +12,20 @@
     "tone_block_count": 0,
     "tone_warning_count": 0
   },
-  "risks": [
-    "post_candidate_mismatch"
-  ],
-  "next_action": "stop without posting",
-  "approved": false,
-  "publish_decision": "skip",
-  "block_reasons": [
-    "post_candidate_mismatch"
-  ],
+  "risks": [],
+  "next_action": "select post candidate",
+  "approved": true,
+  "publish_decision": "dry_run",
+  "block_reasons": [],
   "tone_warnings": [],
   "tone_check_result": {
     "passed": true,
-    "tone_id": "default_light_problem",
-    "target_audience": "ネット購入や電子決済が多い生活者",
+    "tone_id": "student_casual",
+    "target_audience": "students tracking deadlines and hand-ins",
     "used_words": [
-      "ログ"
+      "提出物",
+      "締切",
+      "授業ごと"
     ],
     "used_avoid_words": [],
     "block_count": 0,

@@ -82,11 +82,6 @@
       "summary": "Checked market evidence, candidate consistency, and audience tone before post selection."
     },
     {
-      "stage": "publish_guard",
-      "status": "stopped",
-      "summary": "risk gate blocked live posting"
-    },
-    {
       "stage": "select_post_candidate",
       "status": "ok",
       "summary": "Selected only tone-adapted copy approved by the quality risk gate."

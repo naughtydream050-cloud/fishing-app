@@ -1,46 +1,49 @@
 {
   "date": "2026-06-21",
-  "candidate_id": "receipt-payment-lookback",
-  "tone_id": "default_light_problem",
-  "target_audience": "ネット購入や電子決済が多い生活者",
+  "candidate_id": "student-deadline-check",
+  "tone_id": "student_casual",
+  "target_audience": "students tracking deadlines and hand-ins",
   "selected_variant_id": "A",
   "variants": [
     {
       "variant_id": "A",
-      "candidate_id": "receipt-payment-lookback",
+      "candidate_id": "student-deadline-check",
       "angle": "standard",
-      "text": "レシート/支払い履歴のあと見返し、あとで見返したい時ほど散らばらない？\n\n写真フォルダに残す\nカード明細に残す\nEC購入履歴に残す\n家計簿アプリを別々に見るに残す\n\nレシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい\n\n購入証跡ログブックUIで一か所に残せたら使う？\nそれとも今のやり方で十分？",
-      "tone_id": "default_light_problem",
+      "text": "学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？\n\n学校ポータルに残す\nLINEに残す\nカレンダーに残す\nスマホメモを行き来するに残す\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n時間割連動の提出物ボードで一か所に残せたら使う？\nそれとも今のやり方で十分？",
+      "tone_id": "student_casual",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "default_light_problem",
+        "tone_id": "student_casual",
         "used_words": [
-          "ログ"
+          "提出物",
+          "締切",
+          "授業ごと"
         ],
         "used_avoid_words": [],
         "line_count": 8,
-        "target_audience": "ネット購入や電子決済が多い生活者"
+        "target_audience": "students tracking deadlines and hand-ins"
       },
-      "length": 159
+      "length": 149
     },
     {
       "variant_id": "B",
-      "candidate_id": "receipt-payment-lookback",
+      "candidate_id": "student-deadline-check",
       "angle": "short",
-      "text": "レシート/支払い履歴のあと見返しって、地味に毎回探さない？\n\nレシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい\n\n今は写真フォルダ、カード明細、EC購入履歴、家計簿アプリを別々に見るで何とかしてるけど、あとで見返す時に散らばりがち。\n\n購入証跡ログブックUIみたいに残せたら使う？",
-      "tone_id": "default_light_problem",
+      "text": "学生の提出物忘れ防止って、地味に毎回探さない？\n\n課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい\n\n今は学校ポータル、LINE、カレンダー、スマホメモを行き来するで何とかしてるけど、あとで見返す時に散らばりがち。\n\n時間割連動の提出物ボードみたいに残せたら使う？",
+      "tone_id": "student_casual",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "default_light_problem",
+        "tone_id": "student_casual",
         "used_words": [
-          "あとで見返す",
-          "ログ"
+          "提出物",
+          "締切",
+          "授業ごと"
         ],
         "used_avoid_words": [],
         "line_count": 4,
-        "target_audience": "ネット購入や電子決済が多い生活者"
+        "target_audience": "students tracking deadlines and hand-ins"
       },
-      "length": 153
+      "length": 143
     }
   ],
   "all_variants_tone_checked": true
