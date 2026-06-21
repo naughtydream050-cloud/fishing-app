@@ -64,12 +64,12 @@
     {
       "stage": "generate_threads_post",
       "status": "ok",
-      "summary": "Generated candidate-specific Threads copy from the selected market need and audience tone profile."
+      "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template."
     },
     {
       "stage": "generate_share_card",
       "status": "ok",
-      "summary": "Generated a candidate-specific Threads UI card image from the selected market need."
+      "summary": "Generated a smartphone-first app UI screenshot without sales-copy framing."
     },
     {
       "stage": "generate_card_image",

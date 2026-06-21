@@ -14,41 +14,41 @@
   "next_action": "market research trace",
   "daily_niche_ui_candidates": {
     "date": "2026-06-22",
-    "selected_candidate_id": "receipt-payment-lookback",
+    "selected_candidate_id": "student-deadline-check",
     "candidates": [
       {
-        "candidate_id": "receipt-payment-lookback",
-        "category": "レシート/支払い履歴のあと見返し",
-        "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
-        "target_user": "ネット購入や電子決済が多い生活者",
-        "current_workaround": "写真フォルダ、カード明細、EC購入履歴、家計簿アプリを別々に見る",
-        "why_niche": "家計簿よりも購入証跡のあと見返しに特化すると用途が明確",
-        "why_now": "電子決済とEC購入が増え、購入証跡が複数サービスに分散している",
+        "candidate_id": "student-deadline-check",
+        "category": "学生の提出物忘れ防止",
+        "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+        "target_user": "高校生・大学生・専門学生",
+        "current_workaround": "学校ポータル、LINE、カレンダー、スマホメモを行き来する",
+        "why_niche": "汎用ToDoでは授業単位・提出先・持ち物の文脈が薄い",
+        "why_now": "学校連絡のオンライン化で情報の置き場所が増えている",
         "existing_alternatives": [
-          "写真フォルダ",
-          "家計簿アプリ",
-          "カード明細",
-          "EC購入履歴"
+          "学校ポータル",
+          "Googleカレンダー",
+          "スマホメモ",
+          "LINE"
         ],
         "likely_target_users": [
-          "ネット購入や電子決済が多い生活者"
+          "高校生・大学生・専門学生"
         ],
-        "ui_metaphor": "購入証跡ログブックUI",
-        "expected_ui_metaphor": "購入証跡ログブックUI",
-        "tone_id": "default_light_problem",
+        "ui_metaphor": "時間割連動の提出物ボード",
+        "expected_ui_metaphor": "時間割連動の提出物ボード",
+        "tone_id": "student_casual",
         "priority_score": 9.35,
         "market_sources": [
           {
             "source_type": "manual_observation",
-            "evidence_text": "返品したい時にレシート画像が見つからない"
+            "evidence_text": "課題の締切を学校ポータルで見落とす"
           },
           {
             "source_type": "manual_observation",
-            "evidence_text": "何をどこで買ったか支払い履歴だけでは思い出せない"
+            "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
           },
           {
             "source_type": "manual_observation",
-            "evidence_text": "保証書や領収書をあとから探すのが面倒"
+            "evidence_text": "明日必要なものだけ一目で見たい"
           }
         ],
         "market_evidence_count": 3
@@ -129,7 +129,7 @@
       }
     ],
     "selection_reason": "Highest scored market-backed candidate; previous candidate avoided.",
-    "previous_candidate_id": "student-deadline-check",
+    "previous_candidate_id": "receipt-payment-lookback",
     "dry_run": true,
     "market_evidence_required": true
   },

@@ -11,30 +11,34 @@
   "summary": "Selected only tone-adapted copy approved by the quality risk gate.",
   "scores": {
     "selected": true,
-    "text_length": 135
+    "text_length": 126
   },
   "risks": [],
   "next_action": "card image then publishing guard",
   "selected": true,
-  "selected_candidate_id": "receipt-payment-lookback",
-  "selected_category": "レシート/支払い履歴のあと見返し",
-  "selected_pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+  "selected_candidate_id": "student-deadline-check",
+  "selected_category": "学生の提出物忘れ防止",
+  "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
   "market_research_trace": "output/reports/market_research_trace.json",
   "market_evidence_count": 3,
-  "selected_tone": "default_light_problem",
-  "target_audience": "ネット購入や電子決済が多い生活者",
-  "ui_target_audience": "ネット購入や電子決済が多い生活者",
+  "selected_tone": "student_casual",
+  "target_audience": "students tracking deadlines and hand-ins",
+  "ui_target_audience": "高校生・大学生・専門学生",
   "tone_check_result": {
     "passed": true,
-    "tone_id": "default_light_problem",
-    "used_words": [],
+    "tone_id": "student_casual",
+    "used_words": [
+      "締切",
+      "授業ごと"
+    ],
     "used_avoid_words": [],
     "line_count": 8,
-    "target_audience": "ネット購入や電子決済が多い生活者"
+    "target_audience": "students tracking deadlines and hand-ins",
+    "max_recent_similarity": 0.17
   },
-  "selected_post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
-  "candidate_post_text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
-  "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
+  "selected_post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+  "candidate_post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+  "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
   "image_generated_from_candidate": true,
   "rejected_reason_if_any": "",
   "source": [

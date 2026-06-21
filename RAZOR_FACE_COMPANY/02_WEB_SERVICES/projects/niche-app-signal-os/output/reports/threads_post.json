@@ -1,38 +1,44 @@
 {
-  "department": "Copywriting Department",
+  "department": "Scriptwriter Department",
   "date": "2026-06-22",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
-    "output/reports/audience_tone_profile.json"
+    "output/reports/audience_tone_profile.json",
+    "data/post_log.json"
   ],
-  "summary": "Generated candidate-specific Threads copy from the selected market need and audience tone profile.",
+  "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 135,
-    "variant_count": 2
+    "length": 126,
+    "variant_count": 10,
+    "max_recent_similarity": 0.17
   },
   "risks": [],
-  "next_action": "generate share card",
+  "next_action": "generate mobile UI share card",
   "post": {
     "date": "2026-06-22",
-    "candidate_id": "receipt-payment-lookback",
-    "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
-    "alt_text": "レシート/支払い履歴のあと見返しのスマホUI風カード",
+    "candidate_id": "student-deadline-check",
+    "text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+    "alt_text": "学生の提出物忘れ防止のスマホアプリ画面",
     "topic_tags": [
-      "レシート/支払い履歴のあと見返し",
-      "ニッチアプリ",
-      "DRY_RUN"
+      "学生の提出物忘れ防止",
+      "ニッチアプリ"
     ],
     "decision": "dry_run",
-    "tone_id": "default_light_problem",
-    "target_audience": "ネット購入や電子決済が多い生活者",
-    "variant_id": "A",
+    "tone_id": "student_casual",
+    "target_audience": "students tracking deadlines and hand-ins",
+    "variant_id": "01",
+    "pattern_id": "time_melts_scene",
     "tone_check_result": {
       "passed": true,
-      "tone_id": "default_light_problem",
-      "used_words": [],
+      "tone_id": "student_casual",
+      "used_words": [
+        "締切",
+        "授業ごと"
+      ],
       "used_avoid_words": [],
       "line_count": 8,
-      "target_audience": "ネット購入や電子決済が多い生活者"
+      "target_audience": "students tracking deadlines and hand-ins",
+      "max_recent_similarity": 0.17
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"

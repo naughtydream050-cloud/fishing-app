@@ -1,42 +1,211 @@
 {
   "date": "2026-06-22",
-  "candidate_id": "receipt-payment-lookback",
-  "tone_id": "default_light_problem",
-  "target_audience": "ネット購入や電子決済が多い生活者",
-  "selected_variant_id": "A",
+  "candidate_id": "student-deadline-check",
+  "tone_id": "student_casual",
+  "target_audience": "students tracking deadlines and hand-ins",
+  "selected_variant_id": "01",
+  "selected_pattern_id": "time_melts_scene",
+  "variant_count": 10,
   "variants": [
     {
-      "variant_id": "A",
-      "candidate_id": "receipt-payment-lookback",
-      "angle": "standard",
-      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\n買ったもの単位で、金額・店・レシート写真を残せたら使う？\n家計簿アプリで十分？",
-      "tone_id": "default_light_problem",
+      "variant_id": "01",
+      "candidate_id": "student-deadline-check",
+      "angle": "time_melts_scene",
+      "text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+      "tone_id": "student_casual",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "default_light_problem",
-        "used_words": [],
+        "tone_id": "student_casual",
+        "used_words": [
+          "締切",
+          "授業ごと"
+        ],
         "used_avoid_words": [],
         "line_count": 8,
-        "target_audience": "ネット購入や電子決済が多い生活者"
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.17
       },
-      "length": 135
+      "length": 126
     },
     {
-      "variant_id": "B",
-      "candidate_id": "receipt-payment-lookback",
-      "angle": "short",
-      "text": "レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？\n写真フォルダ\nカード明細\nEC購入履歴\nコンビニの紙レシート\n返品したい時とか、保証を見たい時に限って大捜索になるやつ。\n\nこれ、専用であったら使う？",
-      "tone_id": "default_light_problem",
+      "variant_id": "02",
+      "candidate_id": "student-deadline-check",
+      "angle": "single_purpose_screen",
+      "text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+      "tone_id": "student_casual",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "default_light_problem",
-        "used_words": [],
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物"
+        ],
         "used_avoid_words": [],
-        "line_count": 7,
-        "target_audience": "ネット購入や電子決済が多い生活者"
+        "line_count": 6,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.059
+      },
+      "length": 96
+    },
+    {
+      "variant_id": "03",
+      "candidate_id": "student-deadline-check",
+      "angle": "searching_is_defeat",
+      "text": "提出物、探してる時点でもうちょっと負けてる。\n\n前日の夜とか朝の支度中に\n学校ポータルから探し始めて、\nLINEまで見に行く流れ。\n\n結局どれが最新か分からなくなるの、かなりあるあるだと思う。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリなら使う？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物",
+          "締切",
+          "授業ごと"
+        ],
+        "used_avoid_words": [],
+        "line_count": 6,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.162
+      },
+      "length": 127
+    },
+    {
+      "variant_id": "04",
+      "candidate_id": "student-deadline-check",
+      "angle": "screen_requirements",
+      "text": "もし時間割ごとの提出物ボードがあるなら、画面はこれくらいでいい。\n\n提出物\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n前日の夜とか朝の支度中に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物"
+        ],
+        "used_avoid_words": [],
+        "line_count": 8,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.047
       },
       "length": 107
+    },
+    {
+      "variant_id": "05",
+      "candidate_id": "student-deadline-check",
+      "angle": "alternative_is_ok_but",
+      "text": "今のメモで十分って分かってるんだけど、\n締切探しだけは専用画面が欲しくなる時ある。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんに散らばった提出物を、\n一つの時間割ごとの提出物ボードで見返せたらどう？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物",
+          "締切"
+        ],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.093
+      },
+      "length": 103
+    },
+    {
+      "variant_id": "06",
+      "candidate_id": "student-deadline-check",
+      "angle": "small_loss_confession",
+      "text": "提出物探すの、毎回ちょっと負けてる気がする。\n\n学校ポータル\nLINE\n授業プリント\nカレンダー\n\n結局どれが最新か分からなくなるやつ。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリあったら普通に使う？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物",
+          "締切",
+          "授業ごと"
+        ],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.25
+      },
+      "length": 104
+    },
+    {
+      "variant_id": "07",
+      "candidate_id": "student-deadline-check",
+      "angle": "quote_search_loop",
+      "text": "「提出物どこだっけ」ってなってからが長い。\n\n学校ポータル見て、LINE見て、\n結局授業プリントまで戻る。\n\n前日の夜とか朝の支度中にこれやるの、地味にしんどい。\n\n時間割ごとの提出物ボードだけ開けば済むなら欲しい？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物"
+        ],
+        "used_avoid_words": [],
+        "line_count": 5,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.057
+      },
+      "length": 108
+    },
+    {
+      "variant_id": "08",
+      "candidate_id": "student-deadline-check",
+      "angle": "not_management_just_need",
+      "text": "勉強管理を完璧にしたいわけじゃないんよ。\n\nただ、前日の夜とか朝の支度中に\n提出物がすぐ出てきてほしいだけ。\n\n学校ポータルに置いた気もするし、\nカレンダーに残した気もする。\n\nこういうのだけ拾ってくれる時間割ごとの提出物ボード、需要ある？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物"
+        ],
+        "used_avoid_words": [],
+        "line_count": 6,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.077
+      },
+      "length": 120
+    },
+    {
+      "variant_id": "09",
+      "candidate_id": "student-deadline-check",
+      "angle": "everyone_has_done_this",
+      "text": "学生、これ一回はあると思う。\n\n提出物を探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、結局どれが最新か分からなくなる。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリ、使う？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物",
+          "締切",
+          "授業ごと"
+        ],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.183
+      },
+      "length": 93
+    },
+    {
+      "variant_id": "10",
+      "candidate_id": "student-deadline-check",
+      "angle": "exists_but_missing",
+      "text": "提出物、あるのは分かってるのに見つからないのが一番だるい。\n\n学校ポータルにはありそう\nLINEにもありそう\n授業プリントにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\n時間割ごとの提出物ボードみたいなの、実際使う？",
+      "tone_id": "student_casual",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "student_casual",
+        "used_words": [
+          "提出物"
+        ],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "students tracking deadlines and hand-ins",
+        "max_recent_similarity": 0.073
+      },
+      "length": 121
     }
   ],
-  "all_variants_tone_checked": true
+  "all_variants_tone_checked": true,
+  "selection_rule": "first tone-passing pattern after date/candidate rotation, with recent similarity below threshold"
 }

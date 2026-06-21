@@ -1,8 +1,8 @@
 # Market Research Trace - 2026-06-22
 
-- selected_candidate_id: receipt-payment-lookback
-- selected_category: レシート/支払い履歴のあと見返し
-- selected_pain_point: レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい
+- selected_candidate_id: student-deadline-check
+- selected_category: 学生の提出物忘れ防止
+- selected_pain_point: 課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
 - market_evidence_count: 3
 - why_selected_today: Selected from current scored research inputs.
 

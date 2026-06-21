@@ -1,26 +1,27 @@
 # Live Post Result - 2026-06-22
 
-- status: posted
-- posting_attempted: True
-- api_called: True
-- post_id: 18024763187841835
-- post_url: https://www.threads.net/@younengsaitoshaojie/post/18024763187841835
+- status: dry_run_saved
+- posting_attempted: False
+- api_called: False
+- post_id: 
+- post_url: 
 - target_handle: younengsaitoshaojie
-- selected_candidate_id: receipt-payment-lookback
-- selected_image_path: output/share-cards/2026-06-22-receipt-payment-lookback.png
+- selected_candidate_id: student-deadline-check
+- selected_image_path: output/share-cards/2026-06-22-student-deadline-check.png
 - image_url_available: True
 
 ## Selected Post Text
-レシートとか支払い履歴、あとで探す時だけ急に見つからなくない？
+前日の夜とか朝の支度中、締切探しで時間溶けない？
 
-写真フォルダ
-カード明細
-EC購入履歴
-コンビニの紙レシート
+ちゃんと残してるはずなのに、
+残し場所が毎回違う。
 
-返品したい時とか、保証を見たい時に限って大捜索になるやつ。
+・学校ポータル
+・LINE
+・授業プリント
+・カレンダー
 
-買ったもの単位で、金額・店・レシート写真を残せたら使う？
-家計簿アプリで十分？
+授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？
 
 ## Risks
+- AUTO_POST=false

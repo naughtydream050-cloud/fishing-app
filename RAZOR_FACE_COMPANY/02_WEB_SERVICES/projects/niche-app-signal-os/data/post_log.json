@@ -392,5 +392,26 @@
     "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-lookback.png",
     "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/712b2e24164671ebe14ab034c634e2f8d60c03fe/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-receipt-payment-lookback.png",
     "post_text_hash": "f7899e7afc9150c8f310a789548f4f15654b6ff05533ed3419e5e32e048e0af3"
+  },
+  {
+    "date": "2026-06-22",
+    "created_at": "2026-06-21T23:45:56.907845+00:00",
+    "status": "dry_run_saved",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "d89b46a3265fdec6a9a726b54be817a0d283368d912620bb0a883cc2c09c0f6a",
+    "post_text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
+    "alt_text": "学生の提出物忘れ防止のスマホアプリ画面",
+    "topic_tags": [
+      "学生の提出物忘れ防止",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/84e281d5697db549ee6cf32239223a9642e57171/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
+    "post_text_hash": "fb28afb5fb5d1019c3d922e35f17b1215487ce22ace8aba872c26e7a0b773012"
   }
 ]
