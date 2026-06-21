@@ -123,5 +123,14 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ]
+  ],
+  "publishing": {
+    "status": "posted",
+    "posting_attempted": true,
+    "api_called": true,
+    "post_id": "17884012131597637",
+    "post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
+    "selected_candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png"
+  }
 }

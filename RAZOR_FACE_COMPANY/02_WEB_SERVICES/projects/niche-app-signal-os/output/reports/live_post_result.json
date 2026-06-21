@@ -1,18 +1,16 @@
 {
   "date": "2026-06-22",
-  "created_at": "2026-06-21T23:52:39.675227+00:00",
-  "status": "dry_run_saved",
-  "posting_attempted": false,
-  "api_called": false,
-  "post_id": null,
-  "post_url": "",
+  "created_at": "2026-06-21T23:53:24.586433+00:00",
+  "status": "posted",
+  "posting_attempted": true,
+  "api_called": true,
+  "post_id": "17884012131597637",
+  "post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "student-deadline-check",
   "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/1e654184b6e936e45f859a5af2402f8e1a074901/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/4b54aa46856ee19c1120f732078f3da16a821703/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
   "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
-  "posted_at": null,
-  "risks": [
-    "AUTO_POST=false"
-  ]
+  "posted_at": "2026-06-21T23:53:24.586433+00:00",
+  "risks": []
 }

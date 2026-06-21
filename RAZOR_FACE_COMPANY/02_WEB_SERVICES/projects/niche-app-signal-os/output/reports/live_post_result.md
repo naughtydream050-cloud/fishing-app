@@ -1,10 +1,10 @@
 # Live Post Result - 2026-06-22
 
-- status: dry_run_saved
-- posting_attempted: False
-- api_called: False
-- post_id: 
-- post_url: 
+- status: posted
+- posting_attempted: True
+- api_called: True
+- post_id: 17884012131597637
+- post_url: https://www.threads.net/@younengsaitoshaojie/post/17884012131597637
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: student-deadline-check
 - selected_image_path: output/share-cards/2026-06-22-student-deadline-check.png
@@ -21,4 +21,3 @@ LINE
 このへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？
 
 ## Risks
-- AUTO_POST=false

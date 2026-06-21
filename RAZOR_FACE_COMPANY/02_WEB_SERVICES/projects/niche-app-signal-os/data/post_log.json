@@ -434,5 +434,26 @@
     "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
     "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/1e654184b6e936e45f859a5af2402f8e1a074901/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
     "post_text_hash": "d41ee2b401cf1a0cc8013c09087f4b24664e17cd918de190c0008381a75d87fd"
+  },
+  {
+    "date": "2026-06-22",
+    "created_at": "2026-06-21T23:53:24.586433+00:00",
+    "status": "posted",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": "17884012131597637",
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "a2611d86b819c2ead5cc6dc5c766a43bfd2dd6dba84d7552b5be0a4784a28d11",
+    "post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
+    "alt_text": "学生の提出物忘れ防止のスマホアプリ画面",
+    "topic_tags": [
+      "学生の提出物忘れ防止",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "student-deadline-check",
+    "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/4b54aa46856ee19c1120f732078f3da16a821703/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
+    "post_text_hash": "d41ee2b401cf1a0cc8013c09087f4b24664e17cd918de190c0008381a75d87fd"
   }
 ]
