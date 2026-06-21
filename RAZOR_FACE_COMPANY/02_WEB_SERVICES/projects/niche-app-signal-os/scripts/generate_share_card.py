@@ -105,7 +105,7 @@ def _html(candidate: dict, design: dict) -> str:
 <title>{html.escape(candidate.get("candidate_id", "daily-card"))}</title>
 <style>
 *{{box-sizing:border-box}}
-body{{margin:0;width:{WIDTH}px;height:{HEIGHT}px;background:#fffaf7;font-family:"Yu Gothic","Hiragino Sans","Noto Sans JP",Arial,sans-serif;color:#25212e}}
+body{{margin:0;width:{WIDTH}px;height:{HEIGHT}px;background:#fffaf7;font-family:"Noto Sans CJK JP","Noto Sans JP","Yu Gothic","Hiragino Sans",Arial,sans-serif;color:#25212e}}
 .canvas{{width:{WIDTH}px;height:{HEIGHT}px;padding:70px 72px;background:linear-gradient(155deg,#fff6fb 0%,#eefbff 52%,#f6fff0 100%)}}
 .top{{height:230px;display:flex;flex-direction:column;justify-content:flex-end}}
 .eyebrow{{font-size:29px;font-weight:800;color:#7b6aa0;margin-bottom:18px}}
