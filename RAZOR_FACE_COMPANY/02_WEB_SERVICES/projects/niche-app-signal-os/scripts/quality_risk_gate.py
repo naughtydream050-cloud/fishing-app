@@ -39,13 +39,16 @@ def run(sample: bool = False) -> dict:
     post = load_latest("threads_post.json", {}).get("post", {})
     tone_profile = load_latest("audience_tone_profile.json", {}).get("audience_tone_profile", {})
     selected = load_latest("niche_demand_score.json", {}).get("selected_candidate", {})
+    trace = load_latest("market_research_trace.json", {})
     item = (selected or {}).get("item", {}) if isinstance(selected, dict) else {}
+    selected_candidate_id = trace.get("selected_candidate_id") or selected.get("candidate_id", "")
+    market_evidence_count = int(trace.get("market_evidence_count") or selected.get("evidence_count", 0) or 0)
     blocks = []
     if item.get("target_user") == "unclear":
         blocks.append("target_user_unclear")
-    if int(selected.get("evidence_count", 0) or 0) < 1:
+    if market_evidence_count < 1:
         blocks.append("market_evidence_count_zero")
-    if post.get("candidate_id") and post.get("candidate_id") != selected.get("candidate_id"):
+    if post.get("candidate_id") and post.get("candidate_id") != selected_candidate_id:
         blocks.append("post_candidate_mismatch")
     tone_blocks, tone_warnings, tone_check_result = _tone_gate(post.get("text", ""), tone_profile)
     blocks.extend(tone_blocks)
@@ -56,7 +59,7 @@ def run(sample: bool = False) -> dict:
         scores={"tone_block_count": len(tone_blocks), "tone_warning_count": len(tone_warnings)},
         risks=blocks + tone_warnings,
         next_action="select post candidate" if approved else "stop without posting",
-        input_sources=["output/reports/niche_demand_score.json", "output/reports/threads_post.json", "output/reports/audience_tone_profile.json"],
+        input_sources=["output/reports/market_research_trace.json", "output/reports/niche_demand_score.json", "output/reports/threads_post.json", "output/reports/audience_tone_profile.json"],
         extra={
             "approved": approved,
             "publish_decision": "dry_run" if approved else "skip",
