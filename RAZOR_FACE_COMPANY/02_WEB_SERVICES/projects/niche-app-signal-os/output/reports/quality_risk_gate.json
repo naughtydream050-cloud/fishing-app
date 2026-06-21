@@ -11,20 +11,22 @@
     "tone_block_count": 0,
     "tone_warning_count": 0
   },
-  "risks": [],
-  "next_action": "select post candidate",
-  "approved": true,
-  "publish_decision": "dry_run",
-  "block_reasons": [],
+  "risks": [
+    "post_candidate_mismatch"
+  ],
+  "next_action": "stop without posting",
+  "approved": false,
+  "publish_decision": "skip",
+  "block_reasons": [
+    "post_candidate_mismatch"
+  ],
   "tone_warnings": [],
   "tone_check_result": {
     "passed": true,
-    "tone_id": "student_casual",
-    "target_audience": "students tracking deadlines and hand-ins",
+    "tone_id": "default_light_problem",
+    "target_audience": "ネット購入や電子決済が多い生活者",
     "used_words": [
-      "提出物",
-      "締切",
-      "授業ごと"
+      "ログ"
     ],
     "used_avoid_words": [],
     "block_count": 0,

@@ -58,6 +58,20 @@
       "candidate_id": "student-deadline-check",
       "selected_image_path": "output/share-cards/2026-06-21-student-deadline-check.png",
       "post_text_hash": "4fd8d7171a51926996de4e9c3d06c617bcccbe8baac52325eed92f1318905e6b"
+    },
+    {
+      "date": "2026-06-21",
+      "created_at": "2026-06-21T11:30:27.457773+00:00",
+      "status": "blocked_by_post_source_audit",
+      "target_handle": "younengsaitoshaojie",
+      "content_hash": "1cc15d8cfb4a1d759a47b961cf7f2a9882c255678450fdb4437edf30a3bf6f68",
+      "thread_id": null,
+      "dry_run": true,
+      "auto_post": false,
+      "threads_auto_post_enabled": true,
+      "candidate_id": "receipt-payment-lookback",
+      "selected_image_path": "output/share-cards/2026-06-21-receipt-payment-lookback.png",
+      "post_text_hash": "4e1d5846405ab43a16868ffc7160141c79609613a2a394c345b1daf6b60834c0"
     }
   ]
 }

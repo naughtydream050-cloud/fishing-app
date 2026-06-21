@@ -1,26 +1,27 @@
 # Live Post Result - 2026-06-21
 
-- status: dry_run_saved
+- status: blocked_by_post_source_audit
 - posting_attempted: False
 - api_called: False
 - post_id: 
 - post_url: 
 - target_handle: younengsaitoshaojie
-- selected_candidate_id: student-deadline-check
-- selected_image_path: output/share-cards/2026-06-21-student-deadline-check.png
+- selected_candidate_id: receipt-payment-lookback
+- selected_image_path: output/share-cards/2026-06-21-receipt-payment-lookback.png
 
 ## Selected Post Text
-学生の提出物忘れ防止、あとで見返したい時ほど散らばらない？
+レシート/支払い履歴のあと見返し、あとで見返したい時ほど散らばらない？
 
-学校ポータルに残す
-LINEに残す
-カレンダーに残す
-スマホメモを行き来するに残す
+写真フォルダに残す
+カード明細に残す
+EC購入履歴に残す
+家計簿アプリを別々に見るに残す
 
-課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
+レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい
 
-時間割連動の提出物ボードで一か所に残せたら使う？
+購入証跡ログブックUIで一か所に残せたら使う？
 それとも今のやり方で十分？
 
 ## Risks
-- AUTO_POST=false
+- risk_gate_not_approved
+- selected_post_candidate_not_selected
