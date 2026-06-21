@@ -1,6 +1,14 @@
 name: Niche App Signal OS Auto Post
 
 on:
+  push:
+    branches:
+      - codex/niche-market-auto-post-live
+    paths:
+      - ".github/workflows/niche-app-signal-os-auto-post.yml"
+      - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/scripts/**"
+      - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/data/market_research_inputs.json"
+      - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/data/audience_tone_rules.json"
   workflow_dispatch:
     inputs:
       live_post:
