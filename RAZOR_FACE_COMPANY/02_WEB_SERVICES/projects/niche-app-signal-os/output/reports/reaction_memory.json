@@ -12,8 +12,8 @@
   },
   "risks": [],
   "next_action": "candidate scoring",
-  "reaction_memory": "data\\reaction_memory.json",
-  "memory_path": "memory\\reaction\\2026-06-22.md",
+  "reaction_memory": "data/reaction_memory.json",
+  "memory_path": "memory/reaction/2026-06-22.md",
   "top_entries": [
     {
       "date": "2026-06-21",

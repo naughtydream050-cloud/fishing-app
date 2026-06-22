@@ -13,8 +13,8 @@
 - why_selected_today: Selected from current public-source-backed scored research inputs.
 
 ## Sources
-- public_trends_rss: https://trends.google.com/trending/rss?geo=JP / 広島天気
-- public_market_research:  / 日経株価
-- public_market_research:  / ソフトバンクグループの株価
-- public_market_research:  / 農林水産省
-- public_market_research:  / 航空自衛隊
+- public_trends_rss: https://trends.google.com/trending/rss?geo=JP / 前園真聖
+- public_market_research:  / 沖縄県
+- public_market_research:  / sakana fugu
+- public_market_research:  / 沖縄戦
+- public_market_research:  / 細川直美

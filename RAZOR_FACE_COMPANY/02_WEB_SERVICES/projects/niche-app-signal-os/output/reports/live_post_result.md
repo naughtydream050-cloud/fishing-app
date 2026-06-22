@@ -7,19 +7,21 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: receipt-payment-retrace
-- selected_image_path: output\share-cards\2026-06-22-receipt-payment-retrace.png
-- image_url_available: False
+- selected_image_path: output/share-cards/2026-06-22-receipt-payment-retrace.png
+- image_url_available: True
 
 ## Selected Post Text
-レシート、探してる時点でもうちょっと負けてる。
+もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。
 
-返品したい時とか、保証を見たい時に
-写真フォルダから探し始めて、
-カード明細まで見に行く流れ。
+レシート
+日付
+場所
+あとで見返すメモ
 
-見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。
+余計な分析とかはいらない。
+返品したい時とか、保証を見たい時に迷わず開けるやつ。
 
-買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？
+こういう割り切ったアプリ、あり？
 
 ## Risks
 - AUTO_POST=false

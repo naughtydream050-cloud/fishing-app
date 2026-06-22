@@ -3,8 +3,8 @@
   "candidate_id": "receipt-payment-retrace",
   "tone_id": "default_light_problem",
   "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-  "selected_variant_id": "04",
-  "selected_pattern_id": "searching_is_defeat",
+  "selected_variant_id": "05",
+  "selected_pattern_id": "screen_requirements",
   "variant_count": 10,
   "variants": [
     {
@@ -69,13 +69,13 @@
       "text": "レシート、探してる時点でもうちょっと負けてる。\n\n返品したい時とか、保証を見たい時に\n写真フォルダから探し始めて、\nカード明細まで見に行く流れ。\n\n見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [],
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-        "max_recent_similarity": 0.236
+        "max_recent_similarity": 1.0
       },
       "length": 145
     },
@@ -132,7 +132,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-        "max_recent_similarity": 0.259
+        "max_recent_similarity": 0.341
       },
       "length": 123
     },
@@ -187,7 +187,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-        "max_recent_similarity": 0.145
+        "max_recent_similarity": 0.276
       },
       "length": 113
     }

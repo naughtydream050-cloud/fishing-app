@@ -26,27 +26,27 @@
       {
         "source_type": "public_trends_rss",
         "source_url": "https://trends.google.com/trending/rss?geo=JP",
-        "evidence_text": "広島天気"
+        "evidence_text": "前園真聖"
       },
       {
         "source_type": "public_market_research",
         "source_url": "",
-        "evidence_text": "日経株価"
+        "evidence_text": "沖縄県"
       },
       {
         "source_type": "public_market_research",
         "source_url": "",
-        "evidence_text": "ソフトバンクグループの株価"
+        "evidence_text": "sakana fugu"
       },
       {
         "source_type": "public_market_research",
         "source_url": "",
-        "evidence_text": "農林水産省"
+        "evidence_text": "沖縄戦"
       },
       {
         "source_type": "public_market_research",
         "source_url": "",
-        "evidence_text": "航空自衛隊"
+        "evidence_text": "細川直美"
       }
     ],
     "market_evidence_count": 5,
@@ -68,9 +68,9 @@
       "passed": true,
       "reasons": []
     },
-    "selected_post_text": "レシート、探してる時点でもうちょっと負けてる。\n\n返品したい時とか、保証を見たい時に\n写真フォルダから探し始めて、\nカード明細まで見に行く流れ。\n\n見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？",
-    "selected_post_text_hash": "e9d91d212082dad99af0c20b10bf2f6fbedd54f09325e74d6723925e9547a410",
-    "selected_image_path": "output\\share-cards\\2026-06-22-receipt-payment-retrace.png",
+    "selected_post_text": "もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。\n\nレシート\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n返品したい時とか、保証を見たい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+    "selected_post_text_hash": "c0e04fcd8f73df9424273e408fb9270d88cc620e977aea0b6527afde07b69008",
+    "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-retrace.png",
     "image_generated_from_candidate": true,
     "tone_profile_used": "default_light_problem",
     "design_strategy_used": true,
