@@ -580,5 +580,30 @@
     "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
     "research_freshness": "fresh",
     "evidence_count": 5
+  },
+  {
+    "date": "2026-06-22",
+    "created_at": "2026-06-22T05:29:47.501516+00:00",
+    "status": "posted",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": "18330246631269180",
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "37c4e70ef38ee3d5dcec3658de4f493402945fd62017fcc964d4606b6e479aa0",
+    "post_text": "もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。\n\nレシート\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n返品したい時とか、保証を見たい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+    "alt_text": "receipt-payment-logのスマホアプリ画面",
+    "topic_tags": [
+      "receipt-payment-log",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "receipt-payment-retrace",
+    "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-retrace.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/98d4361208de810ab93366fbbd510e7a5a4e58da/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-receipt-payment-retrace.png",
+    "post_text_hash": "c0e04fcd8f73df9424273e408fb9270d88cc620e977aea0b6527afde07b69008",
+    "pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
+    "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+    "research_freshness": "fresh",
+    "evidence_count": 5
   }
 ]
