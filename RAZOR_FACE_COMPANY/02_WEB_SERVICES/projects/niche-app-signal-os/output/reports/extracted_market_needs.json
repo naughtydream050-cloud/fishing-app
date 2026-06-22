@@ -1,20 +1,16 @@
 {
-  "department": "Research Department",
+  "department": "Market Need Extraction Department",
   "date": "2026-06-22",
   "input_sources": [
-    "output/reports/extracted_market_needs.json",
-    "data/market_research_inputs.json"
+    "output/reports/public_market_research.json"
   ],
-  "summary": "Loaded daily market research inputs from public extraction first, with explicit manual fallback only when needed.",
+  "summary": "Extracted candidate-shaped niche app needs from daily public market signals.",
   "scores": {
-    "items": 5,
-    "usable_candidates": 5,
-    "excluded_candidates": 0
+    "signal_count": 10,
+    "candidate_count": 5
   },
   "risks": [],
-  "next_action": "score niche demand",
-  "input_mode": "public_market_research",
-  "fallback_reason": "",
+  "next_action": "collect research inputs",
   "items": [
     {
       "candidate_id": "receipt-payment-retrace",
@@ -48,8 +44,7 @@
         "カード明細",
         "EC購入履歴"
       ],
-      "expected_ui_metaphor": "買ったものごとのスマホ領収書ログ",
-      "missing_fields": []
+      "expected_ui_metaphor": "買ったものごとのスマホ領収書ログ"
     },
     {
       "candidate_id": "student-deadline-check",
@@ -83,8 +78,7 @@
         "Googleカレンダー",
         "メモアプリ"
       ],
-      "expected_ui_metaphor": "授業別の提出物スマホボード",
-      "missing_fields": []
+      "expected_ui_metaphor": "授業別の提出物スマホボード"
     },
     {
       "candidate_id": "subscription-renewal-snapshot",
@@ -117,8 +111,7 @@
         "メール検索",
         "家計簿アプリ"
       ],
-      "expected_ui_metaphor": "更新日順のサブスク棚スマホUI",
-      "missing_fields": []
+      "expected_ui_metaphor": "更新日順のサブスク棚スマホUI"
     },
     {
       "candidate_id": "trip-packing-last-check",
@@ -151,8 +144,7 @@
         "Notion",
         "紙のチェックリスト"
       ],
-      "expected_ui_metaphor": "出発前のスマホ持ち物チェック画面",
-      "missing_fields": []
+      "expected_ui_metaphor": "出発前のスマホ持ち物チェック画面"
     },
     {
       "candidate_id": "oshi-goods-inventory",
@@ -186,10 +178,8 @@
         "スプレッドシート",
         "メモアプリ"
       ],
-      "expected_ui_metaphor": "現場ごとのグッズ在庫スマホログ",
-      "missing_fields": []
+      "expected_ui_metaphor": "現場ごとのグッズ在庫スマホログ"
     }
   ],
-  "excluded_items": [],
-  "memory_path": "memory\\research\\2026-06-22.md"
+  "signals_used": 10
 }

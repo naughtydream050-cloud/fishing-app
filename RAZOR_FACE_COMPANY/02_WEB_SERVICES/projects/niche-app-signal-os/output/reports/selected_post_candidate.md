@@ -1,18 +1,22 @@
 # Selected Post Candidate - 2026-06-22
 
 - selected: True
-- selected_candidate_id: student-deadline-check
-- selected_category: 学生の提出物忘れ防止
-- market_evidence_count: 3
-- selected_image_path: output/share-cards/2026-06-22-student-deadline-check.png
+- selected_candidate_id: receipt-payment-retrace
+- selected_category: receipt-payment-log
+- market_evidence_count: 5
+- source_urls: 1
+- research_freshness: fresh
+- fallback_reason: 
+- selected_image_path: output\share-cards\2026-06-22-receipt-payment-retrace.png
 - rejected_reason_if_any: 
 
 ## Selected Post Text
-ほしいのは多機能アプリじゃなくて、
-「提出物どこ？」にだけ強い画面かもしれない。
+レシート、探してる時点でもうちょっと負けてる。
 
-学校ポータル
-LINE
-授業プリント
+返品したい時とか、保証を見たい時に
+写真フォルダから探し始めて、
+カード明細まで見に行く流れ。
 
-このへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？
+見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。
+
+買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？

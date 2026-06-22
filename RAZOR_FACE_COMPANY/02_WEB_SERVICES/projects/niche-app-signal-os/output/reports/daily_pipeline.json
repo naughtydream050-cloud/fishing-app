@@ -7,9 +7,19 @@
   "failed": null,
   "stages": [
     {
+      "stage": "fetch_public_market_sources",
+      "status": "ok",
+      "summary": "Fetched small curated public market sources and normalized them into raw market signals."
+    },
+    {
+      "stage": "extract_market_needs",
+      "status": "ok",
+      "summary": "Extracted candidate-shaped niche app needs from daily public market signals."
+    },
+    {
       "stage": "collect_research_inputs",
       "status": "ok",
-      "summary": "Loaded daily market research inputs from data/market_research_inputs.json and removed candidates without evidence."
+      "summary": "Loaded daily market research inputs from public extraction first, with explicit manual fallback only when needed."
     },
     {
       "stage": "analyze_viral_patterns",
@@ -34,12 +44,12 @@
     {
       "stage": "select_niche_candidate",
       "status": "ok",
-      "summary": "Selected daily niche demand candidates only from scored market inputs with evidence."
+      "summary": "Selected daily niche demand candidates only from scored market inputs with evidence and source URLs."
     },
     {
       "stage": "build_market_research_trace",
       "status": "ok",
-      "summary": "Traced the selected candidate back to current market/research evidence."
+      "summary": "Traced the selected candidate back to current public market evidence, source URLs, freshness, and fallback state."
     },
     {
       "stage": "audience_strategy",

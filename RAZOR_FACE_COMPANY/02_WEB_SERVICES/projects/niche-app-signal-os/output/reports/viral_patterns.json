@@ -22,7 +22,7 @@
   "patterns": [
     {
       "category": null,
-      "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
+      "pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
       "wording_pattern": null,
       "visual_pattern": null,
       "engagement_signal": 0,
@@ -30,7 +30,7 @@
     },
     {
       "category": null,
-      "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
+      "pain_point": "授業ごとの提出物や小テストがポータル、LINE、カレンダー、メモに散らばって忘れやすい",
       "wording_pattern": null,
       "visual_pattern": null,
       "engagement_signal": 0,
@@ -38,7 +38,7 @@
     },
     {
       "category": null,
-      "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+      "pain_point": "サブスクの更新日や月額がメール、カード明細、アプリ内設定に散らばって見えにくい",
       "wording_pattern": null,
       "visual_pattern": null,
       "engagement_signal": 0,
@@ -46,7 +46,7 @@
     },
     {
       "category": null,
-      "pain_point": "アクスタ、缶バッジ、トレカの所持数・交換予定・保管場所が写真フォルダとメモに散らばる",
+      "pain_point": "旅行や遠征の持ち物が毎回メモや写真に散らばって、出発前に不安になる",
       "wording_pattern": null,
       "visual_pattern": null,
       "engagement_signal": 0,
@@ -54,7 +54,7 @@
     },
     {
       "category": null,
-      "pain_point": "レシート、スクショ、電子決済履歴が散らばって、あとで何を買ったか探しにくい",
+      "pain_point": "買ったグッズや交換予定が写真フォルダ、メモ、DMに散らばって分からなくなる",
       "wording_pattern": null,
       "visual_pattern": null,
       "engagement_signal": 0,

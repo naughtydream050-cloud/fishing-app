@@ -1,0 +1,239 @@
+{
+  "department": "Public Market Research Department",
+  "date": "2026-06-22",
+  "input_sources": [
+    "data/market_research_sources.json"
+  ],
+  "summary": "Fetched small curated public market sources and normalized them into raw market signals.",
+  "scores": {
+    "source_count": 3,
+    "signal_count": 10,
+    "error_count": 0
+  },
+  "risks": [],
+  "next_action": "extract market needs",
+  "research_freshness": "fresh",
+  "fallback_reason": "",
+  "signals": [
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "広島天気",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:50:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "日経株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:50:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "ソフトバンクグループの株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:50:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "農林水産省",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:50:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "航空自衛隊",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:50:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "キオクシアの株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:40:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "ソシオネクスト 株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:40:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "伊藤忠株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:40:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "安川電機",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:40:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "フジクラ株価",
+      "summary": "",
+      "published_at": "Sun, 21 Jun 2026 17:30:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    }
+  ],
+  "errors": [],
+  "source_urls": [
+    "https://trends.google.com/trending/rss?geo=JP",
+    "https://b.hatena.ne.jp/hotentry/life.rss",
+    "https://b.hatena.ne.jp/hotentry/it.rss"
+  ],
+  "source_types": [
+    "public_bookmark_rss",
+    "public_trends_rss"
+  ]
+}

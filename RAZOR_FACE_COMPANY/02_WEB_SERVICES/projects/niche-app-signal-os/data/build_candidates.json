@@ -1,58 +1,12 @@
 [
   {
-    "date": "2026-06-05",
-    "category": "推し活管理",
-    "idea": "現場予定、当落、入金、同行者メモを一画面でまとめる推し活ボード",
-    "target_user": "複数の推し活予定をスマホで管理する人",
+    "category": "receipt-payment-log",
+    "candidate_id": "receipt-payment-retrace",
+    "idea": "買ったものごとのスマホ領収書ログ",
+    "reason": "家計簿ほど重くなく、買ったもの単位で見返したい小さな不便に絞れる",
     "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-06",
-    "category": "ライブ参戦記録",
-    "idea": "セトリ、座席、感想、写真を公演ごとに残せる参戦ログ",
-    "target_user": "ライブ参戦の思い出を残したいファン",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-07",
-    "category": "グッズ管理",
-    "idea": "写真でグッズ在庫、購入日、交換予定を管理する推しグッズ棚",
-    "target_user": "推しグッズを複数シリーズで買うファン",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-08",
-    "category": "遠征費管理",
-    "idea": "ライブ遠征ごとに費用と思い出をまとめるミニ家計簿",
-    "target_user": "ライブ遠征をするファン",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-09",
-    "category": "レシート家計簿",
-    "idea": "スクショと写真から支出候補だけを自動で下書きする家計簿箱",
-    "target_user": "レシート撮影だけで家計管理したい人",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-10",
-    "category": "大学生向け家計簿",
-    "idea": "大学生の固定費、遊び代、教材費だけに絞ったゆるい家計簿",
-    "target_user": "バイト代で生活費を管理する大学生",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
-  },
-  {
-    "date": "2026-06-11",
-    "category": "SNS投稿管理",
-    "idea": "投稿案、公開日、反応メモ、次の改善案を1枚で残すSNS実験ノート",
-    "target_user": "個人でSNS発信を続けるクリエイター",
-    "signal_score": 10,
-    "next_step": "反応が重複したらWeb LPまたは待機リストを作る"
+    "audience_segment": "買い物履歴や返品期限をスマホで探しがちな生活者",
+    "design_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
+    "next_step": "反応が強ければLPまたは待機リストMVPに進める"
   }
 ]

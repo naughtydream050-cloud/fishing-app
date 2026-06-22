@@ -1,12 +1,20 @@
 # Market Research Trace - 2026-06-22
 
-- selected_candidate_id: student-deadline-check
-- selected_category: 学生の提出物忘れ防止
-- selected_pain_point: 課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
-- market_evidence_count: 3
-- why_selected_today: Selected from current scored research inputs.
+- selected_candidate_id: receipt-payment-retrace
+- selected_category: receipt-payment-log
+- selected_pain_point: レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒
+- market_evidence_count: 5
+- source_urls: 1
+- source_types: public_trends_rss
+- research_freshness: fresh
+- fallback_reason: 
+- source_urls_hash: ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5
+- posting_trace_ready: True
+- why_selected_today: Selected from current public-source-backed scored research inputs.
 
 ## Sources
-- : 
-- : 
-- : 
+- public_trends_rss: https://trends.google.com/trending/rss?geo=JP / 広島天気
+- public_market_research:  / 日経株価
+- public_market_research:  / ソフトバンクグループの株価
+- public_market_research:  / 農林水産省
+- public_market_research:  / 航空自衛隊

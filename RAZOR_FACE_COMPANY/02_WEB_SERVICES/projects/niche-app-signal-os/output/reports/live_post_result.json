@@ -1,16 +1,22 @@
 {
   "date": "2026-06-22",
-  "created_at": "2026-06-21T23:53:24.586433+00:00",
-  "status": "posted",
-  "posting_attempted": true,
-  "api_called": true,
-  "post_id": "17884012131597637",
-  "post_url": "https://www.threads.net/@younengsaitoshaojie/post/17884012131597637",
+  "created_at": "2026-06-22T01:04:19.263154+00:00",
+  "status": "dry_run_saved",
+  "posting_attempted": false,
+  "api_called": false,
+  "post_id": null,
+  "post_url": "",
   "target_handle": "younengsaitoshaojie",
-  "selected_candidate_id": "student-deadline-check",
-  "selected_image_path": "output/share-cards/2026-06-22-student-deadline-check.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/4b54aa46856ee19c1120f732078f3da16a821703/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-22-student-deadline-check.png",
-  "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
-  "posted_at": "2026-06-21T23:53:24.586433+00:00",
-  "risks": []
+  "selected_candidate_id": "receipt-payment-retrace",
+  "selected_image_path": "output\\share-cards\\2026-06-22-receipt-payment-retrace.png",
+  "image_url": "",
+  "selected_post_text": "レシート、探してる時点でもうちょっと負けてる。\n\n返品したい時とか、保証を見たい時に\n写真フォルダから探し始めて、\nカード明細まで見に行く流れ。\n\n見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？",
+  "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+  "pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
+  "research_freshness": "fresh",
+  "evidence_count": 5,
+  "posted_at": null,
+  "risks": [
+    "AUTO_POST=false"
+  ]
 }

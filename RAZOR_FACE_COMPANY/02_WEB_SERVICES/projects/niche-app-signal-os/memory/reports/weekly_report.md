@@ -1,16 +1,16 @@
 # Weekly Report
 
 - updated: 2026-06-22
-- strongest_category: 学生の提出物忘れ防止
-- selected_candidate_id: student-deadline-check
-- signal_score: 9
+- strongest_category: receipt-payment-log
+- selected_candidate_id: receipt-payment-retrace
+- signal_score: 10
 - weak_categories: insufficient data
 - commentable_pain: specific scattered information, deadline, or cost tracking
 - strong_visual_structure: pain headline + simple mock UI + small benefit
 - strong_copy_structure: pain first, then app idea, then soft question
 - web_candidates: see data/build_candidates.json
 - note_candidates: see data/note_candidates.json
-- audience_segment: 高校生・大学生・専門学生
+- audience_segment: 買い物履歴や返品期限をスマホで探しがちな生活者
 - design_positioning: 市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。
 - reaction_memory_entries: 3
 - increase_next_week: categories with replies/saves

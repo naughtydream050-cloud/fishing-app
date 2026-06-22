@@ -1,23 +1,25 @@
 # Live Post Result - 2026-06-22
 
-- status: posted
-- posting_attempted: True
-- api_called: True
-- post_id: 17884012131597637
-- post_url: https://www.threads.net/@younengsaitoshaojie/post/17884012131597637
+- status: dry_run_saved
+- posting_attempted: False
+- api_called: False
+- post_id: 
+- post_url: 
 - target_handle: younengsaitoshaojie
-- selected_candidate_id: student-deadline-check
-- selected_image_path: output/share-cards/2026-06-22-student-deadline-check.png
-- image_url_available: True
+- selected_candidate_id: receipt-payment-retrace
+- selected_image_path: output\share-cards\2026-06-22-receipt-payment-retrace.png
+- image_url_available: False
 
 ## Selected Post Text
-ほしいのは多機能アプリじゃなくて、
-「提出物どこ？」にだけ強い画面かもしれない。
+レシート、探してる時点でもうちょっと負けてる。
 
-学校ポータル
-LINE
-授業プリント
+返品したい時とか、保証を見たい時に
+写真フォルダから探し始めて、
+カード明細まで見に行く流れ。
 
-このへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？
+見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。
+
+買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？
 
 ## Risks
+- AUTO_POST=false

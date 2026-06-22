@@ -1,121 +1,191 @@
 {
   "date": "2026-06-22",
-  "selected_candidate_id": "student-deadline-check",
+  "selected_candidate_id": "receipt-payment-retrace",
   "candidates": [
     {
-      "candidate_id": "student-deadline-check",
-      "category": "学生の提出物忘れ防止",
-      "pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
-      "target_user": "高校生・大学生・専門学生",
-      "current_workaround": "学校ポータル、LINE、カレンダー、スマホメモを行き来する",
-      "why_niche": "汎用ToDoでは授業単位・提出先・持ち物の文脈が薄い",
-      "why_now": "学校連絡のオンライン化で情報の置き場所が増えている",
-      "existing_alternatives": [
-        "学校ポータル",
-        "Googleカレンダー",
-        "スマホメモ",
-        "LINE"
-      ],
-      "likely_target_users": [
-        "高校生・大学生・専門学生"
-      ],
-      "ui_metaphor": "時間割連動の提出物ボード",
-      "expected_ui_metaphor": "時間割連動の提出物ボード",
-      "tone_id": "student_casual",
-      "priority_score": 9.35,
-      "market_sources": [
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "課題の締切を学校ポータルで見落とす"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
-        },
-        {
-          "source_type": "manual_observation",
-          "evidence_text": "明日必要なものだけ一目で見たい"
-        }
-      ],
-      "market_evidence_count": 3
-    },
-    {
-      "candidate_id": "subscription-overlap-check",
-      "category": "サブスク整理",
-      "pain_point": "動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい",
-      "target_user": "サブスクを複数使う社会人と学生",
-      "current_workaround": "カード明細、家計簿アプリ、メモ、アプリ内の契約画面を別々に見る",
-      "why_niche": "家計簿よりも契約更新日・無料期間・利用頻度に絞ると小さな需要がある",
-      "why_now": "AIツールや動画サービスの月額課金が増えている",
+      "candidate_id": "receipt-payment-retrace",
+      "category": "receipt-payment-log",
+      "pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
+      "pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
+      "target_user": "買い物履歴や返品期限をスマホで探しがちな生活者",
+      "current_workaround": "写真フォルダ、カード明細、EC購入履歴を別々に見る",
+      "why_niche": "家計簿ほど重くなく、買ったもの単位で見返したい小さな不便に絞れる",
+      "why_now": "キャッシュレスとEC購入が増え、支払いの証拠が複数アプリに散らばりやすい",
       "existing_alternatives": [
         "家計簿アプリ",
+        "写真フォルダ",
         "カード明細",
-        "カレンダー通知",
-        "スプレッドシート"
+        "EC購入履歴"
       ],
       "likely_target_users": [
-        "サブスクを複数使う社会人と学生"
+        "買い物履歴や返品期限をスマホで探しがちな生活者"
       ],
-      "ui_metaphor": "月額カレンダーと契約カードUI",
-      "expected_ui_metaphor": "月額カレンダーと契約カードUI",
-      "tone_id": "student_casual",
-      "priority_score": 9.1,
+      "ui_metaphor": "買ったものごとのスマホ領収書ログ",
+      "expected_ui_metaphor": "買ったものごとのスマホ領収書ログ",
+      "tone_id": "default_light_problem",
+      "priority_score": 10.6,
       "market_sources": [
         {
-          "source_type": "manual_observation",
-          "evidence_text": "気づいたら使っていないサブスクに毎月払っていた"
+          "source_type": "public_trends_rss",
+          "source_url": "https://trends.google.com/trending/rss?geo=JP",
+          "evidence_text": "広島天気"
         },
         {
-          "source_type": "manual_observation",
-          "evidence_text": "カード明細だけだと何のサービスかすぐ分からない"
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "日経株価"
         },
         {
-          "source_type": "manual_observation",
-          "evidence_text": "無料期間の終わりを忘れて課金されがち"
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "ソフトバンクグループの株価"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "農林水産省"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "航空自衛隊"
         }
       ],
-      "market_evidence_count": 3
+      "market_evidence_count": 5,
+      "source_urls": [
+        "https://trends.google.com/trending/rss?geo=JP"
+      ],
+      "source_types": [
+        "public_trends_rss"
+      ],
+      "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+      "research_freshness": "fresh",
+      "fallback_reason": ""
     },
     {
-      "candidate_id": "live-trip-packing-check",
-      "category": "ライブ遠征の持ち物チェック",
-      "pain_point": "ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる",
-      "target_user": "ライブやイベントに遠征する10代後半から30代のファン",
-      "current_workaround": "スマホメモ、スクショ、LINEの自分宛て、手書きメモで確認している",
-      "why_niche": "旅行アプリやToDoアプリはあるが、ライブ遠征の持ち物と現場導線に寄せた専用UIは少ない",
-      "why_now": "ライブ遠征が戻り、スマホチケット・モバイルバッテリー・本人確認など確認項目が増えている",
+      "candidate_id": "subscription-renewal-snapshot",
+      "category": "subscription-renewal-log",
+      "pain_point": "サブスクの更新日や月額がメール、カード明細、アプリ内設定に散らばって見えにくい",
+      "pain_point_hash": "09c169297571bcc6b5f92e8140b3f6844e469e7e67949a753270cc150e716252",
+      "target_user": "複数のサブスクをなんとなく契約したままにしているスマホユーザー",
+      "current_workaround": "メール検索、カード明細、各サービスのアカウント画面を見る",
+      "why_niche": "節約説教ではなく、更新前に見返すログだけなら投稿で伝わりやすい",
+      "why_now": "小額サブスクが増え、更新タイミングの把握が日常的な不便になっている",
       "existing_alternatives": [
-        "スマホメモ",
-        "Notion",
-        "紙のチェックリスト",
-        "LINE Keep"
+        "カード明細",
+        "メール検索",
+        "家計簿アプリ"
       ],
       "likely_target_users": [
-        "ライブやイベントに遠征する10代後半から30代のファン"
+        "複数のサブスクをなんとなく契約したままにしているスマホユーザー"
       ],
-      "ui_metaphor": "現場前チェックリスト風スマホUI",
-      "expected_ui_metaphor": "現場前チェックリスト風スマホUI",
-      "tone_id": "gen_z_oshi_activity",
-      "priority_score": 8.95,
+      "ui_metaphor": "更新日順のサブスク棚スマホUI",
+      "expected_ui_metaphor": "更新日順のサブスク棚スマホUI",
+      "tone_id": "default_light_problem",
+      "priority_score": 10.6,
       "market_sources": [
         {
-          "source_type": "manual_observation",
-          "evidence_text": "遠征前、チケットと身分証と充電器を何回も確認してしまう"
+          "source_type": "public_trends_rss",
+          "source_url": "https://trends.google.com/trending/rss?geo=JP",
+          "evidence_text": "広島天気"
         },
         {
-          "source_type": "manual_observation",
-          "evidence_text": "現場の持ち物リストを毎回作り直すのが地味に面倒"
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "日経株価"
         },
         {
-          "source_type": "manual_observation",
-          "evidence_text": "前回忘れたものを次の現場でまた忘れそうになる"
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "ソフトバンクグループの株価"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "農林水産省"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "航空自衛隊"
         }
       ],
-      "market_evidence_count": 3
+      "market_evidence_count": 5,
+      "source_urls": [
+        "https://trends.google.com/trending/rss?geo=JP"
+      ],
+      "source_types": [
+        "public_trends_rss"
+      ],
+      "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+      "research_freshness": "fresh",
+      "fallback_reason": ""
+    },
+    {
+      "candidate_id": "trip-packing-last-check",
+      "category": "travel-packing-check",
+      "pain_point": "旅行や遠征の持ち物が毎回メモや写真に散らばって、出発前に不安になる",
+      "pain_point_hash": "30636b04e2ebec0786a7c741dd1a902b3989ebc7db200ea6e44dc087746637c5",
+      "target_user": "旅行やライブ遠征の直前にスマホで持ち物を確認する人",
+      "current_workaround": "メモアプリ、過去の写真、LINE、自作チェックリストを見る",
+      "why_niche": "旅行予約ではなく、直前の忘れ物不安だけに絞った画面が作れる",
+      "why_now": "週末旅行やイベント遠征の準備情報がスマホ内に散らばりやすい",
+      "existing_alternatives": [
+        "メモアプリ",
+        "Notion",
+        "紙のチェックリスト"
+      ],
+      "likely_target_users": [
+        "旅行やライブ遠征の直前にスマホで持ち物を確認する人"
+      ],
+      "ui_metaphor": "出発前のスマホ持ち物チェック画面",
+      "expected_ui_metaphor": "出発前のスマホ持ち物チェック画面",
+      "tone_id": "gen_z_oshi_activity",
+      "priority_score": 10.6,
+      "market_sources": [
+        {
+          "source_type": "public_trends_rss",
+          "source_url": "https://trends.google.com/trending/rss?geo=JP",
+          "evidence_text": "広島天気"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "日経株価"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "ソフトバンクグループの株価"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "農林水産省"
+        },
+        {
+          "source_type": "public_market_research",
+          "source_url": "",
+          "evidence_text": "航空自衛隊"
+        }
+      ],
+      "market_evidence_count": 5,
+      "source_urls": [
+        "https://trends.google.com/trending/rss?geo=JP"
+      ],
+      "source_types": [
+        "public_trends_rss"
+      ],
+      "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+      "research_freshness": "fresh",
+      "fallback_reason": ""
     }
   ],
-  "selection_reason": "Highest scored market-backed candidate; previous candidate avoided.",
-  "previous_candidate_id": "receipt-payment-lookback",
+  "selection_reason": "Highest scored market-backed candidate; previous candidate, pain point, and source URL hash avoided.",
+  "previous_candidate_id": "student-deadline-check",
+  "previous_pain_point_hash": "",
+  "previous_source_urls_hash": "",
+  "duplicate_filtered_count": 1,
   "dry_run": true,
   "market_evidence_required": true
 }

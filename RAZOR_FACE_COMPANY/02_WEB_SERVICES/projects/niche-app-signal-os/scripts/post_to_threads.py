@@ -182,7 +182,7 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
     elif not source_audit.get("posting_allowed"):
         status = "blocked_by_post_source_audit"
         risks.extend(source_audit.get("blocks", []) or ["post_source_audit_not_allowed"])
-    elif source_audit.get("selected_image_path") and not image_url:
+    elif source_audit.get("selected_image_path") and not image_url and not forced_dry_run:
         status = "blocked_by_missing_image_url"
         risks.append("selected_image_path exists but no publishable image URL was resolved")
     elif not gate.get("approved"):

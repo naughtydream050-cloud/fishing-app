@@ -87,6 +87,14 @@ def _selected_candidate() -> dict:
 
 def _deck(candidate: dict) -> dict:
     candidate_id = candidate.get("candidate_id", "")
+    aliases = {
+        "receipt-payment-retrace": "receipt-payment-lookback",
+        "student-deadline-check": "student-deadline-check",
+        "trip-packing-last-check": "live-trip-packing-check",
+        "oshi-goods-inventory": "goods-stock-log",
+        "subscription-renewal-snapshot": "subscription-overlap-check",
+    }
+    candidate_id = aliases.get(candidate_id, candidate_id)
     if candidate_id in COPY_DECKS:
         return COPY_DECKS[candidate_id]
     return {

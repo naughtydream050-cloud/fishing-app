@@ -15,7 +15,7 @@
   },
   "risks": [],
   "next_action": "quality gate",
-  "candidate_id": "student-deadline-check",
+  "candidate_id": "receipt-payment-retrace",
   "composition": "mobile-app-screen-only",
   "sales_copy_removed": true,
   "phone_ratio": {
@@ -23,10 +23,10 @@
     "height": 1288
   },
   "card_paths": {
-    "html": "output/share-cards/2026-06-22-student-deadline-check.html",
-    "png": "output/share-cards/2026-06-22-student-deadline-check.png"
+    "html": "output\\share-cards\\2026-06-22-receipt-payment-retrace.html",
+    "png": "output\\share-cards\\2026-06-22-receipt-payment-retrace.png"
   },
   "png_generated": true,
   "png_status": "ok",
-  "report": "output/reports/daily_share_card_report.md"
+  "report": "output\\reports\\daily_share_card_report.md"
 }

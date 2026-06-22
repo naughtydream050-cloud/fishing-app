@@ -1,27 +1,34 @@
 # Daily Niche UI Candidates - 2026-06-22
 
-Selected: student-deadline-check
-Previous: receipt-payment-lookback
+Selected: receipt-payment-retrace
+Previous: student-deadline-check
+Duplicate filtered: 1
 
 ## Candidates
-### student-deadline-check
-- category: 学生の提出物忘れ防止
-- pain_point: 課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい
-- target: 高校生・大学生・専門学生
-- ui_metaphor: 時間割連動の提出物ボード
-- evidence_count: 3
-- score: 9.35
-### subscription-overlap-check
-- category: サブスク整理
-- pain_point: 動画・音楽・AIツール・クラウドの月額が増えて、何にいくら払っているか見返しにくい
-- target: サブスクを複数使う社会人と学生
-- ui_metaphor: 月額カレンダーと契約カードUI
-- evidence_count: 3
-- score: 9.1
-### live-trip-packing-check
-- category: ライブ遠征の持ち物チェック
-- pain_point: ライブ遠征の前日、チケット・充電器・身分証・双眼鏡みたいな持ち物確認が毎回バラバラになる
-- target: ライブやイベントに遠征する10代後半から30代のファン
-- ui_metaphor: 現場前チェックリスト風スマホUI
-- evidence_count: 3
-- score: 8.95
+### receipt-payment-retrace
+- category: receipt-payment-log
+- pain_point: レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒
+- target: 買い物履歴や返品期限をスマホで探しがちな生活者
+- ui_metaphor: 買ったものごとのスマホ領収書ログ
+- evidence_count: 5
+- source_urls: 1
+- research_freshness: fresh
+- score: 10.6
+### subscription-renewal-snapshot
+- category: subscription-renewal-log
+- pain_point: サブスクの更新日や月額がメール、カード明細、アプリ内設定に散らばって見えにくい
+- target: 複数のサブスクをなんとなく契約したままにしているスマホユーザー
+- ui_metaphor: 更新日順のサブスク棚スマホUI
+- evidence_count: 5
+- source_urls: 1
+- research_freshness: fresh
+- score: 10.6
+### trip-packing-last-check
+- category: travel-packing-check
+- pain_point: 旅行や遠征の持ち物が毎回メモや写真に散らばって、出発前に不安になる
+- target: 旅行やライブ遠征の直前にスマホで持ち物を確認する人
+- ui_metaphor: 出発前のスマホ持ち物チェック画面
+- evidence_count: 5
+- source_urls: 1
+- research_freshness: fresh
+- score: 10.6

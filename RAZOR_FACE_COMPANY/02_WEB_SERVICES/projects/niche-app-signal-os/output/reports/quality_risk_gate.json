@@ -11,7 +11,7 @@
   "scores": {
     "tone_block_count": 0,
     "tone_warning_count": 0,
-    "max_recent_similarity": 0.064
+    "max_recent_similarity": 0.236
   },
   "risks": [],
   "next_action": "select post candidate",
@@ -21,11 +21,9 @@
   "tone_warnings": [],
   "tone_check_result": {
     "passed": true,
-    "tone_id": "student_casual",
-    "target_audience": "students tracking deadlines and hand-ins",
-    "used_words": [
-      "提出物"
-    ],
+    "tone_id": "default_light_problem",
+    "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+    "used_words": [],
     "used_avoid_words": [],
     "block_count": 0,
     "warning_count": 0

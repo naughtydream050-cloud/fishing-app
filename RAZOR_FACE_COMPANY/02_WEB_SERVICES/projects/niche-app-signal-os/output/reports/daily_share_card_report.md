@@ -1,9 +1,9 @@
 # Daily Share Card Report - 2026-06-22
 
-- candidate_id: student-deadline-check
-- category: 学生の提出物忘れ防止
-- html: output/share-cards/2026-06-22-student-deadline-check.html
-- png: output/share-cards/2026-06-22-student-deadline-check.png
+- candidate_id: receipt-payment-retrace
+- category: receipt-payment-log
+- html: output\share-cards\2026-06-22-receipt-payment-retrace.html
+- png: output\share-cards\2026-06-22-receipt-payment-retrace.png
 - png_status: ok
 - composition: mobile-app-screen-only
 - phone_ratio: 710x1288

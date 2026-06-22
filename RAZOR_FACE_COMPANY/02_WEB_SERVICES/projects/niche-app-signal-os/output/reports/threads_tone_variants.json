@@ -1,209 +1,195 @@
 {
   "date": "2026-06-22",
-  "candidate_id": "student-deadline-check",
-  "tone_id": "student_casual",
-  "target_audience": "students tracking deadlines and hand-ins",
-  "selected_variant_id": "02",
-  "selected_pattern_id": "single_purpose_screen",
+  "candidate_id": "receipt-payment-retrace",
+  "tone_id": "default_light_problem",
+  "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+  "selected_variant_id": "04",
+  "selected_pattern_id": "searching_is_defeat",
   "variant_count": 10,
   "variants": [
     {
       "variant_id": "01",
-      "candidate_id": "student-deadline-check",
-      "angle": "time_melts_scene",
-      "text": "前日の夜とか朝の支度中、締切探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・学校ポータル\n・LINE\n・授業プリント\n・カレンダー\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリがあったら、今のやり方から乗り換える？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "exists_but_missing",
+      "text": "レシート、あるのは分かってるのに見つからないのが一番だるい。\n\n写真フォルダにはありそう\nカード明細にもありそう\nECの購入履歴にもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\n購入ごとの証跡ログみたいなの、実際使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": false,
-        "tone_id": "student_casual",
+        "tone_id": "default_light_problem",
         "used_words": [
-          "締切",
-          "授業ごと"
+          "ログ"
         ],
         "used_avoid_words": [],
-        "line_count": 8,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 1.0
+        "line_count": 7,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.588
       },
-      "length": 126
+      "length": 121
     },
     {
       "variant_id": "02",
-      "candidate_id": "student-deadline-check",
-      "angle": "single_purpose_screen",
-      "text": "ほしいのは多機能アプリじゃなくて、\n「提出物どこ？」にだけ強い画面かもしれない。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんを横断して、時間割ごとの提出物ボードにまとまってたら助かる？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "time_melts_scene",
+      "text": "返品したい時とか、保証を見たい時、支払い履歴探しで時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・写真フォルダ\n・カード明細\n・ECの購入履歴\n・コンビニの紙レシート\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリがあったら、今のやり方から乗り換える？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
-        "tone_id": "student_casual",
+        "passed": false,
+        "tone_id": "default_light_problem",
+        "used_words": [],
+        "used_avoid_words": [],
+        "line_count": 8,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 1.0
+      },
+      "length": 148
+    },
+    {
+      "variant_id": "03",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "single_purpose_screen",
+      "text": "ほしいのは多機能アプリじゃなくて、\n「レシートどこ？」にだけ強い画面かもしれない。\n\n写真フォルダ\nカード明細\nECの購入履歴\n\nこのへんを横断して、購入ごとの証跡ログにまとまってたら助かる？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": false,
+        "tone_id": "default_light_problem",
         "used_words": [
-          "提出物"
+          "ログ"
         ],
         "used_avoid_words": [],
         "line_count": 6,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.064
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 1.0
       },
       "length": 96
     },
     {
-      "variant_id": "03",
-      "candidate_id": "student-deadline-check",
+      "variant_id": "04",
+      "candidate_id": "receipt-payment-retrace",
       "angle": "searching_is_defeat",
-      "text": "提出物、探してる時点でもうちょっと負けてる。\n\n前日の夜とか朝の支度中に\n学校ポータルから探し始めて、\nLINEまで見に行く流れ。\n\n結局どれが最新か分からなくなるの、かなりあるあるだと思う。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリなら使う？",
-      "tone_id": "student_casual",
+      "text": "レシート、探してる時点でもうちょっと負けてる。\n\n返品したい時とか、保証を見たい時に\n写真フォルダから探し始めて、\nカード明細まで見に行く流れ。\n\n見つけた頃には、もう探す気力がなくなるの、かなりあるあるだと思う。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリなら使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
         "line_count": 6,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.197
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.236
       },
-      "length": 127
-    },
-    {
-      "variant_id": "04",
-      "candidate_id": "student-deadline-check",
-      "angle": "screen_requirements",
-      "text": "もし時間割ごとの提出物ボードがあるなら、画面はこれくらいでいい。\n\n提出物\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n前日の夜とか朝の支度中に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
-      "tone_id": "student_casual",
-      "tone_check_result": {
-        "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物"
-        ],
-        "used_avoid_words": [],
-        "line_count": 8,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.051
-      },
-      "length": 107
+      "length": 145
     },
     {
       "variant_id": "05",
-      "candidate_id": "student-deadline-check",
-      "angle": "alternative_is_ok_but",
-      "text": "今のメモで十分って分かってるんだけど、\n締切探しだけは専用画面が欲しくなる時ある。\n\n学校ポータル\nLINE\n授業プリント\n\nこのへんに散らばった提出物を、\n一つの時間割ごとの提出物ボードで見返せたらどう？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "screen_requirements",
+      "text": "もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。\n\nレシート\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n返品したい時とか、保証を見たい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
+        "tone_id": "default_light_problem",
         "used_words": [
-          "提出物",
-          "締切"
+          "あとで見返す",
+          "メモ",
+          "ログ"
         ],
         "used_avoid_words": [],
-        "line_count": 7,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.093
+        "line_count": 8,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.103
       },
-      "length": 103
+      "length": 110
     },
     {
       "variant_id": "06",
-      "candidate_id": "student-deadline-check",
-      "angle": "small_loss_confession",
-      "text": "提出物探すの、毎回ちょっと負けてる気がする。\n\n学校ポータル\nLINE\n授業プリント\nカレンダー\n\n結局どれが最新か分からなくなるやつ。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリあったら普通に使う？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "alternative_is_ok_but",
+      "text": "家計簿アプリで十分って分かってるんだけど、\n支払い履歴探しだけは専用画面が欲しくなる時ある。\n\n写真フォルダ\nカード明細\nECの購入履歴\n\nこのへんに散らばったレシートを、\n一つの購入ごとの証跡ログで見返せたらどう？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
+        "tone_id": "default_light_problem",
         "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
+          "ログ"
         ],
         "used_avoid_words": [],
         "line_count": 7,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.25
-      },
-      "length": 104
-    },
-    {
-      "variant_id": "07",
-      "candidate_id": "student-deadline-check",
-      "angle": "quote_search_loop",
-      "text": "「提出物どこだっけ」ってなってからが長い。\n\n学校ポータル見て、LINE見て、\n結局授業プリントまで戻る。\n\n前日の夜とか朝の支度中にこれやるの、地味にしんどい。\n\n時間割ごとの提出物ボードだけ開けば済むなら欲しい？",
-      "tone_id": "student_casual",
-      "tone_check_result": {
-        "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物"
-        ],
-        "used_avoid_words": [],
-        "line_count": 5,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.099
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.203
       },
       "length": 108
     },
     {
-      "variant_id": "08",
-      "candidate_id": "student-deadline-check",
-      "angle": "not_management_just_need",
-      "text": "勉強管理を完璧にしたいわけじゃないんよ。\n\nただ、前日の夜とか朝の支度中に\n提出物がすぐ出てきてほしいだけ。\n\n学校ポータルに置いた気もするし、\nカレンダーに残した気もする。\n\nこういうのだけ拾ってくれる時間割ごとの提出物ボード、需要ある？",
-      "tone_id": "student_casual",
+      "variant_id": "07",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "small_loss_confession",
+      "text": "レシート探すの、毎回ちょっと負けてる気がする。\n\n写真フォルダ\nカード明細\nECの購入履歴\nコンビニの紙レシート\n\n見つけた頃には、もう探す気力がなくなるやつ。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリあったら普通に使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
+        "tone_id": "default_light_problem",
+        "used_words": [],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.259
+      },
+      "length": 123
+    },
+    {
+      "variant_id": "08",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "quote_search_loop",
+      "text": "「レシートどこだっけ」ってなってからが長い。\n\n写真フォルダ見て、カード明細見て、\n結局ECの購入履歴まで戻る。\n\n返品したい時とか、保証を見たい時にこれやるの、地味にしんどい。\n\n購入ごとの証跡ログだけ開けば済むなら欲しい？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "default_light_problem",
         "used_words": [
-          "提出物"
+          "ログ"
         ],
         "used_avoid_words": [],
-        "line_count": 6,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.078
+        "line_count": 5,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.16
       },
-      "length": 120
+      "length": 113
     },
     {
       "variant_id": "09",
-      "candidate_id": "student-deadline-check",
-      "angle": "everyone_has_done_this",
-      "text": "学生、これ一回はあると思う。\n\n提出物を探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、結局どれが最新か分からなくなる。\n\n授業ごとに締切・提出先・持ち物だけまとまるアプリ、使う？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "not_management_just_need",
+      "text": "家計簿をちゃんと続けたいわけじゃないんよ。\n\nただ、返品したい時とか、保証を見たい時に\nレシートがすぐ出てきてほしいだけ。\n\n写真フォルダに置いた気もするし、\nコンビニの紙レシートに残した気もする。\n\nこういうのだけ拾ってくれる購入ごとの証跡ログ、需要ある？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
+        "tone_id": "default_light_problem",
         "used_words": [
-          "提出物",
-          "締切",
-          "授業ごと"
+          "ログ"
         ],
         "used_avoid_words": [],
-        "line_count": 7,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.183
+        "line_count": 6,
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.132
       },
-      "length": 93
+      "length": 129
     },
     {
       "variant_id": "10",
-      "candidate_id": "student-deadline-check",
-      "angle": "exists_but_missing",
-      "text": "提出物、あるのは分かってるのに見つからないのが一番だるい。\n\n学校ポータルにはありそう\nLINEにもありそう\n授業プリントにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\n時間割ごとの提出物ボードみたいなの、実際使う？",
-      "tone_id": "student_casual",
+      "candidate_id": "receipt-payment-retrace",
+      "angle": "everyone_has_done_this",
+      "text": "ネットで買い物する人、これ一回はあると思う。\n\nレシートを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、見つけた頃には、もう探す気力がなくなる。\n\n買ったものごとにレシート写真と支払い履歴だけまとまってるアプリ、使う？",
+      "tone_id": "default_light_problem",
       "tone_check_result": {
         "passed": true,
-        "tone_id": "student_casual",
-        "used_words": [
-          "提出物"
-        ],
+        "tone_id": "default_light_problem",
+        "used_words": [],
         "used_avoid_words": [],
         "line_count": 7,
-        "target_audience": "students tracking deadlines and hand-ins",
-        "max_recent_similarity": 0.073
+        "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
+        "max_recent_similarity": 0.145
       },
-      "length": 121
+      "length": 113
     }
   ],
   "all_variants_tone_checked": true,

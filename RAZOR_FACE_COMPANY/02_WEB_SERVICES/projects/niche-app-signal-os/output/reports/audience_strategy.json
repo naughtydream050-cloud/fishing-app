@@ -11,31 +11,32 @@
   "risks": [],
   "next_action": "design intelligence",
   "audience_strategy": {
-    "candidate_id": "student-deadline-check",
-    "candidate_category": "学生の提出物忘れ防止",
-    "target_user_segment": "高校生・大学生・専門学生",
-    "tone_id": "student_casual",
+    "candidate_id": "receipt-payment-retrace",
+    "candidate_category": "receipt-payment-log",
+    "target_user_segment": "買い物履歴や返品期限をスマホで探しがちな生活者",
+    "tone_id": "default_light_problem",
     "user_motivation": "今のやり方で足りているようで、毎回少し探す・忘れる・見返せない不便を減らしたい",
-    "primary_job": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+    "primary_job": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
     "current_alternatives": [
-      "学校ポータル",
-      "Googleカレンダー",
-      "スマホメモ",
-      "LINE"
+      "家計簿アプリ",
+      "写真フォルダ",
+      "カード明細",
+      "EC購入履歴"
     ],
     "language_to_use": [
-      "提出物",
-      "締切",
-      "明日いるやつ",
-      "授業ごと",
-      "見落とす",
+      "あとで見返す",
+      "散らばる",
+      "探す",
+      "メモ",
+      "ログ",
       "これ欲しい？"
     ],
     "language_to_avoid": [
-      "学習管理システム",
-      "業務効率",
       "革新的",
-      "完全自動化"
+      "SaaS",
+      "生産性",
+      "完全自動化",
+      "業務効率"
     ],
     "comment_hooks": [
       "これ欲しい？",
@@ -45,5 +46,5 @@
     "segment_confidence": 8,
     "date": "2026-06-22"
   },
-  "memory_path": "memory/audience/2026-06-22.md"
+  "memory_path": "memory\\audience\\2026-06-22.md"
 }

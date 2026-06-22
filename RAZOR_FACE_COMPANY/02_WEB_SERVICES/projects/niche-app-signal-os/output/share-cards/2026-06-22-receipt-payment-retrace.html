@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, initial-scale=1">
+<title>receipt-payment-retrace</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;width:1080px;height:1350px;background:#f7f4ef;font-family:"Noto Sans CJK JP","Noto Sans JP","Yu Gothic","Hiragino Sans",Arial,sans-serif;color:#201d2a}
+.canvas{width:1080px;height:1350px;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,#fff8fb 0%,#f6fbff 46%,#f7fff2 100%)}
+.phone{width:710px;height:1288px;border-radius:76px;background:#1f1d2b;padding:24px;box-shadow:0 38px 90px rgba(48,40,70,.28)}
+.screen{height:100%;border-radius:54px;background:#fffdfb;overflow:hidden;display:flex;flex-direction:column}
+.status{height:58px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 38px 12px;font-size:22px;font-weight:800;color:#2d2938}
+.dots{display:flex;gap:7px;align-items:center}.dots i{display:block;width:8px;height:8px;border-radius:99px;background:#2d2938}.battery{width:34px;height:16px;border:3px solid #2d2938;border-radius:5px;position:relative}.battery:after{content:"";position:absolute;right:-7px;top:3px;width:4px;height:6px;background:#2d2938;border-radius:2px}
+.app{padding:22px 34px 26px;display:flex;flex-direction:column;gap:20px;flex:1}
+.topbar{display:flex;align-items:center;justify-content:space-between}
+.app-name{font-size:27px;font-weight:900;color:#6f6880}
+.avatar{width:48px;height:48px;border-radius:18px;background:#F0EDFF;display:grid;place-items:center;color:#7C6DF2;font-size:24px;font-weight:900}
+h1{font-size:48px;line-height:1.12;margin:0;font-weight:950;letter-spacing:0;color:#211d2b}
+.tabs{height:58px;display:flex;align-items:center;gap:12px;overflow:hidden}
+.tabs span{font-size:22px;font-weight:800;color:#8b8495;background:#f4f1f7;border-radius:999px;padding:13px 22px;white-space:nowrap}
+.tabs .active{background:#7C6DF2;color:white}
+.summary{background:#F0EDFF;border:2px solid rgba(32,29,42,.06);border-radius:30px;padding:25px 28px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.summary span{display:block;font-size:22px;font-weight:850;color:#7c748a;margin-bottom:6px}
+.summary strong{font-size:32px;line-height:1.18;font-weight:950;color:#211d2b}
+.summary .bubble{min-width:86px;height:86px;border-radius:28px;background:white;display:grid;place-items:center;color:#7C6DF2;font-size:34px;font-weight:950;box-shadow:0 10px 28px rgba(58,48,78,.08)}
+.list{display:flex;flex-direction:column;gap:14px}
+.item{min-height:124px;background:white;border:2px solid #eee9f3;border-radius:28px;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 9px 24px rgba(46,40,65,.055)}
+.item-title{font-size:29px;font-weight:950;color:#252130;margin-bottom:8px;max-width:350px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item-meta{font-size:22px;font-weight:750;color:#8a8294}
+.item-side{text-align:right;display:flex;flex-direction:column;gap:9px;align-items:flex-end}
+.item-side strong{font-size:27px;color:#211d2b;white-space:nowrap}
+.item-side span{font-size:18px;font-weight:850;color:#7C6DF2;background:#F0EDFF;border-radius:999px;padding:8px 13px;white-space:nowrap}
+.detail{margin-top:auto;background:#f8f6fa;border-radius:32px;padding:22px 26px;display:flex;flex-direction:column;gap:12px}
+.detail-row{display:flex;align-items:center;justify-content:space-between;font-size:22px}
+.detail-row span{font-weight:850;color:#8a8294}.detail-row strong{font-weight:950;color:#211d2b}
+.nav{height:78px;border-top:2px solid #f0ecf5;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;text-align:center;color:#8a8294;font-size:18px;font-weight:850;background:#fffdfb}
+</style>
+</head>
+<body>
+<main class="canvas">
+  <section class="phone">
+    <div class="screen">
+      <div class="status"><span>9:41</span><div class="dots"><i></i><i></i><i></i><div class="battery"></div></div></div>
+      <div class="app">
+        <div class="topbar"><div class="app-name">あと買いログ</div><div class="avatar">＋</div></div>
+        <h1>購入メモ</h1>
+        <div class="tabs"><span class="active">全部</span>
+<span class="">返品</span>
+<span class="">保証</span></div>
+        <section class="summary"><div><span>探してるもの</span><strong>レシート / 支払い履歴</strong></div><div class="bubble">⌕</div></section>
+        <section class="list">
+        <article class="item">
+          <div>
+            <div class="item-title">ワイヤレスイヤホン</div>
+            <div class="item-meta">6/18  ECストア</div>
+          </div>
+          <div class="item-side">
+            <strong>4,280円</strong>
+            <span>レシートあり</span>
+          </div>
+        </article>
+        
+
+        <article class="item">
+          <div>
+            <div class="item-title">日用品まとめ買い</div>
+            <div class="item-meta">6/12  コンビニ</div>
+          </div>
+          <div class="item-side">
+            <strong>1,860円</strong>
+            <span>保証メモ</span>
+          </div>
+        </article>
+        
+
+        <article class="item">
+          <div>
+            <div class="item-title">スマホケース</div>
+            <div class="item-meta">6/04  EC購入</div>
+          </div>
+          <div class="item-side">
+            <strong>2,190円</strong>
+            <span>返品期限 3日</span>
+          </div>
+        </article>
+        </section>
+        <section class="detail"><div class="detail-row"><span>支払い</span><strong>カード</strong></div>
+<div class="detail-row"><span>証跡</span><strong>写真 + 明細</strong></div>
+<div class="detail-row"><span>メモ</span><strong>返品するか確認</strong></div></section>
+      </div>
+      <nav class="nav"><span>ホーム</span>
+<span>検索</span>
+<span>追加</span>
+<span>メモ</span></nav>
+    </div>
+  </section>
+</main>
+</body>
+</html>

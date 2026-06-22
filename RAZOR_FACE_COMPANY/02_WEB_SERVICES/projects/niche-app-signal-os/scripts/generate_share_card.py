@@ -122,6 +122,14 @@ def _browser_path() -> str:
 
 def _preset(candidate: dict) -> dict:
     candidate_id = candidate.get("candidate_id", "")
+    aliases = {
+        "receipt-payment-retrace": "receipt-payment-lookback",
+        "student-deadline-check": "student-deadline-check",
+        "trip-packing-last-check": "live-trip-packing-check",
+        "oshi-goods-inventory": "goods-stock-log",
+        "subscription-renewal-snapshot": "subscription-overlap-check",
+    }
+    candidate_id = aliases.get(candidate_id, candidate_id)
     if candidate_id in UI_PRESETS:
         return UI_PRESETS[candidate_id]
     return {

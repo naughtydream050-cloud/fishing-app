@@ -1,29 +1,62 @@
 {
   "date": "2026-06-22",
-  "selected_candidate_id": "student-deadline-check",
-  "selected_category": "学生の提出物忘れ防止",
-  "selected_pain_point": "課題、レポート、小テスト、持ち物の締切が授業ごとに散らばって忘れやすい",
+  "selected_candidate_id": "receipt-payment-retrace",
+  "selected_category": "receipt-payment-log",
+  "selected_pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
+  "selected_pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
   "market_sources_used": [
     {
-      "source_type": "manual_observation",
-      "evidence_text": "課題の締切を学校ポータルで見落とす"
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "evidence_text": "広島天気"
     },
     {
-      "source_type": "manual_observation",
-      "evidence_text": "提出物が授業ごとに別の場所に書かれていて探すのが面倒"
+      "source_type": "public_market_research",
+      "source_url": "",
+      "evidence_text": "日経株価"
     },
     {
-      "source_type": "manual_observation",
-      "evidence_text": "明日必要なものだけ一目で見たい"
+      "source_type": "public_market_research",
+      "source_url": "",
+      "evidence_text": "ソフトバンクグループの株価"
+    },
+    {
+      "source_type": "public_market_research",
+      "source_url": "",
+      "evidence_text": "農林水産省"
+    },
+    {
+      "source_type": "public_market_research",
+      "source_url": "",
+      "evidence_text": "航空自衛隊"
     }
   ],
-  "market_evidence_count": 3,
-  "source_evidence_count": 3,
-  "why_selected_today": "Selected from current scored research inputs.",
+  "market_evidence_count": 5,
+  "source_evidence_count": 5,
+  "source_urls": [
+    "https://trends.google.com/trending/rss?geo=JP"
+  ],
+  "source_types": [
+    "public_trends_rss"
+  ],
+  "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+  "research_freshness": "fresh",
+  "fallback_reason": "",
+  "why_selected_today": "Selected from current public-source-backed scored research inputs.",
   "stages": {
+    "fetch_public_market_sources": {
+      "present": true,
+      "signal_count": 10,
+      "research_freshness": "fresh"
+    },
+    "extract_market_needs": {
+      "present": true,
+      "candidate_count": 5
+    },
     "collect_research_inputs": {
       "present": true,
-      "item_count": 5
+      "item_count": 5,
+      "input_mode": "public_market_research"
     },
     "analyze_viral_patterns": {
       "present": true
