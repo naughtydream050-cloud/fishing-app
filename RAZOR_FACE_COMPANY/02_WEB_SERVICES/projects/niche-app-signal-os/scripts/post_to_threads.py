@@ -53,12 +53,23 @@ def _write_history_entry(entry: dict) -> None:
     write_json(path, history)
 
 
-def _is_duplicate(content_hash: str, target_handle: str) -> bool:
+def _is_duplicate(content_hash: str, target_handle: str, audit: dict) -> bool:
     history = _post_history()
+    candidate_id = audit.get("selected_candidate_id", "")
+    pain_point_hash = audit.get("selected_pain_point_hash", "")
+    source_urls_hash = audit.get("source_urls_hash", "")
     for entry in history.get("entries", []):
         if not isinstance(entry, dict):
             continue
-        if entry.get("content_hash") == content_hash and entry.get("target_handle") == target_handle and entry.get("status") == "posted":
+        if entry.get("target_handle") != target_handle or entry.get("status") != "posted":
+            continue
+        if entry.get("content_hash") == content_hash:
+            return True
+        if candidate_id and entry.get("candidate_id") == candidate_id:
+            return True
+        if pain_point_hash and entry.get("pain_point_hash") == pain_point_hash:
+            return True
+        if source_urls_hash and entry.get("source_urls_hash") == source_urls_hash:
             return True
     return False
 
@@ -196,10 +207,10 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         if missing:
             status = "missing_threads_credentials"
             risks.append("missing " + ", ".join(missing))
-        elif _is_duplicate(content_hash, env_target_handle):
+        elif _is_duplicate(content_hash, env_target_handle, source_audit):
             status = "duplicate_blocked"
             live_preflight["duplicate"] = True
-            risks.append("duplicate post content for target handle")
+            risks.append("duplicate post candidate/content/pain/source urls for target handle")
         else:
             try:
                 live = _publish_live_text_or_image(post, image_url)
@@ -229,6 +240,10 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "selected_image_path": source_audit.get("selected_image_path", selected_candidate.get("selected_image_path", "")),
         "image_url": image_url,
         "post_text_hash": hashlib.sha256(post.get("text", "").encode("utf-8")).hexdigest() if post.get("text") else "",
+        "pain_point_hash": source_audit.get("selected_pain_point_hash", ""),
+        "source_urls_hash": source_audit.get("source_urls_hash", ""),
+        "research_freshness": source_audit.get("research_freshness", ""),
+        "evidence_count": source_audit.get("evidence_count", source_audit.get("market_evidence_count", 0)),
     }
     append_json_log(DATA_DIR / "post_log.json", log_entry)
     _write_history_entry(
@@ -245,6 +260,10 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
             "candidate_id": log_entry["candidate_id"],
             "selected_image_path": log_entry["selected_image_path"],
             "post_text_hash": log_entry["post_text_hash"],
+            "pain_point_hash": log_entry["pain_point_hash"],
+            "source_urls_hash": log_entry["source_urls_hash"],
+            "research_freshness": log_entry["research_freshness"],
+            "evidence_count": log_entry["evidence_count"],
         }
     )
     post_url = f"https://www.threads.net/@{(env_target_handle or expected_handle).lstrip('@')}/post/{thread_id}" if thread_id else ""
@@ -261,6 +280,10 @@ def run(dry_run: bool = False, sample: bool = False) -> dict:
         "selected_image_path": log_entry["selected_image_path"],
         "image_url": image_url,
         "selected_post_text": post.get("text", ""),
+        "source_urls_hash": log_entry["source_urls_hash"],
+        "pain_point_hash": log_entry["pain_point_hash"],
+        "research_freshness": log_entry["research_freshness"],
+        "evidence_count": log_entry["evidence_count"],
         "posted_at": log_entry["created_at"] if status == "posted" else None,
         "risks": risks,
     }

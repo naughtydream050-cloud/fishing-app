@@ -8,6 +8,7 @@ on:
       - ".github/workflows/niche-app-signal-os-auto-post.yml"
       - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/scripts/**"
       - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/data/market_research_inputs.json"
+      - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/data/market_research_sources.json"
       - "RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/data/audience_tone_rules.json"
   workflow_dispatch:
     inputs:
@@ -100,6 +101,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          grep -n "fetch_public_market_sources" scripts/run_daily_pipeline.py
+          grep -n "extract_market_needs" scripts/run_daily_pipeline.py
           grep -n "design_intelligence" scripts/run_daily_pipeline.py
           grep -n "select_niche_candidate" scripts/run_daily_pipeline.py
           grep -n "build_market_research_trace" scripts/run_daily_pipeline.py

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "url": "https://trends.google.com/trending/rss?geo=JP",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": ["忘れ物", "家計", "予定", "アプリ", "記録", "学校", "レシート", "推し活", "サブスク"]
+    },
+    {
+      "source_id": "hatena_hotentry_life",
+      "source_type": "public_bookmark_rss",
+      "url": "https://b.hatena.ne.jp/hotentry/life.rss",
+      "audience_hint": "daily_life_problem_seekers",
+      "niche_hints": ["生活", "家計", "片付け", "忘れ", "メモ", "旅行", "支払い", "買い物"]
+    },
+    {
+      "source_id": "hatena_hotentry_it",
+      "source_type": "public_bookmark_rss",
+      "url": "https://b.hatena.ne.jp/hotentry/it.rss",
+      "audience_hint": "tool_and_app_interested_users",
+      "niche_hints": ["アプリ", "ツール", "AI", "効率", "メモ", "管理", "自動化", "Notion"]
+    }
+  ]
+}

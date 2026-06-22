@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 
 from common import DATA_DIR, OUTPUT_DIR, cli_parser, department_output, load_latest, read_json, save_stage, today_iso, write_json, write_text
 
@@ -33,7 +34,13 @@ def run(sample: bool = False) -> dict:
     selected_image_path = selected.get("selected_image_path", "")
     selected_post_text = selected.get("selected_post_text") or selected.get("candidate_post_text", "")
     market_evidence_count = int(trace.get("market_evidence_count") or selected.get("market_evidence_count") or 0)
-    fixed_override_used = False
+    source_urls = trace.get("source_urls") or selected.get("source_urls") or []
+    source_types = trace.get("source_types") or selected.get("source_types") or []
+    source_urls_hash = trace.get("source_urls_hash") or selected.get("source_urls_hash") or ""
+    selected_pain_point_hash = trace.get("selected_pain_point_hash") or selected.get("selected_pain_point_hash") or _hash_text(selected.get("selected_pain_point") or trace.get("selected_pain_point", ""))
+    research_freshness = trace.get("research_freshness") or selected.get("research_freshness") or "stale_blocked"
+    fallback_reason = trace.get("fallback_reason") or selected.get("fallback_reason") or ""
+    fixed_override_used = bool(os.getenv("THREADS_POST_TEXT_OVERRIDE", "").strip() or os.getenv("THREADS_IMAGE_URL", "").strip())
     duplicate_reasons: list[str] = []
 
     if previous.get("candidate_id") and previous.get("candidate_id") == selected_candidate_id:
@@ -42,6 +49,10 @@ def run(sample: bool = False) -> dict:
         duplicate_reasons.append("same_image_path_as_previous_post")
     if previous.get("post_text_hash") and previous.get("post_text_hash") == _hash_text(selected_post_text):
         duplicate_reasons.append("same_post_text_as_previous_post")
+    if previous.get("pain_point_hash") and previous.get("pain_point_hash") == selected_pain_point_hash:
+        duplicate_reasons.append("same_pain_point_as_previous_post")
+    if previous.get("source_urls_hash") and previous.get("source_urls_hash") == source_urls_hash:
+        duplicate_reasons.append("same_source_urls_hash_as_previous_post")
 
     image_generated_from_candidate = bool(card.get("candidate_id")) and card.get("candidate_id") == selected_candidate_id
     design_strategy_used = bool(design.get("candidate_id")) and design.get("candidate_id") == selected_candidate_id
@@ -55,6 +66,10 @@ def run(sample: bool = False) -> dict:
         blocks.append("market_evidence_count_zero")
     if not selected_candidate_id:
         blocks.append("selected_candidate_missing")
+    if not source_urls:
+        blocks.append("source_urls_empty")
+    if research_freshness == "stale_blocked":
+        blocks.append("research_freshness_stale_blocked")
     if duplicate_reasons:
         blocks.extend(duplicate_reasons)
     if fixed_override_used:
@@ -78,6 +93,13 @@ def run(sample: bool = False) -> dict:
         "market_sources_used": trace.get("market_sources_used", []),
         "market_evidence_count": market_evidence_count,
         "source_evidence_count": int(trace.get("source_evidence_count") or market_evidence_count),
+        "source_urls": source_urls,
+        "source_types": source_types,
+        "source_urls_hash": source_urls_hash,
+        "evidence_count": market_evidence_count,
+        "research_freshness": research_freshness,
+        "fallback_reason": fallback_reason,
+        "selected_pain_point_hash": selected_pain_point_hash,
         "why_selected_today": trace.get("why_selected_today", ""),
         "previous_candidate_id": previous.get("candidate_id", ""),
         "duplicate_check_result": {
@@ -106,6 +128,12 @@ def run(sample: bool = False) -> dict:
                 f"- selected_category: {audit['selected_category']}",
                 f"- selected_pain_point: {audit['selected_pain_point']}",
                 f"- market_evidence_count: {audit['market_evidence_count']}",
+                f"- source_urls: {len(audit['source_urls'])}",
+                f"- source_types: {', '.join(audit['source_types'])}",
+                f"- evidence_count: {audit['evidence_count']}",
+                f"- research_freshness: {audit['research_freshness']}",
+                f"- fallback_reason: {audit['fallback_reason']}",
+                f"- source_urls_hash: {audit['source_urls_hash']}",
                 f"- why_selected_today: {audit['why_selected_today']}",
                 f"- previous_candidate_id: {audit['previous_candidate_id']}",
                 f"- duplicate_check_result: {audit['duplicate_check_result']}",

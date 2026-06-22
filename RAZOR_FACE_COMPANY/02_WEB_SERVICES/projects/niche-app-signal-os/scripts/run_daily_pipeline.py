@@ -5,6 +5,8 @@ import traceback
 
 from common import REPORTS_DIR, ensure_dirs, save_stage, today_iso, write_json
 
+import fetch_public_market_sources
+import extract_market_needs
 import collect_research_inputs
 import analyze_viral_patterns
 import update_memory_box
@@ -29,6 +31,8 @@ import update_reaction_memory
 
 
 STAGES = [
+    ("fetch_public_market_sources", fetch_public_market_sources.run),
+    ("extract_market_needs", extract_market_needs.run),
     ("collect_research_inputs", collect_research_inputs.run),
     ("analyze_viral_patterns", analyze_viral_patterns.run),
     ("update_memory_box", update_memory_box.run),

@@ -23,17 +23,26 @@ def run(sample: bool = False) -> dict:
     card = load_latest("daily_share_card.json", {})
     tone_check = post.get("tone_check_result") or gate.get("tone_check_result") or {}
     evidence_count = int(trace.get("market_evidence_count") or 0)
+    source_urls = trace.get("source_urls") or []
+    source_types = trace.get("source_types") or []
+    research_freshness = trace.get("research_freshness", "stale_blocked")
     selected_image_path = (card.get("card_paths") or {}).get("png", "")
     approved = (
         bool(post.get("text"))
         and bool(gate.get("approved"))
         and bool(tone_check.get("passed"))
         and evidence_count > 0
+        and bool(source_urls)
+        and research_freshness != "stale_blocked"
         and bool(selected_image_path)
     )
     rejected_reason = "" if approved else _rejection_reason(gate, tone_check, post)
     if not rejected_reason and evidence_count <= 0:
         rejected_reason = "market_evidence_count_zero"
+    if not rejected_reason and not source_urls:
+        rejected_reason = "source_urls_empty"
+    if not rejected_reason and research_freshness == "stale_blocked":
+        rejected_reason = "research_freshness_stale_blocked"
     if not rejected_reason and not selected_image_path:
         rejected_reason = "selected_image_path_missing"
 
@@ -45,6 +54,12 @@ def run(sample: bool = False) -> dict:
         "selected_pain_point": trace.get("selected_pain_point", ""),
         "market_research_trace": "output/reports/market_research_trace.json",
         "market_evidence_count": evidence_count,
+        "source_urls": source_urls,
+        "source_types": source_types,
+        "source_urls_hash": trace.get("source_urls_hash", ""),
+        "research_freshness": research_freshness,
+        "fallback_reason": trace.get("fallback_reason", ""),
+        "selected_pain_point_hash": trace.get("selected_pain_point_hash", ""),
         "selected_tone": post.get("tone_id") or tone_profile.get("tone_id", ""),
         "target_audience": post.get("target_audience") or tone_profile.get("target_audience", ""),
         "ui_target_audience": tone_profile.get("ui_target_audience", ""),
@@ -73,6 +88,9 @@ def run(sample: bool = False) -> dict:
                 f"- selected_candidate_id: {selected['selected_candidate_id']}",
                 f"- selected_category: {selected['selected_category']}",
                 f"- market_evidence_count: {selected['market_evidence_count']}",
+                f"- source_urls: {len(selected['source_urls'])}",
+                f"- research_freshness: {selected['research_freshness']}",
+                f"- fallback_reason: {selected['fallback_reason']}",
                 f"- selected_image_path: {selected['selected_image_path']}",
                 f"- rejected_reason_if_any: {selected['rejected_reason_if_any']}",
                 "",
