@@ -55,6 +55,24 @@
       "requested_fields": [],
       "design_feedback": [],
       "next_decision": "hold"
+    },
+    {
+      "date": "2026-06-22",
+      "candidate_id": "receipt-payment-retrace",
+      "post_variant": "default_light_problem",
+      "manual_post_url": "https://www.threads.net/@younengsaitoshaojie/post/18330246631269180",
+      "post_id": "18330246631269180",
+      "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-retrace.png",
+      "likes": null,
+      "replies": null,
+      "reposts": null,
+      "saves": null,
+      "profile_clicks": null,
+      "comments": [],
+      "objections": [],
+      "requested_fields": [],
+      "design_feedback": [],
+      "next_decision": "hold"
     }
   ],
   "fields": {
