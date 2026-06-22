@@ -65,8 +65,9 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.live_post }}" = "true" ]; then
             LIVE_POST="true"
           fi
-          # Scheduled runs stay DRY_RUN until the public market research layer is reviewed.
-          # Live posting can still be tested explicitly through workflow_dispatch live_post=true.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${THREADS_AUTO_POST_ENABLED:-}" = "true" ]; then
+            LIVE_POST="true"
+          fi
 
           if [ "$LIVE_POST" = "true" ]; then
             echo "LIVE_POST=true" >> "$GITHUB_ENV"
