@@ -1,6 +1,6 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "dry_run": true,
   "sample": false,
   "status": "ok",
@@ -133,14 +133,5 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ],
-  "publishing": {
-    "status": "posted",
-    "posting_attempted": true,
-    "api_called": true,
-    "post_id": "18330246631269180",
-    "post_url": "https://www.threads.net/@younengsaitoshaojie/post/18330246631269180",
-    "selected_candidate_id": "receipt-payment-retrace",
-    "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-retrace.png"
-  }
+  ]
 }

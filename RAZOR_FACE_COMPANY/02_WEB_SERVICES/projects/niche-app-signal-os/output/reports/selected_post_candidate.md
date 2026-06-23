@@ -1,24 +1,22 @@
-# Selected Post Candidate - 2026-06-22
+# Selected Post Candidate - 2026-06-23
 
-- selected: True
-- selected_candidate_id: receipt-payment-retrace
-- selected_category: receipt-payment-log
-- market_evidence_count: 5
-- source_urls: 1
-- research_freshness: fresh
-- fallback_reason: 
-- selected_image_path: output/share-cards/2026-06-22-receipt-payment-retrace.png
-- rejected_reason_if_any: 
+- selected: False
+- selected_candidate_id: 
+- selected_category: 
+- market_evidence_count: 0
+- source_urls: 0
+- research_freshness: stale_blocked
+- fallback_reason: selected_candidate_missing
+- selected_image_path: output/share-cards/2026-06-23-no-selected-candidate.png
+- rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
-レシート
-日付
-場所
-あとで見返すメモ
+メモ
+スクショ
+カレンダー
 
-余計な分析とかはいらない。
-返品したい時とか、保証を見たい時に迷わず開けるやつ。
-
-こういう割り切ったアプリ、あり？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？

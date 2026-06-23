@@ -1,27 +1,29 @@
 {
   "department": "Design Intelligence Department",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_strategy.json"
   ],
   "summary": "Created candidate-specific UI card direction from the selected market need.",
   "scores": {
-    "design_confidence": 8
+    "design_confidence": 0
   },
-  "risks": [],
+  "risks": [
+    "no_selected_market_candidate"
+  ],
   "next_action": "audience tone adapter",
   "design_strategy": {
-    "date": "2026-06-22",
-    "candidate_id": "receipt-payment-retrace",
-    "category": "receipt-payment-log",
-    "pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
-    "target_audience_for_copy": "買い物履歴や返品期限をスマホで探しがちな生活者",
-    "audience_context": "買い物履歴や返品期限をスマホで探しがちな生活者",
+    "date": "2026-06-23",
+    "candidate_id": "",
+    "category": "",
+    "pain_point": "",
+    "target_audience_for_copy": "unclear",
+    "audience_context": "",
     "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",
-    "ui_metaphor_from_market_need": "買ったものごとのスマホ領収書ログ",
+    "ui_metaphor_from_market_need": "",
     "ui_metaphor": [
-      "買ったものごとのスマホ領収書ログ"
+      "スマホログUI"
     ],
     "color_direction": [
       "パステル",
@@ -44,15 +46,8 @@
       "文字過多"
     ],
     "card_cta": "これ欲しい？今のやり方で十分？",
-    "copy_tone_hint": [
-      "あとで見返す",
-      "散らばる",
-      "探す",
-      "メモ",
-      "ログ",
-      "これ欲しい？"
-    ],
-    "design_confidence": 8
+    "copy_tone_hint": [],
+    "design_confidence": 0
   },
-  "memory_path": "memory/design_strategy/2026-06-22.md"
+  "memory_path": "memory/design_strategy/2026-06-23.md"
 }

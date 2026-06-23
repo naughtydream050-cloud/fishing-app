@@ -1,48 +1,18 @@
 {
-  "date": "2026-06-22",
-  "selected_candidate_id": "receipt-payment-retrace",
-  "selected_category": "receipt-payment-log",
-  "selected_pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
-  "selected_pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
-  "market_sources_used": [
-    {
-      "source_type": "public_trends_rss",
-      "source_url": "https://trends.google.com/trending/rss?geo=JP",
-      "evidence_text": "前園真聖"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "沖縄県"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "sakana fugu"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "沖縄戦"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "細川直美"
-    }
-  ],
-  "market_evidence_count": 5,
-  "source_evidence_count": 5,
-  "source_urls": [
-    "https://trends.google.com/trending/rss?geo=JP"
-  ],
-  "source_types": [
-    "public_trends_rss"
-  ],
-  "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
-  "research_freshness": "fresh",
-  "fallback_reason": "",
-  "why_selected_today": "Selected from current public-source-backed scored research inputs.",
+  "date": "2026-06-23",
+  "selected_candidate_id": "",
+  "selected_category": "",
+  "selected_pain_point": "",
+  "selected_pain_point_hash": "",
+  "market_sources_used": [],
+  "market_evidence_count": 0,
+  "source_evidence_count": 0,
+  "source_urls": [],
+  "source_types": [],
+  "source_urls_hash": "",
+  "research_freshness": "stale_blocked",
+  "fallback_reason": "selected_candidate_missing",
+  "why_selected_today": "Selected trace is not posting-ready because candidate/evidence/source URLs/freshness are incomplete.",
   "stages": {
     "fetch_public_market_sources": {
       "present": true,
@@ -69,5 +39,5 @@
       "candidate_count": 5
     }
   },
-  "posting_trace_ready": true
+  "posting_trace_ready": false
 }

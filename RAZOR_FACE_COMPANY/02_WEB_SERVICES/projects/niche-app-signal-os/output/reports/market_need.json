@@ -1,6 +1,6 @@
 {
   "department": "Market Need Department",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "input_sources": [
     "output/reports/research_inputs.json",
     "output/reports/niche_demand_score.json",
@@ -8,201 +8,24 @@
   ],
   "summary": "Selected daily niche demand candidates only from scored market inputs with evidence and source URLs.",
   "scores": {
-    "candidate_count": 4,
-    "selected_priority_score": 10.6
+    "candidate_count": 0,
+    "selected_priority_score": 0
   },
-  "risks": [],
+  "risks": [
+    "no_market_evidence_candidate"
+  ],
   "next_action": "market research trace",
   "daily_niche_ui_candidates": {
-    "date": "2026-06-22",
-    "selected_candidate_id": "receipt-payment-retrace",
-    "candidates": [
-      {
-        "candidate_id": "receipt-payment-retrace",
-        "category": "receipt-payment-log",
-        "pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
-        "pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
-        "target_user": "買い物履歴や返品期限をスマホで探しがちな生活者",
-        "current_workaround": "写真フォルダ、カード明細、EC購入履歴を別々に見る",
-        "why_niche": "家計簿ほど重くなく、買ったもの単位で見返したい小さな不便に絞れる",
-        "why_now": "キャッシュレスとEC購入が増え、支払いの証拠が複数アプリに散らばりやすい",
-        "existing_alternatives": [
-          "家計簿アプリ",
-          "写真フォルダ",
-          "カード明細",
-          "EC購入履歴"
-        ],
-        "likely_target_users": [
-          "買い物履歴や返品期限をスマホで探しがちな生活者"
-        ],
-        "ui_metaphor": "買ったものごとのスマホ領収書ログ",
-        "expected_ui_metaphor": "買ったものごとのスマホ領収書ログ",
-        "tone_id": "default_light_problem",
-        "priority_score": 10.6,
-        "market_sources": [
-          {
-            "source_type": "public_trends_rss",
-            "source_url": "https://trends.google.com/trending/rss?geo=JP",
-            "evidence_text": "前園真聖"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄県"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "sakana fugu"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄戦"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "細川直美"
-          }
-        ],
-        "market_evidence_count": 5,
-        "source_urls": [
-          "https://trends.google.com/trending/rss?geo=JP"
-        ],
-        "source_types": [
-          "public_trends_rss"
-        ],
-        "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
-        "research_freshness": "fresh",
-        "fallback_reason": ""
-      },
-      {
-        "candidate_id": "subscription-renewal-snapshot",
-        "category": "subscription-renewal-log",
-        "pain_point": "サブスクの更新日や月額がメール、カード明細、アプリ内設定に散らばって見えにくい",
-        "pain_point_hash": "09c169297571bcc6b5f92e8140b3f6844e469e7e67949a753270cc150e716252",
-        "target_user": "複数のサブスクをなんとなく契約したままにしているスマホユーザー",
-        "current_workaround": "メール検索、カード明細、各サービスのアカウント画面を見る",
-        "why_niche": "節約説教ではなく、更新前に見返すログだけなら投稿で伝わりやすい",
-        "why_now": "小額サブスクが増え、更新タイミングの把握が日常的な不便になっている",
-        "existing_alternatives": [
-          "カード明細",
-          "メール検索",
-          "家計簿アプリ"
-        ],
-        "likely_target_users": [
-          "複数のサブスクをなんとなく契約したままにしているスマホユーザー"
-        ],
-        "ui_metaphor": "更新日順のサブスク棚スマホUI",
-        "expected_ui_metaphor": "更新日順のサブスク棚スマホUI",
-        "tone_id": "default_light_problem",
-        "priority_score": 10.6,
-        "market_sources": [
-          {
-            "source_type": "public_trends_rss",
-            "source_url": "https://trends.google.com/trending/rss?geo=JP",
-            "evidence_text": "前園真聖"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄県"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "sakana fugu"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄戦"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "細川直美"
-          }
-        ],
-        "market_evidence_count": 5,
-        "source_urls": [
-          "https://trends.google.com/trending/rss?geo=JP"
-        ],
-        "source_types": [
-          "public_trends_rss"
-        ],
-        "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
-        "research_freshness": "fresh",
-        "fallback_reason": ""
-      },
-      {
-        "candidate_id": "trip-packing-last-check",
-        "category": "travel-packing-check",
-        "pain_point": "旅行や遠征の持ち物が毎回メモや写真に散らばって、出発前に不安になる",
-        "pain_point_hash": "30636b04e2ebec0786a7c741dd1a902b3989ebc7db200ea6e44dc087746637c5",
-        "target_user": "旅行やライブ遠征の直前にスマホで持ち物を確認する人",
-        "current_workaround": "メモアプリ、過去の写真、LINE、自作チェックリストを見る",
-        "why_niche": "旅行予約ではなく、直前の忘れ物不安だけに絞った画面が作れる",
-        "why_now": "週末旅行やイベント遠征の準備情報がスマホ内に散らばりやすい",
-        "existing_alternatives": [
-          "メモアプリ",
-          "Notion",
-          "紙のチェックリスト"
-        ],
-        "likely_target_users": [
-          "旅行やライブ遠征の直前にスマホで持ち物を確認する人"
-        ],
-        "ui_metaphor": "出発前のスマホ持ち物チェック画面",
-        "expected_ui_metaphor": "出発前のスマホ持ち物チェック画面",
-        "tone_id": "gen_z_oshi_activity",
-        "priority_score": 10.6,
-        "market_sources": [
-          {
-            "source_type": "public_trends_rss",
-            "source_url": "https://trends.google.com/trending/rss?geo=JP",
-            "evidence_text": "前園真聖"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄県"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "sakana fugu"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "沖縄戦"
-          },
-          {
-            "source_type": "public_market_research",
-            "source_url": "",
-            "evidence_text": "細川直美"
-          }
-        ],
-        "market_evidence_count": 5,
-        "source_urls": [
-          "https://trends.google.com/trending/rss?geo=JP"
-        ],
-        "source_types": [
-          "public_trends_rss"
-        ],
-        "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
-        "research_freshness": "fresh",
-        "fallback_reason": ""
-      }
-    ],
-    "selection_reason": "Highest scored market-backed candidate; previous candidate, pain point, and source URL hash avoided.",
-    "previous_candidate_id": "student-deadline-check",
-    "previous_pain_point_hash": "",
-    "previous_source_urls_hash": "",
-    "duplicate_filtered_count": 1,
+    "date": "2026-06-23",
+    "selected_candidate_id": "",
+    "candidates": [],
+    "selection_reason": "No eligible candidate after evidence and duplicate checks.",
+    "previous_candidate_id": "receipt-payment-retrace",
+    "previous_pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
+    "previous_source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
+    "duplicate_filtered_count": 5,
     "dry_run": true,
     "market_evidence_required": true
   },
-  "memory_path": "memory/market_needs/2026-06-22.md"
+  "memory_path": "memory/market_needs/2026-06-23.md"
 }

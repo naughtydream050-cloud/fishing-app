@@ -1,50 +1,30 @@
 {
   "department": "Audience Strategy Department",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json"
   ],
   "summary": "Defined the target segment and wording for the selected market-backed candidate.",
   "scores": {
-    "segment_confidence": 8
+    "segment_confidence": 0
   },
-  "risks": [],
+  "risks": [
+    "no_selected_market_candidate"
+  ],
   "next_action": "design intelligence",
   "audience_strategy": {
-    "candidate_id": "receipt-payment-retrace",
-    "candidate_category": "receipt-payment-log",
-    "target_user_segment": "買い物履歴や返品期限をスマホで探しがちな生活者",
+    "candidate_id": "",
+    "candidate_category": "",
+    "target_user_segment": "unclear",
     "tone_id": "default_light_problem",
-    "user_motivation": "今のやり方で足りているようで、毎回少し探す・忘れる・見返せない不便を減らしたい",
-    "primary_job": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
-    "current_alternatives": [
-      "家計簿アプリ",
-      "写真フォルダ",
-      "カード明細",
-      "EC購入履歴"
-    ],
-    "language_to_use": [
-      "あとで見返す",
-      "散らばる",
-      "探す",
-      "メモ",
-      "ログ",
-      "これ欲しい？"
-    ],
-    "language_to_avoid": [
-      "革新的",
-      "SaaS",
-      "生産性",
-      "完全自動化",
-      "業務効率"
-    ],
-    "comment_hooks": [
-      "これ欲しい？",
-      "今のやり方で十分？",
-      "専用であったら使う？"
-    ],
-    "segment_confidence": 8,
-    "date": "2026-06-22"
+    "user_motivation": "",
+    "primary_job": "",
+    "current_alternatives": [],
+    "language_to_use": [],
+    "language_to_avoid": [],
+    "comment_hooks": [],
+    "segment_confidence": 0,
+    "date": "2026-06-23"
   },
-  "memory_path": "memory/audience/2026-06-22.md"
+  "memory_path": "memory/audience/2026-06-23.md"
 }

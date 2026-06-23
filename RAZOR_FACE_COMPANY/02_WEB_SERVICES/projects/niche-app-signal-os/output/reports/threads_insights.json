@@ -1,6 +1,6 @@
 {
   "department": "Analytics Department",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "input_sources": [
     "output/reports/publishing.json"
   ],
@@ -8,7 +8,9 @@
   "scores": {
     "insight_fields": 9
   },
-  "risks": [],
+  "risks": [
+    "no_live_thread_id"
+  ],
   "next_action": "reaction memory",
   "insights": {
     "views": null,
@@ -21,6 +23,6 @@
     "follows": null,
     "clicks": null
   },
-  "source_status": "posted",
-  "thread_id": "18330246631269180"
+  "source_status": "blocked_by_post_source_audit",
+  "thread_id": null
 }

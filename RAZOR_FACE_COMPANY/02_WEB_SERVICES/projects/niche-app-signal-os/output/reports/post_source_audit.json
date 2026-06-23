@@ -1,62 +1,40 @@
 {
-  "date": "2026-06-22",
-  "selected_candidate_id": "receipt-payment-retrace",
-  "selected_category": "receipt-payment-log",
-  "selected_pain_point": "レシートや支払い履歴をあとで探す時に、写真フォルダやカード明細を行き来するのが面倒",
-  "market_sources_used": [
-    {
-      "source_type": "public_trends_rss",
-      "source_url": "https://trends.google.com/trending/rss?geo=JP",
-      "evidence_text": "前園真聖"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "沖縄県"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "sakana fugu"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "沖縄戦"
-    },
-    {
-      "source_type": "public_market_research",
-      "source_url": "",
-      "evidence_text": "細川直美"
-    }
-  ],
-  "market_evidence_count": 5,
-  "source_evidence_count": 5,
-  "source_urls": [
-    "https://trends.google.com/trending/rss?geo=JP"
-  ],
-  "source_types": [
-    "public_trends_rss"
-  ],
-  "source_urls_hash": "ccbd37e77e18af808de72c658fa9b97a38343fd73ea57267b22f745dd5b104e5",
-  "evidence_count": 5,
-  "research_freshness": "fresh",
-  "fallback_reason": "",
-  "selected_pain_point_hash": "a7035617d1913abbd41321c1170bf5fd2072b381fcdfa865eaf9effcf1762cd5",
-  "why_selected_today": "Selected from current public-source-backed scored research inputs.",
-  "previous_candidate_id": "student-deadline-check",
+  "date": "2026-06-23",
+  "selected_candidate_id": "",
+  "selected_category": "",
+  "selected_pain_point": "",
+  "market_sources_used": [],
+  "market_evidence_count": 0,
+  "source_evidence_count": 0,
+  "source_urls": [],
+  "source_types": [],
+  "source_urls_hash": "",
+  "evidence_count": 0,
+  "research_freshness": "stale_blocked",
+  "fallback_reason": "selected_candidate_missing",
+  "selected_pain_point_hash": "",
+  "why_selected_today": "Selected trace is not posting-ready because candidate/evidence/source URLs/freshness are incomplete.",
+  "previous_candidate_id": "receipt-payment-retrace",
   "duplicate_check_result": {
     "passed": true,
     "reasons": []
   },
-  "selected_post_text": "もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。\n\nレシート\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\n返品したい時とか、保証を見たい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
-  "selected_post_text_hash": "c0e04fcd8f73df9424273e408fb9270d88cc620e977aea0b6527afde07b69008",
-  "selected_image_path": "output/share-cards/2026-06-22-receipt-payment-retrace.png",
-  "image_generated_from_candidate": true,
+  "selected_post_text": "今のやり方で十分って分かってるんだけど、\n小さい不便だけは専用画面が欲しくなる時ある。\n\nメモ\nスクショ\nカレンダー\n\nこのへんに散らばったこれを、\n一つのスマホログで見返せたらどう？",
+  "selected_post_text_hash": "292ac28eee584f026ee438039ba99630e65fb42a1be10d68c13a81da870afdf9",
+  "selected_image_path": "output/share-cards/2026-06-23-no-selected-candidate.png",
+  "image_generated_from_candidate": false,
   "tone_profile_used": "default_light_problem",
-  "design_strategy_used": true,
+  "design_strategy_used": false,
   "risk_gate_result": true,
   "fixed_override_used": false,
-  "posting_allowed": true,
-  "blocks": []
+  "posting_allowed": false,
+  "blocks": [
+    "market_evidence_count_zero",
+    "selected_candidate_missing",
+    "source_urls_empty",
+    "research_freshness_stale_blocked",
+    "design_strategy_not_for_selected_candidate",
+    "card_image_not_for_selected_candidate",
+    "selected_post_candidate_not_selected"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "department": "Audience Tone Adapter Department",
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "input_sources": [
     "output/reports/audience_strategy.json",
     "output/reports/design_strategy.json",
@@ -14,21 +14,14 @@
   "risks": [],
   "next_action": "generate tone-adapted Threads post",
   "audience_tone_profile": {
-    "date": "2026-06-22",
-    "candidate_id": "receipt-payment-retrace",
+    "date": "2026-06-23",
+    "candidate_id": "",
     "tone_id": "default_light_problem",
-    "target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-    "target_user_segment": "買い物履歴や返品期限をスマホで探しがちな生活者",
-    "ui_target_audience": "買い物履歴や返品期限をスマホで探しがちな生活者",
-    "audience_context": "買い物履歴や返品期限をスマホで探しがちな生活者",
-    "copy_tone_hint": [
-      "あとで見返す",
-      "散らばる",
-      "探す",
-      "メモ",
-      "ログ",
-      "これ欲しい？"
-    ],
+    "target_audience": "unclear",
+    "target_user_segment": "unclear",
+    "ui_target_audience": "unclear",
+    "audience_context": "",
+    "copy_tone_hint": [],
     "tone": "軽い問題提起と試作UIの相談",
     "use_words": [
       "あとで見返す",
@@ -67,5 +60,5 @@
       "data/audience_tone_rules.json"
     ]
   },
-  "memory_path": "memory/audience_tone/2026-06-22.md"
+  "memory_path": "memory/audience_tone/2026-06-23.md"
 }

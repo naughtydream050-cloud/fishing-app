@@ -1,26 +1,31 @@
-# Live Post Result - 2026-06-22
+# Live Post Result - 2026-06-23
 
-- status: posted
-- posting_attempted: True
-- api_called: True
-- post_id: 18330246631269180
-- post_url: https://www.threads.net/@younengsaitoshaojie/post/18330246631269180
+- status: blocked_by_post_source_audit
+- posting_attempted: False
+- api_called: False
+- post_id: 
+- post_url: 
 - target_handle: younengsaitoshaojie
-- selected_candidate_id: receipt-payment-retrace
-- selected_image_path: output/share-cards/2026-06-22-receipt-payment-retrace.png
+- selected_candidate_id: 
+- selected_image_path: output/share-cards/2026-06-23-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-もし購入ごとの証跡ログがあるなら、画面はこれくらいでいい。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
-レシート
-日付
-場所
-あとで見返すメモ
+メモ
+スクショ
+カレンダー
 
-余計な分析とかはいらない。
-返品したい時とか、保証を見たい時に迷わず開けるやつ。
-
-こういう割り切ったアプリ、あり？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？
 
 ## Risks
+- market_evidence_count_zero
+- selected_candidate_missing
+- source_urls_empty
+- research_freshness_stale_blocked
+- design_strategy_not_for_selected_candidate
+- card_image_not_for_selected_candidate
+- selected_post_candidate_not_selected
