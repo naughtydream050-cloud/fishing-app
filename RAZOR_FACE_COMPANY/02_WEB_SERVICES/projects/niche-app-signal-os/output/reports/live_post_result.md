@@ -1,4 +1,4 @@
-# Live Post Result - 2026-06-23
+# Live Post Result - 2026-06-24
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,18 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-06-23-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-06-24-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-今のやり方で十分って分かってるんだけど、
-小さい不便だけは専用画面が欲しくなる時ある。
+「これどこだっけ」ってなってからが長い。
 
-メモ
-スクショ
-カレンダー
+メモ見て、スクショ見て、
+結局カレンダーまで戻る。
 
-このへんに散らばったこれを、
-一つのスマホログで見返せたらどう？
+あとで見返したい時にこれやるの、地味にしんどい。
+
+スマホログだけ開けば済むなら欲しい？
 
 ## Risks
 - market_evidence_count_zero
