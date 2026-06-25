@@ -1,6 +1,6 @@
 {
   "department": "Audience Tone Adapter Department",
-  "date": "2026-06-24",
+  "date": "2026-06-25",
   "input_sources": [
     "output/reports/audience_strategy.json",
     "output/reports/design_strategy.json",
@@ -14,7 +14,7 @@
   "risks": [],
   "next_action": "generate tone-adapted Threads post",
   "audience_tone_profile": {
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "candidate_id": "",
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
@@ -60,5 +60,5 @@
       "data/audience_tone_rules.json"
     ]
   },
-  "memory_path": "memory/audience_tone/2026-06-24.md"
+  "memory_path": "memory/audience_tone/2026-06-25.md"
 }
