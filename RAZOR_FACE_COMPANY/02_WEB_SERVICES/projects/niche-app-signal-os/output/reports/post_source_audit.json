@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-25",
+  "date": "2026-06-26",
   "selected_candidate_id": "",
   "selected_category": "",
   "selected_pain_point": "",
@@ -19,9 +19,9 @@
     "passed": true,
     "reasons": []
   },
-  "selected_post_text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
-  "selected_post_text_hash": "784ea634e028306882f75336a9ee8d2df4077bf136a9dc402ad9a5a8670971dd",
-  "selected_image_path": "output/share-cards/2026-06-25-no-selected-candidate.png",
+  "selected_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+  "selected_post_text_hash": "3ea0ea5a3f50d663a4a126300b463e173673851966ff654421999260791d35dd",
+  "selected_image_path": "output/share-cards/2026-06-26-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "tone_profile_used": "default_light_problem",
   "design_strategy_used": false,

@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-06-25
+# Selected Post Candidate - 2026-06-26
 
 - selected: False
 - selected_candidate_id: 
@@ -7,16 +7,17 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-06-25-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-06-26-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、探してる時点でもうちょっと負けてる。
+これ探すの、毎回ちょっと負けてる気がする。
 
-あとで見返したい時に
-メモから探し始めて、
-スクショまで見に行く流れ。
+メモ
+スクショ
+カレンダー
+写真フォルダ
 
-必要な情報が見つかりにくいの、かなりあるあるだと思う。
+必要な情報が見つかりにくいやつ。
 
-スマホUIのアプリなら使う？
+スマホUIのアプリあったら普通に使う？

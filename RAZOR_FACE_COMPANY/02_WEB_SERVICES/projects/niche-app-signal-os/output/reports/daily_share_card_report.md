@@ -1,9 +1,9 @@
-# Daily Share Card Report - 2026-06-25
+# Daily Share Card Report - 2026-06-26
 
 - candidate_id: no-selected-candidate
 - category: 
-- html: output/share-cards/2026-06-25-no-selected-candidate.html
-- png: output/share-cards/2026-06-25-no-selected-candidate.png
+- html: output/share-cards/2026-06-26-no-selected-candidate.html
+- png: output/share-cards/2026-06-26-no-selected-candidate.png
 - png_status: ok
 - composition: mobile-app-screen-only
 - phone_ratio: 710x1288
