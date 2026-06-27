@@ -1,4 +1,4 @@
-# Public Market Research - 2026-06-26
+# Public Market Research - 2026-06-27
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 孫正義 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 控除 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] earthquake (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 南海トラフ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] メーガン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 西村拓哉 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] kospi (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] フジロック (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 牲川歩見 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 地震 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] クルトワ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] バックナンバー 熊本 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] デ・ブライネ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 住宅 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ベルギー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 筧美和子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 須田 亜香里 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 雨 (https://trends.google.com/trending/rss?geo=JP)

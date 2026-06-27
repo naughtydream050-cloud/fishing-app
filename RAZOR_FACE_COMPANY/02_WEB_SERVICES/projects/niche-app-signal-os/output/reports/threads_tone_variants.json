@@ -1,10 +1,10 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "04",
-  "selected_pattern_id": "small_loss_confession",
+  "selected_variant_id": "06",
+  "selected_pattern_id": "not_management_just_need",
   "variant_count": 10,
   "variants": [
     {
@@ -74,7 +74,7 @@
       "text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ"
@@ -82,7 +82,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.206
+        "max_recent_similarity": 1.0
       },
       "length": 82
     },
@@ -139,7 +139,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.165
+        "max_recent_similarity": 0.177
       },
       "length": 76
     },
@@ -159,7 +159,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.451
+        "max_recent_similarity": 0.075
       },
       "length": 108
     },
@@ -178,7 +178,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.358
+        "max_recent_similarity": 0.122
       },
       "length": 106
     },
