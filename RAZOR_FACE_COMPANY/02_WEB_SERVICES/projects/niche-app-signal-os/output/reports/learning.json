@@ -1,6 +1,6 @@
 {
   "department": "Executive Department",
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "input_sources": [
     "output/reports/threads_insights.json",
     "data/reaction_memory.json"
@@ -49,10 +49,10 @@
     "language_to_avoid": [],
     "comment_hooks": [],
     "segment_confidence": 0,
-    "date": "2026-06-27"
+    "date": "2026-06-28"
   },
   "design_strategy": {
-    "date": "2026-06-27",
+    "date": "2026-06-28",
     "candidate_id": "",
     "category": "",
     "pain_point": "",

@@ -1,4 +1,4 @@
-# Public Market Research - 2026-06-27
+# Public Market Research - 2026-06-28
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] クルトワ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドク (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] バックナンバー 熊本 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デ・ブライネ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 住宅 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベルギー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 筧美和子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 須田 亜香里 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 雨 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 平愛梨 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ランボルギーニ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ノンアルコールビール 運転 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] メッシ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 宋成文 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 森崎ウィン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 石垣 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロングウォーク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 阪神ファン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 土砂災害 (https://trends.google.com/trending/rss?geo=JP)

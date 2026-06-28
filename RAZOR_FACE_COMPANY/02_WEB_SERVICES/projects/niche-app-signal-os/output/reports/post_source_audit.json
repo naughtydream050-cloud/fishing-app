@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "selected_candidate_id": "",
   "selected_category": "",
   "selected_pain_point": "",
@@ -19,9 +19,9 @@
     "passed": true,
     "reasons": []
   },
-  "selected_post_text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
-  "selected_post_text_hash": "da68e8a18d4d4ab1dac9d94cd901d9e94eed0fbf7934422ff55f0232ff1b39a5",
-  "selected_image_path": "output/share-cards/2026-06-27-no-selected-candidate.png",
+  "selected_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+  "selected_post_text_hash": "a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3",
+  "selected_image_path": "output/share-cards/2026-06-28-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "tone_profile_used": "default_light_problem",
   "design_strategy_used": false,

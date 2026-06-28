@@ -1,10 +1,10 @@
 {
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "06",
-  "selected_pattern_id": "not_management_just_need",
+  "selected_variant_id": "07",
+  "selected_pattern_id": "everyone_has_done_this",
   "variant_count": 10,
   "variants": [
     {
@@ -113,7 +113,7 @@
       "text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -122,7 +122,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.086
+        "max_recent_similarity": 1.0
       },
       "length": 108
     },
@@ -189,7 +189,7 @@
       "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -198,7 +198,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.477
+        "max_recent_similarity": 0.122
       },
       "length": 83
     }

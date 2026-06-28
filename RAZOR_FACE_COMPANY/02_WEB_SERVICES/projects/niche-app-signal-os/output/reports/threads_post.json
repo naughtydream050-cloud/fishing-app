@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 108,
+    "length": 76,
     "variant_count": 10,
-    "max_recent_similarity": 0.086
+    "max_recent_similarity": 0.177
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-06-27",
+    "date": "2026-06-28",
     "candidate_id": "",
-    "text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
+    "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -26,19 +26,16 @@
     "decision": "dry_run",
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
-    "variant_id": "06",
-    "pattern_id": "not_management_just_need",
+    "variant_id": "07",
+    "pattern_id": "everyone_has_done_this",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
-      "used_words": [
-        "メモ",
-        "ログ"
-      ],
+      "used_words": [],
       "used_avoid_words": [],
-      "line_count": 6,
+      "line_count": 7,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.086
+      "max_recent_similarity": 0.177
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"

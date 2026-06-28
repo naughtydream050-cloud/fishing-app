@@ -855,5 +855,30 @@
     "source_urls_hash": "",
     "research_freshness": "stale_blocked",
     "evidence_count": 0
+  },
+  {
+    "date": "2026-06-28",
+    "created_at": "2026-06-28T04:48:23.288857+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "1270b83ffc507464db80cbb7674166ac41f2c6249b8d22c718434da1279b6a16",
+    "post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+    "alt_text": "候補のスマホアプリ画面",
+    "topic_tags": [
+      "",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "",
+    "selected_image_path": "output/share-cards/2026-06-28-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b9ef54d3416dd3d76b387e206112661814303e19/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png",
+    "post_text_hash": "a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3",
+    "pain_point_hash": "",
+    "source_urls_hash": "",
+    "research_freshness": "stale_blocked",
+    "evidence_count": 0
   }
 ]
