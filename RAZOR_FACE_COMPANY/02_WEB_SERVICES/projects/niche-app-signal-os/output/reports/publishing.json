@@ -11,8 +11,8 @@
   ],
   "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards.",
   "scores": {
-    "auto_post": false,
-    "dry_run": true,
+    "auto_post": true,
+    "dry_run": false,
     "threads_auto_post_enabled": true
   },
   "risks": [
@@ -30,23 +30,23 @@
   "target_guard": "target_handle_ok",
   "live_preflight": {
     "gate_approved": true,
-    "auto_post": false,
+    "auto_post": true,
     "threads_auto_post_enabled": true,
-    "dry_run": true,
+    "dry_run": false,
     "target_handle": "younengsaitoshaojie",
     "expected_target_handle": "younengsaitoshaojie",
-    "content_hash": "1270b83ffc507464db80cbb7674166ac41f2c6249b8d22c718434da1279b6a16",
+    "content_hash": "c14066a687325e6cda7d77c98e003b2ac5e21b4f67d09e3df886520454bbaf9b",
     "duplicate": false,
     "missing_secrets": [],
     "selected_candidate": false,
     "post_source_audit_allowed": false,
     "image_url_available": true
   },
-  "log_entry": "{'date': '2026-06-28', 'created_at': '2026-06-28T04:48:23.288857+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': False, 'threads_auto_post_enabled': True, 'dry_run': True, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '1270b83ffc507464db80cbb7674166ac41f2c6249b8d22c718434da1279b6a16', 'post_text': '使う人、これ一回はあると思う。\\n\\nこれを探す\\n見つからない\\n別のアプリを開く\\nまた戻る\\n\\nで、必要な情報が見つかりにくい。\\n\\nスマホUIのアプリ、使う？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-06-28-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b9ef54d3416dd3d76b387e206112661814303e19/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png', 'post_text_hash': 'a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
+  "log_entry": "{'date': '2026-06-28', 'created_at': '2026-06-28T04:48:24.578823+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': True, 'threads_auto_post_enabled': True, 'dry_run': False, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': 'c14066a687325e6cda7d77c98e003b2ac5e21b4f67d09e3df886520454bbaf9b', 'post_text': '使う人、これ一回はあると思う。\\n\\nこれを探す\\n見つからない\\n別のアプリを開く\\nまた戻る\\n\\nで、必要な情報が見つかりにくい。\\n\\nスマホUIのアプリ、使う？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-06-28-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/abc42b518be27536bc59003637c831fa22f76856/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png', 'post_text_hash': 'a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
   "api_called": false,
   "live_post_result": {
     "date": "2026-06-28",
-    "created_at": "2026-06-28T04:48:23.288857+00:00",
+    "created_at": "2026-06-28T04:48:24.578823+00:00",
     "status": "blocked_by_post_source_audit",
     "posting_attempted": false,
     "api_called": false,
@@ -55,7 +55,7 @@
     "target_handle": "younengsaitoshaojie",
     "selected_candidate_id": "",
     "selected_image_path": "output/share-cards/2026-06-28-no-selected-candidate.png",
-    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b9ef54d3416dd3d76b387e206112661814303e19/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/abc42b518be27536bc59003637c831fa22f76856/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png",
     "selected_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
     "source_urls_hash": "",
     "pain_point_hash": "",
