@@ -1,6 +1,6 @@
 {
   "department": "Publishing Department",
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "input_sources": [
     "output/reports/quality_risk_gate.json",
     "output/reports/selected_post_candidate.json",
@@ -11,8 +11,8 @@
   ],
   "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards.",
   "scores": {
-    "auto_post": true,
-    "dry_run": false,
+    "auto_post": false,
+    "dry_run": true,
     "threads_auto_post_enabled": true
   },
   "risks": [
@@ -30,23 +30,23 @@
   "target_guard": "target_handle_ok",
   "live_preflight": {
     "gate_approved": true,
-    "auto_post": true,
+    "auto_post": false,
     "threads_auto_post_enabled": true,
-    "dry_run": false,
+    "dry_run": true,
     "target_handle": "younengsaitoshaojie",
     "expected_target_handle": "younengsaitoshaojie",
-    "content_hash": "c14066a687325e6cda7d77c98e003b2ac5e21b4f67d09e3df886520454bbaf9b",
+    "content_hash": "029b2e365b55a49a60065545c804b90a4f8bbb64a6a5ca20f7e3d0771589e1fd",
     "duplicate": false,
     "missing_secrets": [],
     "selected_candidate": false,
     "post_source_audit_allowed": false,
     "image_url_available": true
   },
-  "log_entry": "{'date': '2026-06-28', 'created_at': '2026-06-28T04:48:24.578823+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': True, 'threads_auto_post_enabled': True, 'dry_run': False, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': 'c14066a687325e6cda7d77c98e003b2ac5e21b4f67d09e3df886520454bbaf9b', 'post_text': '使う人、これ一回はあると思う。\\n\\nこれを探す\\n見つからない\\n別のアプリを開く\\nまた戻る\\n\\nで、必要な情報が見つかりにくい。\\n\\nスマホUIのアプリ、使う？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-06-28-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/abc42b518be27536bc59003637c831fa22f76856/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png', 'post_text_hash': 'a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
+  "log_entry": "{'date': '2026-06-29', 'created_at': '2026-06-29T04:57:56.714524+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': False, 'threads_auto_post_enabled': True, 'dry_run': True, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '029b2e365b55a49a60065545c804b90a4f8bbb64a6a5ca20f7e3d0771589e1fd', 'post_text': 'もしスマホログがあるなら、画面はこれくらいでいい。\\n\\nこれ\\n日付\\n場所\\nあとで見返すメモ\\n\\n余計な分析とかはいらない。\\nあとで見返したい時に迷わず開けるやつ。\\n\\nこういう割り切ったアプリ、あり？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-06-29-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/00a88ad3393f79be4da9ca65e7952b259d861a15/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-29-no-selected-candidate.png', 'post_text_hash': '99439774c7342d0a7b1713c97efffcd9aa621252e8400a1f7a509da270f81644', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
   "api_called": false,
   "live_post_result": {
-    "date": "2026-06-28",
-    "created_at": "2026-06-28T04:48:24.578823+00:00",
+    "date": "2026-06-29",
+    "created_at": "2026-06-29T04:57:56.714524+00:00",
     "status": "blocked_by_post_source_audit",
     "posting_attempted": false,
     "api_called": false,
@@ -54,9 +54,9 @@
     "post_url": "",
     "target_handle": "younengsaitoshaojie",
     "selected_candidate_id": "",
-    "selected_image_path": "output/share-cards/2026-06-28-no-selected-candidate.png",
-    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/abc42b518be27536bc59003637c831fa22f76856/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-28-no-selected-candidate.png",
-    "selected_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+    "selected_image_path": "output/share-cards/2026-06-29-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/00a88ad3393f79be4da9ca65e7952b259d861a15/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-06-29-no-selected-candidate.png",
+    "selected_post_text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
     "source_urls_hash": "",
     "pain_point_hash": "",
     "research_freshness": "stale_blocked",

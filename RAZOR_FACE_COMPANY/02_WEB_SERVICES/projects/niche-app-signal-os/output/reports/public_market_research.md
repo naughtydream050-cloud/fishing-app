@@ -1,4 +1,4 @@
-# Public Market Research - 2026-06-28
+# Public Market Research - 2026-06-29
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 平愛梨 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ランボルギーニ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ノンアルコールビール 運転 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] メッシ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 宋成文 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 森崎ウィン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石垣 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロングウォーク (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 阪神ファン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 土砂災害 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] var (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 八甲田 熊 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 塩 貝 ブラジル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] セベリーノ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 柳沢慎吾 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 坂倉将吾 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中国 輸出規制 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 池上彰 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 軍国主義 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 打者 (https://trends.google.com/trending/rss?geo=JP)

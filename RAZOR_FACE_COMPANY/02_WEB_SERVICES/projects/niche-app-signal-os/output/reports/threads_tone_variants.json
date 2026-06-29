@@ -1,10 +1,10 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "07",
-  "selected_pattern_id": "everyone_has_done_this",
+  "selected_variant_id": "02",
+  "selected_pattern_id": "screen_requirements",
   "variant_count": 10,
   "variants": [
     {
@@ -33,7 +33,7 @@
       "text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "あとで見返す",
@@ -43,7 +43,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.627
+        "max_recent_similarity": 0.087
       },
       "length": 97
     },
@@ -133,13 +133,13 @@
       "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [],
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.177
+        "max_recent_similarity": 1.0
       },
       "length": 76
     },

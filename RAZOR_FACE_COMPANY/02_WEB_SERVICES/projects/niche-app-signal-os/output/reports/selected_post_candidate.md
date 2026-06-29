@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-06-28
+# Selected Post Candidate - 2026-06-29
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-06-28-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-06-29-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+もしスマホログがあるなら、画面はこれくらいでいい。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+これ
+日付
+場所
+あとで見返すメモ
 
-で、必要な情報が見つかりにくい。
+余計な分析とかはいらない。
+あとで見返したい時に迷わず開けるやつ。
 
-スマホUIのアプリ、使う？
+こういう割り切ったアプリ、あり？
