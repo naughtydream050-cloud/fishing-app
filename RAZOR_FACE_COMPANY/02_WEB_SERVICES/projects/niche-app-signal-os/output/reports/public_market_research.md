@@ -1,4 +1,4 @@
-# Public Market Research - 2026-06-29
+# Public Market Research - 2026-06-30
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] var (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 八甲田 熊 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 塩 貝 ブラジル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] セベリーノ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 柳沢慎吾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 坂倉将吾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中国 輸出規制 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 池上彰 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 軍国主義 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 打者 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 伊藤浩子編み物 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ray-ban meta (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 今永昇太 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] belanda vs maroko (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国家公務員 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山田まりや (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドル円 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 気象庁 台風情報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャンタルマンタル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本代表 本田圭佑 (https://trends.google.com/trending/rss?geo=JP)

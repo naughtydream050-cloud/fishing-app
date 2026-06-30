@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "selected": false,
   "selected_candidate_id": "",
   "selected_category": "",
@@ -19,18 +19,17 @@
     "passed": true,
     "tone_id": "default_light_problem",
     "used_words": [
-      "あとで見返す",
       "メモ",
       "ログ"
     ],
     "used_avoid_words": [],
-    "line_count": 8,
+    "line_count": 7,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.087
+    "max_recent_similarity": 0.067
   },
   "selected_post_text": "",
-  "candidate_post_text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
-  "selected_image_path": "output/share-cards/2026-06-29-no-selected-candidate.png",
+  "candidate_post_text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
+  "selected_image_path": "output/share-cards/2026-06-30-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [

@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 97,
+    "length": 108,
     "variant_count": 10,
-    "max_recent_similarity": 0.087
+    "max_recent_similarity": 0.067
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-06-29",
+    "date": "2026-06-30",
     "candidate_id": "",
-    "text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+    "text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -26,20 +26,19 @@
     "decision": "dry_run",
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
-    "variant_id": "02",
-    "pattern_id": "screen_requirements",
+    "variant_id": "04",
+    "pattern_id": "exists_but_missing",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
       "used_words": [
-        "あとで見返す",
         "メモ",
         "ログ"
       ],
       "used_avoid_words": [],
-      "line_count": 8,
+      "line_count": 7,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.087
+      "max_recent_similarity": 0.067
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
