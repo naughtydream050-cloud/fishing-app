@@ -1,6 +1,6 @@
 {
   "department": "Post Candidate Selection Department",
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/threads_post.json",
@@ -36,17 +36,16 @@
     "passed": true,
     "tone_id": "default_light_problem",
     "used_words": [
-      "メモ",
-      "ログ"
+      "メモ"
     ],
     "used_avoid_words": [],
-    "line_count": 7,
+    "line_count": 8,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.067
+    "max_recent_similarity": 0.122
   },
   "selected_post_text": "",
-  "candidate_post_text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
-  "selected_image_path": "output/share-cards/2026-06-30-no-selected-candidate.png",
+  "candidate_post_text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
+  "selected_image_path": "output/share-cards/2026-07-01-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [

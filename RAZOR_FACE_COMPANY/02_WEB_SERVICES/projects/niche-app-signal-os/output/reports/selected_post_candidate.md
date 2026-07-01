@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-06-30
+# Selected Post Candidate - 2026-07-01
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-06-30-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-01-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+あとで見返したい時、小さい不便で時間溶けない？
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+ちゃんと残してるはずなのに、
+残し場所が毎回違う。
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
+・メモ
+・スクショ
+・カレンダー
+・写真フォルダ
 
-スマホログみたいなの、実際使う？
+スマホUIのアプリがあったら、今のやり方から乗り換える？

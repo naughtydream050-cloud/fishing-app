@@ -1,4 +1,4 @@
-# Public Market Research - 2026-06-30
+# Public Market Research - 2026-07-01
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 伊藤浩子編み物 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ray-ban meta (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 今永昇太 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] belanda vs maroko (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 国家公務員 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 山田まりや (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドル円 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 気象庁 台風情報 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジャンタルマンタル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日本代表 本田圭佑 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ワイアット・ミルズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 横田慎太郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] インカピエ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] fifaランク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐藤二朗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] fire ムーブメント (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 韓国サッカー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ミゲル・ロハス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東御市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] apple iphone 値上げ (https://trends.google.com/trending/rss?geo=JP)

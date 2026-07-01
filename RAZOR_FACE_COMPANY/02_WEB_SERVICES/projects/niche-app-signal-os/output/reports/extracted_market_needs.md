@@ -1,4 +1,4 @@
-# Extracted Market Needs - 2026-06-30
+# Extracted Market Needs - 2026-07-01
 
 - signal_count: 10
 - candidate_count: 5
