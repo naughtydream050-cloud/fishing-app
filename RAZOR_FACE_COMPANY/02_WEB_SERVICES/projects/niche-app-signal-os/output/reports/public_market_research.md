@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-02
+# Public Market Research - 2026-07-03
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 鈴木 彩 艶 移籍 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 入場券 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 今井達也 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] もこみち (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 週刊少年ジャンプ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 桐生祥秀 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 神田愛花 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デーブ ロバーツ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ツキノワグマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スイス代表 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] キーウ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ff7 リベレーション (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マンザンビ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大野智 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐々木朗希 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] エアマックス95 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アルジェリア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 薬屋のひとりごと 映画 (https://trends.google.com/trending/rss?geo=JP)

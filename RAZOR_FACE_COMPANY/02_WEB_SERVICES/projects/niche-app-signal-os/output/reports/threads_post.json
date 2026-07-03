@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 92,
+    "length": 83,
     "variant_count": 10,
-    "max_recent_similarity": 0.086
+    "max_recent_similarity": 0.122
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-07-02",
+    "date": "2026-07-03",
     "candidate_id": "",
-    "text": "今のやり方で十分って分かってるんだけど、\n小さい不便だけは専用画面が欲しくなる時ある。\n\nメモ\nスクショ\nカレンダー\n\nこのへんに散らばったこれを、\n一つのスマホログで見返せたらどう？",
+    "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -27,7 +27,7 @@
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
     "variant_id": "02",
-    "pattern_id": "alternative_is_ok_but",
+    "pattern_id": "single_purpose_screen",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
@@ -36,9 +36,9 @@
         "ログ"
       ],
       "used_avoid_words": [],
-      "line_count": 7,
+      "line_count": 6,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.086
+      "max_recent_similarity": 0.122
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
