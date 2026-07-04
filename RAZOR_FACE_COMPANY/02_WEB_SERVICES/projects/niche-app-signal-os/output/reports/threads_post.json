@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 83,
+    "length": 103,
     "variant_count": 10,
-    "max_recent_similarity": 0.122
+    "max_recent_similarity": 0.165
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "candidate_id": "",
-    "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
+    "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -26,19 +26,18 @@
     "decision": "dry_run",
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
-    "variant_id": "02",
-    "pattern_id": "single_purpose_screen",
+    "variant_id": "01",
+    "pattern_id": "searching_is_defeat",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
       "used_words": [
-        "メモ",
-        "ログ"
+        "メモ"
       ],
       "used_avoid_words": [],
       "line_count": 6,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.122
+      "max_recent_similarity": 0.165
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"

@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-03
+# Public Market Research - 2026-07-04
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スイス代表 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] キーウ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ff7 リベレーション (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マンザンビ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 大野智 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐々木朗希 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エアマックス95 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アルジェリア (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 薬屋のひとりごと 映画 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] テイラースウィフト 結婚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヒコロヒー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 野呂佳代 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 三 野宮 鈴 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] コロンビア ガーナ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 吉野家ドラクエコラボ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 吉野家 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中田英寿 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 秋山竜次 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佛得角 (https://trends.google.com/trending/rss?geo=JP)

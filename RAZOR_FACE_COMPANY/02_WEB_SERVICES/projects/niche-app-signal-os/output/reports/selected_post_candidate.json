@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "selected": false,
   "selected_candidate_id": "",
   "selected_category": "",
@@ -19,17 +19,16 @@
     "passed": true,
     "tone_id": "default_light_problem",
     "used_words": [
-      "メモ",
-      "ログ"
+      "メモ"
     ],
     "used_avoid_words": [],
     "line_count": 6,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.122
+    "max_recent_similarity": 0.165
   },
   "selected_post_text": "",
-  "candidate_post_text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
-  "selected_image_path": "output/share-cards/2026-07-03-no-selected-candidate.png",
+  "candidate_post_text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
+  "selected_image_path": "output/share-cards/2026-07-04-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [
