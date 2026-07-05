@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "selected": false,
   "selected_candidate_id": "",
   "selected_category": "",
@@ -22,13 +22,13 @@
       "メモ"
     ],
     "used_avoid_words": [],
-    "line_count": 6,
+    "line_count": 7,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.165
+    "max_recent_similarity": 0.206
   },
   "selected_post_text": "",
-  "candidate_post_text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
-  "selected_image_path": "output/share-cards/2026-07-04-no-selected-candidate.png",
+  "candidate_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+  "selected_image_path": "output/share-cards/2026-07-05-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [

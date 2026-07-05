@@ -1,4 +1,4 @@
-# Live Post Result - 2026-07-04
+# Live Post Result - 2026-07-05
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-07-04-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-05-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ、探してる時点でもうちょっと負けてる。
+これ探すの、毎回ちょっと負けてる気がする。
 
-あとで見返したい時に
-メモから探し始めて、
-スクショまで見に行く流れ。
+メモ
+スクショ
+カレンダー
+写真フォルダ
 
-必要な情報が見つかりにくいの、かなりあるあるだと思う。
+必要な情報が見つかりにくいやつ。
 
-スマホUIのアプリなら使う？
+スマホUIのアプリあったら普通に使う？
 
 ## Risks
 - market_evidence_count_zero
