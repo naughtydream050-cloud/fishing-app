@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-05
+# Public Market Research - 2026-07-06
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 風 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロッキーズ 対 ジャイアンツ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] カルロ アンチェ ロッティ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中島ひとみ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロサンゼルス・ドジャース (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジャンゴッド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トイ・ストーリー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] バービー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サンデーモーニング (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中川安奈 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 北朝鮮 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] はたらく 細胞 作者 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 藤川 球児 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ひとつ屋根の下 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 防衛省 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] leo (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ラ・リーガ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 伊勢崎市田中島町 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大谷翔平 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 薬丸裕英 (https://trends.google.com/trending/rss?geo=JP)

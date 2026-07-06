@@ -1,39 +1,39 @@
 {
   "department": "Trend Timing Department",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "input_sources": [
     "output/reports/research_inputs.json"
   ],
   "summary": "日付とカテゴリから投稿タイミングを軽量評価しました。",
   "scores": {
-    "max_timing_score": 6
+    "max_timing_score": 5
   },
   "risks": [],
   "next_action": "niche demand scoring",
   "timing": [
     {
       "category": "",
-      "timing_score": 6,
+      "timing_score": 5,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     },
     {
       "category": "",
-      "timing_score": 6,
+      "timing_score": 5,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     },
     {
       "category": "",
-      "timing_score": 6,
+      "timing_score": 5,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     },
     {
       "category": "",
-      "timing_score": 6,
+      "timing_score": 5,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     },
     {
       "category": "",
-      "timing_score": 6,
+      "timing_score": 5,
       "reason": "週末や予定系カテゴリは会話化しやすい"
     }
   ]

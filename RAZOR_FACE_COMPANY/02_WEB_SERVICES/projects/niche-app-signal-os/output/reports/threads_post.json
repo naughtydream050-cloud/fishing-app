@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 82,
+    "length": 93,
     "variant_count": 10,
-    "max_recent_similarity": 0.206
+    "max_recent_similarity": 0.1
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-07-05",
+    "date": "2026-07-06",
     "candidate_id": "",
-    "text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+    "text": "「これどこだっけ」ってなってからが長い。\n\nメモ見て、スクショ見て、\n結局カレンダーまで戻る。\n\nあとで見返したい時にこれやるの、地味にしんどい。\n\nスマホログだけ開けば済むなら欲しい？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -26,18 +26,19 @@
     "decision": "dry_run",
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
-    "variant_id": "03",
-    "pattern_id": "small_loss_confession",
+    "variant_id": "01",
+    "pattern_id": "quote_search_loop",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
       "used_words": [
-        "メモ"
+        "メモ",
+        "ログ"
       ],
       "used_avoid_words": [],
-      "line_count": 7,
+      "line_count": 5,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.206
+      "max_recent_similarity": 0.1
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"
