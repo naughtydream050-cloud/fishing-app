@@ -1,6 +1,6 @@
 {
   "department": "Design Department",
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "input_sources": [
     "output/reports/llm_council.json",
     "output/reports/design_strategy.json"
@@ -15,8 +15,8 @@
   ],
   "next_action": "risk gate",
   "card_paths": [
-    "output/card_images/2026-07-06.svg",
-    "output/card_images/2026-07-06.html"
+    "output/card_images/2026-07-07.svg",
+    "output/card_images/2026-07-07.html"
   ],
   "design_strategy": {
     "visual_positioning": "市場候補の不便が一目で伝わるスマホアプリ画面風カード。完成SaaSではなく、欲しいか聞くDRY_RUN検証の見え方にする。",

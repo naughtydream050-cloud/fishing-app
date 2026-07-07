@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-06
+# Public Market Research - 2026-07-07
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 北朝鮮 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] はたらく 細胞 作者 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 藤川 球児 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ひとつ屋根の下 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 防衛省 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] leo (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ラ・リーガ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 伊勢崎市田中島町 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 大谷翔平 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 薬丸裕英 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐藤浩市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 桑田真澄 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 星 より 輝く 君 へ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 銀行危機 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 村上宗隆 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 米騒動 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャイアンツ 対 ブルージェイズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロタ島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドジャース 対 ロッキーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 (https://trends.google.com/trending/rss?geo=JP)
