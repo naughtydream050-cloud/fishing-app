@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-07
+# Public Market Research - 2026-07-08
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 佐藤浩市 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 桑田真澄 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 星 より 輝く 君 へ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 銀行危機 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 村上宗隆 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 米騒動 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジャイアンツ 対 ブルージェイズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロタ島 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドジャース 対 ロッキーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マックフルーリー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 和久田 麻由子 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] 高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 兵庫県知事 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 西村博之 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高知銀行 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 手術 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 近藤サト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 梗塞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャイアンツ 対 ブルージェイズ (https://trends.google.com/trending/rss?geo=JP)
