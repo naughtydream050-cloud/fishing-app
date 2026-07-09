@@ -1,4 +1,4 @@
-# Post Source Audit - 2026-07-08
+# Post Source Audit - 2026-07-09
 
 - selected_candidate_id: 
 - selected_category: 
@@ -13,7 +13,7 @@
 - why_selected_today: Selected trace is not posting-ready because candidate/evidence/source URLs/freshness are incomplete.
 - previous_candidate_id: receipt-payment-retrace
 - duplicate_check_result: {'passed': True, 'reasons': []}
-- selected_image_path: output/share-cards/2026-07-08-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-09-no-selected-candidate.png
 - image_generated_from_candidate: False
 - tone_profile_used: default_light_problem
 - design_strategy_used: False

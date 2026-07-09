@@ -1,6 +1,6 @@
 {
   "department": "Post Source Audit Department",
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/selected_post_candidate.json",
@@ -26,7 +26,7 @@
   ],
   "next_action": "stop before posting",
   "post_source_audit": {
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "selected_candidate_id": "",
     "selected_category": "",
     "selected_pain_point": "",
@@ -46,9 +46,9 @@
       "passed": true,
       "reasons": []
     },
-    "selected_post_text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
-    "selected_post_text_hash": "4aa65c602cce0c39f5057ec30a6888fb9017514a5df6e878a5ab2dae28d05d3c",
-    "selected_image_path": "output/share-cards/2026-07-08-no-selected-candidate.png",
+    "selected_post_text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+    "selected_post_text_hash": "99439774c7342d0a7b1713c97efffcd9aa621252e8400a1f7a509da270f81644",
+    "selected_image_path": "output/share-cards/2026-07-09-no-selected-candidate.png",
     "image_generated_from_candidate": false,
     "tone_profile_used": "default_light_problem",
     "design_strategy_used": false,

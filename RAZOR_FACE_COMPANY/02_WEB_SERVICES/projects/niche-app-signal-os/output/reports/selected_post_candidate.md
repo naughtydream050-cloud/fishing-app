@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-07-08
+# Selected Post Candidate - 2026-07-09
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-07-08-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-09-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+もしスマホログがあるなら、画面はこれくらいでいい。
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+これ
+日付
+場所
+あとで見返すメモ
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
+余計な分析とかはいらない。
+あとで見返したい時に迷わず開けるやつ。
 
-スマホログみたいなの、実際使う？
+こういう割り切ったアプリ、あり？
