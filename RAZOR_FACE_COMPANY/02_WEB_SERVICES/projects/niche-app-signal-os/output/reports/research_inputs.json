@@ -1,6 +1,6 @@
 {
   "department": "Research Department",
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "input_sources": [
     "output/reports/extracted_market_needs.json",
     "data/market_research_inputs.json"
@@ -23,11 +23,11 @@
       "target_user": "買い物履歴や返品期限をスマホで探しがちな生活者",
       "current_workaround": "写真フォルダ、カード明細、EC購入履歴を別々に見る",
       "evidence_texts": [
-        "過失運転致死傷罪",
-        "ディズニー",
-        "高校野球 北海道",
-        "栃木県高校野球",
-        "マツキヨ ちいかわ"
+        "狩野英孝",
+        "ストレンジャー",
+        "do",
+        "ホワイトハウス",
+        "バタン諸島"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -58,11 +58,11 @@
       "target_user": "課題や提出期限をスマホで確認する学生",
       "current_workaround": "学校ポータル、LINE、カレンダー、スマホメモを行き来する",
       "evidence_texts": [
-        "過失運転致死傷罪",
-        "ディズニー",
-        "高校野球 北海道",
-        "栃木県高校野球",
-        "マツキヨ ちいかわ"
+        "狩野英孝",
+        "ストレンジャー",
+        "do",
+        "ホワイトハウス",
+        "バタン諸島"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -93,11 +93,11 @@
       "target_user": "複数のサブスクをなんとなく契約したままにしているスマホユーザー",
       "current_workaround": "メール検索、カード明細、各サービスのアカウント画面を見る",
       "evidence_texts": [
-        "過失運転致死傷罪",
-        "ディズニー",
-        "高校野球 北海道",
-        "栃木県高校野球",
-        "マツキヨ ちいかわ"
+        "狩野英孝",
+        "ストレンジャー",
+        "do",
+        "ホワイトハウス",
+        "バタン諸島"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -127,11 +127,11 @@
       "target_user": "旅行やライブ遠征の直前にスマホで持ち物を確認する人",
       "current_workaround": "メモアプリ、過去の写真、LINE、自作チェックリストを見る",
       "evidence_texts": [
-        "過失運転致死傷罪",
-        "ディズニー",
-        "高校野球 北海道",
-        "栃木県高校野球",
-        "マツキヨ ちいかわ"
+        "狩野英孝",
+        "ストレンジャー",
+        "do",
+        "ホワイトハウス",
+        "バタン諸島"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -161,11 +161,11 @@
       "target_user": "推し活のグッズや現場記録をスマホで見返したい人",
       "current_workaround": "写真フォルダ、メモ、DM、スプレッドシートを行き来する",
       "evidence_texts": [
-        "過失運転致死傷罪",
-        "ディズニー",
-        "高校野球 北海道",
-        "栃木県高校野球",
-        "マツキヨ ちいかわ"
+        "狩野英孝",
+        "ストレンジャー",
+        "do",
+        "ホワイトハウス",
+        "バタン諸島"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -191,5 +191,5 @@
     }
   ],
   "excluded_items": [],
-  "memory_path": "memory/research/2026-07-09.md"
+  "memory_path": "memory/research/2026-07-10.md"
 }

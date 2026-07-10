@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-07-09
+# Selected Post Candidate - 2026-07-10
 
 - selected: False
 - selected_candidate_id: 
@@ -7,18 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-07-09-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-10-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-もしスマホログがあるなら、画面はこれくらいでいい。
+あとで見返したい時、小さい不便で時間溶けない？
 
-これ
-日付
-場所
-あとで見返すメモ
+ちゃんと残してるはずなのに、
+残し場所が毎回違う。
 
-余計な分析とかはいらない。
-あとで見返したい時に迷わず開けるやつ。
+・メモ
+・スクショ
+・カレンダー
+・写真フォルダ
 
-こういう割り切ったアプリ、あり？
+スマホUIのアプリがあったら、今のやり方から乗り換える？
