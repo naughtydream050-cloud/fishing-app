@@ -133,5 +133,14 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ]
+  ],
+  "publishing": {
+    "status": "blocked_by_post_source_audit",
+    "posting_attempted": false,
+    "api_called": false,
+    "post_id": null,
+    "post_url": "",
+    "selected_candidate_id": "",
+    "selected_image_path": "output/share-cards/2026-07-10-no-selected-candidate.png"
+  }
 }
