@@ -1,6 +1,6 @@
 {
   "date": "2026-07-11",
-  "created_at": "2026-07-11T03:39:21.760714+00:00",
+  "created_at": "2026-07-11T03:39:23.024373+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-07-11-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/f08ae9319931d1d128038d6d7cc59df4d16d7573/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-07-11-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/86e300f801746986e88f01a5b5527a51737d1656/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-07-11-no-selected-candidate.png",
   "selected_post_text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
   "source_urls_hash": "",
   "pain_point_hash": "",
