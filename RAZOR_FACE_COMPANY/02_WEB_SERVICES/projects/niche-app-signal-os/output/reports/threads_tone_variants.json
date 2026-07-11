@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "02",
-  "selected_pattern_id": "time_melts_scene",
+  "selected_variant_id": "03",
+  "selected_pattern_id": "single_purpose_screen",
   "variant_count": 10,
   "variants": [
     {
@@ -34,7 +34,7 @@
       "text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ"
@@ -42,7 +42,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.122
+        "max_recent_similarity": 1.0
       },
       "length": 106
     },
@@ -73,7 +73,7 @@
       "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ"
@@ -81,7 +81,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 1.0
+        "max_recent_similarity": 0.206
       },
       "length": 103
     },
@@ -122,7 +122,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.085
+        "max_recent_similarity": 0.086
       },
       "length": 92
     },

@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-10
+# Public Market Research - 2026-07-11
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 狩野英孝 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ストレンジャー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] do (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ホワイトハウス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] バタン諸島 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] キャサリン妃 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] bo2 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ちい かわ おばけ の 森 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石川県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スポーツナビ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 栗原恵 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 草彅剛 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] フランソワーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 蔵内勇夫 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 吉田正尚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ごぶごぶ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 埼玉 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球速報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 愛媛県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ゾンビランドサガ (https://trends.google.com/trending/rss?geo=JP)
