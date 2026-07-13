@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-12
+# Public Market Research - 2026-07-13
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 財務省 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 北陸新幹線 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 本田紗来 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 新潟県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エルドボルグ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岐阜県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 山本由伸 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ランドン・ナック (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 浦野芽良 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] イッペイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中村ゆり (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 麻生太郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ラヴィット! (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 沖縄高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 島根県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヤフー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] news (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ユーチューブ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 福岡 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 北海道高校野球 (https://trends.google.com/trending/rss?geo=JP)

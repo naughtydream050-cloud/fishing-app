@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-07-12
+# Selected Post Candidate - 2026-07-13
 
 - selected: False
 - selected_candidate_id: 
@@ -7,16 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-07-12-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-13-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、探してる時点でもうちょっと負けてる。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
-あとで見返したい時に
-メモから探し始めて、
-スクショまで見に行く流れ。
+メモ
+スクショ
+カレンダー
 
-必要な情報が見つかりにくいの、かなりあるあるだと思う。
-
-スマホUIのアプリなら使う？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？
