@@ -1,6 +1,6 @@
 {
   "department": "LLM Council Department",
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "input_sources": [
     "output/reports/niche_demand_score.json"
   ],
@@ -13,7 +13,7 @@
   "next_action": "copywriting",
   "provider": "rules_fallback",
   "decision_payload": {
-    "date": "2026-07-13",
+    "date": "2026-07-14",
     "selected_niche": "生活の小さい面倒解決",
     "council": {
       "trend_scout": "生活の小さい面倒解決は具体的な生活場面があり、コメントが返りやすい。",

@@ -1,6 +1,6 @@
 {
   "department": "Risk Control Department",
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/niche_demand_score.json",
@@ -11,7 +11,7 @@
   "scores": {
     "tone_block_count": 0,
     "tone_warning_count": 0,
-    "max_recent_similarity": 0.122
+    "max_recent_similarity": 0.069
   },
   "risks": [],
   "next_action": "select post candidate",

@@ -1,4 +1,4 @@
-# Live Post Result - 2026-07-13
+# Live Post Result - 2026-07-14
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,19 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-07-13-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-14-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-今のやり方で十分って分かってるんだけど、
-小さい不便だけは専用画面が欲しくなる時ある。
+きれいに管理したいわけじゃないんよ。
 
-メモ
-スクショ
-カレンダー
+ただ、あとで見返したい時に
+これがすぐ出てきてほしいだけ。
 
-このへんに散らばったこれを、
-一つのスマホログで見返せたらどう？
+スマホメモに置いた気もするし、
+写真フォルダに残した気もする。
+
+こういうのだけ拾ってくれるスマホログ、需要ある？
 
 ## Risks
 - market_evidence_count_zero
