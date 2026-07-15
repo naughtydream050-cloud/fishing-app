@@ -1730,5 +1730,30 @@
     "source_urls_hash": "",
     "research_freshness": "stale_blocked",
     "evidence_count": 0
+  },
+  {
+    "date": "2026-07-15",
+    "created_at": "2026-07-15T03:30:46.299081+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "293144b1a0110c1f251e8642316b3c5dd5f2e831180951d08ec0118d43b3c830",
+    "post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+    "alt_text": "候補のスマホアプリ画面",
+    "topic_tags": [
+      "",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "",
+    "selected_image_path": "output/share-cards/2026-07-15-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/4f888b8a6132b86795a586612a5a8c972accdea8/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-07-15-no-selected-candidate.png",
+    "post_text_hash": "3ea0ea5a3f50d663a4a126300b463e173673851966ff654421999260791d35dd",
+    "pain_point_hash": "",
+    "source_urls_hash": "",
+    "research_freshness": "stale_blocked",
+    "evidence_count": 0
   }
 ]
