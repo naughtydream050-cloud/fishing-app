@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "selected": false,
   "selected_candidate_id": "",
   "selected_category": "",
@@ -19,17 +19,16 @@
     "passed": true,
     "tone_id": "default_light_problem",
     "used_words": [
-      "メモ",
-      "ログ"
+      "メモ"
     ],
     "used_avoid_words": [],
-    "line_count": 6,
+    "line_count": 7,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.087
+    "max_recent_similarity": 0.206
   },
   "selected_post_text": "",
-  "candidate_post_text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
-  "selected_image_path": "output/share-cards/2026-07-14-no-selected-candidate.png",
+  "candidate_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+  "selected_image_path": "output/share-cards/2026-07-15-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [

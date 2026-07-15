@@ -1,129 +1,14 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "01",
-  "selected_pattern_id": "not_management_just_need",
+  "selected_variant_id": "03",
+  "selected_pattern_id": "small_loss_confession",
   "variant_count": 10,
   "variants": [
     {
       "variant_id": "01",
-      "candidate_id": "",
-      "angle": "not_management_just_need",
-      "text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": true,
-        "tone_id": "default_light_problem",
-        "used_words": [
-          "メモ",
-          "ログ"
-        ],
-        "used_avoid_words": [],
-        "line_count": 6,
-        "target_audience": "unclear",
-        "max_recent_similarity": 0.087
-      },
-      "length": 108
-    },
-    {
-      "variant_id": "02",
-      "candidate_id": "",
-      "angle": "everyone_has_done_this",
-      "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": true,
-        "tone_id": "default_light_problem",
-        "used_words": [],
-        "used_avoid_words": [],
-        "line_count": 7,
-        "target_audience": "unclear",
-        "max_recent_similarity": 0.165
-      },
-      "length": 76
-    },
-    {
-      "variant_id": "03",
-      "candidate_id": "",
-      "angle": "exists_but_missing",
-      "text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": false,
-        "tone_id": "default_light_problem",
-        "used_words": [
-          "メモ",
-          "ログ"
-        ],
-        "used_avoid_words": [],
-        "line_count": 7,
-        "target_audience": "unclear",
-        "max_recent_similarity": 1.0
-      },
-      "length": 108
-    },
-    {
-      "variant_id": "04",
-      "candidate_id": "",
-      "angle": "time_melts_scene",
-      "text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": false,
-        "tone_id": "default_light_problem",
-        "used_words": [
-          "メモ"
-        ],
-        "used_avoid_words": [],
-        "line_count": 8,
-        "target_audience": "unclear",
-        "max_recent_similarity": 1.0
-      },
-      "length": 106
-    },
-    {
-      "variant_id": "05",
-      "candidate_id": "",
-      "angle": "single_purpose_screen",
-      "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": false,
-        "tone_id": "default_light_problem",
-        "used_words": [
-          "メモ",
-          "ログ"
-        ],
-        "used_avoid_words": [],
-        "line_count": 6,
-        "target_audience": "unclear",
-        "max_recent_similarity": 1.0
-      },
-      "length": 83
-    },
-    {
-      "variant_id": "06",
-      "candidate_id": "",
-      "angle": "searching_is_defeat",
-      "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
-      "tone_id": "default_light_problem",
-      "tone_check_result": {
-        "passed": false,
-        "tone_id": "default_light_problem",
-        "used_words": [
-          "メモ"
-        ],
-        "used_avoid_words": [],
-        "line_count": 6,
-        "target_audience": "unclear",
-        "max_recent_similarity": 1.0
-      },
-      "length": 103
-    },
-    {
-      "variant_id": "07",
       "candidate_id": "",
       "angle": "screen_requirements",
       "text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
@@ -144,7 +29,7 @@
       "length": 97
     },
     {
-      "variant_id": "08",
+      "variant_id": "02",
       "candidate_id": "",
       "angle": "alternative_is_ok_but",
       "text": "今のやり方で十分って分かってるんだけど、\n小さい不便だけは専用画面が欲しくなる時ある。\n\nメモ\nスクショ\nカレンダー\n\nこのへんに散らばったこれを、\n一つのスマホログで見返せたらどう？",
@@ -164,7 +49,7 @@
       "length": 92
     },
     {
-      "variant_id": "09",
+      "variant_id": "03",
       "candidate_id": "",
       "angle": "small_loss_confession",
       "text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
@@ -183,7 +68,7 @@
       "length": 82
     },
     {
-      "variant_id": "10",
+      "variant_id": "04",
       "candidate_id": "",
       "angle": "quote_search_loop",
       "text": "「これどこだっけ」ってなってからが長い。\n\nメモ見て、スクショ見て、\n結局カレンダーまで戻る。\n\nあとで見返したい時にこれやるの、地味にしんどい。\n\nスマホログだけ開けば済むなら欲しい？",
@@ -201,6 +86,121 @@
         "max_recent_similarity": 0.1
       },
       "length": 93
+    },
+    {
+      "variant_id": "05",
+      "candidate_id": "",
+      "angle": "not_management_just_need",
+      "text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": false,
+        "tone_id": "default_light_problem",
+        "used_words": [
+          "メモ",
+          "ログ"
+        ],
+        "used_avoid_words": [],
+        "line_count": 6,
+        "target_audience": "unclear",
+        "max_recent_similarity": 1.0
+      },
+      "length": 108
+    },
+    {
+      "variant_id": "06",
+      "candidate_id": "",
+      "angle": "everyone_has_done_this",
+      "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "default_light_problem",
+        "used_words": [],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "unclear",
+        "max_recent_similarity": 0.165
+      },
+      "length": 76
+    },
+    {
+      "variant_id": "07",
+      "candidate_id": "",
+      "angle": "exists_but_missing",
+      "text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": true,
+        "tone_id": "default_light_problem",
+        "used_words": [
+          "メモ",
+          "ログ"
+        ],
+        "used_avoid_words": [],
+        "line_count": 7,
+        "target_audience": "unclear",
+        "max_recent_similarity": 0.115
+      },
+      "length": 108
+    },
+    {
+      "variant_id": "08",
+      "candidate_id": "",
+      "angle": "time_melts_scene",
+      "text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": false,
+        "tone_id": "default_light_problem",
+        "used_words": [
+          "メモ"
+        ],
+        "used_avoid_words": [],
+        "line_count": 8,
+        "target_audience": "unclear",
+        "max_recent_similarity": 1.0
+      },
+      "length": 106
+    },
+    {
+      "variant_id": "09",
+      "candidate_id": "",
+      "angle": "single_purpose_screen",
+      "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": false,
+        "tone_id": "default_light_problem",
+        "used_words": [
+          "メモ",
+          "ログ"
+        ],
+        "used_avoid_words": [],
+        "line_count": 6,
+        "target_audience": "unclear",
+        "max_recent_similarity": 1.0
+      },
+      "length": 83
+    },
+    {
+      "variant_id": "10",
+      "candidate_id": "",
+      "angle": "searching_is_defeat",
+      "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
+      "tone_id": "default_light_problem",
+      "tone_check_result": {
+        "passed": false,
+        "tone_id": "default_light_problem",
+        "used_words": [
+          "メモ"
+        ],
+        "used_avoid_words": [],
+        "line_count": 6,
+        "target_audience": "unclear",
+        "max_recent_similarity": 1.0
+      },
+      "length": 103
     }
   ],
   "all_variants_tone_checked": true,
