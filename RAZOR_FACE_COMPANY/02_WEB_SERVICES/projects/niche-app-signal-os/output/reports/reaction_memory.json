@@ -1,6 +1,6 @@
 {
   "department": "Reaction Memory Department",
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "input_sources": [
     "data/reaction_memory.json",
     "output/reports/publishing.json"
@@ -13,7 +13,7 @@
   "risks": [],
   "next_action": "candidate scoring",
   "reaction_memory": "data/reaction_memory.json",
-  "memory_path": "memory/reaction/2026-07-15.md",
+  "memory_path": "memory/reaction/2026-07-16.md",
   "top_entries": [
     {
       "date": "2026-06-21",

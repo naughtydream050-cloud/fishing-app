@@ -1,6 +1,6 @@
 {
   "department": "Post Candidate Selection Department",
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/threads_post.json",
@@ -35,17 +35,15 @@
   "tone_check_result": {
     "passed": true,
     "tone_id": "default_light_problem",
-    "used_words": [
-      "メモ"
-    ],
+    "used_words": [],
     "used_avoid_words": [],
     "line_count": 7,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.206
+    "max_recent_similarity": 0.177
   },
   "selected_post_text": "",
-  "candidate_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
-  "selected_image_path": "output/share-cards/2026-07-15-no-selected-candidate.png",
+  "candidate_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+  "selected_image_path": "output/share-cards/2026-07-16-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [

@@ -1,6 +1,6 @@
 {
   "department": "Mobile UI Card Generator",
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/design_strategy.json"
@@ -23,8 +23,8 @@
     "height": 1288
   },
   "card_paths": {
-    "html": "output/share-cards/2026-07-15-no-selected-candidate.html",
-    "png": "output/share-cards/2026-07-15-no-selected-candidate.png"
+    "html": "output/share-cards/2026-07-16-no-selected-candidate.html",
+    "png": "output/share-cards/2026-07-16-no-selected-candidate.png"
   },
   "png_generated": true,
   "png_status": "ok",

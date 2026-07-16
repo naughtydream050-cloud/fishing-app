@@ -1,6 +1,6 @@
 {
   "department": "Post Source Audit Department",
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/selected_post_candidate.json",
@@ -26,7 +26,7 @@
   ],
   "next_action": "stop before posting",
   "post_source_audit": {
-    "date": "2026-07-15",
+    "date": "2026-07-16",
     "selected_candidate_id": "",
     "selected_category": "",
     "selected_pain_point": "",
@@ -46,9 +46,9 @@
       "passed": true,
       "reasons": []
     },
-    "selected_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
-    "selected_post_text_hash": "3ea0ea5a3f50d663a4a126300b463e173673851966ff654421999260791d35dd",
-    "selected_image_path": "output/share-cards/2026-07-15-no-selected-candidate.png",
+    "selected_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
+    "selected_post_text_hash": "a9101c2212cdb3a741bbe99165255295372efefd0a45be88824f98230f5872d3",
+    "selected_image_path": "output/share-cards/2026-07-16-no-selected-candidate.png",
     "image_generated_from_candidate": false,
     "tone_profile_used": "default_light_problem",
     "design_strategy_used": false,
