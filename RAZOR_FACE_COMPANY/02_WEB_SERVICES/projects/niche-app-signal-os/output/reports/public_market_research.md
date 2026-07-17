@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-16
+# Public Market Research - 2026-07-17
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
+- [google_trends_jp] 死体 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] 秋田県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] coco壱 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ノーヒットノーラン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 捜査 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 霧島市 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] 岩手県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 越境台風 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 糸井嘉男 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 角田夏実 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 広島県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 年金 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] line 有料 化 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サマソニ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 廃墟 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福岡県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 貝塚市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小倉記念 過去 (https://trends.google.com/trending/rss?geo=JP)

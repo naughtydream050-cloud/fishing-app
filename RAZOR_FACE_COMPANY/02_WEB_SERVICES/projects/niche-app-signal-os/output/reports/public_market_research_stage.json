@@ -1,6 +1,6 @@
 {
   "department": "Public Market Research Department",
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "input_sources": [
     "data/market_research_sources.json"
   ],
@@ -20,9 +20,30 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
+      "title": "死体",
+      "summary": "",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
+      "audience_hint": "general_japan_mobile_users",
+      "niche_hints": [
+        "忘れ物",
+        "家計",
+        "予定",
+        "アプリ",
+        "記録",
+        "学校",
+        "レシート",
+        "推し活",
+        "サブスク"
+      ]
+    },
+    {
+      "source_id": "google_trends_jp",
+      "source_type": "public_trends_rss",
+      "source_url": "https://trends.google.com/trending/rss?geo=JP",
+      "item_url": "https://trends.google.com/trending/rss?geo=JP",
       "title": "秋田県高校野球",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:20:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -41,9 +62,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "coco壱",
+      "title": "捜査",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:20:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -62,9 +83,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "ノーヒットノーラン",
+      "title": "霧島市",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:20:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -85,7 +106,7 @@
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
       "title": "岩手県高校野球",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:20:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -104,9 +125,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "越境台風",
+      "title": "サマソニ",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:20:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -125,9 +146,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "糸井嘉男",
+      "title": "廃墟",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:10:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -146,9 +167,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "角田夏実",
+      "title": "福岡県高校野球",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:10:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -167,9 +188,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "広島県高校野球",
+      "title": "貝塚市",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:10:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
@@ -188,30 +209,9 @@
       "source_type": "public_trends_rss",
       "source_url": "https://trends.google.com/trending/rss?geo=JP",
       "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "年金",
+      "title": "小倉記念 過去",
       "summary": "",
-      "published_at": "Wed, 15 Jul 2026 20:00:00 -0700",
-      "audience_hint": "general_japan_mobile_users",
-      "niche_hints": [
-        "忘れ物",
-        "家計",
-        "予定",
-        "アプリ",
-        "記録",
-        "学校",
-        "レシート",
-        "推し活",
-        "サブスク"
-      ]
-    },
-    {
-      "source_id": "google_trends_jp",
-      "source_type": "public_trends_rss",
-      "source_url": "https://trends.google.com/trending/rss?geo=JP",
-      "item_url": "https://trends.google.com/trending/rss?geo=JP",
-      "title": "line 有料 化",
-      "summary": "",
-      "published_at": "Wed, 15 Jul 2026 19:50:00 -0700",
+      "published_at": "Thu, 16 Jul 2026 20:20:00 -0700",
       "audience_hint": "general_japan_mobile_users",
       "niche_hints": [
         "忘れ物",
