@@ -1,4 +1,4 @@
-# Live Post Result - 2026-07-17
+# Live Post Result - 2026-07-18
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,18 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-07-17-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-18-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-「これどこだっけ」ってなってからが長い。
+これ、あるのは分かってるのに見つからないのが一番だるい。
 
-メモ見て、スクショ見て、
-結局カレンダーまで戻る。
+メモにはありそう
+スクショにもありそう
+カレンダーにもありそう
 
-あとで見返したい時にこれやるの、地味にしんどい。
+でも今ほしいのはそこじゃなくて、
+一発で出てくる画面。
 
-スマホログだけ開けば済むなら欲しい？
+スマホログみたいなの、実際使う？
 
 ## Risks
 - market_evidence_count_zero
