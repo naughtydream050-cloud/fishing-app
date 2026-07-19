@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "02",
-  "selected_pattern_id": "exists_but_missing",
+  "selected_variant_id": "03",
+  "selected_pattern_id": "time_melts_scene",
   "variant_count": 10,
   "variants": [
     {
@@ -31,7 +31,7 @@
       "text": "これ、あるのは分かってるのに見つからないのが一番だるい。\n\nメモにはありそう\nスクショにもありそう\nカレンダーにもありそう\n\nでも今ほしいのはそこじゃなくて、\n一発で出てくる画面。\n\nスマホログみたいなの、実際使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -40,7 +40,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.075
+        "max_recent_similarity": 1.0
       },
       "length": 108
     },
@@ -90,7 +90,7 @@
       "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ"
@@ -98,7 +98,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 1.0
+        "max_recent_similarity": 0.206
       },
       "length": 103
     },

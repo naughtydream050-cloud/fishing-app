@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-18
+# Public Market Research - 2026-07-19
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 坂口杏里 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 柏レイソル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 島根県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球 東東京 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 村上宗隆 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福井県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 松井秀喜 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マック (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マクドナルド メニュー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小泉進次郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャパンオープン バドミントン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球速報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岐阜県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福岡競艇 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 長野 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国債金利 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松本 人 志 ストーマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] バレーボールカナダ男子代表 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 前原瑞樹 (https://trends.google.com/trending/rss?geo=JP)
