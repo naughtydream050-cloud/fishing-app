@@ -1,6 +1,6 @@
 {
   "department": "Market Need Extraction Department",
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "input_sources": [
     "output/reports/public_market_research.json"
   ],
@@ -19,11 +19,11 @@
       "target_user": "買い物履歴や返品期限をスマホで探しがちな生活者",
       "current_workaround": "写真フォルダ、カード明細、EC購入履歴を別々に見る",
       "evidence_texts": [
-        "宇都宮 コンビニ トイレ",
-        "工藤公康",
-        "大井競馬場",
-        "自由が丘駅",
-        "西東京 高校野球"
+        "高校野球 福岡",
+        "立花学園",
+        "愛媛県高校野球",
+        "高校野球 北海道",
+        "検問"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -53,11 +53,11 @@
       "target_user": "課題や提出期限をスマホで確認する学生",
       "current_workaround": "学校ポータル、LINE、カレンダー、スマホメモを行き来する",
       "evidence_texts": [
-        "宇都宮 コンビニ トイレ",
-        "工藤公康",
-        "大井競馬場",
-        "自由が丘駅",
-        "西東京 高校野球"
+        "高校野球 福岡",
+        "立花学園",
+        "愛媛県高校野球",
+        "高校野球 北海道",
+        "検問"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -87,11 +87,11 @@
       "target_user": "複数のサブスクをなんとなく契約したままにしているスマホユーザー",
       "current_workaround": "メール検索、カード明細、各サービスのアカウント画面を見る",
       "evidence_texts": [
-        "宇都宮 コンビニ トイレ",
-        "工藤公康",
-        "大井競馬場",
-        "自由が丘駅",
-        "西東京 高校野球"
+        "高校野球 福岡",
+        "立花学園",
+        "愛媛県高校野球",
+        "高校野球 北海道",
+        "検問"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -120,11 +120,11 @@
       "target_user": "旅行やライブ遠征の直前にスマホで持ち物を確認する人",
       "current_workaround": "メモアプリ、過去の写真、LINE、自作チェックリストを見る",
       "evidence_texts": [
-        "宇都宮 コンビニ トイレ",
-        "工藤公康",
-        "大井競馬場",
-        "自由が丘駅",
-        "西東京 高校野球"
+        "高校野球 福岡",
+        "立花学園",
+        "愛媛県高校野球",
+        "高校野球 北海道",
+        "検問"
       ],
       "source_type": "public_market_research",
       "source_urls": [
@@ -153,11 +153,11 @@
       "target_user": "推し活のグッズや現場記録をスマホで見返したい人",
       "current_workaround": "写真フォルダ、メモ、DM、スプレッドシートを行き来する",
       "evidence_texts": [
-        "宇都宮 コンビニ トイレ",
-        "工藤公康",
-        "大井競馬場",
-        "自由が丘駅",
-        "西東京 高校野球"
+        "高校野球 福岡",
+        "立花学園",
+        "愛媛県高校野球",
+        "高校野球 北海道",
+        "検問"
       ],
       "source_type": "public_market_research",
       "source_urls": [

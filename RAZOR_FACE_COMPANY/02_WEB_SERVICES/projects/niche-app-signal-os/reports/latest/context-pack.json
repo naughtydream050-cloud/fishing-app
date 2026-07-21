@@ -1,6 +1,6 @@
 {
   "project": "niche-app-signal-os",
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "dry_run": true,
   "sample": false,
   "status": "ok",
@@ -133,14 +133,5 @@
     "memory/reaction/",
     "memory/council/",
     "memory/reports/"
-  ],
-  "publishing": {
-    "status": "blocked_by_post_source_audit",
-    "posting_attempted": false,
-    "api_called": false,
-    "post_id": null,
-    "post_url": "",
-    "selected_candidate_id": "",
-    "selected_image_path": "output/share-cards/2026-07-20-no-selected-candidate.png"
-  }
+  ]
 }
