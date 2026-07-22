@@ -1,4 +1,4 @@
-# Daily Niche UI Candidates - 2026-07-21
+# Daily Niche UI Candidates - 2026-07-22
 
 Selected: none
 Previous: receipt-payment-retrace
