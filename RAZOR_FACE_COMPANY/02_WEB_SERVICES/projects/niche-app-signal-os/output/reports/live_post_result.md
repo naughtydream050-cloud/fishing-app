@@ -1,4 +1,4 @@
-# Live Post Result - 2026-07-22
+# Live Post Result - 2026-07-23
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,21 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-07-22-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-23-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-きれいに管理したいわけじゃないんよ。
+もしスマホログがあるなら、画面はこれくらいでいい。
 
-ただ、あとで見返したい時に
-これがすぐ出てきてほしいだけ。
+これ
+日付
+場所
+あとで見返すメモ
 
-スマホメモに置いた気もするし、
-写真フォルダに残した気もする。
+余計な分析とかはいらない。
+あとで見返したい時に迷わず開けるやつ。
 
-こういうのだけ拾ってくれるスマホログ、需要ある？
+こういう割り切ったアプリ、あり？
 
 ## Risks
 - market_evidence_count_zero
