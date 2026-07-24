@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-23
+# Public Market Research - 2026-07-24
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 山口組 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 東筑 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岡山県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 澤穂希 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 外傷 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球 愛知 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 甲子園 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岩手県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 三重県高校野球 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球 東東京 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 大阪 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 土用の丑の日 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 兵庫県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中居 正広 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山口県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 関屋記念 過去 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サッカーダイジェスト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 千葉県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 埼玉県高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] カップヌードル 冷やし (https://trends.google.com/trending/rss?geo=JP)
