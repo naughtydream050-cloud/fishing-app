@@ -1,6 +1,6 @@
 {
   "date": "2026-07-24",
-  "created_at": "2026-07-24T03:40:25.888546+00:00",
+  "created_at": "2026-07-24T03:40:27.357536+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-07-24-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/2a5766578cfdae39f745c3ef5526da4beedfaed2/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-07-24-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/f87352c5a8f0a7e48cb1cd755f7baffcbee45153/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-07-24-no-selected-candidate.png",
   "selected_post_text": "今のやり方で十分って分かってるんだけど、\n小さい不便だけは専用画面が欲しくなる時ある。\n\nメモ\nスクショ\nカレンダー\n\nこのへんに散らばったこれを、\n一つのスマホログで見返せたらどう？",
   "source_urls_hash": "",
   "pain_point_hash": "",
