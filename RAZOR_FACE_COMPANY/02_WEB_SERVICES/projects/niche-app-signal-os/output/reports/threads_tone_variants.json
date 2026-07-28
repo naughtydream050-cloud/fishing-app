@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "05",
-  "selected_pattern_id": "everyone_has_done_this",
+  "selected_variant_id": "06",
+  "selected_pattern_id": "exists_but_missing",
   "variant_count": 10,
   "variants": [
     {
@@ -93,13 +93,13 @@
       "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [],
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.177
+        "max_recent_similarity": 1.0
       },
       "length": 76
     },
@@ -169,7 +169,7 @@
       "text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ"
@@ -177,7 +177,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 1.0
+        "max_recent_similarity": 0.206
       },
       "length": 103
     },

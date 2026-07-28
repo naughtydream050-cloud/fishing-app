@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-27
+# Public Market Research - 2026-07-28
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] リストラ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドローンショー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 天海祐希 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 鳥居みゆき (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 31 ポケモン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 木南晴夏 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 伊万里市瀬戸町 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヒロアカur (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] プルデンシャル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジャンカルロ・エスポジート (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 食料品消費税 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ea (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 認知症 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] インターハイバスケ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国民栄誉賞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 奄美警備隊 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] aig女子オープン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 享栄高校 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福山高校 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 香川 真司 (https://trends.google.com/trending/rss?geo=JP)

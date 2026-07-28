@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-07-27
+# Selected Post Candidate - 2026-07-28
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,17 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-07-27-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-07-28-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+これ、あるのは分かってるのに見つからないのが一番だるい。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+メモにはありそう
+スクショにもありそう
+カレンダーにもありそう
 
-で、必要な情報が見つかりにくい。
+でも今ほしいのはそこじゃなくて、
+一発で出てくる画面。
 
-スマホUIのアプリ、使う？
+スマホログみたいなの、実際使う？
