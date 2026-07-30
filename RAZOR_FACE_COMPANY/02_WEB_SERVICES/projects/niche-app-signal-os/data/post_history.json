@@ -1698,6 +1698,24 @@
       "source_urls_hash": "",
       "research_freshness": "stale_blocked",
       "evidence_count": 0
+    },
+    {
+      "date": "2026-07-30",
+      "created_at": "2026-07-30T03:25:02.495679+00:00",
+      "status": "blocked_by_post_source_audit",
+      "target_handle": "younengsaitoshaojie",
+      "content_hash": "2bac968d4bd44a0e59b85945208ef4b04dfc7dca93a1125bc41baa75d7192399",
+      "thread_id": null,
+      "dry_run": false,
+      "auto_post": true,
+      "threads_auto_post_enabled": true,
+      "candidate_id": "",
+      "selected_image_path": "output/share-cards/2026-07-30-no-selected-candidate.png",
+      "post_text_hash": "b0b863a2bf19136aa6807b58cf4168a1cd3bf85de90f6d646e5aee6ab8bb279e",
+      "pain_point_hash": "",
+      "source_urls_hash": "",
+      "research_freshness": "stale_blocked",
+      "evidence_count": 0
     }
   ]
 }
