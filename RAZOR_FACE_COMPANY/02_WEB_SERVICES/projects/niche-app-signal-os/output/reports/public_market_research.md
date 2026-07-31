@@ -1,4 +1,4 @@
-# Public Market Research - 2026-07-30
+# Public Market Research - 2026-07-31
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] dodgers vs mariners (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インターハイ陸上 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 消費税 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ホンダf1 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 犯罪 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベラルーシ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トム・ホランド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ホワイトソックス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 横浜市長 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 尾田栄一郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ソニー 決算 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 変動金利 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校サッカー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 組み合わせ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] バスケ インターハイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スパイダーマン ブランドニューデイ ネタバレ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国家情報局 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 陣内智則 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校サッカーインターハイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 解雇 (https://trends.google.com/trending/rss?geo=JP)
