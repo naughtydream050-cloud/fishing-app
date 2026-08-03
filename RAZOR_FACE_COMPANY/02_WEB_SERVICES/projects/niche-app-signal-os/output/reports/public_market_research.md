@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-01
+# Public Market Research - 2026-08-03
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 細田佳央太 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インターハイバスケ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ツギクル芸人グランプリ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] fc東京 ドルトムント (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インハイtv (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インワンズブラッド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 釧路 地震 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロッキーズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 阿部慎之助 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 菅楓華 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高市早苗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ディズニーランド (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 藤沢市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ひよっこ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ひよっこ 朝ドラ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 熊本 ふるさと納税 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ちいかわ 映画 特典 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 資産 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 名鉄広見線 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 生活保護 (https://trends.google.com/trending/rss?geo=JP)
