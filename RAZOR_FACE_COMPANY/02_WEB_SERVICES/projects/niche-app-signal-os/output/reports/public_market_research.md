@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-05
+# Public Market Research - 2026-08-06
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 嵐 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 太田 光 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 東広島市黒瀬楢原東 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ネイマール (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デボちゃん (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日本銀行 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ソフトテニス インターハイ 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] からあげクン 2 個増量 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 小野田紀美 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 鎌倉駅 人身事故 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 長友佑都 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヤーレンズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ファミチキ 増量 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ラーズ・ヌートバー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 失点 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高島忠夫 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐久間宣行 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] inter miami vs atletico san luis standings (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] zbtlink (https://trends.google.com/trending/rss?geo=JP)
