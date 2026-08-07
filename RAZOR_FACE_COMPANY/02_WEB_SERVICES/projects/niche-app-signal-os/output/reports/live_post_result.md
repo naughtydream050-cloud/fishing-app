@@ -1,4 +1,4 @@
-# Live Post Result - 2026-08-06
+# Live Post Result - 2026-08-07
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-08-06-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-07-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+これ、あるのは分かってるのに見つからないのが一番だるい。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+メモにはありそう
+スクショにもありそう
+カレンダーにもありそう
 
-で、必要な情報が見つかりにくい。
+でも今ほしいのはそこじゃなくて、
+一発で出てくる画面。
 
-スマホUIのアプリ、使う？
+スマホログみたいなの、実際使う？
 
 ## Risks
 - market_evidence_count_zero

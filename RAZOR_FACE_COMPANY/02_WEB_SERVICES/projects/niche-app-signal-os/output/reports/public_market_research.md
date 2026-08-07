@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-06
+# Public Market Research - 2026-08-07
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 松島 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 長友佑都 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヤーレンズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ファミチキ 増量 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ラーズ・ヌートバー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 失点 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高島忠夫 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐久間宣行 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] inter miami vs atletico san luis standings (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] zbtlink (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] パークプレイス大分 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] レッドソックス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 本多灯 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 杉浦太陽 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] sfl (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] インターハイ柔道 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 横浜denaベイスターズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 明治公園 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 橋本幹彦 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 戸田競艇 (https://trends.google.com/trending/rss?geo=JP)
