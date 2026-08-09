@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-08
+# Selected Post Candidate - 2026-08-09
 
 - selected: False
 - selected_candidate_id: 
@@ -7,18 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-08-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-09-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-あとで見返したい時、小さい不便で時間溶けない？
+これ、探してる時点でもうちょっと負けてる。
 
-ちゃんと残してるはずなのに、
-残し場所が毎回違う。
+あとで見返したい時に
+メモから探し始めて、
+スクショまで見に行く流れ。
 
-・メモ
-・スクショ
-・カレンダー
-・写真フォルダ
+必要な情報が見つかりにくいの、かなりあるあるだと思う。
 
-スマホUIのアプリがあったら、今のやり方から乗り換える？
+スマホUIのアプリなら使う？

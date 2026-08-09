@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "selected_candidate_id": "",
   "selected_category": "",
   "selected_pain_point": "",
@@ -19,9 +19,9 @@
     "passed": true,
     "reasons": []
   },
-  "selected_post_text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
-  "selected_post_text_hash": "21cdbffef7ba9c2e6bf2c4071d833ffe14235a2161a0b86faf2e77db4fc1be4c",
-  "selected_image_path": "output/share-cards/2026-08-08-no-selected-candidate.png",
+  "selected_post_text": "これ、探してる時点でもうちょっと負けてる。\n\nあとで見返したい時に\nメモから探し始めて、\nスクショまで見に行く流れ。\n\n必要な情報が見つかりにくいの、かなりあるあるだと思う。\n\nスマホUIのアプリなら使う？",
+  "selected_post_text_hash": "784ea634e028306882f75336a9ee8d2df4077bf136a9dc402ad9a5a8670971dd",
+  "selected_image_path": "output/share-cards/2026-08-09-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "tone_profile_used": "default_light_problem",
   "design_strategy_used": false,
