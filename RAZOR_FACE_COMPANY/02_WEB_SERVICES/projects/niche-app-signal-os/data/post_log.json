@@ -3005,5 +3005,30 @@
     "source_urls_hash": "",
     "research_freshness": "stale_blocked",
     "evidence_count": 0
+  },
+  {
+    "date": "2026-08-11",
+    "created_at": "2026-08-11T02:25:21.177288+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": false,
+    "threads_auto_post_enabled": true,
+    "dry_run": true,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "f02f937cbef130644e71180f06435abc4afb8d263981bb5d86703448d3e1bbca",
+    "post_text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
+    "alt_text": "候補のスマホアプリ画面",
+    "topic_tags": [
+      "",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "",
+    "selected_image_path": "output/share-cards/2026-08-11-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/6b89b0e1448e5fe18d3e560b272d6e5442cbcde3/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-08-11-no-selected-candidate.png",
+    "post_text_hash": "99439774c7342d0a7b1713c97efffcd9aa621252e8400a1f7a509da270f81644",
+    "pain_point_hash": "",
+    "source_urls_hash": "",
+    "research_freshness": "stale_blocked",
+    "evidence_count": 0
   }
 ]

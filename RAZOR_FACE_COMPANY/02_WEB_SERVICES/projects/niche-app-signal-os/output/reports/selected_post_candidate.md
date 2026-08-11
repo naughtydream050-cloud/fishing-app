@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-10
+# Selected Post Candidate - 2026-08-11
 
 - selected: False
 - selected_candidate_id: 
@@ -7,15 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-10-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-11-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-ほしいのは多機能アプリじゃなくて、
-「これどこ？」にだけ強い画面かもしれない。
+もしスマホログがあるなら、画面はこれくらいでいい。
 
-メモ
-スクショ
-カレンダー
+これ
+日付
+場所
+あとで見返すメモ
 
-このへんを横断して、スマホログにまとまってたら助かる？
+余計な分析とかはいらない。
+あとで見返したい時に迷わず開けるやつ。
+
+こういう割り切ったアプリ、あり？
