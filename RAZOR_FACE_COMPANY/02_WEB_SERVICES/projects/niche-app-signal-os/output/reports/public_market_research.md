@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-11
+# Public Market Research - 2026-08-12
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] ロイヤルズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マック メニュー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エスコンフィールド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 尼崎競艇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ららぽーと甲子園 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 攻撃 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 有働由美子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 敦賀気比高校野球部 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドジャース 対 ロイヤルズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 映画 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ハッピーセット おもちゃ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 指名手配 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ブレイク・スネル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] snow man アルバム amenity (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 戸田競艇 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 君 の 好き は 無敵 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 金浦国際空港 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 坪井智也 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大同特殊鋼 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 園田競馬 (https://trends.google.com/trending/rss?geo=JP)
