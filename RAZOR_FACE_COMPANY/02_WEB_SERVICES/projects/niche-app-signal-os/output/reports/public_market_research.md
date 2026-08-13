@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-12
+# Public Market Research - 2026-08-13
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] ハッピーセット おもちゃ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 指名手配 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ブレイク・スネル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] snow man アルバム amenity (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 戸田競艇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 君 の 好き は 無敵 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 金浦国際空港 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 坪井智也 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 大同特殊鋼 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 園田競馬 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] カバー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岡本和真 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ダニエル・リンチ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] speed (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 石垣元気 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 徳島 阿波踊り (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 全日本 空輸 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 尼崎競艇 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 健大高崎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アレックス・ブレグマン (https://trends.google.com/trending/rss?geo=JP)

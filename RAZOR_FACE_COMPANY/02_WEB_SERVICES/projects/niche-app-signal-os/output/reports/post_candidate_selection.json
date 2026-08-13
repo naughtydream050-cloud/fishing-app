@@ -1,6 +1,6 @@
 {
   "department": "Post Candidate Selection Department",
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "input_sources": [
     "output/reports/market_research_trace.json",
     "output/reports/threads_post.json",
@@ -36,17 +36,16 @@
     "passed": true,
     "tone_id": "default_light_problem",
     "used_words": [
-      "メモ",
-      "ログ"
+      "メモ"
     ],
     "used_avoid_words": [],
     "line_count": 7,
     "target_audience": "unclear",
-    "max_recent_similarity": 0.122
+    "max_recent_similarity": 0.206
   },
   "selected_post_text": "",
-  "candidate_post_text": "今のやり方で十分って分かってるんだけど、\n小さい不便だけは専用画面が欲しくなる時ある。\n\nメモ\nスクショ\nカレンダー\n\nこのへんに散らばったこれを、\n一つのスマホログで見返せたらどう？",
-  "selected_image_path": "output/share-cards/2026-08-12-no-selected-candidate.png",
+  "candidate_post_text": "これ探すの、毎回ちょっと負けてる気がする。\n\nメモ\nスクショ\nカレンダー\n写真フォルダ\n\n必要な情報が見つかりにくいやつ。\n\nスマホUIのアプリあったら普通に使う？",
+  "selected_image_path": "output/share-cards/2026-08-13-no-selected-candidate.png",
   "image_generated_from_candidate": false,
   "rejected_reason_if_any": "market_evidence_count_zero",
   "source": [
