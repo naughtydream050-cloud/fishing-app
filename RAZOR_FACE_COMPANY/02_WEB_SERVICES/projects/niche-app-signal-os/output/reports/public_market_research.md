@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-13
+# Public Market Research - 2026-08-14
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] カバー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岡本和真 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ダニエル・リンチ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] speed (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石垣元気 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 徳島 阿波踊り (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 全日本 空輸 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 尼崎競艇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 健大高崎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アレックス・ブレグマン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] quizknock (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] nfl (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中居正広&フジテレビ問題 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山中竹春市長 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] コビトカバ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 札幌記念 過去 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] せ ー まる (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドジャース 対 ブルワーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 水曜日のダウンタウン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 有働由美子 (https://trends.google.com/trending/rss?geo=JP)
