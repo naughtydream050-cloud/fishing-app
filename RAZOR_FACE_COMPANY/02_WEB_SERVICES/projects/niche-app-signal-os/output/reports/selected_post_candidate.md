@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-15
+# Selected Post Candidate - 2026-08-16
 
 - selected: False
 - selected_candidate_id: 
@@ -7,16 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-15-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-16-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-きれいに管理したいわけじゃないんよ。
+これ、探してる時点でもうちょっと負けてる。
 
-ただ、あとで見返したい時に
-これがすぐ出てきてほしいだけ。
+あとで見返したい時に
+メモから探し始めて、
+スクショまで見に行く流れ。
 
-スマホメモに置いた気もするし、
-写真フォルダに残した気もする。
+必要な情報が見つかりにくいの、かなりあるあるだと思う。
 
-こういうのだけ拾ってくれるスマホログ、需要ある？
+スマホUIのアプリなら使う？
