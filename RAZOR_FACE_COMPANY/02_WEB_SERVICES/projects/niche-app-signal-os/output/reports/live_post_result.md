@@ -1,4 +1,4 @@
-# Live Post Result - 2026-08-16
+# Live Post Result - 2026-08-17
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,18 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-08-16-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-17-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ、探してる時点でもうちょっと負けてる。
+ほしいのは多機能アプリじゃなくて、
+「これどこ？」にだけ強い画面かもしれない。
 
-あとで見返したい時に
-メモから探し始めて、
-スクショまで見に行く流れ。
+メモ
+スクショ
+カレンダー
 
-必要な情報が見つかりにくいの、かなりあるあるだと思う。
-
-スマホUIのアプリなら使う？
+このへんを横断して、スマホログにまとまってたら助かる？
 
 ## Risks
 - market_evidence_count_zero

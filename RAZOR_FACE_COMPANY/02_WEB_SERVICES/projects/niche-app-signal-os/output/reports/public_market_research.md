@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-16
+# Public Market Research - 2026-08-17
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 東日本国際大昌平 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] オリエンタルラジオ 中田 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 火災 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] オリエンタルラジオ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] tgc松山 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] やすとも (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中山秀征 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 田村真子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中田敦彦 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アスレチックス 対 レンジャーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] supreme (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 鳥井 信宏 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 滝沢カレン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 金 価格 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] トライアル 株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヤマハ発動機株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ローチケ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 潜水艦 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] cdtvライブ ライブ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] チケットぴあ (https://trends.google.com/trending/rss?geo=JP)
