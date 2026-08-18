@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "01",
-  "selected_pattern_id": "single_purpose_screen",
+  "selected_variant_id": "03",
+  "selected_pattern_id": "screen_requirements",
   "variant_count": 10,
   "variants": [
     {
@@ -14,7 +14,7 @@
       "text": "ほしいのは多機能アプリじゃなくて、\n「これどこ？」にだけ強い画面かもしれない。\n\nメモ\nスクショ\nカレンダー\n\nこのへんを横断して、スマホログにまとまってたら助かる？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -23,7 +23,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.122
+        "max_recent_similarity": 1.0
       },
       "length": 83
     },
@@ -53,7 +53,7 @@
       "text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "あとで見返す",
@@ -63,7 +63,7 @@
         "used_avoid_words": [],
         "line_count": 8,
         "target_audience": "unclear",
-        "max_recent_similarity": 1.0
+        "max_recent_similarity": 0.087
       },
       "length": 97
     },
@@ -179,7 +179,7 @@
         "used_avoid_words": [],
         "line_count": 7,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.075
+        "max_recent_similarity": 0.115
       },
       "length": 108
     },
