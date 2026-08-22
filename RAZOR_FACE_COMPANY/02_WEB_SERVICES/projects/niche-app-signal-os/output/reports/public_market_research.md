@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-21
+# Public Market Research - 2026-08-22
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 最低賃金 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中島 翔哉 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベーブ・ルース (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ケニー・オメガ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] カイル・タッカー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 滝沢カレン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] corinthians x rosario (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高見素直 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球 チケット (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 林 泰輔 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ゾラニ・テテ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中田翔 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 甲子園 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] nhk one (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 長井心海 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スーパーgt (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 健大高崎 石垣 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 甲子園 ライブ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 健大高崎野球部 (https://trends.google.com/trending/rss?geo=JP)

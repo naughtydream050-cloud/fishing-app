@@ -1,4 +1,4 @@
-# Live Post Result - 2026-08-21
+# Live Post Result - 2026-08-22
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-08-21-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-22-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+これ探すの、毎回ちょっと負けてる気がする。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+メモ
+スクショ
+カレンダー
+写真フォルダ
 
-で、必要な情報が見つかりにくい。
+必要な情報が見つかりにくいやつ。
 
-スマホUIのアプリ、使う？
+スマホUIのアプリあったら普通に使う？
 
 ## Risks
 - market_evidence_count_zero
