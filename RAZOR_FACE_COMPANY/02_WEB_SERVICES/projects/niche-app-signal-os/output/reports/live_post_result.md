@@ -1,4 +1,4 @@
-# Live Post Result - 2026-08-22
+# Live Post Result - 2026-08-23
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,18 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-08-22-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-23-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ探すの、毎回ちょっと負けてる気がする。
+「これどこだっけ」ってなってからが長い。
 
-メモ
-スクショ
-カレンダー
-写真フォルダ
+メモ見て、スクショ見て、
+結局カレンダーまで戻る。
 
-必要な情報が見つかりにくいやつ。
+あとで見返したい時にこれやるの、地味にしんどい。
 
-スマホUIのアプリあったら普通に使う？
+スマホログだけ開けば済むなら欲しい？
 
 ## Risks
 - market_evidence_count_zero
