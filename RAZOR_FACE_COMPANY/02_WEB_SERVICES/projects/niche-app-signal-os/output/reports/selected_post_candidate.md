@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-23
+# Selected Post Candidate - 2026-08-24
 
 - selected: False
 - selected_candidate_id: 
@@ -7,15 +7,15 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-23-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-24-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-「これどこだっけ」ってなってからが長い。
+ほしいのは多機能アプリじゃなくて、
+「これどこ？」にだけ強い画面かもしれない。
 
-メモ見て、スクショ見て、
-結局カレンダーまで戻る。
+メモ
+スクショ
+カレンダー
 
-あとで見返したい時にこれやるの、地味にしんどい。
-
-スマホログだけ開けば済むなら欲しい？
+このへんを横断して、スマホログにまとまってたら助かる？

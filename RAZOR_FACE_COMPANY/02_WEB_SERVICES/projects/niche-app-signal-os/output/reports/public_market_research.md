@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-23
+# Public Market Research - 2026-08-24
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] リオネル・メッシ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 鈴木浩文 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] フィンガー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] nhk 受信料 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐々木悠葵 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 菅沼菜々 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] りくりゅう ラジオ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 仮面ライダーゼッツ キャスト (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 成田悠輔 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 東武建設 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 台風21号 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 六ヶ所村 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 江川 卓 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] トライアル 株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サムスン 株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 楽天株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 伊藤智洋 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] シャープ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 総務省 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 3 (https://trends.google.com/trending/rss?geo=JP)
