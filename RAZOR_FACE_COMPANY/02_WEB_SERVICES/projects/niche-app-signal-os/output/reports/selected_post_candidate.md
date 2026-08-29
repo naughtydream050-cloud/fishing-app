@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-28
+# Selected Post Candidate - 2026-08-29
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-28-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-29-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+これ、探してる時点でもうちょっと負けてる。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+あとで見返したい時に
+メモから探し始めて、
+スクショまで見に行く流れ。
 
-で、必要な情報が見つかりにくい。
+必要な情報が見つかりにくいの、かなりあるあるだと思う。
 
-スマホUIのアプリ、使う？
+スマホUIのアプリなら使う？
