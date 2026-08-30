@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-29
+# Public Market Research - 2026-08-30
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 遺族 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ほしのまり (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] あの (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] bsn賞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 津競艇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 鳥人間コンテスト (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 懲戒解雇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 皇居ラン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐藤沙織里 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ウォン 円 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岡山駅 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 登山 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] エルニーニョ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中村倫也 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] トラヴァーズステークス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 権田 修一 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日清トップリーグ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 徳之島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 毒島誠 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] トロント・ブルージェイズ (https://trends.google.com/trending/rss?geo=JP)

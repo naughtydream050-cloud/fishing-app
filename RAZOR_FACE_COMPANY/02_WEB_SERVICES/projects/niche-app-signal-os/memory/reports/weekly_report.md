@@ -1,6 +1,6 @@
 # Weekly Report
 
-- updated: 2026-08-29
+- updated: 2026-08-30
 - strongest_category: receipt-payment-log
 - selected_candidate_id: receipt-payment-retrace
 - signal_score: 10

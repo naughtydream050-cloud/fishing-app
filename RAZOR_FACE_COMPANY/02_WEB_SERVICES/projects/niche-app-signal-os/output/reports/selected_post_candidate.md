@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-08-29
+# Selected Post Candidate - 2026-08-30
 
 - selected: False
 - selected_candidate_id: 
@@ -7,16 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-08-29-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-08-30-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、探してる時点でもうちょっと負けてる。
+もしスマホログがあるなら、画面はこれくらいでいい。
 
-あとで見返したい時に
-メモから探し始めて、
-スクショまで見に行く流れ。
+これ
+日付
+場所
+あとで見返すメモ
 
-必要な情報が見つかりにくいの、かなりあるあるだと思う。
+余計な分析とかはいらない。
+あとで見返したい時に迷わず開けるやつ。
 
-スマホUIのアプリなら使う？
+こういう割り切ったアプリ、あり？
