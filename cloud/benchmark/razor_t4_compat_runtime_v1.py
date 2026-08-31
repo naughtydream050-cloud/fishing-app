@@ -146,7 +146,7 @@ def outer(args: argparse.Namespace) -> None:
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     env = os.environ.copy()
     env.update({"MPLBACKEND": "Agg", "RAZOR_T4_COMPAT_INNER": "1", "ACESTEP_CHECKPOINTS_DIR": str(checkpoints), "ACESTEP_DISABLE_TQDM": "1"})
-    run([uv, "run", "--no-sync", "python", str(Path(__file__).resolve()), "--output-dir", str(args.output_dir), "--runtime-dir", str(runtime)], cwd=repo, env=env, timeout=21600)
+    run([uv, "run", "--no-sync", "python", str(Path(__file__).resolve()), "--output-dir", str(args.output_dir), "--runtime-dir", str(runtime), "--duration-seconds", str(args.duration_seconds)], cwd=repo, env=env, timeout=21600)
 
 
 def inner(args: argparse.Namespace) -> None:
@@ -163,14 +163,14 @@ def inner(args: argparse.Namespace) -> None:
         use_flash_attention=False, compile_model=False, offload_to_cpu=True, offload_dit_to_cpu=True,
         quantization=None, use_mlx_dit=False,
     )
-    if not ok: raise RuntimeError("GATE 1 FAILED: " + status)
+    if not ok: raise RuntimeError(f"GATE {2 if args.duration_seconds == 64 else 1} FAILED: " + status)
     if handler.dtype != torch.float32:
-        raise RuntimeError(f"GATE 1 FAILED: actual dtype is {handler.dtype}, expected torch.float32")
+        raise RuntimeError(f"GATE {2 if args.duration_seconds == 64 else 1} FAILED: actual dtype is {handler.dtype}, expected torch.float32")
     result = handler.generate_music(
         captions=SETTINGS["caption"], lyrics="", bpm=SETTINGS["bpm"], key_scale=SETTINGS["key_scale"],
         time_signature=SETTINGS["time_signature"], vocal_language="unknown", inference_steps=SETTINGS["inference_steps"],
         guidance_scale=SETTINGS["guidance_scale"], use_random_seed=False, seed=SETTINGS["seed"],
-        audio_duration=SETTINGS["duration_seconds"], batch_size=1, task_type="text2music", use_adg=SETTINGS["use_adg"],
+        audio_duration=args.duration_seconds, batch_size=1, task_type="text2music", use_adg=SETTINGS["use_adg"],
         shift=SETTINGS["shift"], infer_method=SETTINGS["infer_method"],
     )
     if not result.get("success") or not result.get("audios"):
@@ -179,19 +179,20 @@ def inner(args: argparse.Namespace) -> None:
     tensor = audio["tensor"].detach().float().cpu()
     nan_count, inf_count = int(torch.isnan(tensor).sum()), int(torch.isinf(tensor).sum())
     if nan_count or inf_count:
-        raise RuntimeError(f"GATE 1 FAILED: output has NaN={nan_count}, Inf={inf_count}")
+        raise RuntimeError(f"GATE {gate} FAILED: output has NaN={nan_count}, Inf={inf_count}")
     data = tensor.numpy() if tensor.ndim == 1 else tensor.transpose(0, 1).numpy()
-    wav = output / "base_8s.wav"
+    gate = 2 if args.duration_seconds == 64 else 1
+    wav = output / f"base_{int(args.duration_seconds)}s.wav"
     sf.write(wav, data, audio["sample_rate"], subtype="PCM_16")
     if not wav.is_file() or wav.stat().st_size < 4096:
-        raise RuntimeError("GATE 1 FAILED: WAV write failed")
+        raise RuntimeError(f"GATE {gate} FAILED: WAV write failed")
     report = {
-        "gate": 1, "status": "PASS", "actual_dtype": str(handler.dtype), "wav": str(wav),
+        "gate": gate, "status": "PASS", "actual_dtype": str(handler.dtype), "wav": str(wav),
         "duration_seconds": float(sf.info(str(wav)).duration), "nan": nan_count, "inf": inf_count,
         "peak_vram_gib": round(torch.cuda.max_memory_allocated() / 1024 ** 3, 3),
         "elapsed_seconds": round(time.time() - started, 2), "initialization": status,
     }
-    (output / "GATE_1_BASE_8S_REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    (output / f"GATE_{gate}_BASE_{int(args.duration_seconds)}S_REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
@@ -201,6 +202,7 @@ def main() -> None:
     parser.add_argument("--runtime-dir", type=Path, default=Path("/tmp/RAZOR_T4_COMPAT_RUNTIME_V1"))
     parser.add_argument("--adapters", type=Path, default=Path("/kaggle/input/krump-core-v1-benchmark-assets/KRUMP_CORE_V1_BENCHMARK_ADAPTERS.zip"))
     parser.add_argument("--min-tmp-free-gb", type=float, default=10.0)
+    parser.add_argument("--duration-seconds", type=float, default=8.0)
     args = parser.parse_args()
     (inner if os.environ.get("RAZOR_T4_COMPAT_INNER") == "1" else outer)(args)
 
