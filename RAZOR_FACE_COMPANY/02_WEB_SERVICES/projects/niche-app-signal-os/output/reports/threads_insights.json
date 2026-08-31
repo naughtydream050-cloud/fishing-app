@@ -1,6 +1,6 @@
 {
   "department": "Analytics Department",
-  "date": "2026-08-30",
+  "date": "2026-08-31",
   "input_sources": [
     "output/reports/publishing.json"
   ],
