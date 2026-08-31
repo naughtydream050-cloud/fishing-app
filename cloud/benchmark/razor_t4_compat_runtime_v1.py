@@ -146,7 +146,7 @@ def outer(args: argparse.Namespace) -> None:
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     env = os.environ.copy()
     env.update({"MPLBACKEND": "Agg", "RAZOR_T4_COMPAT_INNER": "1", "ACESTEP_CHECKPOINTS_DIR": str(checkpoints), "ACESTEP_DISABLE_TQDM": "1"})
-    run([uv, "run", "--no-sync", "python", str(Path(__file__).resolve()), "--output-dir", str(args.output_dir), "--runtime-dir", str(runtime), "--duration-seconds", str(args.duration_seconds)], cwd=repo, env=env, timeout=21600)
+    run([uv, "run", "--no-sync", "python", str(Path(__file__).resolve()), "--output-dir", str(args.output_dir), "--runtime-dir", str(runtime), "--duration-seconds", str(args.duration_seconds)] + (["--adapter-label", args.adapter_label] if args.adapter_label else []), cwd=repo, env=env, timeout=21600)
 
 
 def inner(args: argparse.Namespace) -> None:
@@ -154,7 +154,7 @@ def inner(args: argparse.Namespace) -> None:
     import torch
     from acestep.handler import AceStepHandler
 
-    started = time.time()
+    adapter_dirs = {\n        "epoch10": args.runtime_dir / "adapters" / "pilot_20" / "checkpoints" / "epoch_10_loss_0.5858",\n        "epoch15": args.runtime_dir / "adapters" / "pilot_20" / "checkpoints" / "epoch_15_loss_0.6048",\n        "epoch20": args.runtime_dir / "adapters" / "pilot_20" / "final",\n    }\n    if args.adapter_label:\n        adapter_dir = adapter_dirs[args.adapter_label]\n        if not (adapter_dir / "adapter_config.json").is_file() or not (adapter_dir / "adapter_model.safetensors").is_file():\n            raise RuntimeError(f"GATE 3 FAILED: missing adapter files: {adapter_dir}")\n\n    started = time.time()
     torch.cuda.reset_peak_memory_stats()
     output = args.output_dir / RUNTIME_NAME
     handler = AceStepHandler()
@@ -163,9 +163,8 @@ def inner(args: argparse.Namespace) -> None:
         use_flash_attention=False, compile_model=False, offload_to_cpu=True, offload_dit_to_cpu=True,
         quantization=None, use_mlx_dit=False,
     )
-    if not ok: raise RuntimeError(f"GATE {2 if args.duration_seconds == 64 else 1} FAILED: " + status)
-    if handler.dtype != torch.float32:
-        raise RuntimeError(f"GATE {2 if args.duration_seconds == 64 else 1} FAILED: actual dtype is {handler.dtype}, expected torch.float32")
+    if not ok: raise RuntimeError(f"GATE {3 if args.adapter_label else (2 if args.duration_seconds == 64 else 1)} FAILED: " + status)
+    if handler.dtype != torch.float32:\n        raise RuntimeError(f"GATE {3 if args.adapter_label else (2 if args.duration_seconds == 64 else 1)} FAILED: actual dtype is {handler.dtype}, expected torch.float32")\n    load_message = None\n    if args.adapter_label:\n        load_message = handler.load_lora(str(adapter_dirs[args.adapter_label]))\n        if not load_message.startswith("✅"):\n            raise RuntimeError(f"GATE 3 FAILED: {args.adapter_label} adapter load failed: {load_message}")
     result = handler.generate_music(
         captions=SETTINGS["caption"], lyrics="", bpm=SETTINGS["bpm"], key_scale=SETTINGS["key_scale"],
         time_signature=SETTINGS["time_signature"], vocal_language="unknown", inference_steps=SETTINGS["inference_steps"],
@@ -181,8 +180,7 @@ def inner(args: argparse.Namespace) -> None:
     if nan_count or inf_count:
         raise RuntimeError(f"GATE {gate} FAILED: output has NaN={nan_count}, Inf={inf_count}")
     data = tensor.numpy() if tensor.ndim == 1 else tensor.transpose(0, 1).numpy()
-    gate = 2 if args.duration_seconds == 64 else 1
-    wav = output / f"base_{int(args.duration_seconds)}s.wav"
+    gate = 3 if args.adapter_label else (2 if args.duration_seconds == 64 else 1)\n    wav = output / (f"{args.adapter_label}.wav" if args.adapter_label else f"base_{int(args.duration_seconds)}s.wav")
     sf.write(wav, data, audio["sample_rate"], subtype="PCM_16")
     if not wav.is_file() or wav.stat().st_size < 4096:
         raise RuntimeError(f"GATE {gate} FAILED: WAV write failed")
@@ -190,7 +188,7 @@ def inner(args: argparse.Namespace) -> None:
         "gate": gate, "status": "PASS", "actual_dtype": str(handler.dtype), "wav": str(wav),
         "duration_seconds": float(sf.info(str(wav)).duration), "nan": nan_count, "inf": inf_count,
         "peak_vram_gib": round(torch.cuda.max_memory_allocated() / 1024 ** 3, 3),
-        "elapsed_seconds": round(time.time() - started, 2), "initialization": status,
+        "elapsed_seconds": round(time.time() - started, 2), "initialization": status,\n        "adapter_label": args.adapter_label, "adapter_path": str(adapter_dirs[args.adapter_label]) if args.adapter_label else None, "adapter_load": load_message,
     }
     (output / f"GATE_{gate}_BASE_{int(args.duration_seconds)}S_REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -202,7 +200,7 @@ def main() -> None:
     parser.add_argument("--runtime-dir", type=Path, default=Path("/tmp/RAZOR_T4_COMPAT_RUNTIME_V1"))
     parser.add_argument("--adapters", type=Path, default=Path("/kaggle/input/krump-core-v1-benchmark-assets/KRUMP_CORE_V1_BENCHMARK_ADAPTERS.zip"))
     parser.add_argument("--min-tmp-free-gb", type=float, default=10.0)
-    parser.add_argument("--duration-seconds", type=float, default=8.0)
+    parser.add_argument("--duration-seconds", type=float, default=8.0)\n    parser.add_argument("--adapter-label", choices=("epoch10", "epoch15", "epoch20"))
     args = parser.parse_args()
     SETTINGS["duration_seconds"] = args.duration_seconds
     (inner if os.environ.get("RAZOR_T4_COMPAT_INNER") == "1" else outer)(args)
