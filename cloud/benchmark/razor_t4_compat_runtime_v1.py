@@ -178,7 +178,7 @@ def inner(args: argparse.Namespace) -> None:
         raise RuntimeError(f"GATE {3 if args.adapter_label else (2 if args.duration_seconds == 64 else 1)} FAILED: actual dtype is {handler.dtype}, expected torch.float32")
     load_message = None
     if args.adapter_label:
-        load_message = handler.load_lora(str(adapter_dirs[args.adapter_label]))
+        load_message = handler.add_lora(str(adapter_dirs[args.adapter_label]), adapter_name=args.adapter_label)
         if not load_message.startswith("✅"):
             raise RuntimeError(f"GATE 3 FAILED: {args.adapter_label} adapter load failed: {load_message}")
     result = handler.generate_music(
@@ -196,7 +196,8 @@ def inner(args: argparse.Namespace) -> None:
     if nan_count or inf_count:
         raise RuntimeError(f"GATE {gate} FAILED: output has NaN={nan_count}, Inf={inf_count}")
     data = tensor.numpy() if tensor.ndim == 1 else tensor.transpose(0, 1).numpy()
-    gate = 3 if args.adapter_label else (2 if args.duration_seconds == 64 else 1)
+    gate_map = {"epoch10": 3, "epoch15": 4, "epoch20": 5}
+    gate = gate_map[args.adapter_label] if args.adapter_label else (2 if args.duration_seconds == 64 else 1)
     wav = output / (f"{args.adapter_label}.wav" if args.adapter_label else f"base_{int(args.duration_seconds)}s.wav")
     sf.write(wav, data, audio["sample_rate"], subtype="PCM_16")
     if not wav.is_file() or wav.stat().st_size < 4096:
@@ -208,7 +209,7 @@ def inner(args: argparse.Namespace) -> None:
         "elapsed_seconds": round(time.time() - started, 2), "initialization": status,
         "adapter_label": args.adapter_label, "adapter_path": str(adapter_dirs[args.adapter_label]) if args.adapter_label else None, "adapter_load": load_message,
     }
-    (output / f"GATE_{gate}_BASE_{int(args.duration_seconds)}S_REPORT.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    (output / (f"GATE_{gate}_{args.adapter_label.upper()}_{int(args.duration_seconds)}S_REPORT.json" if args.adapter_label else f"GATE_{gate}_BASE_{int(args.duration_seconds)}S_REPORT.json")).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
