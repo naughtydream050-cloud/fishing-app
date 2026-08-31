@@ -204,6 +204,7 @@ def main() -> None:
     parser.add_argument("--min-tmp-free-gb", type=float, default=10.0)
     parser.add_argument("--duration-seconds", type=float, default=8.0)
     args = parser.parse_args()
+    SETTINGS["duration_seconds"] = args.duration_seconds
     (inner if os.environ.get("RAZOR_T4_COMPAT_INNER") == "1" else outer)(args)
 
 
