@@ -1,4 +1,4 @@
-# Live Post Result - 2026-08-31
+# Live Post Result - 2026-09-01
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-08-31-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-01-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+これ探すの、毎回ちょっと負けてる気がする。
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+メモ
+スクショ
+カレンダー
+写真フォルダ
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
+必要な情報が見つかりにくいやつ。
 
-スマホログみたいなの、実際使う？
+スマホUIのアプリあったら普通に使う？
 
 ## Risks
 - market_evidence_count_zero

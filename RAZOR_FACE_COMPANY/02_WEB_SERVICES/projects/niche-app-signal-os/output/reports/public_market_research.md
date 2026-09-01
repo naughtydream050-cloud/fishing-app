@@ -1,4 +1,4 @@
-# Public Market Research - 2026-08-31
+# Public Market Research - 2026-09-01
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 宇波弘貴 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] レクサス・nx (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福岡県議会議 自民党県議団 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ポケモン 映画 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中国 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 玉城 デニー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 真木あかり (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 青木宣親 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 自動車産業 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] iphone18pro (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東京ゲームショウ 2026 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] citen ちいかわ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロベルト・モレノ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ディズニーチケット (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 石井ふく子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] にゃんこ大戦争くにおくんコラボ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 個人向け国債 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] パジェロ 新型 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 記念貨幣 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 復興割九州 (https://trends.google.com/trending/rss?geo=JP)
