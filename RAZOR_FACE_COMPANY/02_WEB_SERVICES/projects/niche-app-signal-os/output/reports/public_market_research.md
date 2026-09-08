@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-07
+# Public Market Research - 2026-09-08
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 福島民報 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] byd・ラッコ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福音 館 書店 ぐりとぐら (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 黒柳徹子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 土屋太鳳 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 豊和工業 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 植野 行雄 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] みずほ楽天カード (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 小野寺太志 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] くら寿司 株 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] om pen (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ひよっこ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オーバードーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジュディオング (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 辺野古 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 10月ドラマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 波津漁港 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドル円 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 耶馬渓ダム (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] キャリー取引 (https://trends.google.com/trending/rss?geo=JP)
