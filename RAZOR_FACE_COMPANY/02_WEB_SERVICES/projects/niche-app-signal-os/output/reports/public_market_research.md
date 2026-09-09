@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-08
+# Public Market Research - 2026-09-09
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] om pen (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ひよっこ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] オーバードーズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジュディオング (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 辺野古 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 10月ドラマ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 波津漁港 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドル円 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 耶馬渓ダム (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] キャリー取引 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 趣里 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 電池 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 森敬斗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロイヤルズ 対 dバックス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] skハイニックス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オウケンブルースリ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] グランドシネマサンシャイン 池袋 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福岡ソフトバンクホークス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 週刊文春 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] デジカメinfo (https://trends.google.com/trending/rss?geo=JP)
