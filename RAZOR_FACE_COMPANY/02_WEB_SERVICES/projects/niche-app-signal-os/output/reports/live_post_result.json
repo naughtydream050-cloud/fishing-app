@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "created_at": "2026-09-10T04:37:40.808241+00:00",
+  "created_at": "2026-09-10T04:37:42.542747+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-09-10-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/456577e87afa8bdf49da63632402486a97c634e3/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-09-10-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/c4e66c89ed7c5f1c38546ca9472453a4cdb75613/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-09-10-no-selected-candidate.png",
   "selected_post_text": "「これどこだっけ」ってなってからが長い。\n\nメモ見て、スクショ見て、\n結局カレンダーまで戻る。\n\nあとで見返したい時にこれやるの、地味にしんどい。\n\nスマホログだけ開けば済むなら欲しい？",
   "source_urls_hash": "",
   "pain_point_hash": "",
