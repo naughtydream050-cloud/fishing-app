@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-10
+# Public Market Research - 2026-09-11
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 剛力彩芽 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エアトリ 株価 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ブルワーズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 新幹線 予約 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 北村晴男 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 串カツ田中 無限ハイボール (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アジア大会 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] grカート (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中部電力 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] オータムフェスト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日経平均株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 井本貴史 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サイバーキャブ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山田邦子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 熊本県知事 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 清水圭 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 藤川 球児 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ひろみちお兄さん (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ソフトバンクグループ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] kettle (https://trends.google.com/trending/rss?geo=JP)
