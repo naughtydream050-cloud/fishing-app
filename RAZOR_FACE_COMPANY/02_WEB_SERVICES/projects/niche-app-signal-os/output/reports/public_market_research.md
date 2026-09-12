@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-11
+# Public Market Research - 2026-09-12
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 日経平均株価 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 井本貴史 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サイバーキャブ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 山田邦子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 熊本県知事 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 清水圭 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 藤川 球児 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ひろみちお兄さん (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ソフトバンクグループ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] kettle (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 吉本新喜劇 座長 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] reit (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 若井 滉 斗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 巨人 対 阪神 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中日 対 ヤクルト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オリックス 対 楽天 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小学校教員 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イオン熊本 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ライバー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 千葉ジェッツ (https://trends.google.com/trending/rss?geo=JP)
