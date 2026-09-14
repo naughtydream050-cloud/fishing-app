@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-13
+# Public Market Research - 2026-09-14
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 周東佑京 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 車掌 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 新婚さんいらっしゃい (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石橋貴明 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 総持院 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] じゅんいちダビッドソン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 内閣広報室 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トレード (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石丸伸二 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 矢本悠馬 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 馬場咲希 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 官僚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐野岳 結婚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 追突 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 10月ドラマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福岡空港 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] デーリー東北 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ゲーム差 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イスラエル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マックス・フェルスタッペン (https://trends.google.com/trending/rss?geo=JP)
