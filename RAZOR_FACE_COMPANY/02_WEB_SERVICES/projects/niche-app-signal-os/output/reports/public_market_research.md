@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-14
+# Public Market Research - 2026-09-15
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 馬場咲希 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 官僚 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐野岳 結婚 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 追突 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 10月ドラマ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福岡空港 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デーリー東北 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ゲーム差 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] イスラエル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マックス・フェルスタッペン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 飯田祐基 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 同志社国際高校 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高齢 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヘンリー王子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サブスク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 四国電力送配電 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イ・スジン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アベンジャーズ/エンドゲーム (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 菅野智之 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 辺野古 (https://trends.google.com/trending/rss?geo=JP)
