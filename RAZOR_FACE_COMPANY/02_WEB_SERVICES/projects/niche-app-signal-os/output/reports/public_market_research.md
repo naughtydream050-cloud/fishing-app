@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-15
+# Public Market Research - 2026-09-16
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 飯田祐基 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 同志社国際高校 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高齢 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヘンリー王子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サブスク (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 四国電力送配電 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] イ・スジン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アベンジャーズ/エンドゲーム (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 菅野智之 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 辺野古 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大学入試センター (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 診断 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 村竹ラシッド (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 皇族 費 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東京ドーム イベント (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 柳沢慎吾 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] めざましテレビ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マックルモア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岩手日報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 全日本 空輸 (https://trends.google.com/trending/rss?geo=JP)
