@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-16
+# Public Market Research - 2026-09-17
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 大学入試センター (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 診断 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 村竹ラシッド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 皇族 費 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 東京ドーム イベント (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 柳沢慎吾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] めざましテレビ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マックルモア (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岩手日報 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 全日本 空輸 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 総務大臣 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] jfa (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田中聡 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 庄司 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 林総務大臣 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 相馬勇紀 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 鈴木憲和 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サムライブルー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 品川庄司 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国土交通大臣 (https://trends.google.com/trending/rss?geo=JP)
