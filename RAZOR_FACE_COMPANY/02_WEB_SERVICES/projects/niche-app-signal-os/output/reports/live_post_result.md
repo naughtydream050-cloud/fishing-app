@@ -1,4 +1,4 @@
-# Live Post Result - 2026-09-18
+# Live Post Result - 2026-09-19
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,21 +7,18 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-09-18-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-19-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-もしスマホログがあるなら、画面はこれくらいでいい。
+「これどこだっけ」ってなってからが長い。
 
-これ
-日付
-場所
-あとで見返すメモ
+メモ見て、スクショ見て、
+結局カレンダーまで戻る。
 
-余計な分析とかはいらない。
-あとで見返したい時に迷わず開けるやつ。
+あとで見返したい時にこれやるの、地味にしんどい。
 
-こういう割り切ったアプリ、あり？
+スマホログだけ開けば済むなら欲しい？
 
 ## Risks
 - market_evidence_count_zero

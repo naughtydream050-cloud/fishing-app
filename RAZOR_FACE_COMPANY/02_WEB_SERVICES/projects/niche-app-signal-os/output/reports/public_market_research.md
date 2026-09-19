@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-18
+# Public Market Research - 2026-09-19
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] スヌーピー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 黒柳徹子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ブルーインパルス 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ブライアン ウルフ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ファレイドリア (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] オールカマー 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ハースf1チーム (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 増田貴久 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 台風 東京 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ローソン 弁当 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本シニアオープン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 楽天 対 ソフトバンク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本ハム 対 オリックス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ニカゲーム (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] starto entertainment (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 水戸ストーカー殺人 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岡田芽依 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 埼玉新聞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 梅野隆太郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ベルーナドーム (https://trends.google.com/trending/rss?geo=JP)
