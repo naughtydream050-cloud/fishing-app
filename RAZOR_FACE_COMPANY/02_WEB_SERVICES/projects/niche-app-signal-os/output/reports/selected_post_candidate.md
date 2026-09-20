@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-09-19
+# Selected Post Candidate - 2026-09-20
 
 - selected: False
 - selected_candidate_id: 
@@ -7,15 +7,17 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-09-19-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-20-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-「これどこだっけ」ってなってからが長い。
+これ探すの、毎回ちょっと負けてる気がする。
 
-メモ見て、スクショ見て、
-結局カレンダーまで戻る。
+メモ
+スクショ
+カレンダー
+写真フォルダ
 
-あとで見返したい時にこれやるの、地味にしんどい。
+必要な情報が見つかりにくいやつ。
 
-スマホログだけ開けば済むなら欲しい？
+スマホUIのアプリあったら普通に使う？
