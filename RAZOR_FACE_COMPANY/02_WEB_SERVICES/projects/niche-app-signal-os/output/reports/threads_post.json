@@ -1,6 +1,6 @@
 {
   "department": "Scriptwriter Department",
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "input_sources": [
     "output/reports/daily_niche_ui_candidates.json",
     "output/reports/audience_tone_profile.json",
@@ -8,16 +8,16 @@
   ],
   "summary": "Generated natural Threads copy from 10 rotating audience-aware structures instead of a single fixed template.",
   "scores": {
-    "length": 106,
+    "length": 76,
     "variant_count": 10,
-    "max_recent_similarity": 0.122
+    "max_recent_similarity": 0.177
   },
   "risks": [],
   "next_action": "generate mobile UI share card",
   "post": {
-    "date": "2026-09-21",
+    "date": "2026-09-22",
     "candidate_id": "",
-    "text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
+    "text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
     "alt_text": "候補のスマホアプリ画面",
     "topic_tags": [
       "",
@@ -27,17 +27,15 @@
     "tone_id": "default_light_problem",
     "target_audience": "unclear",
     "variant_id": "01",
-    "pattern_id": "time_melts_scene",
+    "pattern_id": "everyone_has_done_this",
     "tone_check_result": {
       "passed": true,
       "tone_id": "default_light_problem",
-      "used_words": [
-        "メモ"
-      ],
+      "used_words": [],
       "used_avoid_words": [],
-      "line_count": 8,
+      "line_count": 7,
       "target_audience": "unclear",
-      "max_recent_similarity": 0.122
+      "max_recent_similarity": 0.177
     }
   },
   "tone_variants_path": "output/reports/threads_tone_variants.json"

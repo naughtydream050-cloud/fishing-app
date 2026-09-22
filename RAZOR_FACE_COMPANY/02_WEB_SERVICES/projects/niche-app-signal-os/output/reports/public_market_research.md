@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-21
+# Public Market Research - 2026-09-22
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] ウクライナ ドローン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 熱海 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 玉川祐子 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] 黒柳徹子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 台湾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 浮所飛貴 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福澤朗 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 大島町 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] チャイニーズタイペイ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ひよっこ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 土砂災害警戒区域 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 柳沢慎吾 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 野々村友紀子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マック (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マクドナルド メニュー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 不二家 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中央道 渋滞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国民クイズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ちいかわ (https://trends.google.com/trending/rss?geo=JP)

@@ -1,4 +1,4 @@
-# Live Post Result - 2026-09-21
+# Live Post Result - 2026-09-22
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,21 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-09-21-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-22-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-あとで見返したい時、小さい不便で時間溶けない？
+使う人、これ一回はあると思う。
 
-ちゃんと残してるはずなのに、
-残し場所が毎回違う。
+これを探す
+見つからない
+別のアプリを開く
+また戻る
 
-・メモ
-・スクショ
-・カレンダー
-・写真フォルダ
+で、必要な情報が見つかりにくい。
 
-スマホUIのアプリがあったら、今のやり方から乗り換える？
+スマホUIのアプリ、使う？
 
 ## Risks
 - market_evidence_count_zero
