@@ -1,4 +1,4 @@
-# Live Post Result - 2026-09-22
+# Live Post Result - 2026-09-23
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,19 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-09-22-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-23-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+きれいに管理したいわけじゃないんよ。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+ただ、あとで見返したい時に
+これがすぐ出てきてほしいだけ。
 
-で、必要な情報が見つかりにくい。
+スマホメモに置いた気もするし、
+写真フォルダに残した気もする。
 
-スマホUIのアプリ、使う？
+こういうのだけ拾ってくれるスマホログ、需要ある？
 
 ## Risks
 - market_evidence_count_zero

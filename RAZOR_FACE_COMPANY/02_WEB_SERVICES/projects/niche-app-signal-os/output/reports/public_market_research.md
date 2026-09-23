@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-22
+# Public Market Research - 2026-09-23
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 熱海 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 玉川祐子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 黒柳徹子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 野々村友紀子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マック (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マクドナルド メニュー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 不二家 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中央道 渋滞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 国民クイズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ちいかわ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 市川團十郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サッカー日本代表 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 桐谷健太 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 井上 順 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 井口 資 仁 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 村上宗隆 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小林悠 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヘイデン パネッティーア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松たか子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] エミュー (https://trends.google.com/trending/rss?geo=JP)
