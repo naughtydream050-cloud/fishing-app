@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-23
+# Public Market Research - 2026-09-24
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 市川團十郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サッカー日本代表 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 桐谷健太 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 井上 順 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 井口 資 仁 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 村上宗隆 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 小林悠 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヘイデン パネッティーア (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 松たか子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エミュー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 河北新報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] west (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] くりまんじゅうだらけくじ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] じゃらん (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スタバ ポケモン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐藤淑乃 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 江藤愛 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アスレチックス 対 エンゼルス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐藤駿一郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロイヤルズ 対 ホワイトソックス (https://trends.google.com/trending/rss?geo=JP)

@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-09-23
+# Selected Post Candidate - 2026-09-24
 
 - selected: False
 - selected_candidate_id: 
@@ -7,16 +7,15 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-09-23-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-24-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-きれいに管理したいわけじゃないんよ。
+ほしいのは多機能アプリじゃなくて、
+「これどこ？」にだけ強い画面かもしれない。
 
-ただ、あとで見返したい時に
-これがすぐ出てきてほしいだけ。
+メモ
+スクショ
+カレンダー
 
-スマホメモに置いた気もするし、
-写真フォルダに残した気もする。
-
-こういうのだけ拾ってくれるスマホログ、需要ある？
+このへんを横断して、スマホログにまとまってたら助かる？
