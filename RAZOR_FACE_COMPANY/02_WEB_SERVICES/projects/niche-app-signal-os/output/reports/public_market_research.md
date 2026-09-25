@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-24
+# Public Market Research - 2026-09-25
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 河北新報 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] west (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] くりまんじゅうだらけくじ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] afg vs nep (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 政治 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 書類送検 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 相撲 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] じゃらん (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スタバ ポケモン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐藤淑乃 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 江藤愛 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アスレチックス 対 エンゼルス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 佐藤駿一郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ロイヤルズ 対 ホワイトソックス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田中真美子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 2026 中秋の名月 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 2026 年中秋節 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ブレーブス 対 レッズ (https://trends.google.com/trending/rss?geo=JP)

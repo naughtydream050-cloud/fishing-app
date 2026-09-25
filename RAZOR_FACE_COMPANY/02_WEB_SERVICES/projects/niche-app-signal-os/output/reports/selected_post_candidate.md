@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-09-24
+# Selected Post Candidate - 2026-09-25
 
 - selected: False
 - selected_candidate_id: 
@@ -7,15 +7,17 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-09-24-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-25-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-ほしいのは多機能アプリじゃなくて、
-「これどこ？」にだけ強い画面かもしれない。
+これ、あるのは分かってるのに見つからないのが一番だるい。
 
-メモ
-スクショ
-カレンダー
+メモにはありそう
+スクショにもありそう
+カレンダーにもありそう
 
-このへんを横断して、スマホログにまとまってたら助かる？
+でも今ほしいのはそこじゃなくて、
+一発で出てくる画面。
+
+スマホログみたいなの、実際使う？
