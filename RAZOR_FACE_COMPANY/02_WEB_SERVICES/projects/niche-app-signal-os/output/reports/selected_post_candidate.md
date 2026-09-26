@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-09-25
+# Selected Post Candidate - 2026-09-26
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-09-25-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-26-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+これ、探してる時点でもうちょっと負けてる。
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+あとで見返したい時に
+メモから探し始めて、
+スクショまで見に行く流れ。
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
+必要な情報が見つかりにくいの、かなりあるあるだと思う。
 
-スマホログみたいなの、実際使う？
+スマホUIのアプリなら使う？

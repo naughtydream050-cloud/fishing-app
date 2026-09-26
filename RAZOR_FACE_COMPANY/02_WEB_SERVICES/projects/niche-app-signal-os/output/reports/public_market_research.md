@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-25
+# Public Market Research - 2026-09-26
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] afg vs nep (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 政治 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 書類送検 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 相撲 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 松井裕樹 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] じゃらん (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 田中真美子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 2026 中秋の名月 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 2026 年中秋節 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ブレーブス 対 レッズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 佐々木朗希 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ぷよぷよ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 記事 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 熊本県 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 刘欢 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田中希実 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャイアンツ 対 ドジャース (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 熊本地震 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 国仲涼子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ツーリズムexpoジャパン2026 (https://trends.google.com/trending/rss?geo=JP)
