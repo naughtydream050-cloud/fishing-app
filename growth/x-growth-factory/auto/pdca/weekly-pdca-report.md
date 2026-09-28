@@ -1,10 +1,10 @@
 # Threads Weekly PDCA Report
 
-Week of: 2026-09-21
+Week of: 2026-09-28
 
 Posts:
 - posted: 4
-- skipped: 121
+- skipped: 128
 - failed: 0
 
 Metrics:
