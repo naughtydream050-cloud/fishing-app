@@ -1,4 +1,4 @@
-# Live Post Result - 2026-09-28
+# Live Post Result - 2026-09-29
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,19 +7,21 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-09-28-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-29-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-今のやり方で十分って分かってるんだけど、
-小さい不便だけは専用画面が欲しくなる時ある。
+あとで見返したい時、小さい不便で時間溶けない？
 
-メモ
-スクショ
-カレンダー
+ちゃんと残してるはずなのに、
+残し場所が毎回違う。
 
-このへんに散らばったこれを、
-一つのスマホログで見返せたらどう？
+・メモ
+・スクショ
+・カレンダー
+・写真フォルダ
+
+スマホUIのアプリがあったら、今のやり方から乗り換える？
 
 ## Risks
 - market_evidence_count_zero
