@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-09-29
+# Selected Post Candidate - 2026-09-30
 
 - selected: False
 - selected_candidate_id: 
@@ -7,18 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-09-29-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-09-30-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-あとで見返したい時、小さい不便で時間溶けない？
+きれいに管理したいわけじゃないんよ。
 
-ちゃんと残してるはずなのに、
-残し場所が毎回違う。
+ただ、あとで見返したい時に
+これがすぐ出てきてほしいだけ。
 
-・メモ
-・スクショ
-・カレンダー
-・写真フォルダ
+スマホメモに置いた気もするし、
+写真フォルダに残した気もする。
 
-スマホUIのアプリがあったら、今のやり方から乗り換える？
+こういうのだけ拾ってくれるスマホログ、需要ある？
