@@ -1,4 +1,4 @@
-# Public Market Research - 2026-09-30
+# Public Market Research - 2026-10-01
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 田中希実 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石橋 貴明 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 悠仁さま (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 辻本倫太郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ファミクラストア (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドイツ人 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] パドレス 対 カブス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 十勝花子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中村奨吾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中間淳太 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小園海斗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヴァンビ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 伊東四朗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] クワバタオハラ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 仮面ライダーカブト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 森本 レオ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アクアライン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 林詩棟 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] おぼっちゃまくん アニメ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大友愛 (https://trends.google.com/trending/rss?geo=JP)
