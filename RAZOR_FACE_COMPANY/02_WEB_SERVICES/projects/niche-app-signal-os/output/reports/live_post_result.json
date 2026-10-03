@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "created_at": "2026-10-03T05:13:42.796386+00:00",
+  "created_at": "2026-10-03T05:13:44.676400+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-10-03-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/a251c4c3eb34893e8a3b0540c4d37e0d8af0410e/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-10-03-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/2b6fa438d2b1b5777128576e1b33f45bd4045310/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-10-03-no-selected-candidate.png",
   "selected_post_text": "使う人、これ一回はあると思う。\n\nこれを探す\n見つからない\n別のアプリを開く\nまた戻る\n\nで、必要な情報が見つかりにくい。\n\nスマホUIのアプリ、使う？",
   "source_urls_hash": "",
   "pain_point_hash": "",
