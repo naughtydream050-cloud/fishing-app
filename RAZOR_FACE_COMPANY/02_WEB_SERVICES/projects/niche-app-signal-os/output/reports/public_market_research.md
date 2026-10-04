@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-03
+# Public Market Research - 2026-10-04
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 広島 対 阪神 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 食品 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ケロロ軍曹 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 生瀬勝久 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ライフ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 有村架純 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] なるはやで (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] s&p 500 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 凱旋門賞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 野犬 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] nttドコモ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田中和基 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岩田絵里奈 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 黒木千晶 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 札幌 対 いわきfc (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 青井実 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サンジャポ アナウンサー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] doge (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 狩野英孝 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福士蒼汰 (https://trends.google.com/trending/rss?geo=JP)
