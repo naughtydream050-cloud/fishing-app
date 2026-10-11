@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-10
+# Public Market Research - 2026-10-11
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 将棋 竜王戦 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 西武ライオンズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベイスターズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岩井勇気 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 石井亮次 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スポナビ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] セレッソ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福岡 対 岡山 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 向井 パンサー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] fc東京 対 浦和 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東京v 対 広島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 野球コーチ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 水戸 対 清水 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 亀田和毅 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ホンダ nsx (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ボーダーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 相川亮二 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福井県知事 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] pga (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ベイカレント (https://trends.google.com/trending/rss?geo=JP)
