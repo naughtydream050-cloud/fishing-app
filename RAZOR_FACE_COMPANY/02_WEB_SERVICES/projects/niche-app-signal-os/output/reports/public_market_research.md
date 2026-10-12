@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-11
+# Public Market Research - 2026-10-12
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 東京v 対 広島 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 野球コーチ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 水戸 対 清水 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 亀田和毅 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ホンダ nsx (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ボーダーズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 相川亮二 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福井県知事 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] pga (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベイカレント (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ファイターズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日ハム速報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 宇野千代 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ニュースto (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 皆藤愛子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 水本勝己 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小島大河 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 香港 ディズニーランド ホテル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 髙木菜那 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山本祐大 (https://trends.google.com/trending/rss?geo=JP)
