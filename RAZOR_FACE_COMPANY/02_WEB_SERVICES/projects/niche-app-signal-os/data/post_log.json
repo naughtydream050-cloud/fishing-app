@@ -6230,5 +6230,30 @@
     "source_urls_hash": "",
     "research_freshness": "stale_blocked",
     "evidence_count": 0
+  },
+  {
+    "date": "2026-10-14",
+    "created_at": "2026-10-14T04:48:19.677970+00:00",
+    "status": "blocked_by_post_source_audit",
+    "auto_post": true,
+    "threads_auto_post_enabled": true,
+    "dry_run": false,
+    "thread_id": null,
+    "target_handle": "younengsaitoshaojie",
+    "content_hash": "516cc729cbd986899fbe144c9014e677745f012669882588e9503d4952d2d50a",
+    "post_text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
+    "alt_text": "候補のスマホアプリ画面",
+    "topic_tags": [
+      "",
+      "ニッチアプリ"
+    ],
+    "candidate_id": "",
+    "selected_image_path": "output/share-cards/2026-10-14-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b9db72880fe1a1ed8dbdd9e81687b8e2893bba2e/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-10-14-no-selected-candidate.png",
+    "post_text_hash": "21cdbffef7ba9c2e6bf2c4071d833ffe14235a2161a0b86faf2e77db4fc1be4c",
+    "pain_point_hash": "",
+    "source_urls_hash": "",
+    "research_freshness": "stale_blocked",
+    "evidence_count": 0
   }
 ]
