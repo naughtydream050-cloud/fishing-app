@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-15
+# Public Market Research - 2026-10-16
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] jlpga (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] だし巻き (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] wix (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] メドレー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] iphone air 投げ売り (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 貴島明日香 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 警視庁 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日経平均 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ムーキー・ベッツ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 永井花奈 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] レペゼン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] パット・マーフィー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 十勝岳 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] msci (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 新幹線 運行状況 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 詐欺 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] downdetector (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 関東大震災 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 湖西線 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 地震保険 (https://trends.google.com/trending/rss?geo=JP)
