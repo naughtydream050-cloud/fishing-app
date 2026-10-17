@@ -1,4 +1,4 @@
-# Live Post Result - 2026-10-16
+# Live Post Result - 2026-10-17
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,18 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-10-16-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-10-17-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+ほしいのは多機能アプリじゃなくて、
+「これどこ？」にだけ強い画面かもしれない。
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+メモ
+スクショ
+カレンダー
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
-
-スマホログみたいなの、実際使う？
+このへんを横断して、スマホログにまとまってたら助かる？
 
 ## Risks
 - market_evidence_count_zero
