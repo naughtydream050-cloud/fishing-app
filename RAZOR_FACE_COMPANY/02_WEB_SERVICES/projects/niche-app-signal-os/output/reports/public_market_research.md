@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-17
+# Public Market Research - 2026-10-18
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 福岡 火事 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 味の素スタジアム (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 秋 華 賞 オッズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 田中卓志 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 高校野球東北大会 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] フランミル・レイエス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 伊藤美誠 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ハウステンボス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] グランド・セフト・オートvi (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 自衛官 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 平田良介 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] いわきfc 対 甲府 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田中希実 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 富士通レディース 速報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 眞鍋かをり (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] vivant 映画 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 男子ゴルフ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 杉浦 希空 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福永活也 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 森田遥 (https://trends.google.com/trending/rss?geo=JP)
