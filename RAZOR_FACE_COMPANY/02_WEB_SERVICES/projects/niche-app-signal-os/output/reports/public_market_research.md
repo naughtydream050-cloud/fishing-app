@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-18
+# Public Market Research - 2026-10-19
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 平田良介 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] いわきfc 対 甲府 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 田中希実 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 富士通レディース 速報 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 眞鍋かをり (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] vivant 映画 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 男子ゴルフ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 杉浦 希空 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福永活也 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 森田遥 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 興行収入 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ぽかぽか 岩井 休み 理由 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] キオクシア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ボクシング (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] black lagoon (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 逮捕令状 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 沢田亜矢子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] リコール (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 細野 豪志 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 高校野球 関東大会 (https://trends.google.com/trending/rss?geo=JP)
