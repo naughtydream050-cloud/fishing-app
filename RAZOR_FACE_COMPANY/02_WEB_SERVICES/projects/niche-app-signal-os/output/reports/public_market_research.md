@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-20
+# Public Market Research - 2026-10-21
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 通勤 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 関口 和之 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 菅野智之 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] インド (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 愛子さま (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岡部たかし (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中川安奈アナ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] コービーブライアント (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 栃木 県 警察 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 唐津競艇 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] コンサドーレ札幌 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 小深田大翔 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 横断歩道 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] playstation (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オリンパス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] クヴァラツヘリア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ロバート・ダウニー・jr. (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 太川陽介 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中村倫也 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] さくらインターネット (https://trends.google.com/trending/rss?geo=JP)

@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-10-20
+# Selected Post Candidate - 2026-10-21
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,18 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-10-20-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-10-21-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+あとで見返したい時、小さい不便で時間溶けない？
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+ちゃんと残してるはずなのに、
+残し場所が毎回違う。
 
-で、必要な情報が見つかりにくい。
+・メモ
+・スクショ
+・カレンダー
+・写真フォルダ
 
-スマホUIのアプリ、使う？
+スマホUIのアプリがあったら、今のやり方から乗り換える？
