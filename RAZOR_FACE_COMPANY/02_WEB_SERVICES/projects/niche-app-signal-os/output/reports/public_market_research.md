@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-22
+# Public Market Research - 2026-10-23
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 小園海斗 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中井亜美 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] pokémon sleep (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ちいかわ 図書カード (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 矢野 謙次 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 台風 福岡 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] プレミアム バンダイ メンテナンス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マイルズ・ブリッジズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヴェゼル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トビーマグワイア (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本サッカー協会 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 阪急 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山形新聞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] visa (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 最優秀選手賞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドゥームズデイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 学費 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 吉田正尚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 村上龍 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 杉浦太陽 (https://trends.google.com/trending/rss?geo=JP)
