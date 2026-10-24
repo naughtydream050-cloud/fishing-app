@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-23
+# Public Market Research - 2026-10-24
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 日本サッカー協会 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 阪急 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 山形新聞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] visa (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 最優秀選手賞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドゥームズデイ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 学費 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 吉田正尚 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 村上龍 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 杉浦太陽 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] spurs vs rockets (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] グラハム・アイク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] キャメロン・ブーザー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 乃木 憂 助 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イ・ボミ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] gmo ハッキング (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ガストメニュー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山下 真 瑚 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] u18 陸上 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] コンパニ (https://trends.google.com/trending/rss?geo=JP)
