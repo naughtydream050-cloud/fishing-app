@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-24
+# Public Market Research - 2026-10-25
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] spurs vs rockets (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] グラハム・アイク (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] キャメロン・ブーザー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 乃木 憂 助 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] イ・ボミ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] gmo ハッキング (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ガストメニュー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 山下 真 瑚 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] u18 陸上 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] コンパニ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福田萌子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 新潟 対 仙台 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 名古屋 対 横浜fm (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 蓮池薫 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヤクセル・レンデボーグ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 天皇賞秋 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 荒牧慶彦 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 準決勝 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] プロ 志望 届 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福留孝介 (https://trends.google.com/trending/rss?geo=JP)
