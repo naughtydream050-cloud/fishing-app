@@ -1,4 +1,4 @@
-# Public Market Research - 2026-10-25
+# Public Market Research - 2026-10-26
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 福田萌子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 新潟 対 仙台 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 名古屋 対 横浜fm (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 蓮池薫 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヤクセル・レンデボーグ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 天皇賞秋 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 荒牧慶彦 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 準決勝 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] プロ 志望 届 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福留孝介 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 清宮虎多朗 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 角田夏実 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] テラドローン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スタバ ホリデー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オルフェーヴル (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] カマタマーレ讃岐 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] パックン妻なぜ亡くなった (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 西武戦力外 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 投資 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岩国市議会議員選挙結果 (https://trends.google.com/trending/rss?geo=JP)
