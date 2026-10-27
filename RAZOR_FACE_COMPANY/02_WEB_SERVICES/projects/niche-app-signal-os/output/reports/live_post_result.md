@@ -1,4 +1,4 @@
-# Live Post Result - 2026-10-26
+# Live Post Result - 2026-10-27
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,19 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-10-26-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-10-27-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-これ、あるのは分かってるのに見つからないのが一番だるい。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
-メモにはありそう
-スクショにもありそう
-カレンダーにもありそう
+メモ
+スクショ
+カレンダー
 
-でも今ほしいのはそこじゃなくて、
-一発で出てくる画面。
-
-スマホログみたいなの、実際使う？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？
 
 ## Risks
 - market_evidence_count_zero
