@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-01
+# Public Market Research - 2026-11-02
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 天皇杯 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 谷村海那 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] バスケットlive (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] kia 대 삼성 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 低所得者 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] super beaver (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 竹田恒泰 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 車両火災 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 栃木ホンダヒート (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ランピースキン病 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 鈴木 奈穂子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 貴乃花 光司 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 博多大吉 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 住友化学 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 備蓄 緊急 要請 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 西村博之 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] フレディ フリーマン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ノースサファリサッポロ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] gang of dragon (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スコッティ・バーンズ (https://trends.google.com/trending/rss?geo=JP)
