@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-02
+# Public Market Research - 2026-11-03
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 鈴木 奈穂子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 貴乃花 光司 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 博多大吉 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 住友化学 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 備蓄 緊急 要請 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 西村博之 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] フレディ フリーマン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ノースサファリサッポロ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] gang of dragon (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スコッティ・バーンズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ラヴィット レギュラー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] j3 順位 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ゲキサカ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] コンサドーレ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 齋藤慎太郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ステフィン・カリー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 栃木シティ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 2026年ヒット商品 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ローソンチケット (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 柿谷曜一朗 (https://trends.google.com/trending/rss?geo=JP)
