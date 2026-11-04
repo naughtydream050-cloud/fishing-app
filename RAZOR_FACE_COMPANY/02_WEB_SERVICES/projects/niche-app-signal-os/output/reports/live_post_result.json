@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "created_at": "2026-11-04T06:10:14.900342+00:00",
+  "created_at": "2026-11-04T06:10:16.751184+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-11-04-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/0234f9d76b935503690d9bd17f730fd66c99b34c/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-04-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/3744eff0ad515c3dd2a456577ac49cdef49e48cf/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-04-no-selected-candidate.png",
   "selected_post_text": "もしスマホログがあるなら、画面はこれくらいでいい。\n\nこれ\n日付\n場所\nあとで見返すメモ\n\n余計な分析とかはいらない。\nあとで見返したい時に迷わず開けるやつ。\n\nこういう割り切ったアプリ、あり？",
   "source_urls_hash": "",
   "pain_point_hash": "",
