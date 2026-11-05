@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-04
+# Public Market Research - 2026-11-05
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 仙台市長 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 坂元達裕 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 鈴木章斗 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日刊建設工業新聞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] imalu (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] abema 将棋 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] キーシャ・ボトムズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 弾劾 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] jsr 買収 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 防空 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 八村塁 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジャパンディスプレイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 損害保険ジャパン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヤニス・アデトクンボ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 気象庁 台風情報 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ハリエット スパー リング (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ゼルダ オカリナ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ビクター・ウェンバンヤマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ルカ・ドンチッチ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 7203 (https://trends.google.com/trending/rss?geo=JP)
