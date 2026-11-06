@@ -1,4 +1,4 @@
-# Live Post Result - 2026-11-05
+# Live Post Result - 2026-11-06
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,20 +7,19 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-11-05-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-11-06-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-使う人、これ一回はあると思う。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
-これを探す
-見つからない
-別のアプリを開く
-また戻る
+メモ
+スクショ
+カレンダー
 
-で、必要な情報が見つかりにくい。
-
-スマホUIのアプリ、使う？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？
 
 ## Risks
 - market_evidence_count_zero
