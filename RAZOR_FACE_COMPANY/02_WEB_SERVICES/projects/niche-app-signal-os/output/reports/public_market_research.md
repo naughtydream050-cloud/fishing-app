@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-07
+# Public Market Research - 2026-11-08
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 小川泰平 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] world tag league (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エスパルス 試合 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] いわきfc (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 浦和レッズ (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] kt 대 삼성 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ps5 gta6 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] カターレ富山 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ルカ・ドンチッチ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 天龍源一郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ピッチコム (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 博報堂 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] g大阪 対 c大阪 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サンフレッチェ広島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 仙台 対 甲府 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] acnチャンピオンシップゴルフトーナメント (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] バークシャー・ハサウェイ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 弘前市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 水原一平 (https://trends.google.com/trending/rss?geo=JP)
