@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-08
+# Public Market Research - 2026-11-09
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 浦和レッズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] kt 대 삼성 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 博報堂 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] g大阪 対 c大阪 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サンフレッチェ広島 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 仙台 対 甲府 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] acnチャンピオンシップゴルフトーナメント (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] バークシャー・ハサウェイ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 弘前市 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 水原一平 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 野崎 守 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スーパーフォーミュラ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] クマ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 活断層 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] サム・アルトマン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 福島良一 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 12月 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 一個買うと一個もらえる (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ドラクエ 新作 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] タイラー オースティン (https://trends.google.com/trending/rss?geo=JP)
