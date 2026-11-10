@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-09
+# Public Market Research - 2026-11-10
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 野崎 守 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スーパーフォーミュラ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] クマ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 活断層 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] サム・アルトマン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 福島良一 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 12月 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 一個買うと一個もらえる (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドラクエ 新作 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] タイラー オースティン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 仮面舞踏会 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ソフトバンク 株価 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 薬屋のひとりごと 実写 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 写真集 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 打者 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ココス 福袋 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ホンダ ステップワゴン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アルトワークス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] メーガン妃 父親 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ジェームズ・ガン (https://trends.google.com/trending/rss?geo=JP)
