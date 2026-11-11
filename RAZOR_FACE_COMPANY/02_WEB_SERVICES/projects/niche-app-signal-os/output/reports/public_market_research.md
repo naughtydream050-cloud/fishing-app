@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-10
+# Public Market Research - 2026-11-11
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 仮面舞踏会 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ソフトバンク 株価 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 薬屋のひとりごと 実写 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 写真集 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 打者 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ココス 福袋 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ホンダ ステップワゴン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アルトワークス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] メーガン妃 父親 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジェームズ・ガン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] グルメフェス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 豊島逸夫 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マラソン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 帝国データバンク (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ローレンス・ストロール (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 金沢ドラゴンクロス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 圏央道 事故 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 衝突 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 髙木悠未 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東出昌大 (https://trends.google.com/trending/rss?geo=JP)
