@@ -1,4 +1,4 @@
-# Live Post Result - 2026-11-11
+# Live Post Result - 2026-11-12
 
 - status: blocked_by_post_source_audit
 - posting_attempted: False
@@ -7,21 +7,20 @@
 - post_url: 
 - target_handle: younengsaitoshaojie
 - selected_candidate_id: 
-- selected_image_path: output/share-cards/2026-11-11-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-11-12-no-selected-candidate.png
 - image_url_available: True
 
 ## Selected Post Text
-もしスマホログがあるなら、画面はこれくらいでいい。
+使う人、これ一回はあると思う。
 
-これ
-日付
-場所
-あとで見返すメモ
+これを探す
+見つからない
+別のアプリを開く
+また戻る
 
-余計な分析とかはいらない。
-あとで見返したい時に迷わず開けるやつ。
+で、必要な情報が見つかりにくい。
 
-こういう割り切ったアプリ、あり？
+スマホUIのアプリ、使う？
 
 ## Risks
 - market_evidence_count_zero
