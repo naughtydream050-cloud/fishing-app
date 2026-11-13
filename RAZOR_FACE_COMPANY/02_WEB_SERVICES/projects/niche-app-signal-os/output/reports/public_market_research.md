@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-12
+# Public Market Research - 2026-11-13
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 医薬品 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 赤ちゃん (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 適時開示 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ジャパンディスプレイ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 化石賞 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ヘグセス長官 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 丸亀 値下げ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ローソン 盛りすぎ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日経電子版 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トム・オブライエン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 原子力潜水艦 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 令和8年度 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 大岩剛 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 渡辺やすし (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] スカイライン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 岩佐歩夢 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 玩具 の 神様 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 再審 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 井原良太郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] やす子 (https://trends.google.com/trending/rss?geo=JP)
