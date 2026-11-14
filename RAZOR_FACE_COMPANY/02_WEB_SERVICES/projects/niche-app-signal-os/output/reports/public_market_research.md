@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-13
+# Public Market Research - 2026-11-14
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 原子力潜水艦 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 令和8年度 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 大岩剛 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 渡辺やすし (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] スカイライン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 岩佐歩夢 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 玩具 の 神様 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 再審 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 井原良太郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] やす子 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 宮里優作 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 藤枝myfc (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 女子ダブルス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東京ディズニーランド・エレクトリカルパレード・ドリームライツ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] テゲバジャーロ宮崎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 愛知県高校サッカー選手権 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 金光大阪サッカー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 長崎ヴェルカ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日経225先物取引 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 島崎遥香 (https://trends.google.com/trending/rss?geo=JP)

@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "candidate_id": "",
   "tone_id": "default_light_problem",
   "target_audience": "unclear",
-  "selected_variant_id": "01",
-  "selected_pattern_id": "quote_search_loop",
+  "selected_variant_id": "02",
+  "selected_pattern_id": "not_management_just_need",
   "variant_count": 10,
   "variants": [
     {
@@ -14,7 +14,7 @@
       "text": "「これどこだっけ」ってなってからが長い。\n\nメモ見て、スクショ見て、\n結局カレンダーまで戻る。\n\nあとで見返したい時にこれやるの、地味にしんどい。\n\nスマホログだけ開けば済むなら欲しい？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": true,
+        "passed": false,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -23,7 +23,7 @@
         "used_avoid_words": [],
         "line_count": 5,
         "target_audience": "unclear",
-        "max_recent_similarity": 0.086
+        "max_recent_similarity": 1.0
       },
       "length": 93
     },
@@ -34,7 +34,7 @@
       "text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
       "tone_id": "default_light_problem",
       "tone_check_result": {
-        "passed": false,
+        "passed": true,
         "tone_id": "default_light_problem",
         "used_words": [
           "メモ",
@@ -43,7 +43,7 @@
         "used_avoid_words": [],
         "line_count": 6,
         "target_audience": "unclear",
-        "max_recent_similarity": 1.0
+        "max_recent_similarity": 0.087
       },
       "length": 108
     },
