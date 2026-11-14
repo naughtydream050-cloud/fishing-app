@@ -11,8 +11,8 @@
   ],
   "summary": "Threads posting was evaluated through AUTO_POST, DRY_RUN, target, duplicate, post source audit, and secrets guards.",
   "scores": {
-    "auto_post": false,
-    "dry_run": true,
+    "auto_post": true,
+    "dry_run": false,
     "threads_auto_post_enabled": true
   },
   "risks": [
@@ -30,23 +30,23 @@
   "target_guard": "target_handle_ok",
   "live_preflight": {
     "gate_approved": true,
-    "auto_post": false,
+    "auto_post": true,
     "threads_auto_post_enabled": true,
-    "dry_run": true,
+    "dry_run": false,
     "target_handle": "younengsaitoshaojie",
     "expected_target_handle": "younengsaitoshaojie",
-    "content_hash": "554b9805d15f36ecaf4731dfb804c51defebabcd46732b244377f0a2a92dc0ed",
+    "content_hash": "616a39538f14dbe3c8dde3099a2e866906824adfc5d84c1b860ef0d79701332a",
     "duplicate": false,
     "missing_secrets": [],
     "selected_candidate": false,
     "post_source_audit_allowed": false,
     "image_url_available": true
   },
-  "log_entry": "{'date': '2026-11-14', 'created_at': '2026-11-14T06:13:45.753579+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': False, 'threads_auto_post_enabled': True, 'dry_run': True, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '554b9805d15f36ecaf4731dfb804c51defebabcd46732b244377f0a2a92dc0ed', 'post_text': 'きれいに管理したいわけじゃないんよ。\\n\\nただ、あとで見返したい時に\\nこれがすぐ出てきてほしいだけ。\\n\\nスマホメモに置いた気もするし、\\n写真フォルダに残した気もする。\\n\\nこういうのだけ拾ってくれるスマホログ、需要ある？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-11-14-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b562d95bbfa2d72e8afb85b0d88db2344984615c/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-14-no-selected-candidate.png', 'post_text_hash': 'da68e8a18d4d4ab1dac9d94cd901d9e94eed0fbf7934422ff55f0232ff1b39a5', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
+  "log_entry": "{'date': '2026-11-14', 'created_at': '2026-11-14T06:13:47.181368+00:00', 'status': 'blocked_by_post_source_audit', 'auto_post': True, 'threads_auto_post_enabled': True, 'dry_run': False, 'thread_id': None, 'target_handle': '<THREADS_TARGET_HANDLE:redacted>', 'content_hash': '616a39538f14dbe3c8dde3099a2e866906824adfc5d84c1b860ef0d79701332a', 'post_text': 'きれいに管理したいわけじゃないんよ。\\n\\nただ、あとで見返したい時に\\nこれがすぐ出てきてほしいだけ。\\n\\nスマホメモに置いた気もするし、\\n写真フォルダに残した気もする。\\n\\nこういうのだけ拾ってくれるスマホログ、需要ある？', 'alt_text': '候補のスマホアプリ画面', 'topic_tags': ['', 'ニッチアプリ'], 'candidate_id': '', 'selected_image_path': 'output/share-cards/2026-11-14-no-selected-candidate.png', 'image_url': 'https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/85326802a88a94bb505b4325484485e0e46669b8/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-14-no-selected-candidate.png', 'post_text_hash': 'da68e8a18d4d4ab1dac9d94cd901d9e94eed0fbf7934422ff55f0232ff1b39a5', 'pain_point_hash': '', 'source_urls_hash': '', 'research_freshness': 'stale_blocked', 'evidence_count': 0}",
   "api_called": false,
   "live_post_result": {
     "date": "2026-11-14",
-    "created_at": "2026-11-14T06:13:45.753579+00:00",
+    "created_at": "2026-11-14T06:13:47.181368+00:00",
     "status": "blocked_by_post_source_audit",
     "posting_attempted": false,
     "api_called": false,
@@ -55,7 +55,7 @@
     "target_handle": "younengsaitoshaojie",
     "selected_candidate_id": "",
     "selected_image_path": "output/share-cards/2026-11-14-no-selected-candidate.png",
-    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/b562d95bbfa2d72e8afb85b0d88db2344984615c/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-14-no-selected-candidate.png",
+    "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/85326802a88a94bb505b4325484485e0e46669b8/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-14-no-selected-candidate.png",
     "selected_post_text": "きれいに管理したいわけじゃないんよ。\n\nただ、あとで見返したい時に\nこれがすぐ出てきてほしいだけ。\n\nスマホメモに置いた気もするし、\n写真フォルダに残した気もする。\n\nこういうのだけ拾ってくれるスマホログ、需要ある？",
     "source_urls_hash": "",
     "pain_point_hash": "",
