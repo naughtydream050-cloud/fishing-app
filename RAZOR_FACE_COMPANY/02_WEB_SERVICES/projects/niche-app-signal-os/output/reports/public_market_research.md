@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-14
+# Public Market Research - 2026-11-15
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 宮里優作 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 藤枝myfc (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 女子ダブルス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 東京ディズニーランド・エレクトリカルパレード・ドリームライツ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] テゲバジャーロ宮崎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 愛知県高校サッカー選手権 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 金光大阪サッカー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 長崎ヴェルカ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日経225先物取引 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 島崎遥香 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] バドミントン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 山口県高校サッカー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 田口 淳之介 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 駅弁 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ステレンボッシュ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ツエーゲン金沢 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ヴァンラーレ八戸 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イグナトワ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ルヴァンカップ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] オグリキャップ (https://trends.google.com/trending/rss?geo=JP)
