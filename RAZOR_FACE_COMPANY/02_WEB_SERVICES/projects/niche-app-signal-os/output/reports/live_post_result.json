@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "created_at": "2026-11-17T07:49:47.636520+00:00",
+  "created_at": "2026-11-17T07:49:49.567900+00:00",
   "status": "blocked_by_post_source_audit",
   "posting_attempted": false,
   "api_called": false,
@@ -9,7 +9,7 @@
   "target_handle": "younengsaitoshaojie",
   "selected_candidate_id": "",
   "selected_image_path": "output/share-cards/2026-11-17-no-selected-candidate.png",
-  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/70d97f0fd4964fd4391cc1c9f20bc185e74d5f91/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-17-no-selected-candidate.png",
+  "image_url": "https://raw.githubusercontent.com/naughtydream050-cloud/fishing-app/a410000ba3fa9f013bfda21cc566d0c3248fc200/RAZOR_FACE_COMPANY/02_WEB_SERVICES/projects/niche-app-signal-os/output/share-cards/2026-11-17-no-selected-candidate.png",
   "selected_post_text": "あとで見返したい時、小さい不便で時間溶けない？\n\nちゃんと残してるはずなのに、\n残し場所が毎回違う。\n\n・メモ\n・スクショ\n・カレンダー\n・写真フォルダ\n\nスマホUIのアプリがあったら、今のやり方から乗り換える？",
   "source_urls_hash": "",
   "pain_point_hash": "",
