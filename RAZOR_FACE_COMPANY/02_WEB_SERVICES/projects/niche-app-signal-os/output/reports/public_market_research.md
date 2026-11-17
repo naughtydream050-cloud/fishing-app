@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-16
+# Public Market Research - 2026-11-17
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] gta6 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 重岡大毅 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 皆藤愛子 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 三越伊勢丹ホールディングス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 斎藤元彦 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デコピン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] みずがめ座 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アベンジャーズ/ドゥームズデイ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 矢野雅哉 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 徳島県阿波市長 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 藤島親方 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] travis japan (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 倉林晶 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 中田翔 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 285a (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] topix (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 玉木雄一郎 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ハッカー (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] マツダ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 与沢翼 (https://trends.google.com/trending/rss?geo=JP)
