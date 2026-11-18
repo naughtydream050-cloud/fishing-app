@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-17
+# Public Market Research - 2026-11-18
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 藤島親方 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] travis japan (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 倉林晶 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 中田翔 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 285a (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] topix (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 玉木雄一郎 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ハッカー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マツダ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 与沢翼 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] quentin grimes (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アントニオバルガス (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 戦闘機 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 武田真一 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 北村匠海 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 松木玖生 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 受刑者 選挙権 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] モナキ サカイjr (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] レイカーズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ポケモンチャンピオンズ (https://trends.google.com/trending/rss?geo=JP)
