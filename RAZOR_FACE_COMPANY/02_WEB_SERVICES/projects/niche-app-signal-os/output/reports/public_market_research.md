@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-18
+# Public Market Research - 2026-11-19
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] quentin grimes (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] アントニオバルガス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 戦闘機 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 武田真一 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 北村匠海 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 松木玖生 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 受刑者 選挙権 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] モナキ サカイjr (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] レイカーズ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ポケモンチャンピオンズ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] yahoo!ニュース (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ana 減額マイルキャンペーン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] トヨタ・カローラ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日経 平均 株価 伊藤 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本中央競馬会 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 日本ケンタッキー・フライド・チキン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ハニートラップ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 米中露首脳会談 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 今日は何の日 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] フィンセント・ファン・ゴッホ (https://trends.google.com/trending/rss?geo=JP)
