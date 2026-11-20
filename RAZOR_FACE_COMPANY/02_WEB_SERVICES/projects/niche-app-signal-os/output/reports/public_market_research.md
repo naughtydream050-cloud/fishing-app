@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-19
+# Public Market Research - 2026-11-20
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] yahoo!ニュース (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ana 減額マイルキャンペーン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] トヨタ・カローラ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日経 平均 株価 伊藤 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日本中央競馬会 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 日本ケンタッキー・フライド・チキン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ハニートラップ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 米中露首脳会談 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 今日は何の日 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] フィンセント・ファン・ゴッホ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 泉口友汰 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 生田目 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 心斎橋 火事 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] ポケットチェンジ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 芝草宇宙 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] jr京都線 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] グランド・セフト・オート (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] mamaアワード2026 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 共和党 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 京セラドーム (https://trends.google.com/trending/rss?geo=JP)
