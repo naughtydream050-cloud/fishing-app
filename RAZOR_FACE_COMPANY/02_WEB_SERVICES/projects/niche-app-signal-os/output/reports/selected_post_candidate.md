@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-11-22
+# Selected Post Candidate - 2026-11-23
 
 - selected: False
 - selected_candidate_id: 
@@ -7,17 +7,16 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-11-22-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-11-23-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-これ探すの、毎回ちょっと負けてる気がする。
+今のやり方で十分って分かってるんだけど、
+小さい不便だけは専用画面が欲しくなる時ある。
 
 メモ
 スクショ
 カレンダー
-写真フォルダ
 
-必要な情報が見つかりにくいやつ。
-
-スマホUIのアプリあったら普通に使う？
+このへんに散らばったこれを、
+一つのスマホログで見返せたらどう？
