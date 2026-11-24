@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-23
+# Public Market Research - 2026-11-24
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] 上下両院 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ストリクトリー・カム・ダンシング (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 光一&シゲのshowマン!! (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] リフォーム (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドミニク・スミス (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] タナーレイニー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 毎熊晟矢 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ドリームフェスティバル2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 常滑競艇 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 延坪島 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] フォートナイト (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] pakistan a vs nepal (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] アベイル福袋 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 京王グループ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 芸備線 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 11月満月 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] fc大阪 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] イム・ジヨン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] exile コアラのマーチ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] jaxa (https://trends.google.com/trending/rss?geo=JP)
