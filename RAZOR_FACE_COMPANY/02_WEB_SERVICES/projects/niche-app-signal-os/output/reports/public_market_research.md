@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-25
+# Public Market Research - 2026-11-26
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] ジャスタウェイ カプ ヌ 3 分 タイマー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] benhern tokyo festival 2026 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] f15ex (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 北九州 対 金沢 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] エルサルバドル (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 7011 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] boøwy (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 橋下徹 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ベラルーシの大統領 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] ビターチョコサンドクッキー無印 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 有馬記念 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] モロゾフ ポムポム プリン (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] セブン 唐揚げ (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 青龍 映画 賞 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 旗手怜央 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 金河成 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 滝澤夏央 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 電池 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 東京ドーム イベント (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 285a (https://trends.google.com/trending/rss?geo=JP)
