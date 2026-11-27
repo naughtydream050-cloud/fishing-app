@@ -1,4 +1,4 @@
-# Selected Post Candidate - 2026-11-26
+# Selected Post Candidate - 2026-11-27
 
 - selected: False
 - selected_candidate_id: 
@@ -7,15 +7,17 @@
 - source_urls: 0
 - research_freshness: stale_blocked
 - fallback_reason: selected_candidate_missing
-- selected_image_path: output/share-cards/2026-11-26-no-selected-candidate.png
+- selected_image_path: output/share-cards/2026-11-27-no-selected-candidate.png
 - rejected_reason_if_any: market_evidence_count_zero
 
 ## Selected Post Text
-ほしいのは多機能アプリじゃなくて、
-「これどこ？」にだけ強い画面かもしれない。
+使う人、これ一回はあると思う。
 
-メモ
-スクショ
-カレンダー
+これを探す
+見つからない
+別のアプリを開く
+また戻る
 
-このへんを横断して、スマホログにまとまってたら助かる？
+で、必要な情報が見つかりにくい。
+
+スマホUIのアプリ、使う？
