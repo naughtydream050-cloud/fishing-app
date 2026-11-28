@@ -1,4 +1,4 @@
-# Public Market Research - 2026-11-27
+# Public Market Research - 2026-11-28
 
 - research_freshness: fresh
 - signal_count: 10
@@ -6,13 +6,13 @@
 - fallback_reason: 
 
 ## Signals
-- [google_trends_jp] starto entertainment (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] aus vs eng (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 285a (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 幽 遊 白書 一 番くじ (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] シュガークン (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] デーリー東北 (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] マークスタイラー (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 社債 (https://trends.google.com/trending/rss?geo=JP)
 - [google_trends_jp] ain (https://trends.google.com/trending/rss?geo=JP)
-- [google_trends_jp] 藤枝市 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] うお座 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 土田 龍 空 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] あ に いもうと (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 三浦 知良 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 駅伝競走 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 宇野昌磨 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 段原瑠々 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] 犯罪 (https://trends.google.com/trending/rss?geo=JP)
+- [google_trends_jp] エフエヌエス歌謡祭 (https://trends.google.com/trending/rss?geo=JP)
